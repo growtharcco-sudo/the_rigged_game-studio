@@ -1,0 +1,463 @@
+{
+ "id": "000_kit_example_ep01",
+ "episode": "01",
+ "series": "Casino Beaters",
+ "voice": "am_liam",
+ "speed": 1.0,
+ "hold": 2.6,
+ "caption_keywords": [
+  "1800s",
+  "monte",
+  "carlo",
+  "watched",
+  "month",
+  "machines",
+  "balanced",
+  "flaw",
+  "winning",
+  "million",
+  "francs",
+  "millions",
+  "fought",
+  "never",
+  "houses",
+  "luck",
+  "maths"
+ ],
+ "phrases": [
+  {
+   "say": "In the eighteen hundreds, a Yorkshire mill engineer walked into the Monte Carlo casino.",
+   "cap": "In the 1800s, | a Yorkshire mill engineer | walked into | the Monte Carlo casino.",
+   "pause": 0.45
+  },
+  {
+   "say": "He didn't place a bet. He just watched.",
+   "cap": "He didn't place a bet. | He just watched.",
+   "pause": 0.45
+  },
+  {
+   "say": "For a month, he wrote down every number that landed.",
+   "cap": "For a month, | he wrote down | every number that landed.",
+   "pause": 0.45
+  },
+  {
+   "say": "He knew machines. And he knew no spinning wheel is perfectly balanced.",
+   "cap": "He knew machines. | And he knew | no spinning wheel | is perfectly balanced.",
+   "pause": 0.45
+  },
+  {
+   "say": "One wheel had a flaw. Some numbers came up more often than they should.",
+   "cap": "One wheel had a flaw. | Some numbers came up | more often than they should.",
+   "pause": 0.45
+  },
+  {
+   "say": "So he bet on them. And he kept winning.",
+   "cap": "So he bet on them. | And he kept winning.",
+   "pause": 0.45
+  },
+  {
+   "say": "Over a few days, he took more than two million francs.",
+   "cap": "Over a few days, | he took more than | 2 million francs.",
+   "pause": 0.45
+  },
+  {
+   "say": "That's millions in today's money.",
+   "cap": "That's millions | in today's money.",
+   "pause": 0.45
+  },
+  {
+   "say": "The casino fought back. Wheels were redesigned so the trick could never work again.",
+   "cap": "The casino fought back. | Wheels were redesigned | so the trick | could never work again.",
+   "pause": 0.45
+  },
+  {
+   "say": "He went home and bought houses.",
+   "cap": "He went home | and bought houses.",
+   "pause": 0.45
+  },
+  {
+   "say": "He beat the casino the only way it can be beaten. Not with luck. With maths.",
+   "cap": "He beat the casino | the only way | it can be beaten. | Not with luck. | With maths.",
+   "pause": 0.45
+  }
+ ],
+ "scenes": [
+  {
+   "start": 0,
+   "kind": "title",
+   "els": [
+    {
+     "type": "bg",
+     "look": "night"
+    },
+    {
+     "type": "mascot",
+     "at": -1,
+     "x": 300,
+     "y": 830,
+     "s": 0.82,
+     "drift": -60,
+     "walk": 90,
+     "walk_dur": 2.5
+    },
+    {
+     "type": "word",
+     "at": -1,
+     "text": "1800s",
+     "y": 400,
+     "size": 190,
+     "rot": -3,
+     "pop": "back"
+    },
+    {
+     "type": "label",
+     "text": "MONTE CARLO",
+     "y": 520,
+     "at": -1,
+     "size": 40,
+     "bg": "rust",
+     "fg": "paper",
+     "rot": -3,
+     "font": "Mono-Bold"
+    }
+   ]
+  },
+  {
+   "start": 1,
+   "kind": "watch",
+   "els": [
+    {
+     "type": "bg",
+     "look": "hall"
+    },
+    {
+     "type": "table_wheel",
+     "at": 1
+    },
+    {
+     "type": "ground",
+     "y": 1250
+    },
+    {
+     "type": "mascot",
+     "at": 1,
+     "x": 205,
+     "y": 780,
+     "s": 0.8,
+     "rise": 160
+    },
+    {
+     "type": "nobet_eye",
+     "at": 1,
+     "eye_at": {
+      "b": 1,
+      "w": 5
+     }
+    }
+   ]
+  },
+  {
+   "start": 2,
+   "kind": "notebook",
+   "els": [
+    {
+     "type": "bg",
+     "look": "candle"
+    },
+    {
+     "type": "tally",
+     "at": 2,
+     "days": 30,
+     "unit": "DAY",
+     "dur": 3.3
+    },
+    {
+     "type": "ground",
+     "y": 1255
+    }
+   ]
+  },
+  {
+   "start": 3,
+   "kind": "balance",
+   "els": [
+    {
+     "type": "bg",
+     "look": "blueprint",
+     "rot": 1.5
+    },
+    {
+     "type": "balance",
+     "at": 3,
+     "wheel_at": {
+      "b": 3,
+      "w": 3
+     }
+    },
+    {
+     "type": "ground",
+     "y": 1260
+    }
+   ]
+  },
+  {
+   "start": 4,
+   "kind": "odds",
+   "els": [
+    {
+     "type": "bg",
+     "look": "paper"
+    },
+    {
+     "type": "wheel_odds",
+     "at": 4,
+     "bars_at": {
+      "b": 4,
+      "w": 5
+     },
+     "label": "HOW OFTEN EACH NUMBER LANDED",
+     "line": "EXPECTED"
+    },
+    {
+     "type": "ground",
+     "y": 1262
+    }
+   ]
+  },
+  {
+   "start": 5,
+   "kind": "streak",
+   "els": [
+    {
+     "type": "bg",
+     "look": "paper",
+     "glow": 0.25
+    },
+    {
+     "type": "streak",
+     "at": 5,
+     "streak_at": {
+      "b": 5,
+      "w": 5
+     },
+     "wins": 9
+    },
+    {
+     "type": "ground",
+     "y": 1255
+    }
+   ]
+  },
+  {
+   "start": 6,
+   "kind": "counter",
+   "els": [
+    {
+     "type": "bg",
+     "look": "paper"
+    },
+    {
+     "type": "counter",
+     "at": 6,
+     "value": 2000000,
+     "prefix": "",
+     "suffix": "",
+     "decimals": 0,
+     "count_at": {
+      "b": 6,
+      "w": 4
+     },
+     "dur": 3.0,
+     "chips": true,
+     "unit": "FRANCS",
+     "after": "= MILLIONS TODAY",
+     "after_at": 7
+    },
+    {
+     "type": "ground",
+     "y": 1255
+    }
+   ]
+  },
+  {
+   "start": 8,
+   "kind": "patched",
+   "els": [
+    {
+     "type": "bg",
+     "look": "red"
+    },
+    {
+     "type": "mascot",
+     "at": 8,
+     "x": 130,
+     "y": 820,
+     "s": 0.75,
+     "rise": 200
+    },
+    {
+     "type": "mascot",
+     "at": 8,
+     "x": 950,
+     "y": 820,
+     "s": 0.75,
+     "rise": 200
+    },
+    {
+     "type": "patch",
+     "at": 8,
+     "fix_at": {
+      "b": 8,
+      "w": 4
+     }
+    },
+    {
+     "type": "stamp",
+     "text": "PATCHED",
+     "y": 730,
+     "size": 150,
+     "rot": -10,
+     "at": {
+      "b": 8,
+      "w": 11
+     }
+    },
+    {
+     "type": "label",
+     "text": "THE CASINO FIGHTS BACK",
+     "y": 250,
+     "at": 8,
+     "size": 44,
+     "bg": "ink",
+     "fg": "paper",
+     "rot": -2,
+     "font": "Mono-Bold"
+    },
+    {
+     "type": "ground",
+     "y": 1255
+    }
+   ]
+  },
+  {
+   "start": 9,
+   "kind": "town",
+   "els": [
+    {
+     "type": "bg",
+     "look": "sunset"
+    },
+    {
+     "type": "town",
+     "at": 9
+    },
+    {
+     "type": "ground",
+     "y": 1255
+    },
+    {
+     "type": "label",
+     "text": "YORKSHIRE, ENGLAND",
+     "y": 300,
+     "at": 9,
+     "size": 44,
+     "bg": "rust",
+     "fg": "paper",
+     "rot": -2,
+     "font": "Mono-Bold"
+    }
+   ]
+  },
+  {
+   "start": 10,
+   "kind": "ending",
+   "els": [
+    {
+     "type": "bg",
+     "look": "paper",
+     "glow": 0.3,
+     "glow_y": 760
+    },
+    {
+     "type": "label",
+     "text": "P(win) > 1/37",
+     "y": 300,
+     "at": {
+      "b": 10,
+      "d": 0.6
+     },
+     "size": 40,
+     "bg": "rust",
+     "fg": "paper",
+     "rot": 2,
+     "font": "Mono-Bold"
+    },
+    {
+     "type": "word",
+     "at": 10,
+     "text": "LUCK",
+     "font": "Inter-Black",
+     "size": 190,
+     "y": 560,
+     "rot": -3,
+     "strike_at": {
+      "b": 10,
+      "w": 13
+     }
+    },
+    {
+     "type": "word",
+     "at": {
+      "b": 10,
+      "w": 14
+     },
+     "text": "MATHS",
+     "size": 210,
+     "y": 900,
+     "rot": 2,
+     "card": "ink",
+     "ink": "gold",
+     "pop": "slam",
+     "glow": true
+    },
+    {
+     "type": "ground",
+     "y": 1255
+    },
+    {
+     "type": "text",
+     "at": {
+      "b": 10,
+      "d": 1.0
+     },
+     "text": "THE RIGGED GAME",
+     "y": 1720,
+     "size": 34,
+     "alpha": 0.8,
+     "footer": true
+    },
+    {
+     "type": "outro",
+     "at": [
+      "end",
+      0.35
+     ]
+    }
+   ]
+  }
+ ],
+ "cover": {
+  "kicker": "HE BEAT MONTE CARLO",
+  "big": "1800s",
+  "sub": "WITH A NOTEBOOK"
+ },
+ "sources": [
+  "Joseph Jagger, Monte Carlo 1873: https://en.wikipedia.org/wiki/Joseph_Jagger",
+  "https://www.todayifoundout.com/index.php/2015/08/man-broke-bank-monte-carlo/"
+ ],
+ "post": {
+  "instagram_caption": "This man beat Monte Carlo without luck. Just a notebook and a wobbly wheel.\n\nIn 1873 Joseph Jagger, a Yorkshire engineer, recorded every spin until he found a biased wheel.\n\nWould you have spotted it?\n\nEducation only. Not gambling advice. 18+\nFollow @the_rigged_game for more casino secrets.\n\n#theriggedgame #montecarlo #casinohistory #truestory #maths",
+  "youtube_title": "The Man Who Beat Monte Carlo With A Notebook",
+  "youtube_description": "Joseph Jagger found a biased roulette wheel in Monte Carlo and won more than 2 million francs.\n\nEducation only. Not gambling advice. 18+ AI narration.\n\nSources: https://en.wikipedia.org/wiki/Joseph_Jagger\n\nSubscribe to @the_rigged_game for more casino secrets.\n#casino #history #theriggedgame"
+ }
+}

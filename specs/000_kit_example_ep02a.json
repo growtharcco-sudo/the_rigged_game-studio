@@ -1,0 +1,540 @@
+{
+ "id": "000_kit_example_ep02a",
+ "episode": "02",
+ "series": "Casino Secrets",
+ "voice": "am_liam",
+ "speed": 1.0,
+ "hold": 2.6,
+ "caption_keywords": [
+  "clock",
+  "won't",
+  "clocks",
+  "windows",
+  "sunset",
+  "accident",
+  "design",
+  "2000",
+  "book",
+  "ceilings",
+  "maze-like",
+  "machines",
+  "chips",
+  "money",
+  "free",
+  "slower",
+  "one",
+  "playing",
+  "maths",
+  "luck",
+  "time"
+ ],
+ "phrases": [
+  {
+   "say": "Walk into most casinos, and try to find a clock. You won't.",
+   "cap": "Walk into most casinos, | and try to find a clock. | You won't.",
+   "pause": 0.45
+  },
+  {
+   "say": "No clocks. Few windows. No sunset to remind you it's late.",
+   "cap": "No clocks. | Few windows. | No sunset | to remind you it's late.",
+   "pause": 0.45
+  },
+  {
+   "say": "That is not an accident. It is by design.",
+   "cap": "That is not an accident. | It is by design.",
+   "pause": 0.45
+  },
+  {
+   "say": "In the year two thousand, a former casino boss wrote a whole book on designing casinos.",
+   "cap": "In the year 2000, | a former casino boss | wrote a whole book | on designing casinos.",
+   "pause": 0.45
+  },
+  {
+   "say": "His rules? Low ceilings, maze-like paths, and machines everywhere you turn.",
+   "cap": "His rules? | Low ceilings, | maze-like paths, | and machines | everywhere you turn.",
+   "pause": 0.45
+  },
+  {
+   "say": "Real cash disappears too. You hold chips, so it doesn't feel like money.",
+   "cap": "Real cash disappears too. | You hold chips, | so it doesn't feel like money.",
+   "pause": 0.45
+  },
+  {
+   "say": "And the free drinks? They're not free.",
+   "cap": "And the free drinks? | They're not free.",
+   "pause": 0.45
+  },
+  {
+   "say": "They're paid for by the bets you make with a slower mind.",
+   "cap": "They're paid for | by the bets you make | with a slower mind.",
+   "pause": 0.45
+  },
+  {
+   "say": "Every detail has one job. Keep you playing.",
+   "cap": "Every detail has one job. | Keep you playing.",
+   "pause": 0.45
+  },
+  {
+   "say": "Because the longer you stay, the more the maths wins.",
+   "cap": "Because the longer you stay, | the more the maths wins.",
+   "pause": 0.45
+  },
+  {
+   "say": "The house doesn't need luck. It just needs time.",
+   "cap": "The house doesn't need luck. | It just needs time.",
+   "pause": 0.45
+  }
+ ],
+ "scenes": [
+  {
+   "start": 0,
+   "kind": "clock_hunt",
+   "els": [
+    {
+     "type": "bg",
+     "look": "hall"
+    },
+    {
+     "type": "wallclock",
+     "at": -1,
+     "stop_at": {
+      "b": 0,
+      "w": 10
+     }
+    },
+    {
+     "type": "ground",
+     "y": 1250
+    },
+    {
+     "type": "mascot",
+     "at": -1,
+     "x": -60,
+     "y": 820,
+     "s": 0.78,
+     "walk": 260,
+     "walk_dur": 1.4
+    },
+    {
+     "type": "stamp",
+     "text": "NOT FOUND",
+     "y": 660,
+     "size": 120,
+     "rot": -8,
+     "at": {
+      "b": 0,
+      "w": 10
+     }
+    }
+   ]
+  },
+  {
+   "start": 1,
+   "kind": "cards",
+   "els": [
+    {
+     "type": "bg",
+     "look": "study"
+    },
+    {
+     "type": "cards",
+     "at": 1,
+     "items": [
+      {
+       "text": "NO CLOCKS",
+       "icon": "clock",
+       "at": {
+        "b": 1,
+        "d": 0.0
+       }
+      },
+      {
+       "text": "NO WINDOWS",
+       "icon": "window",
+       "at": {
+        "b": 1,
+        "w": 2,
+        "d": 0.0
+       }
+      },
+      {
+       "text": "NO SUNSET",
+       "icon": "sunset",
+       "at": {
+        "b": 1,
+        "w": 4,
+        "d": 0.0
+       }
+      }
+     ]
+    },
+    {
+     "type": "dim",
+     "at": 2
+    },
+    {
+     "type": "stamp",
+     "text": "BY DESIGN",
+     "y": 720,
+     "size": 150,
+     "rot": -9,
+     "at": 2,
+     "delay": 0.25
+    }
+   ]
+  },
+  {
+   "start": 3,
+   "kind": "book",
+   "els": [
+    {
+     "type": "bg",
+     "look": "paper",
+     "glow": 0.3
+    },
+    {
+     "type": "mascot",
+     "at": {
+      "b": 3,
+      "d": 1.2
+     },
+     "x": 800.0,
+     "y": 560,
+     "s": 0.72,
+     "rise": 180,
+     "fade": 0.7,
+     "color": "#2a1a12"
+    },
+    {
+     "type": "book",
+     "at": 3,
+     "open_at": {
+      "b": 3,
+      "d": 2.6
+     },
+     "title": [
+      "DESIGNING",
+      "CASINOS"
+     ]
+    },
+    {
+     "type": "label",
+     "text": "YEAR 2000",
+     "y": 330,
+     "at": 3,
+     "size": 64,
+     "bg": "rust",
+     "fg": "paper",
+     "rot": -3,
+     "font": "Inter-Black",
+     "pop": "big"
+    },
+    {
+     "type": "label",
+     "text": "EX CASINO BOSS",
+     "y": 470,
+     "at": {
+      "b": 3,
+      "d": 1.2
+     },
+     "size": 34,
+     "bg": "ink",
+     "fg": "paper",
+     "rot": 3,
+     "font": "Mono-Bold",
+     "x": 770.0,
+     "delay": 0.2
+    },
+    {
+     "type": "ground",
+     "y": 1255
+    }
+   ]
+  },
+  {
+   "start": 4,
+   "kind": "maze",
+   "els": [
+    {
+     "type": "bg",
+     "look": "blueprint",
+     "rot": 1.2
+    },
+    {
+     "type": "maze",
+     "at": 4,
+     "exit_at": {
+      "b": 4,
+      "w": 4
+     },
+     "machines_at": {
+      "b": 4,
+      "w": 7
+     },
+     "headers": [
+      "THE RULE BOOK",
+      "MAZE PATHS",
+      "MACHINES EVERYWHERE"
+     ]
+    },
+    {
+     "type": "ground",
+     "y": 1262
+    }
+   ]
+  },
+  {
+   "start": 5,
+   "kind": "chips",
+   "els": [
+    {
+     "type": "bg",
+     "look": "paper",
+     "glow": 0.25,
+     "glow_y": 780
+    },
+    {
+     "type": "cash_chips",
+     "at": 5,
+     "flip_at": {
+      "b": 5,
+      "w": 4
+     }
+    },
+    {
+     "type": "label",
+     "text": "REAL CASH",
+     "y": 330,
+     "at": 5,
+     "size": 56,
+     "bg": "ink",
+     "fg": "paper",
+     "rot": -3,
+     "font": "Inter-Black",
+     "until": {
+      "b": 5,
+      "w": 4
+     },
+     "delay": 0.2
+    },
+    {
+     "type": "label",
+     "text": "CHIPS",
+     "y": 330,
+     "at": {
+      "b": 5,
+      "w": 4
+     },
+     "size": 64,
+     "bg": "rust",
+     "fg": "paper",
+     "rot": -3,
+     "font": "Inter-Black",
+     "pop": true,
+     "delay": 0.1
+    },
+    {
+     "type": "label",
+     "text": "FEELS LIKE A GAME",
+     "y": 1200,
+     "at": {
+      "b": 5,
+      "w": 8
+     },
+     "size": 40,
+     "bg": "ink",
+     "fg": "gold",
+     "rot": 2,
+     "font": "Mono-Bold"
+    },
+    {
+     "type": "ground",
+     "y": 1262
+    }
+   ]
+  },
+  {
+   "start": 6,
+   "kind": "drinks",
+   "els": [
+    {
+     "type": "bg",
+     "look": "hall"
+    },
+    {
+     "type": "drink",
+     "at": 6,
+     "front": "FREE",
+     "back": [
+      "PAID BY",
+      "YOUR BETS"
+     ],
+     "flip_at": 7,
+     "strike_at": {
+      "b": 6,
+      "w": 5
+     },
+     "woozy_at": {
+      "b": 7,
+      "w": 9
+     }
+    },
+    {
+     "type": "label",
+     "text": "SLOWER MIND",
+     "y": 330,
+     "at": {
+      "b": 7,
+      "w": 9
+     },
+     "size": 48,
+     "bg": "ink",
+     "fg": "gold",
+     "rot": -3,
+     "font": "Mono-Bold"
+    },
+    {
+     "type": "ground",
+     "y": 1255
+    }
+   ]
+  },
+  {
+   "start": 8,
+   "kind": "puppet",
+   "els": [
+    {
+     "type": "bg",
+     "look": "red"
+    },
+    {
+     "type": "puppet",
+     "at": 8
+    },
+    {
+     "type": "label",
+     "text": "ONE JOB",
+     "y": 1180,
+     "at": 8,
+     "size": 60,
+     "bg": "paper",
+     "fg": "rust",
+     "rot": -3,
+     "font": "Inter-Black",
+     "pop": "big",
+     "delay": 0.1
+    },
+    {
+     "type": "ground",
+     "y": 1262,
+     "color": "#2a0b08"
+    }
+   ]
+  },
+  {
+   "start": 9,
+   "kind": "chart",
+   "els": [
+    {
+     "type": "bg",
+     "look": "blueprint",
+     "rot": -1.2
+    },
+    {
+     "type": "chart",
+     "at": 9,
+     "title": "THE LONGER YOU STAY"
+    },
+    {
+     "type": "ground",
+     "y": 1262
+    }
+   ]
+  },
+  {
+   "start": 10,
+   "kind": "ending",
+   "els": [
+    {
+     "type": "bg",
+     "look": "paper",
+     "glow": 0.3,
+     "glow_y": 760
+    },
+    {
+     "type": "hourglass",
+     "at": 10,
+     "dur": 3.3
+    },
+    {
+     "type": "word",
+     "at": 10,
+     "text": "LUCK",
+     "font": "Inter-Black",
+     "size": 110,
+     "x": 340.0,
+     "y": 300,
+     "rot": -6,
+     "strike_at": {
+      "b": 10,
+      "w": 4
+     },
+     "tear_rot": 10,
+     "tear_drop": 50,
+     "tear_fade": 0.5
+    },
+    {
+     "type": "word",
+     "at": {
+      "b": 10,
+      "w": 8
+     },
+     "text": "TIME",
+     "size": 170,
+     "x": 650.0,
+     "y": 500,
+     "rot": 4,
+     "card": "ink",
+     "ink": "gold",
+     "pop": "slam"
+    },
+    {
+     "type": "ground",
+     "y": 1255
+    },
+    {
+     "type": "text",
+     "at": {
+      "b": 10,
+      "d": 1.0
+     },
+     "text": "THE RIGGED GAME",
+     "y": 1720,
+     "size": 34,
+     "alpha": 0.8,
+     "footer": true
+    },
+    {
+     "type": "outro",
+     "at": [
+      "end",
+      0.35
+     ]
+    }
+   ]
+  }
+ ],
+ "cover": {
+  "kicker": "EVER SEEN A CASINO CLOCK?",
+  "big": "0",
+  "sub": "THAT IS NOT AN ACCIDENT"
+ },
+ "sources": [
+  "Bill Friedman, Designing Casinos to Dominate the Competition (2000)"
+ ],
+ "post": {
+  "instagram_caption": "Ever noticed casinos have no clocks? That is not an accident.\n\nLow ceilings, maze floors, chips instead of cash and free drinks all have one job.\n\nWhich trick surprised you most?\n\nEducation only. Not gambling advice. 18+\nFollow @the_rigged_game for more casino secrets.\n\n#theriggedgame #casinosecrets #casino #psychology #design",
+  "youtube_title": "Why Casinos Have No Clocks",
+  "youtube_description": "No clocks, few windows, maze floors, chips and free drinks: casino design has one job.\n\nEducation only. Not gambling advice. 18+ AI narration.\n\nSource: Bill Friedman, Designing Casinos to Dominate the Competition (2000).\n\nSubscribe to @the_rigged_game for more casino secrets.\n#casino #design #theriggedgame"
+ }
+}

@@ -1,0 +1,4 @@
+pipeline/models/
+queue/
+__pycache__/
+*.pyc

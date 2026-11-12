@@ -1,0 +1,5 @@
+# reel building
+kokoro-onnx
+soundfile
+numpy
+skia-python

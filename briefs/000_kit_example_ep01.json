@@ -1,0 +1,53 @@
+{
+ "id": "000_kit_example_ep01",
+ "episode": "01",
+ "series": "Casino Beaters",
+ "keywords": ["1800s", "monte", "carlo", "watched", "month", "machines", "balanced", "flaw", "winning", "million",
+              "francs", "millions", "fought", "never", "houses", "luck", "maths"],
+ "beats": [
+  {"say": "In the eighteen hundreds, a Yorkshire mill engineer walked into the Monte Carlo casino.",
+   "cap": "In the 1800s, | a Yorkshire mill engineer | walked into | the Monte Carlo casino.",
+   "show": {"kind": "title", "big": "1800s", "tag": "MONTE CARLO"}},
+  {"say": "He didn't place a bet. He just watched.",
+   "cap": "He didn't place a bet. | He just watched.",
+   "show": {"kind": "watch", "eye_at": {"beat": 0, "word": 5}}},
+  {"say": "For a month, he wrote down every number that landed.",
+   "cap": "For a month, | he wrote down | every number that landed.",
+   "show": {"kind": "notebook", "days": 30}},
+  {"say": "He knew machines. And he knew no spinning wheel is perfectly balanced.",
+   "cap": "He knew machines. | And he knew | no spinning wheel | is perfectly balanced.",
+   "show": {"kind": "balance", "wheel_at": {"beat": 0, "word": 3}}},
+  {"say": "One wheel had a flaw. Some numbers came up more often than they should.",
+   "cap": "One wheel had a flaw. | Some numbers came up | more often than they should.",
+   "show": {"kind": "odds", "bars_at": {"beat": 0, "word": 5}}},
+  {"say": "So he bet on them. And he kept winning.",
+   "cap": "So he bet on them. | And he kept winning.",
+   "show": {"kind": "streak", "streak_at": {"beat": 0, "word": 5}}},
+  {"say": "Over a few days, he took more than two million francs.",
+   "cap": "Over a few days, | he took more than | 2 million francs.",
+   "show": {"kind": "counter", "value": 2000000, "unit": "FRANCS", "count_at": {"beat": 0, "word": 4},
+            "after": "= MILLIONS TODAY", "after_at": 1}},
+  {"say": "That's millions in today's money.",
+   "cap": "That's millions | in today's money."},
+  {"say": "The casino fought back. Wheels were redesigned so the trick could never work again.",
+   "cap": "The casino fought back. | Wheels were redesigned | so the trick | could never work again.",
+   "show": {"kind": "patched", "fix_at": {"beat": 0, "word": 4}, "stamp_at": {"beat": 0, "word": 11}}},
+  {"say": "He went home and bought houses.",
+   "cap": "He went home | and bought houses.",
+   "show": {"kind": "town", "place": "YORKSHIRE, ENGLAND"}},
+  {"say": "He beat the casino the only way it can be beaten. Not with luck. With maths.",
+   "cap": "He beat the casino | the only way | it can be beaten. | Not with luck. | With maths.",
+   "show": {"kind": "ending", "wrong": "LUCK", "right": "MATHS", "eq": "P(win) > 1/37",
+            "strike_at": {"beat": 0, "word": 13}, "right_at": {"beat": 0, "word": 14}}}
+ ],
+ "cover": {"kicker": "HE BEAT MONTE CARLO", "big": "1800s", "sub": "WITH A NOTEBOOK"},
+ "sources": [
+  "Joseph Jagger, Monte Carlo 1873: https://en.wikipedia.org/wiki/Joseph_Jagger",
+  "https://www.todayifoundout.com/index.php/2015/08/man-broke-bank-monte-carlo/"
+ ],
+ "post": {
+  "instagram_caption": "This man beat Monte Carlo without luck. Just a notebook and a wobbly wheel.\n\nIn 1873 Joseph Jagger, a Yorkshire engineer, recorded every spin until he found a biased wheel.\n\nWould you have spotted it?\n\nEducation only. Not gambling advice. 18+\nFollow @the_rigged_game for more casino secrets.\n\n#theriggedgame #montecarlo #casinohistory #truestory #maths",
+  "youtube_title": "The Man Who Beat Monte Carlo With A Notebook",
+  "youtube_description": "Joseph Jagger found a biased roulette wheel in Monte Carlo and won more than 2 million francs.\n\nEducation only. Not gambling advice. 18+ AI narration.\n\nSources: https://en.wikipedia.org/wiki/Joseph_Jagger\n\nSubscribe to @the_rigged_game for more casino secrets.\n#casino #history #theriggedgame"
+ }
+}
