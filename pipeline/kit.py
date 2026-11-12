@@ -253,6 +253,7 @@ def build_spec(brief):
         spec['progress'] = progress
         spec['progress_end'] = progress_end if progress_end is not None else 'end'
     for k in ('cover', 'sources', 'post'): spec[k] = brief[k]
+    spec['math'] = brief.get('math', [])
     return spec
 
 

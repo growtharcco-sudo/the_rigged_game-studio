@@ -530,11 +530,24 @@
   "sub": "THAT IS NOT AN ACCIDENT"
  },
  "sources": [
-  "Bill Friedman, Designing Casinos to Dominate the Competition (2000)"
+  {
+   "name": "Bill Friedman, Designing Casinos to Dominate the Competition (2000)",
+   "url": "https://en.wikipedia.org/wiki/Bill_Friedman",
+   "fetched": "2026-11-13"
+  }
  ],
  "post": {
-  "instagram_caption": "Ever noticed casinos have no clocks? That is not an accident.\n\nLow ceilings, maze floors, chips instead of cash and free drinks all have one job.\n\nWhich trick surprised you most?\n\nEducation only. Not gambling advice. 18+\nFollow @the_rigged_game for more casino secrets.\n\n#theriggedgame #casinosecrets #casino #psychology #design",
+  "slot": "test",
+  "post_at": "2026-11-13T23:30:00+05:30",
+  "instagram_caption": "Ever noticed casinos have no clocks? That is not an accident.\n\nLow ceilings, maze floors, chips instead of cash and free drinks all have one job.\n\nEducation only. Not gambling advice. 18+\n\nWhich of these surprised you most?\n\n#theriggedgame #casinosecrets #casino #psychology #design",
   "youtube_title": "Why Casinos Have No Clocks",
-  "youtube_description": "No clocks, few windows, maze floors, chips and free drinks: casino design has one job.\n\nEducation only. Not gambling advice. 18+ AI narration.\n\nSource: Bill Friedman, Designing Casinos to Dominate the Competition (2000).\n\nSubscribe to @the_rigged_game for more casino secrets.\n#casino #design #theriggedgame"
- }
+  "youtube_description": "No clocks, few windows, maze floors, chips and free drinks: casino design has one job.\n\nEducation only. Not gambling advice. 18+ AI narration.\n\nSources:\n• Bill Friedman, Designing Casinos to Dominate the Competition (2000)\n\nThe Rigged Game: how casinos really work. Instagram: @the_rigged_game\n\n#Casino #Design #Shorts"
+ },
+ "math": [
+  {
+   "expr": "2000",
+   "expect": 2000,
+   "note": "publication year of Friedman's book"
+  }
+ ]
 }

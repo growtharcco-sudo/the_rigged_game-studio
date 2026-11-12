@@ -2,55 +2,201 @@
  "id": "000_kit_example_ep02a",
  "episode": "02",
  "series": "Casino Secrets",
- "keywords": ["clock", "won't", "clocks", "windows", "sunset", "accident", "design", "2000", "book", "ceilings",
-              "maze-like", "machines", "chips", "money", "free", "slower", "one", "playing", "maths", "luck", "time"],
- "beats": [
-  {"say": "Walk into most casinos, and try to find a clock. You won't.",
-   "cap": "Walk into most casinos, | and try to find a clock. | You won't.",
-   "show": {"kind": "clock_hunt", "stamp": "NOT FOUND", "stamp_at": {"beat": 0, "word": 10}}},
-  {"say": "No clocks. Few windows. No sunset to remind you it's late.",
-   "cap": "No clocks. | Few windows. | No sunset | to remind you it's late.",
-   "show": {"kind": "cards", "stamp": "BY DESIGN", "stamp_at": 1, "items": [
-     {"text": "NO CLOCKS", "icon": "clock", "beat": 0},
-     {"text": "NO WINDOWS", "icon": "window", "beat": 0, "word": 2},
-     {"text": "NO SUNSET", "icon": "sunset", "beat": 0, "word": 4}]}},
-  {"say": "That is not an accident. It is by design.",
-   "cap": "That is not an accident. | It is by design."},
-  {"say": "In the year two thousand, a former casino boss wrote a whole book on designing casinos.",
-   "cap": "In the year 2000, | a former casino boss | wrote a whole book | on designing casinos.",
-   "show": {"kind": "book", "year": "YEAR 2000", "boss": "EX CASINO BOSS"}},
-  {"say": "His rules? Low ceilings, maze-like paths, and machines everywhere you turn.",
-   "cap": "His rules? | Low ceilings, | maze-like paths, | and machines | everywhere you turn.",
-   "show": {"kind": "maze", "headers": ["THE RULE BOOK", "MAZE PATHS", "MACHINES EVERYWHERE"],
-            "exit_at": {"beat": 0, "word": 4}, "machines_at": {"beat": 0, "word": 7}}},
-  {"say": "Real cash disappears too. You hold chips, so it doesn't feel like money.",
-   "cap": "Real cash disappears too. | You hold chips, | so it doesn't feel like money.",
-   "show": {"kind": "chips", "before": "REAL CASH", "after": "CHIPS", "flip_at": {"beat": 0, "word": 4},
-            "note": "FEELS LIKE A GAME", "note_at": {"beat": 0, "word": 8}}},
-  {"say": "And the free drinks? They're not free.",
-   "cap": "And the free drinks? | They're not free.",
-   "show": {"kind": "drinks", "strike_at": {"beat": 0, "word": 5}, "flip_at": 1,
-            "woozy": "SLOWER MIND", "woozy_at": {"beat": 1, "word": 9}}},
-  {"say": "They're paid for by the bets you make with a slower mind.",
-   "cap": "They're paid for | by the bets you make | with a slower mind."},
-  {"say": "Every detail has one job. Keep you playing.",
-   "cap": "Every detail has one job. | Keep you playing.",
-   "show": {"kind": "puppet", "label": "ONE JOB"}},
-  {"say": "Because the longer you stay, the more the maths wins.",
-   "cap": "Because the longer you stay, | the more the maths wins.",
-   "show": {"kind": "chart", "title": "THE LONGER YOU STAY"}},
-  {"say": "The house doesn't need luck. It just needs time.",
-   "cap": "The house doesn't need luck. | It just needs time.",
-   "show": {"kind": "ending", "visual": "hourglass", "wrong": "LUCK", "right": "TIME",
-            "strike_at": {"beat": 0, "word": 4}, "right_at": {"beat": 0, "word": 8}}}
+ "keywords": [
+  "clock",
+  "won't",
+  "clocks",
+  "windows",
+  "sunset",
+  "accident",
+  "design",
+  "2000",
+  "book",
+  "ceilings",
+  "maze-like",
+  "machines",
+  "chips",
+  "money",
+  "free",
+  "slower",
+  "one",
+  "playing",
+  "maths",
+  "luck",
+  "time"
  ],
- "cover": {"kicker": "EVER SEEN A CASINO CLOCK?", "big": "0", "sub": "THAT IS NOT AN ACCIDENT"},
+ "beats": [
+  {
+   "say": "Walk into most casinos, and try to find a clock. You won't.",
+   "cap": "Walk into most casinos, | and try to find a clock. | You won't.",
+   "show": {
+    "kind": "clock_hunt",
+    "stamp": "NOT FOUND",
+    "stamp_at": {
+     "beat": 0,
+     "word": 10
+    }
+   }
+  },
+  {
+   "say": "No clocks. Few windows. No sunset to remind you it's late.",
+   "cap": "No clocks. | Few windows. | No sunset | to remind you it's late.",
+   "show": {
+    "kind": "cards",
+    "stamp": "BY DESIGN",
+    "stamp_at": 1,
+    "items": [
+     {
+      "text": "NO CLOCKS",
+      "icon": "clock",
+      "beat": 0
+     },
+     {
+      "text": "NO WINDOWS",
+      "icon": "window",
+      "beat": 0,
+      "word": 2
+     },
+     {
+      "text": "NO SUNSET",
+      "icon": "sunset",
+      "beat": 0,
+      "word": 4
+     }
+    ]
+   }
+  },
+  {
+   "say": "That is not an accident. It is by design.",
+   "cap": "That is not an accident. | It is by design."
+  },
+  {
+   "say": "In the year two thousand, a former casino boss wrote a whole book on designing casinos.",
+   "cap": "In the year 2000, | a former casino boss | wrote a whole book | on designing casinos.",
+   "show": {
+    "kind": "book",
+    "year": "YEAR 2000",
+    "boss": "EX CASINO BOSS"
+   }
+  },
+  {
+   "say": "His rules? Low ceilings, maze-like paths, and machines everywhere you turn.",
+   "cap": "His rules? | Low ceilings, | maze-like paths, | and machines | everywhere you turn.",
+   "show": {
+    "kind": "maze",
+    "headers": [
+     "THE RULE BOOK",
+     "MAZE PATHS",
+     "MACHINES EVERYWHERE"
+    ],
+    "exit_at": {
+     "beat": 0,
+     "word": 4
+    },
+    "machines_at": {
+     "beat": 0,
+     "word": 7
+    }
+   }
+  },
+  {
+   "say": "Real cash disappears too. You hold chips, so it doesn't feel like money.",
+   "cap": "Real cash disappears too. | You hold chips, | so it doesn't feel like money.",
+   "show": {
+    "kind": "chips",
+    "before": "REAL CASH",
+    "after": "CHIPS",
+    "flip_at": {
+     "beat": 0,
+     "word": 4
+    },
+    "note": "FEELS LIKE A GAME",
+    "note_at": {
+     "beat": 0,
+     "word": 8
+    }
+   }
+  },
+  {
+   "say": "And the free drinks? They're not free.",
+   "cap": "And the free drinks? | They're not free.",
+   "show": {
+    "kind": "drinks",
+    "strike_at": {
+     "beat": 0,
+     "word": 5
+    },
+    "flip_at": 1,
+    "woozy": "SLOWER MIND",
+    "woozy_at": {
+     "beat": 1,
+     "word": 9
+    }
+   }
+  },
+  {
+   "say": "They're paid for by the bets you make with a slower mind.",
+   "cap": "They're paid for | by the bets you make | with a slower mind."
+  },
+  {
+   "say": "Every detail has one job. Keep you playing.",
+   "cap": "Every detail has one job. | Keep you playing.",
+   "show": {
+    "kind": "puppet",
+    "label": "ONE JOB"
+   }
+  },
+  {
+   "say": "Because the longer you stay, the more the maths wins.",
+   "cap": "Because the longer you stay, | the more the maths wins.",
+   "show": {
+    "kind": "chart",
+    "title": "THE LONGER YOU STAY"
+   }
+  },
+  {
+   "say": "The house doesn't need luck. It just needs time.",
+   "cap": "The house doesn't need luck. | It just needs time.",
+   "show": {
+    "kind": "ending",
+    "visual": "hourglass",
+    "wrong": "LUCK",
+    "right": "TIME",
+    "strike_at": {
+     "beat": 0,
+     "word": 4
+    },
+    "right_at": {
+     "beat": 0,
+     "word": 8
+    }
+   }
+  }
+ ],
+ "cover": {
+  "kicker": "EVER SEEN A CASINO CLOCK?",
+  "big": "0",
+  "sub": "THAT IS NOT AN ACCIDENT"
+ },
  "sources": [
-  "Bill Friedman, Designing Casinos to Dominate the Competition (2000)"
+  {
+   "name": "Bill Friedman, Designing Casinos to Dominate the Competition (2000)",
+   "url": "https://en.wikipedia.org/wiki/Bill_Friedman",
+   "fetched": "2026-11-13"
+  }
+ ],
+ "math": [
+  {
+   "expr": "2000",
+   "expect": 2000,
+   "note": "publication year of Friedman's book"
+  }
  ],
  "post": {
-  "instagram_caption": "Ever noticed casinos have no clocks? That is not an accident.\n\nLow ceilings, maze floors, chips instead of cash and free drinks all have one job.\n\nWhich trick surprised you most?\n\nEducation only. Not gambling advice. 18+\nFollow @the_rigged_game for more casino secrets.\n\n#theriggedgame #casinosecrets #casino #psychology #design",
+  "slot": "test",
+  "post_at": "2026-11-13T23:30:00+05:30",
+  "instagram_caption": "Ever noticed casinos have no clocks? That is not an accident.\n\nLow ceilings, maze floors, chips instead of cash and free drinks all have one job.\n\nEducation only. Not gambling advice. 18+\n\nWhich of these surprised you most?\n\n#theriggedgame #casinosecrets #casino #psychology #design",
   "youtube_title": "Why Casinos Have No Clocks",
-  "youtube_description": "No clocks, few windows, maze floors, chips and free drinks: casino design has one job.\n\nEducation only. Not gambling advice. 18+ AI narration.\n\nSource: Bill Friedman, Designing Casinos to Dominate the Competition (2000).\n\nSubscribe to @the_rigged_game for more casino secrets.\n#casino #design #theriggedgame"
+  "youtube_description": "No clocks, few windows, maze floors, chips and free drinks: casino design has one job.\n\nEducation only. Not gambling advice. 18+ AI narration.\n\nSources:\n• Bill Friedman, Designing Casinos to Dominate the Competition (2000)\n\nThe Rigged Game: how casinos really work. Instagram: @the_rigged_game\n\n#Casino #Design #Shorts"
  }
 }

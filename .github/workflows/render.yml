@@ -1,12 +1,15 @@
-name: Render Reel
-# Renders a spec into the final video in GitHub Actions (no Claude usage).
-# Run it from the Actions tab with the spec id, e.g. 003_roulette. The video and cover come back as an artifact.
+name: Render a Reel
+# Renders in GitHub Actions (no Claude usage). Video, cover and sheet come back as an artifact.
 on:
   workflow_dispatch:
     inputs:
-      id:
-        description: "spec id (file name in specs/ without .json)"
+      spec:
+        description: "Spec path, e.g. specs/003_roulette.json"
         required: true
+      sheet_only:
+        description: "Only make the check sheet"
+        type: boolean
+        default: false
 jobs:
   render:
     runs-on: ubuntu-latest
@@ -15,17 +18,15 @@ jobs:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with: { python-version: "3.12" }
-      - run: sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg espeak-ng
-      - run: pip install -q -r requirements.txt
+      - run: sudo apt-get update -q && sudo apt-get install -y -q ffmpeg
       - uses: actions/cache@v4
-        with:
-          path: pipeline/models
-          key: kokoro-v1.0
-      - run: python pipeline/make_reel.py "specs/${{ inputs.id }}.json"
+        with: { path: pipeline/models, key: kokoro-v1.0 }
+      - run: pip install -q -r requirements.txt
+      - name: Render
+        run: |
+          if [ "${{ inputs.sheet_only }}" = "true" ]; then python pipeline/make_reel.py "${{ inputs.spec }}" --sheet --allow-old-sources
+          else python pipeline/make_reel.py "${{ inputs.spec }}" --allow-old-sources; fi
       - uses: actions/upload-artifact@v4
         with:
-          name: ${{ inputs.id }}
-          path: |
-            queue/${{ inputs.id }}/video.mp4
-            queue/${{ inputs.id }}/cover.png
-            queue/${{ inputs.id }}/post.json
+          name: reel
+          path: queue/

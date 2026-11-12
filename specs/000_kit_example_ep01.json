@@ -452,12 +452,40 @@
   "sub": "WITH A NOTEBOOK"
  },
  "sources": [
-  "Joseph Jagger, Monte Carlo 1873: https://en.wikipedia.org/wiki/Joseph_Jagger",
-  "https://www.todayifoundout.com/index.php/2015/08/man-broke-bank-monte-carlo/"
+  {
+   "name": "Wikipedia, Joseph Jagger",
+   "url": "https://en.wikipedia.org/wiki/Joseph_Jagger",
+   "fetched": "2026-11-13"
+  },
+  {
+   "name": "Today I Found Out, The man who broke the bank at Monte Carlo",
+   "url": "https://www.todayifoundout.com/index.php/2015/08/man-broke-bank-monte-carlo/",
+   "fetched": "2026-11-13"
+  }
  ],
  "post": {
-  "instagram_caption": "This man beat Monte Carlo without luck. Just a notebook and a wobbly wheel.\n\nIn 1873 Joseph Jagger, a Yorkshire engineer, recorded every spin until he found a biased wheel.\n\nWould you have spotted it?\n\nEducation only. Not gambling advice. 18+\nFollow @the_rigged_game for more casino secrets.\n\n#theriggedgame #montecarlo #casinohistory #truestory #maths",
+  "slot": "test",
+  "post_at": "2026-11-13T23:30:00+05:30",
+  "instagram_caption": "This man beat Monte Carlo without luck. Just a notebook and a wobbly wheel.\n\nIn 1873 Joseph Jagger, a Yorkshire engineer, recorded the spins until he found a biased wheel, then won over 2 million francs.\n\nEducation only. Not gambling advice. 18+\n\nWould you have spotted the flaw?\n\n#theriggedgame #montecarlo #casinohistory #truestory #maths",
   "youtube_title": "The Man Who Beat Monte Carlo With A Notebook",
-  "youtube_description": "Joseph Jagger found a biased roulette wheel in Monte Carlo and won more than 2 million francs.\n\nEducation only. Not gambling advice. 18+ AI narration.\n\nSources: https://en.wikipedia.org/wiki/Joseph_Jagger\n\nSubscribe to @the_rigged_game for more casino secrets.\n#casino #history #theriggedgame"
- }
+  "youtube_description": "Joseph Jagger found a biased roulette wheel in Monte Carlo in 1873 and won over 2 million francs.\n\nEducation only. Not gambling advice. 18+ AI narration.\n\nSources:\n• Wikipedia, Joseph Jagger\n• Today I Found Out, The man who broke the bank at Monte Carlo\n\nThe Rigged Game: how casinos really work. Instagram: @the_rigged_game\n\n#Casino #History #Shorts"
+ },
+ "math": [
+  {
+   "expr": "1800",
+   "expect": 1800,
+   "note": "1873 is in the 1800s (Jagger at Monte Carlo)"
+  },
+  {
+   "expr": "2000000",
+   "expect": 2000000,
+   "note": "reported winnings: over 2 million francs (Wikipedia)"
+  },
+  {
+   "expr": "1/37",
+   "expect": 0.027027,
+   "tol": 0.001,
+   "note": "chance of one number on a fair single-zero wheel"
+  }
+ ]
 }

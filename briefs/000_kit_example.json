@@ -2,72 +2,274 @@
  "id": "000_kit_example",
  "episode": "02",
  "series": "Casino Secrets",
- "keywords": ["five", "four", "three", "two", "one", "hidden", "sneaky", "never", "clocks", "windows", "sunset", "time",
-              "maze", "exits", "machines", "chips", "plastic", "money", "free", "slower", "craziest", "dollar", "fifty",
-              "cents", "celebrates", "won", "lights", "music", "lost", "half", "loss", "win", "luck"],
- "beats": [
-  {"say": "Casinos use five hidden tricks to keep you playing.",
-   "cap": "Casinos use five hidden tricks | to keep you playing.",
-   "show": {"kind": "fan", "title": "5 HIDDEN TRICKS", "secret": "TOP SECRET", "secret_at": {"beat": 1, "delay": 1.0}}},
-  {"say": "And number one is so sneaky, most people never notice it.",
-   "cap": "And number one is so sneaky, | most people | never notice it."},
-  {"say": "Number five. No clocks, and almost no windows.",
-   "cap": "Number five. | No clocks, | and almost no windows.",
-   "show": [{"kind": "countdown", "n": 5, "sub": "NO CLOCKS"},
-            {"kind": "cards", "from_word": 2, "items": [
-              {"text": "NO CLOCKS", "icon": "clock", "beat": 0, "word": 2},
-              {"text": "NO WINDOWS", "icon": "window", "beat": 0, "word": 5},
-              {"text": "NO SUNSET", "icon": "sunset", "beat": 1, "word": 2}]}]},
-  {"say": "Without a sunset, you lose track of time.",
-   "cap": "Without a sunset, | you lose track of time."},
-  {"say": "Number four. The floor is a maze.",
-   "cap": "Number four. | The floor is a maze.",
-   "show": [{"kind": "countdown", "n": 4, "sub": "THE MAZE"},
-            {"kind": "maze", "from_word": 2, "exit_at": {"beat": 1}, "machines_at": {"beat": 1, "word": 5}}]},
-  {"say": "Exits are hard to find. Machines are impossible to miss.",
-   "cap": "Exits are hard to find. | Machines are impossible | to miss."},
-  {"say": "Number three. Cash becomes chips.",
-   "cap": "Number three. | Cash becomes chips.",
-   "show": [{"kind": "countdown", "n": 3, "sub": "CHIPS"},
-            {"kind": "chips", "from_word": 2, "before": "REAL CASH", "after": "CHIPS", "flip_at": {"beat": 0, "word": 3},
-             "note": "FEELS LIKE A GAME", "note_at": 1}]},
-  {"say": "Plastic doesn't feel like money, so it's easier to bet more.",
-   "cap": "Plastic doesn't feel like money, | so it's easier to bet more."},
-  {"say": "Number two. The free drinks.",
-   "cap": "Number two. | The free drinks.",
-   "show": [{"kind": "countdown", "n": 2, "sub": "FREE DRINKS"},
-            {"kind": "drinks", "from_word": 2, "front": "FREE", "back": ["PAID BY", "YOUR BETS"], "flip_at": {"beat": 1},
-             "woozy": "SLOWER MIND", "woozy_at": {"beat": 1, "word": 9}}]},
-  {"say": "They're paid for by the bets you make with a slower mind.",
-   "cap": "They're paid for | by the bets you make | with a slower mind."},
-  {"say": "But number one is the craziest.",
-   "cap": "But number one | is the craziest.",
-   "show": {"kind": "countdown", "n": 1, "sub": "THE CRAZIEST"}},
-  {"say": "You bet one dollar. You win fifty cents.",
-   "cap": "You bet one dollar. | You win fifty cents.",
-   "show": {"kind": "slot", "bet": "$1.00", "won": "$0.50", "loss": "-$0.50", "mask_label": "LOSS DISGUISED AS A WIN",
-            "spin_at": {"beat": 0, "word": 4}, "party_at": 1, "lost_at": 3, "mask_at": 4}},
-  {"say": "And the machine celebrates like you won.",
-   "cap": "And the machine celebrates | like you won."},
-  {"say": "It flashes lights and plays winning music.",
-   "cap": "It flashes lights | and plays winning music."},
-  {"say": "But you just lost half your money.",
-   "cap": "But you just lost | half your money."},
-  {"say": "Researchers call it a loss disguised as a win.",
-   "cap": "Researchers call it | a loss disguised as a win."},
-  {"say": "The house doesn't need luck. It just needs time.",
-   "cap": "The house doesn't need luck. | It just needs time.",
-   "show": {"kind": "ending", "visual": "hourglass", "wrong": "LUCK", "right": "TIME",
-            "strike_at": {"beat": 0, "word": 4}, "right_at": {"beat": 0, "word": 8}}}
+ "keywords": [
+  "five",
+  "four",
+  "three",
+  "two",
+  "one",
+  "hidden",
+  "sneaky",
+  "never",
+  "clocks",
+  "windows",
+  "sunset",
+  "time",
+  "maze",
+  "exits",
+  "machines",
+  "chips",
+  "plastic",
+  "money",
+  "free",
+  "slower",
+  "craziest",
+  "dollar",
+  "fifty",
+  "cents",
+  "celebrates",
+  "won",
+  "lights",
+  "music",
+  "lost",
+  "half",
+  "loss",
+  "win",
+  "luck"
  ],
- "cover": {"kicker": "5 HIDDEN CASINO TRICKS", "big": "#1?", "sub": "MOST PEOPLE NEVER NOTICE"},
+ "beats": [
+  {
+   "say": "Casinos use five hidden tricks to keep you playing.",
+   "cap": "Casinos use five hidden tricks | to keep you playing.",
+   "show": {
+    "kind": "fan",
+    "title": "5 HIDDEN TRICKS",
+    "secret": "TOP SECRET",
+    "secret_at": {
+     "beat": 1,
+     "delay": 1.0
+    }
+   }
+  },
+  {
+   "say": "And number one is so sneaky, most people never notice it.",
+   "cap": "And number one is so sneaky, | most people | never notice it."
+  },
+  {
+   "say": "Number five. No clocks, and almost no windows.",
+   "cap": "Number five. | No clocks, | and almost no windows.",
+   "show": [
+    {
+     "kind": "countdown",
+     "n": 5,
+     "sub": "NO CLOCKS"
+    },
+    {
+     "kind": "cards",
+     "from_word": 2,
+     "items": [
+      {
+       "text": "NO CLOCKS",
+       "icon": "clock",
+       "beat": 0,
+       "word": 2
+      },
+      {
+       "text": "NO WINDOWS",
+       "icon": "window",
+       "beat": 0,
+       "word": 5
+      },
+      {
+       "text": "NO SUNSET",
+       "icon": "sunset",
+       "beat": 1,
+       "word": 2
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "say": "Without a sunset, you lose track of time.",
+   "cap": "Without a sunset, | you lose track of time."
+  },
+  {
+   "say": "Number four. The floor is a maze.",
+   "cap": "Number four. | The floor is a maze.",
+   "show": [
+    {
+     "kind": "countdown",
+     "n": 4,
+     "sub": "THE MAZE"
+    },
+    {
+     "kind": "maze",
+     "from_word": 2,
+     "exit_at": {
+      "beat": 1
+     },
+     "machines_at": {
+      "beat": 1,
+      "word": 5
+     }
+    }
+   ]
+  },
+  {
+   "say": "Exits are hard to find. Machines are impossible to miss.",
+   "cap": "Exits are hard to find. | Machines are impossible | to miss."
+  },
+  {
+   "say": "Number three. Cash becomes chips.",
+   "cap": "Number three. | Cash becomes chips.",
+   "show": [
+    {
+     "kind": "countdown",
+     "n": 3,
+     "sub": "CHIPS"
+    },
+    {
+     "kind": "chips",
+     "from_word": 2,
+     "before": "REAL CASH",
+     "after": "CHIPS",
+     "flip_at": {
+      "beat": 0,
+      "word": 3
+     },
+     "note": "FEELS LIKE A GAME",
+     "note_at": 1
+    }
+   ]
+  },
+  {
+   "say": "Plastic doesn't feel like money, so it's easier to bet more.",
+   "cap": "Plastic doesn't feel like money, | so it's easier to bet more."
+  },
+  {
+   "say": "Number two. The free drinks.",
+   "cap": "Number two. | The free drinks.",
+   "show": [
+    {
+     "kind": "countdown",
+     "n": 2,
+     "sub": "FREE DRINKS"
+    },
+    {
+     "kind": "drinks",
+     "from_word": 2,
+     "front": "FREE",
+     "back": [
+      "PAID BY",
+      "YOUR BETS"
+     ],
+     "flip_at": {
+      "beat": 1
+     },
+     "woozy": "SLOWER MIND",
+     "woozy_at": {
+      "beat": 1,
+      "word": 9
+     }
+    }
+   ]
+  },
+  {
+   "say": "They're paid for by the bets you make with a slower mind.",
+   "cap": "They're paid for | by the bets you make | with a slower mind."
+  },
+  {
+   "say": "But number one is the craziest.",
+   "cap": "But number one | is the craziest.",
+   "show": {
+    "kind": "countdown",
+    "n": 1,
+    "sub": "THE CRAZIEST"
+   }
+  },
+  {
+   "say": "You bet one dollar. You win fifty cents.",
+   "cap": "You bet one dollar. | You win fifty cents.",
+   "show": {
+    "kind": "slot",
+    "bet": "$1.00",
+    "won": "$0.50",
+    "loss": "-$0.50",
+    "mask_label": "LOSS DISGUISED AS A WIN",
+    "spin_at": {
+     "beat": 0,
+     "word": 4
+    },
+    "party_at": 1,
+    "lost_at": 3,
+    "mask_at": 4
+   }
+  },
+  {
+   "say": "And the machine celebrates like you won.",
+   "cap": "And the machine celebrates | like you won."
+  },
+  {
+   "say": "It flashes lights and plays winning music.",
+   "cap": "It flashes lights | and plays winning music."
+  },
+  {
+   "say": "But you just lost half your money.",
+   "cap": "But you just lost | half your money."
+  },
+  {
+   "say": "Researchers call it a loss disguised as a win.",
+   "cap": "Researchers call it | a loss disguised as a win."
+  },
+  {
+   "say": "The house doesn't need luck. It just needs time.",
+   "cap": "The house doesn't need luck. | It just needs time.",
+   "show": {
+    "kind": "ending",
+    "visual": "hourglass",
+    "wrong": "LUCK",
+    "right": "TIME",
+    "strike_at": {
+     "beat": 0,
+     "word": 4
+    },
+    "right_at": {
+     "beat": 0,
+     "word": 8
+    }
+   }
+  }
+ ],
+ "cover": {
+  "kicker": "5 HIDDEN CASINO TRICKS",
+  "big": "#1?",
+  "sub": "MOST PEOPLE NEVER NOTICE"
+ },
  "sources": [
-  "Bill Friedman, Designing Casinos to Dominate the Competition (Institute for the Study of Gambling and Commercial Gaming, 2000): low ceilings, maze layouts, machines in every sightline",
-  "Dixon, Harrigan, Sandhu, Collins and Fugelsang (2010), 'Losses disguised as wins in modern multi-line video slot machines', Addiction 105(10)"
+  {
+   "name": "Bill Friedman, Designing Casinos to Dominate the Competition (2000)",
+   "url": "https://en.wikipedia.org/wiki/Bill_Friedman",
+   "fetched": "2026-11-13"
+  },
+  {
+   "name": "Dixon et al. (2010), Losses disguised as wins in modern multi-line video slot machines, Addiction 105(10)",
+   "url": "https://uwaterloo.ca/reasoning-decision-making-lab/sites/default/files/uploads/files/DixFugetal_10c.pdf",
+   "fetched": "2026-11-13"
+  }
+ ],
+ "math": [
+  {
+   "expr": "1.00 - 0.50",
+   "expect": 0.5,
+   "note": "bet $1.00, win $0.50: a $0.50 loss the machine celebrates"
+  }
  ],
  "post": {
-  "instagram_caption": "Casinos use 5 hidden tricks to keep you playing. Number 1 is the sneakiest.\n\nNo clocks, a maze for a floor, chips instead of cash, free drinks, and machines that celebrate when you lose money.\n\nWhich one have you noticed before?\n\nEducation only. Not gambling advice. 18+\nFollow @the_rigged_game for more casino secrets.\n\n#theriggedgame #casinosecrets #casino #psychology #didyouknow",
+  "slot": "test",
+  "post_at": "2026-11-13T23:30:00+05:30",
+  "instagram_caption": "Casinos use 5 hidden tricks to keep you playing. Number 1 is the sneakiest.\n\nNo clocks, a maze for a floor, chips instead of cash, free drinks, and machines that celebrate when you lose money.\n\nEducation only. Not gambling advice. 18+\n\nWhich of these tricks have you noticed before?\n\n#theriggedgame #casinosecrets #casino #psychology #didyouknow",
   "youtube_title": "5 Tricks Casinos Use To Keep You Playing",
-  "youtube_description": "No clocks, maze floors, chips, free drinks, and the sneakiest one: losses disguised as wins.\n\nEducation only. Not gambling advice. 18+ AI narration.\n\nSources: Bill Friedman, Designing Casinos to Dominate the Competition (2000). Dixon et al. (2010), Addiction 105(10).\n\nSubscribe to @the_rigged_game for more casino secrets.\n#casino #psychology #theriggedgame"
+  "youtube_description": "No clocks, maze floors, chips, free drinks, and the sneakiest one: losses disguised as wins.\n\nEducation only. Not gambling advice. 18+ AI narration.\n\nSources:\n• Bill Friedman, Designing Casinos to Dominate the Competition (2000)\n• Dixon et al., Losses disguised as wins, Addiction (2010)\n\nThe Rigged Game: how casinos really work. Instagram: @the_rigged_game\n\n#Casino #Psychology #Shorts"
  }
 }

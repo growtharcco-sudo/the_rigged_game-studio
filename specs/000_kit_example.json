@@ -687,12 +687,29 @@
   "sub": "MOST PEOPLE NEVER NOTICE"
  },
  "sources": [
-  "Bill Friedman, Designing Casinos to Dominate the Competition (Institute for the Study of Gambling and Commercial Gaming, 2000): low ceilings, maze layouts, machines in every sightline",
-  "Dixon, Harrigan, Sandhu, Collins and Fugelsang (2010), 'Losses disguised as wins in modern multi-line video slot machines', Addiction 105(10)"
+  {
+   "name": "Bill Friedman, Designing Casinos to Dominate the Competition (2000)",
+   "url": "https://en.wikipedia.org/wiki/Bill_Friedman",
+   "fetched": "2026-11-13"
+  },
+  {
+   "name": "Dixon et al. (2010), Losses disguised as wins in modern multi-line video slot machines, Addiction 105(10)",
+   "url": "https://uwaterloo.ca/reasoning-decision-making-lab/sites/default/files/uploads/files/DixFugetal_10c.pdf",
+   "fetched": "2026-11-13"
+  }
  ],
  "post": {
-  "instagram_caption": "Casinos use 5 hidden tricks to keep you playing. Number 1 is the sneakiest.\n\nNo clocks, a maze for a floor, chips instead of cash, free drinks, and machines that celebrate when you lose money.\n\nWhich one have you noticed before?\n\nEducation only. Not gambling advice. 18+\nFollow @the_rigged_game for more casino secrets.\n\n#theriggedgame #casinosecrets #casino #psychology #didyouknow",
+  "slot": "test",
+  "post_at": "2026-11-13T23:30:00+05:30",
+  "instagram_caption": "Casinos use 5 hidden tricks to keep you playing. Number 1 is the sneakiest.\n\nNo clocks, a maze for a floor, chips instead of cash, free drinks, and machines that celebrate when you lose money.\n\nEducation only. Not gambling advice. 18+\n\nWhich of these tricks have you noticed before?\n\n#theriggedgame #casinosecrets #casino #psychology #didyouknow",
   "youtube_title": "5 Tricks Casinos Use To Keep You Playing",
-  "youtube_description": "No clocks, maze floors, chips, free drinks, and the sneakiest one: losses disguised as wins.\n\nEducation only. Not gambling advice. 18+ AI narration.\n\nSources: Bill Friedman, Designing Casinos to Dominate the Competition (2000). Dixon et al. (2010), Addiction 105(10).\n\nSubscribe to @the_rigged_game for more casino secrets.\n#casino #psychology #theriggedgame"
- }
+  "youtube_description": "No clocks, maze floors, chips, free drinks, and the sneakiest one: losses disguised as wins.\n\nEducation only. Not gambling advice. 18+ AI narration.\n\nSources:\n• Bill Friedman, Designing Casinos to Dominate the Competition (2000)\n• Dixon et al., Losses disguised as wins, Addiction (2010)\n\nThe Rigged Game: how casinos really work. Instagram: @the_rigged_game\n\n#Casino #Psychology #Shorts"
+ },
+ "math": [
+  {
+   "expr": "1.00 - 0.50",
+   "expect": 0.5,
+   "note": "bet $1.00, win $0.50: a $0.50 loss the machine celebrates"
+  }
+ ]
 }
