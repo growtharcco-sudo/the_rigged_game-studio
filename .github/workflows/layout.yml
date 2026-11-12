@@ -10,7 +10,7 @@ jobs:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with: { python-version: "3.12" }
-      - run: pip install -q skia-python
+      - run: sudo apt-get install -y -q libegl1 libgl1 libfontconfig1 >/dev/null && pip install -q skia-python
       - name: Build every brief and run the layout check
         run: |
           for b in briefs/*.json; do echo "== $b"; python pipeline/kit.py "$b" || exit 1; done
