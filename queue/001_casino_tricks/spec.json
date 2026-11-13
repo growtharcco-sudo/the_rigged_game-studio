@@ -1,0 +1,715 @@
+{
+ "id": "001_casino_tricks",
+ "episode": "02",
+ "series": "Casino Secrets",
+ "voice": "am_liam",
+ "speed": 1.0,
+ "hold": 2.6,
+ "caption_keywords": [
+  "five",
+  "four",
+  "three",
+  "two",
+  "one",
+  "hidden",
+  "sneaky",
+  "never",
+  "clocks",
+  "windows",
+  "sunset",
+  "time",
+  "maze",
+  "exits",
+  "machines",
+  "chips",
+  "plastic",
+  "money",
+  "free",
+  "slower",
+  "craziest",
+  "dollar",
+  "fifty",
+  "cents",
+  "celebrates",
+  "won",
+  "lights",
+  "music",
+  "lost",
+  "half",
+  "loss",
+  "win",
+  "luck"
+ ],
+ "phrases": [
+  {
+   "say": "Casinos use five hidden tricks to keep you playing.",
+   "cap": "Casinos use five hidden tricks | to keep you playing.",
+   "pause": 0.45
+  },
+  {
+   "say": "And number one is so sneaky, most people never notice it.",
+   "cap": "And number one is so sneaky, | most people | never notice it.",
+   "pause": 0.45
+  },
+  {
+   "say": "Number five. No clocks, and almost no windows.",
+   "cap": "Number five. | No clocks, | and almost no windows.",
+   "pause": 0.45
+  },
+  {
+   "say": "Without a sunset, you lose track of time.",
+   "cap": "Without a sunset, | you lose track of time.",
+   "pause": 0.45
+  },
+  {
+   "say": "Number four. The floor is a maze.",
+   "cap": "Number four. | The floor is a maze.",
+   "pause": 0.45
+  },
+  {
+   "say": "Exits are hard to find. Machines are impossible to miss.",
+   "cap": "Exits are hard to find. | Machines are impossible | to miss.",
+   "pause": 0.45
+  },
+  {
+   "say": "Number three. Cash becomes chips.",
+   "cap": "Number three. | Cash becomes chips.",
+   "pause": 0.45
+  },
+  {
+   "say": "Plastic doesn't feel like money, so it's easier to bet more.",
+   "cap": "Plastic doesn't feel like money, | so it's easier to bet more.",
+   "pause": 0.45
+  },
+  {
+   "say": "Number two. The free drinks.",
+   "cap": "Number two. | The free drinks.",
+   "pause": 0.45
+  },
+  {
+   "say": "They're paid for by the bets you make with a slower mind.",
+   "cap": "They're paid for | by the bets you make | with a slower mind.",
+   "pause": 0.45
+  },
+  {
+   "say": "But number one is the craziest.",
+   "cap": "But number one | is the craziest.",
+   "pause": 0.45
+  },
+  {
+   "say": "You bet one dollar. You win fifty cents.",
+   "cap": "You bet one dollar. | You win fifty cents.",
+   "pause": 0.45
+  },
+  {
+   "say": "And the machine celebrates like you won.",
+   "cap": "And the machine celebrates | like you won.",
+   "pause": 0.45
+  },
+  {
+   "say": "It flashes lights and plays winning music.",
+   "cap": "It flashes lights | and plays winning music.",
+   "pause": 0.45
+  },
+  {
+   "say": "But you just lost half your money.",
+   "cap": "But you just lost | half your money.",
+   "pause": 0.45
+  },
+  {
+   "say": "Researchers call it a loss disguised as a win.",
+   "cap": "Researchers call it | a loss disguised as a win.",
+   "pause": 0.45
+  },
+  {
+   "say": "The house doesn't need luck. It just needs time.",
+   "cap": "The house doesn't need luck. | It just needs time.",
+   "pause": 0.45
+  }
+ ],
+ "scenes": [
+  {
+   "start": 0,
+   "kind": "fan",
+   "els": [
+    {
+     "type": "bg",
+     "look": "hall"
+    },
+    {
+     "type": "ground",
+     "y": 1250
+    },
+    {
+     "type": "mascot",
+     "at": -1,
+     "x": 190,
+     "y": 830,
+     "s": 0.78
+    },
+    {
+     "type": "fan",
+     "at": -1,
+     "n": 5
+    },
+    {
+     "type": "label",
+     "text": "5 HIDDEN TRICKS",
+     "y": 300,
+     "at": -1,
+     "size": 66,
+     "bg": "ink",
+     "fg": "gold",
+     "rot": -3,
+     "font": "Inter-Black"
+    },
+    {
+     "type": "stamp",
+     "text": "TOP SECRET",
+     "x": 690.0,
+     "y": 520,
+     "size": 84,
+     "rot": -12,
+     "at": {
+      "b": 1,
+      "d": 1.0
+     }
+    }
+   ]
+  },
+  {
+   "start": 2,
+   "kind": "countdown",
+   "els": [
+    {
+     "type": "bg",
+     "look": "dark",
+     "rays": true
+    },
+    {
+     "type": "numcard",
+     "at": 2,
+     "n": 5
+    },
+    {
+     "type": "label",
+     "text": "NO CLOCKS",
+     "y": 1240,
+     "at": 2,
+     "size": 54,
+     "bg": "ink",
+     "fg": "gold",
+     "rot": 2,
+     "font": "Inter-Black",
+     "delay": 0.2
+    },
+    {
+     "type": "label",
+     "text": "TRICK #5",
+     "y": 300,
+     "at": 2,
+     "size": 46,
+     "bg": "rust",
+     "fg": "paper",
+     "rot": -3,
+     "font": "Mono-Bold",
+     "delay": 0.2
+    }
+   ]
+  },
+  {
+   "start": {
+    "b": 2,
+    "w": 2
+   },
+   "kind": "cards",
+   "els": [
+    {
+     "type": "bg",
+     "look": "study"
+    },
+    {
+     "type": "cards",
+     "at": 2,
+     "items": [
+      {
+       "text": "NO CLOCKS",
+       "icon": "clock",
+       "at": {
+        "b": 2,
+        "w": 2,
+        "d": 0.0
+       }
+      },
+      {
+       "text": "NO WINDOWS",
+       "icon": "window",
+       "at": {
+        "b": 2,
+        "w": 5,
+        "d": 0.0
+       }
+      },
+      {
+       "text": "NO SUNSET",
+       "icon": "sunset",
+       "at": {
+        "b": 3,
+        "w": 2,
+        "d": 0.0
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "start": 4,
+   "kind": "countdown",
+   "els": [
+    {
+     "type": "bg",
+     "look": "dark",
+     "rays": true
+    },
+    {
+     "type": "numcard",
+     "at": 4,
+     "n": 4
+    },
+    {
+     "type": "label",
+     "text": "THE MAZE",
+     "y": 1240,
+     "at": 4,
+     "size": 54,
+     "bg": "ink",
+     "fg": "gold",
+     "rot": 2,
+     "font": "Inter-Black",
+     "delay": 0.2
+    },
+    {
+     "type": "label",
+     "text": "TRICK #4",
+     "y": 300,
+     "at": 4,
+     "size": 46,
+     "bg": "rust",
+     "fg": "paper",
+     "rot": -3,
+     "font": "Mono-Bold",
+     "delay": 0.2
+    }
+   ]
+  },
+  {
+   "start": {
+    "b": 4,
+    "w": 2
+   },
+   "kind": "maze",
+   "els": [
+    {
+     "type": "bg",
+     "look": "blueprint",
+     "rot": 1.2
+    },
+    {
+     "type": "maze",
+     "at": 4,
+     "exit_at": {
+      "b": 5
+     },
+     "machines_at": {
+      "b": 5,
+      "w": 5
+     },
+     "headers": [
+      "THE MAZE",
+      "WHERE IS THE EXIT?",
+      "MACHINES EVERYWHERE"
+     ]
+    },
+    {
+     "type": "ground",
+     "y": 1262
+    }
+   ]
+  },
+  {
+   "start": 6,
+   "kind": "countdown",
+   "els": [
+    {
+     "type": "bg",
+     "look": "dark",
+     "rays": true
+    },
+    {
+     "type": "numcard",
+     "at": 6,
+     "n": 3
+    },
+    {
+     "type": "label",
+     "text": "CHIPS",
+     "y": 1240,
+     "at": 6,
+     "size": 54,
+     "bg": "ink",
+     "fg": "gold",
+     "rot": 2,
+     "font": "Inter-Black",
+     "delay": 0.2
+    },
+    {
+     "type": "label",
+     "text": "TRICK #3",
+     "y": 300,
+     "at": 6,
+     "size": 46,
+     "bg": "rust",
+     "fg": "paper",
+     "rot": -3,
+     "font": "Mono-Bold",
+     "delay": 0.2
+    }
+   ]
+  },
+  {
+   "start": {
+    "b": 6,
+    "w": 2
+   },
+   "kind": "chips",
+   "els": [
+    {
+     "type": "bg",
+     "look": "paper",
+     "glow": 0.25,
+     "glow_y": 780
+    },
+    {
+     "type": "cash_chips",
+     "at": 6,
+     "flip_at": {
+      "b": 6,
+      "w": 3
+     }
+    },
+    {
+     "type": "label",
+     "text": "REAL CASH",
+     "y": 330,
+     "at": 6,
+     "size": 56,
+     "bg": "ink",
+     "fg": "paper",
+     "rot": -3,
+     "font": "Inter-Black",
+     "until": {
+      "b": 6,
+      "w": 3
+     },
+     "delay": 0.2
+    },
+    {
+     "type": "label",
+     "text": "CHIPS",
+     "y": 330,
+     "at": {
+      "b": 6,
+      "w": 3
+     },
+     "size": 64,
+     "bg": "rust",
+     "fg": "paper",
+     "rot": -3,
+     "font": "Inter-Black",
+     "pop": true,
+     "delay": 0.1
+    },
+    {
+     "type": "label",
+     "text": "FEELS LIKE A GAME",
+     "y": 1200,
+     "at": 7,
+     "size": 40,
+     "bg": "ink",
+     "fg": "gold",
+     "rot": 2,
+     "font": "Mono-Bold"
+    },
+    {
+     "type": "ground",
+     "y": 1262
+    }
+   ]
+  },
+  {
+   "start": 8,
+   "kind": "countdown",
+   "els": [
+    {
+     "type": "bg",
+     "look": "dark",
+     "rays": true
+    },
+    {
+     "type": "numcard",
+     "at": 8,
+     "n": 2
+    },
+    {
+     "type": "label",
+     "text": "FREE DRINKS",
+     "y": 1240,
+     "at": 8,
+     "size": 54,
+     "bg": "ink",
+     "fg": "gold",
+     "rot": 2,
+     "font": "Inter-Black",
+     "delay": 0.2
+    },
+    {
+     "type": "label",
+     "text": "TRICK #2",
+     "y": 300,
+     "at": 8,
+     "size": 46,
+     "bg": "rust",
+     "fg": "paper",
+     "rot": -3,
+     "font": "Mono-Bold",
+     "delay": 0.2
+    }
+   ]
+  },
+  {
+   "start": {
+    "b": 8,
+    "w": 2
+   },
+   "kind": "drinks",
+   "els": [
+    {
+     "type": "bg",
+     "look": "hall"
+    },
+    {
+     "type": "drink",
+     "at": 8,
+     "front": "FREE",
+     "back": [
+      "PAID BY",
+      "YOUR BETS"
+     ],
+     "flip_at": {
+      "b": 9
+     },
+     "woozy_at": {
+      "b": 9,
+      "w": 9
+     }
+    },
+    {
+     "type": "label",
+     "text": "SLOWER MIND",
+     "y": 330,
+     "at": {
+      "b": 9,
+      "w": 9
+     },
+     "size": 48,
+     "bg": "ink",
+     "fg": "gold",
+     "rot": -3,
+     "font": "Mono-Bold"
+    },
+    {
+     "type": "ground",
+     "y": 1255
+    }
+   ]
+  },
+  {
+   "start": 10,
+   "kind": "countdown",
+   "els": [
+    {
+     "type": "bg",
+     "look": "dark",
+     "rays": true
+    },
+    {
+     "type": "numcard",
+     "at": 10,
+     "n": 1
+    },
+    {
+     "type": "label",
+     "text": "THE CRAZIEST",
+     "y": 1240,
+     "at": 10,
+     "size": 54,
+     "bg": "paper",
+     "fg": "rust",
+     "rot": 2,
+     "font": "Inter-Black",
+     "delay": 0.2
+    },
+    {
+     "type": "label",
+     "text": "TRICK #1",
+     "y": 300,
+     "at": 10,
+     "size": 46,
+     "bg": "rust",
+     "fg": "paper",
+     "rot": -3,
+     "font": "Mono-Bold",
+     "delay": 0.2
+    }
+   ]
+  },
+  {
+   "start": 11,
+   "kind": "slot",
+   "els": [
+    {
+     "type": "slot",
+     "at": 11,
+     "spin_at": {
+      "b": 11,
+      "w": 4
+     },
+     "party_at": 12,
+     "lost_at": 14,
+     "mask_at": 15,
+     "bet": "$1.00",
+     "won": "$0.50",
+     "loss": "-$0.50",
+     "mask_label": "LOSS DISGUISED AS A WIN"
+    },
+    {
+     "type": "ground",
+     "y": 1262,
+     "color": "#120707"
+    }
+   ]
+  },
+  {
+   "start": 16,
+   "kind": "ending",
+   "els": [
+    {
+     "type": "bg",
+     "look": "paper",
+     "glow": 0.3,
+     "glow_y": 760
+    },
+    {
+     "type": "hourglass",
+     "at": 16,
+     "dur": 3.3
+    },
+    {
+     "type": "word",
+     "at": 16,
+     "text": "LUCK",
+     "font": "Inter-Black",
+     "size": 110,
+     "x": 340.0,
+     "y": 300,
+     "rot": -6,
+     "strike_at": {
+      "b": 16,
+      "w": 4
+     },
+     "tear_rot": 10,
+     "tear_drop": 50,
+     "tear_fade": 0.5
+    },
+    {
+     "type": "word",
+     "at": {
+      "b": 16,
+      "w": 8
+     },
+     "text": "TIME",
+     "size": 170,
+     "x": 650.0,
+     "y": 500,
+     "rot": 4,
+     "card": "ink",
+     "ink": "gold",
+     "pop": "slam"
+    },
+    {
+     "type": "ground",
+     "y": 1255
+    },
+    {
+     "type": "text",
+     "at": {
+      "b": 16,
+      "d": 1.0
+     },
+     "text": "THE RIGGED GAME",
+     "y": 1720,
+     "size": 34,
+     "alpha": 0.8,
+     "footer": true
+    },
+    {
+     "type": "outro",
+     "at": [
+      "end",
+      0.35
+     ]
+    }
+   ]
+  }
+ ],
+ "progress": [
+  2,
+  4,
+  6,
+  8,
+  10
+ ],
+ "progress_end": 16,
+ "cover": {
+  "kicker": "5 HIDDEN CASINO TRICKS",
+  "big": "#1?",
+  "sub": "MOST PEOPLE NEVER NOTICE"
+ },
+ "sources": [
+  {
+   "name": "Bill Friedman, Designing Casinos to Dominate the Competition (2000)",
+   "url": "https://en.wikipedia.org/wiki/Bill_Friedman",
+   "fetched": "2026-11-13"
+  },
+  {
+   "name": "Dixon et al. (2010), Losses disguised as wins in modern multi-line video slot machines, Addiction 105(10)",
+   "url": "https://uwaterloo.ca/reasoning-decision-making-lab/sites/default/files/uploads/files/DixFugetal_10c.pdf",
+   "fetched": "2026-11-13"
+  }
+ ],
+ "post": {
+  "slot": "evening",
+  "post_at": "2026-11-13T23:30:00+05:30",
+  "instagram_caption": "Casinos use 5 hidden tricks to keep you playing. Number 1 is the sneakiest.\n\nNo clocks, a maze for a floor, chips instead of cash, free drinks, and machines that celebrate when you lose money.\n\nEducation only. Not gambling advice. 18+\n\nWhich of these tricks have you noticed before?\n\n#theriggedgame #casinosecrets #casino #psychology #didyouknow",
+  "youtube_title": "5 Tricks Casinos Use To Keep You Playing",
+  "youtube_description": "No clocks, maze floors, chips, free drinks, and the sneakiest one: losses disguised as wins.\n\nEducation only. Not gambling advice. 18+ AI narration.\n\nSources:\n• Bill Friedman, Designing Casinos to Dominate the Competition (2000)\n• Dixon et al., Losses disguised as wins, Addiction (2010)\n\nThe Rigged Game: how casinos really work. Instagram: @the_rigged_game\n\n#Casino #Psychology #Shorts"
+ },
+ "math": [
+  {
+   "expr": "1.00 - 0.50",
+   "expect": 0.5,
+   "note": "bet $1.00, win $0.50: a $0.50 loss the machine celebrates"
+  }
+ ]
+}
