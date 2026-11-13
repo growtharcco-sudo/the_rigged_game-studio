@@ -1,7 +1,7 @@
 name: Check briefs (layout)
 on:
   push:
-    paths: ["briefs/**", "pipeline/**"]
+    paths: ["briefs/**", "pipeline/**", ".github/workflows/layout.yml"]
   pull_request:
 jobs:
   layout:
