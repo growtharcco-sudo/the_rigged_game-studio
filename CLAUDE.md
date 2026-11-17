@@ -15,6 +15,6 @@ Hard rules:
   #theriggedgame. YouTube description has a Sources list and 3 hashtags including #Shorts.
 - Instagram AI label and YouTube synthetic-content disclosure stay on.
 - Video quality: 1080x1920, 30 fps, H.264 High CRF 14, never lowered or re-compressed.
-- Do not change the look (pipeline/noir.py drawing) unless James asks.
-- If James replies "skip", create `queue/<id>/SKIP`, commit and push.
+- Do not change the look (pipeline/noir.py drawing) unless Samrit asks.
+- If Samrit replies "skip", create `queue/<id>/SKIP`, commit and push.
 - Never put tokens or passwords in files or chat: they live only in GitHub Secrets.

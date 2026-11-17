@@ -96,7 +96,7 @@ python poster/media_branch.py check <id>        # must print "on media branch"
 git add briefs specs queue IDEAS.md && git commit -m "queue <id>" && git pull --rebase && git push
 ```
 
-## 7. Tell James
+## 7. Tell Samrit
 Send the video and cover with SendUserFile (status proactive) right after queueing, with one line:
 the topic, the hero fact and its source, the slot and post time.
 
@@ -107,7 +107,7 @@ Make one Reel per slot in `channel.json` (except `test`), soonest `post_at` firs
 Then ONE SendUserMessage listing them:
 "<id>: <topic>, posts <time>. Reply skip <id>, or tell me what to change. No reply = it posts."
 
-## B. Replies from James
+## B. Replies from Samrit
 - "skip <id>" (or "skip"): create `queue/<id>/SKIP`, commit and push. Nothing gets posted.
 - A change: edit the brief, run kit.py, --check, --sheet and the full render, re-run step 6 with the same id,
   push before the post time. Say what changed.
