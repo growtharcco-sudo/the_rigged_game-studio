@@ -8,7 +8,8 @@ the Reel kit. GitHub Actions posts every queued Reel at its `post_at`. **You nev
 Slots (all IST) are in `channel.json`:
 | Slot | post_at | Who it reaches |
 |---|---|---|
-| `evening` | today 23:30 | 6 PM London, 1 PM New York |
+| `morning` | 07:30 | 9 PM New York the evening before |
+| `evening` | 23:30 | 6 PM London, 1 PM New York |
 
 ## 1. Pick the topic
 - Education, never promotion: how a game works and its real odds, the house edge, casino design and psychology,
@@ -102,8 +103,9 @@ the topic, the hero fact and its source, the slot and post time.
 
 ---
 
-## A. Daily run: all of the day's Reels
-Make one Reel per slot in `channel.json` (except `test`), soonest `post_at` first, steps 1 to 7 for each.
+## A. Two-day run (about 3 AM IST, every other day): 4 Reels
+Make one Reel per slot in `channel.json` (except `test`) for TODAY and for TOMORROW (4 Reels), soonest `post_at`
+first, steps 1 to 7 for each. Skip any slot that already has a Reel in queue/ (no SKIP file). 4 different topics.
 Then ONE SendUserMessage listing them:
 "<id>: <topic>, posts <time>. Reply skip <id>, or tell me what to change. No reply = it posts."
 

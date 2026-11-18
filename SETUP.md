@@ -54,6 +54,6 @@ Paste only the value (if a label or spaces slip in, the code cleans them).
 3. One real end-to-end post (slot `test`), then the daily task is switched on.
 
 ## F. Scheduled task (Claude)
-ONE cloud task, "The Rigged Game daily", runs `ROUTINE.md` section A once a day.
+ONE cloud task, "The Rigged Game (group B)", runs `ROUTINE.md` section A every other day (even dates) at about 3 AM IST and makes 4 Reels: 07:30 and 23:30 for that day and the next.
 It needs "Skip all approvals" (Automatically approve) on and no connectors it doesn't use.
 The whole account has at most 5 scheduled runs a day.

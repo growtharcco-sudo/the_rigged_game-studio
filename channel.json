@@ -3,6 +3,6 @@
  "handle": "the_rigged_game",
  "brand_tag": "#theriggedgame",
  "voice": "am_liam",
- "slots": {"evening": "23:30", "test": null},
- "note": "post times are IST. The daily run makes one Reel per slot, soonest first. 'test' is only for the end-to-end test."
+ "slots": {"morning": "07:30", "evening": "23:30", "test": null},
+ "note": "post times are IST. One run every other day makes one Reel per slot for its own day and the next day (4 Reels), soonest first. 'test' is only for the end-to-end test."
 }
