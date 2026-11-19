@@ -37,6 +37,8 @@ Scene kinds (all in the noir paper-cutout style; legacy/ has the episodes they c
   book       year, boss, title=[2 lines], boss_at, open_at                 book opens, former boss behind it
   EXPLAINERS (Ace, the gambler mascot, teaches: pose "point" | "present" | "chip")
   teach_wheel  header, note, note_at, pose, zero_at (green pockets glow), ball_at (ball lands on zero), american
+  teach_cards  header, pose, rows=[{label, total, total_at, cards=[{r, s (h d s c), beat, word, delay, down, flip_at}]}]
+               (max 2 rows: dealer on top, you below), note, note_at, stamp, stamp_at
   teach_card   header, pose, items=[{text, beat, word, delay, strike_at}] (max 2 big cards), stamp, stamp_at
   countdown  n, sub                                                        big flipping number card (#5 ... #1)
   cards      items=[{text, icon, beat, word, delay}] (max 3), stamp, stamp_at   paper cards slide in. icons: clock,
@@ -147,6 +149,32 @@ def block(kind, s, b, nb):
         if s.get('year'): els.append(L(s['year'], 330, A, size=64, font='Inter-Black', pop='big'))
         if s.get('boss'): els.append(dict(L(s['boss'], 470, bt, size=34, bg='ink', rot=3), x=W / 2 + 230, delay=0.2))
         els.append(G(1255))
+        return els
+    if kind == 'teach_cards':
+        ace = {'type': 'mascot', 'at': A, 'x': 165, 'y': 805, 's': 0.7, 'pose': s.get('pose', 'point'), 'side': 1}
+        if b == 0: ace['pose_now'] = True
+        else: ace['rise'] = 140
+        rows = s['rows'][:2]; ys = [600, 960] if len(rows) > 1 else [800]
+        ce = {'type': 'card_rows', 'at': A, 'rows': []}
+        for i, row in enumerate(rows):
+            r = {'y': ys[i], 'cards': [], 'x0': 500 if len(row['cards']) < 4 else 470}
+            for k in ('label', 'total', 'total_bg'):
+                if row.get(k): r[k] = row[k]
+            if row.get('total'): ce[f't{i}_at'] = at(row.get('total_at', nb - 1))
+            for j, cd in enumerate(row['cards'][:4]):
+                r['cards'].append({'r': cd['r'], 's': cd.get('s', 's'), **({'down': True} if cd.get('down') else {})})
+                ref = {'beat': cd.get('beat', 0), 'delay': cd.get('delay', 0.15 * j), **({'word': cd['word']} if 'word' in cd else {})}
+                ce[f'c{i}_{j}_at'] = -1 if (b == 0 and cd.get('beat', 0) == 0 and 'word' not in cd and 'delay' not in cd) else at(ref)
+                if cd.get('flip_at') is not None: ce[f'f{i}_{j}_at'] = at(cd['flip_at'])
+            ce['rows'].append(r)
+        els = [{'type': 'bg', 'look': 'hall'}, G(1255), ce, ace]
+        if s.get('note'):
+            els.append(L(s['note'], 1180, at(s.get('note_at', 0)), size=42, bg='ink', fg='gold', rot=2, delay=0.2, x=690))
+        if s.get('stamp'):
+            els.append({'type': 'stamp', 'text': s['stamp'], 'x': 640, 'y': 800, 'size': s.get('stamp_size', 110), 'rot': -10,
+                        'at': at(s.get('stamp_at', nb - 1))})
+        if s.get('header'):
+            els.append(L(s['header'], 300, A, size=54, bg='ink', fg='gold', font='Inter-Black', rot=-2))
         return els
     if kind in ('teach_wheel', 'teach_card'):
         hook = b == 0

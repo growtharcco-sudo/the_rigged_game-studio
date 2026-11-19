@@ -14,6 +14,7 @@ Slots (all IST) are in `channel.json`:
 ## 1. Pick the topic
 - Education, never promotion: how a game works and its real odds, the house edge, casino design and psychology,
   gambling history, famous casino beaters, scams exposed. Never "how to win", never a betting site, app, code or link.
+- Rotate the series: a How To Play Reel (rules made simple, then the catch), then a story, secret or myth Reel.
 - Take the next open idea in `IDEAS.md` or a better one. Check `posted/`, `queue/` and `IDEAS.md`: no repeats.
   Mark the idea `[used <id>]`.
 

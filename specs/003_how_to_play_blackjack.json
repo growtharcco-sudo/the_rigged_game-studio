@@ -1,0 +1,1060 @@
+{
+ "id": "003_how_to_play_blackjack",
+ "episode": "04",
+ "series": "How To Play",
+ "voice": "am_liam",
+ "speed": 1.0,
+ "hold": 2.6,
+ "caption_keywords": [
+  "dealer",
+  "hit",
+  "stand",
+  "bust",
+  "ace",
+  "blackjack",
+  "first",
+  "edge",
+  "face"
+ ],
+ "phrases": [
+  {
+   "say": "Ever wondered how blackjack actually works? Here it is in under a minute.",
+   "cap": "Ever wondered how|blackjack actually works?|Here it is in under a minute.",
+   "pause": 0.45
+  },
+  {
+   "say": "You play against the dealer, not against the other players at the table.",
+   "cap": "You play against the dealer,|not against the other players|at the table.",
+   "pause": 0.45
+  },
+  {
+   "say": "The goal is to get closer to twenty one than the dealer, without going over.",
+   "cap": "The goal is to get|closer to 21 than the dealer,|without going over.",
+   "pause": 0.45
+  },
+  {
+   "say": "Number cards count as their number, and every face card counts as ten.",
+   "cap": "Number cards count|as their number,|and every face card|counts as 10.",
+   "pause": 0.45
+  },
+  {
+   "say": "An ace counts as one or eleven, whichever helps your hand more.",
+   "cap": "An ace counts as 1 or 11,|whichever helps your hand more.",
+   "pause": 0.45
+  },
+  {
+   "say": "You start with two cards. Say hit to take another card, or stand to stop.",
+   "cap": "You start with two cards.|Say hit to take another card,|or stand to stop.",
+   "pause": 0.45
+  },
+  {
+   "say": "Go over twenty one and you bust, which means you lose that hand right away.",
+   "cap": "Go over 21 and you bust,|which means you lose|that hand right away.",
+   "pause": 0.45
+  },
+  {
+   "say": "An ace and a ten value card as your first two cards is a blackjack, which usually pays three to two.",
+   "cap": "An ace and a 10 value card|as your first two cards|is a blackjack,|which usually pays 3 to 2.",
+   "pause": 0.45
+  },
+  {
+   "say": "The dealer has no choices, and must keep drawing cards until they reach seventeen or more.",
+   "cap": "The dealer has no choices,|and must keep drawing cards|until they reach 17 or more.",
+   "pause": 0.45
+  },
+  {
+   "say": "But here is the catch: you always play your hand before the dealer.",
+   "cap": "But here is the catch:|you always play your hand|before the dealer.",
+   "pause": 0.45
+  },
+  {
+   "say": "If you bust, you lose, even when the dealer busts too.",
+   "cap": "If you bust, you lose,|even when the dealer busts too.",
+   "pause": 0.45
+  },
+  {
+   "say": "Most of the casino's edge comes from that one rule: you go first.",
+   "cap": "Most of the casino's edge|comes from that one rule:|you go first.",
+   "pause": 0.45
+  }
+ ],
+ "scenes": [
+  {
+   "start": 0,
+   "kind": "teach_cards",
+   "els": [
+    {
+     "type": "bg",
+     "look": "hall"
+    },
+    {
+     "type": "ground",
+     "y": 1255
+    },
+    {
+     "type": "card_rows",
+     "at": -1,
+     "rows": [
+      {
+       "y": 600,
+       "cards": [
+        {
+         "r": "9",
+         "s": "c"
+        },
+        {
+         "r": "?",
+         "s": "s",
+         "down": true
+        }
+       ],
+       "x0": 500,
+       "label": "DEALER"
+      },
+      {
+       "y": 960,
+       "cards": [
+        {
+         "r": "K",
+         "s": "h"
+        },
+        {
+         "r": "7",
+         "s": "s"
+        }
+       ],
+       "x0": 500,
+       "label": "YOU"
+      }
+     ],
+     "c0_0_at": -1,
+     "c0_1_at": -1,
+     "c1_0_at": -1,
+     "c1_1_at": -1
+    },
+    {
+     "type": "mascot",
+     "at": -1,
+     "x": 165,
+     "y": 805,
+     "s": 0.7,
+     "pose": "point",
+     "side": 1,
+     "pose_now": true
+    },
+    {
+     "type": "label",
+     "text": "YOU VS THE DEALER",
+     "y": 1180,
+     "at": 1,
+     "size": 42,
+     "bg": "ink",
+     "fg": "gold",
+     "rot": 2,
+     "font": "Mono-Bold",
+     "delay": 0.2,
+     "x": 690
+    },
+    {
+     "type": "label",
+     "text": "HOW TO PLAY: BLACKJACK",
+     "y": 300,
+     "at": -1,
+     "size": 54,
+     "bg": "ink",
+     "fg": "gold",
+     "rot": -2,
+     "font": "Inter-Black"
+    }
+   ]
+  },
+  {
+   "start": 2,
+   "kind": "teach_card",
+   "els": [
+    {
+     "type": "bg",
+     "look": "hall"
+    },
+    {
+     "type": "ground",
+     "y": 1255
+    },
+    {
+     "type": "mascot",
+     "at": 2,
+     "x": 175,
+     "y": 805,
+     "s": 0.72,
+     "pose": "present",
+     "side": 1,
+     "rise": 140
+    },
+    {
+     "type": "word",
+     "at": {
+      "b": 2,
+      "d": 0.2
+     },
+     "text": "BEAT THE DEALER",
+     "font": "Inter-Black",
+     "size": 74,
+     "x": 660,
+     "y": 620,
+     "rot": -3,
+     "pop": "back",
+     "card": "paper",
+     "ink": "ink"
+    },
+    {
+     "type": "word",
+     "at": {
+      "b": 2,
+      "w": 12,
+      "d": 0.0
+     },
+     "text": "NEVER OVER 21",
+     "font": "Inter-Black",
+     "size": 74,
+     "x": 660,
+     "y": 930,
+     "rot": 2,
+     "pop": "back",
+     "card": "gold",
+     "ink": "ink"
+    },
+    {
+     "type": "label",
+     "text": "THE GOAL",
+     "y": 300,
+     "at": 2,
+     "size": 54,
+     "bg": "ink",
+     "fg": "gold",
+     "rot": -2,
+     "font": "Inter-Black"
+    }
+   ]
+  },
+  {
+   "start": 3,
+   "kind": "teach_cards",
+   "els": [
+    {
+     "type": "bg",
+     "look": "hall"
+    },
+    {
+     "type": "ground",
+     "y": 1255
+    },
+    {
+     "type": "card_rows",
+     "at": 3,
+     "rows": [
+      {
+       "y": 800,
+       "cards": [
+        {
+         "r": "7",
+         "s": "d"
+        },
+        {
+         "r": "K",
+         "s": "h"
+        },
+        {
+         "r": "Q",
+         "s": "s"
+        },
+        {
+         "r": "J",
+         "s": "c"
+        }
+       ],
+       "x0": 470
+      }
+     ],
+     "c0_0_at": {
+      "b": 3,
+      "d": 0.0
+     },
+     "c0_1_at": {
+      "b": 3,
+      "w": 7,
+      "d": 0.15
+     },
+     "c0_2_at": {
+      "b": 3,
+      "w": 8,
+      "d": 0.3
+     },
+     "c0_3_at": {
+      "b": 3,
+      "w": 9,
+      "d": 0.44999999999999996
+     }
+    },
+    {
+     "type": "mascot",
+     "at": 3,
+     "x": 165,
+     "y": 805,
+     "s": 0.7,
+     "pose": "point",
+     "side": 1,
+     "rise": 140
+    },
+    {
+     "type": "label",
+     "text": "FACE CARDS = 10",
+     "y": 1180,
+     "at": {
+      "b": 3,
+      "w": 10
+     },
+     "size": 42,
+     "bg": "ink",
+     "fg": "gold",
+     "rot": 2,
+     "font": "Mono-Bold",
+     "delay": 0.2,
+     "x": 690
+    },
+    {
+     "type": "label",
+     "text": "CARD VALUES",
+     "y": 300,
+     "at": 3,
+     "size": 54,
+     "bg": "ink",
+     "fg": "gold",
+     "rot": -2,
+     "font": "Inter-Black"
+    }
+   ]
+  },
+  {
+   "start": 4,
+   "kind": "teach_cards",
+   "els": [
+    {
+     "type": "bg",
+     "look": "hall"
+    },
+    {
+     "type": "ground",
+     "y": 1255
+    },
+    {
+     "type": "card_rows",
+     "at": 4,
+     "rows": [
+      {
+       "y": 800,
+       "cards": [
+        {
+         "r": "A",
+         "s": "s"
+        }
+       ],
+       "x0": 500
+      }
+     ],
+     "c0_0_at": {
+      "b": 4,
+      "d": 0.2
+     }
+    },
+    {
+     "type": "mascot",
+     "at": 4,
+     "x": 165,
+     "y": 805,
+     "s": 0.7,
+     "pose": "chip",
+     "side": 1,
+     "rise": 140
+    },
+    {
+     "type": "label",
+     "text": "ACE = 1 OR 11",
+     "y": 1180,
+     "at": {
+      "b": 4,
+      "w": 4
+     },
+     "size": 42,
+     "bg": "ink",
+     "fg": "gold",
+     "rot": 2,
+     "font": "Mono-Bold",
+     "delay": 0.2,
+     "x": 690
+    },
+    {
+     "type": "label",
+     "text": "THE ACE",
+     "y": 300,
+     "at": 4,
+     "size": 54,
+     "bg": "ink",
+     "fg": "gold",
+     "rot": -2,
+     "font": "Inter-Black"
+    }
+   ]
+  },
+  {
+   "start": 5,
+   "kind": "teach_cards",
+   "els": [
+    {
+     "type": "bg",
+     "look": "hall"
+    },
+    {
+     "type": "ground",
+     "y": 1255
+    },
+    {
+     "type": "card_rows",
+     "at": 5,
+     "rows": [
+      {
+       "y": 800,
+       "cards": [
+        {
+         "r": "9",
+         "s": "h"
+        },
+        {
+         "r": "7",
+         "s": "c"
+        },
+        {
+         "r": "4",
+         "s": "d"
+        }
+       ],
+       "x0": 500,
+       "label": "YOU",
+       "total": "20"
+      }
+     ],
+     "t0_at": {
+      "b": 5,
+      "w": 12
+     },
+     "c0_0_at": {
+      "b": 5,
+      "d": 0.0
+     },
+     "c0_1_at": {
+      "b": 5,
+      "d": 0.15
+     },
+     "c0_2_at": {
+      "b": 5,
+      "w": 6,
+      "d": 0.3
+     }
+    },
+    {
+     "type": "mascot",
+     "at": 5,
+     "x": 165,
+     "y": 805,
+     "s": 0.7,
+     "pose": "point",
+     "side": 1,
+     "rise": 140
+    },
+    {
+     "type": "label",
+     "text": "HIT = ONE MORE CARD",
+     "y": 1180,
+     "at": {
+      "b": 5,
+      "w": 6
+     },
+     "size": 42,
+     "bg": "ink",
+     "fg": "gold",
+     "rot": 2,
+     "font": "Mono-Bold",
+     "delay": 0.2,
+     "x": 690
+    },
+    {
+     "type": "label",
+     "text": "HIT OR STAND",
+     "y": 300,
+     "at": 5,
+     "size": 54,
+     "bg": "ink",
+     "fg": "gold",
+     "rot": -2,
+     "font": "Inter-Black"
+    }
+   ]
+  },
+  {
+   "start": 6,
+   "kind": "teach_cards",
+   "els": [
+    {
+     "type": "bg",
+     "look": "hall"
+    },
+    {
+     "type": "ground",
+     "y": 1255
+    },
+    {
+     "type": "card_rows",
+     "at": 6,
+     "rows": [
+      {
+       "y": 800,
+       "cards": [
+        {
+         "r": "K",
+         "s": "s"
+        },
+        {
+         "r": "6",
+         "s": "h"
+        },
+        {
+         "r": "9",
+         "s": "d"
+        }
+       ],
+       "x0": 500,
+       "label": "YOU",
+       "total": "25"
+      }
+     ],
+     "t0_at": {
+      "b": 6,
+      "w": 3
+     },
+     "c0_0_at": {
+      "b": 6,
+      "d": 0.0
+     },
+     "c0_1_at": {
+      "b": 6,
+      "d": 0.15
+     },
+     "c0_2_at": {
+      "b": 6,
+      "w": 2,
+      "d": 0.3
+     }
+    },
+    {
+     "type": "mascot",
+     "at": 6,
+     "x": 165,
+     "y": 805,
+     "s": 0.7,
+     "pose": "present",
+     "side": 1,
+     "rise": 140
+    },
+    {
+     "type": "stamp",
+     "text": "BUST",
+     "x": 640,
+     "y": 800,
+     "size": 110,
+     "rot": -10,
+     "at": {
+      "b": 6,
+      "w": 6
+     }
+    },
+    {
+     "type": "label",
+     "text": "GOING BUST",
+     "y": 300,
+     "at": 6,
+     "size": 54,
+     "bg": "ink",
+     "fg": "gold",
+     "rot": -2,
+     "font": "Inter-Black"
+    }
+   ]
+  },
+  {
+   "start": 7,
+   "kind": "teach_cards",
+   "els": [
+    {
+     "type": "bg",
+     "look": "hall"
+    },
+    {
+     "type": "ground",
+     "y": 1255
+    },
+    {
+     "type": "card_rows",
+     "at": 7,
+     "rows": [
+      {
+       "y": 800,
+       "cards": [
+        {
+         "r": "A",
+         "s": "h"
+        },
+        {
+         "r": "K",
+         "s": "s"
+        }
+       ],
+       "x0": 500,
+       "label": "YOU",
+       "total": "21",
+       "total_bg": "ink"
+      }
+     ],
+     "t0_at": {
+      "b": 7,
+      "w": 13
+     },
+     "c0_0_at": {
+      "b": 7,
+      "d": 0.0
+     },
+     "c0_1_at": {
+      "b": 7,
+      "w": 3,
+      "d": 0.15
+     }
+    },
+    {
+     "type": "mascot",
+     "at": 7,
+     "x": 165,
+     "y": 805,
+     "s": 0.7,
+     "pose": "chip",
+     "side": 1,
+     "rise": 140
+    },
+    {
+     "type": "label",
+     "text": "USUALLY PAYS 3 TO 2",
+     "y": 1180,
+     "at": {
+      "b": 7,
+      "w": 16
+     },
+     "size": 42,
+     "bg": "ink",
+     "fg": "gold",
+     "rot": 2,
+     "font": "Mono-Bold",
+     "delay": 0.2,
+     "x": 690
+    },
+    {
+     "type": "label",
+     "text": "BLACKJACK!",
+     "y": 300,
+     "at": 7,
+     "size": 54,
+     "bg": "ink",
+     "fg": "gold",
+     "rot": -2,
+     "font": "Inter-Black"
+    }
+   ]
+  },
+  {
+   "start": 8,
+   "kind": "teach_cards",
+   "els": [
+    {
+     "type": "bg",
+     "look": "hall"
+    },
+    {
+     "type": "ground",
+     "y": 1255
+    },
+    {
+     "type": "card_rows",
+     "at": 8,
+     "rows": [
+      {
+       "y": 800,
+       "cards": [
+        {
+         "r": "J",
+         "s": "c"
+        },
+        {
+         "r": "6",
+         "s": "d"
+        },
+        {
+         "r": "3",
+         "s": "h"
+        }
+       ],
+       "x0": 500,
+       "label": "DEALER",
+       "total": "19"
+      }
+     ],
+     "t0_at": {
+      "b": 8,
+      "w": 13
+     },
+     "c0_0_at": {
+      "b": 8,
+      "d": 0.0
+     },
+     "c0_1_at": {
+      "b": 8,
+      "d": 0.15
+     },
+     "c0_2_at": {
+      "b": 8,
+      "w": 8,
+      "d": 0.3
+     }
+    },
+    {
+     "type": "mascot",
+     "at": 8,
+     "x": 165,
+     "y": 805,
+     "s": 0.7,
+     "pose": "point",
+     "side": 1,
+     "rise": 140
+    },
+    {
+     "type": "label",
+     "text": "DRAWS UNTIL 17+",
+     "y": 1180,
+     "at": {
+      "b": 8,
+      "w": 11
+     },
+     "size": 42,
+     "bg": "ink",
+     "fg": "gold",
+     "rot": 2,
+     "font": "Mono-Bold",
+     "delay": 0.2,
+     "x": 690
+    },
+    {
+     "type": "label",
+     "text": "THE DEALER'S RULE",
+     "y": 300,
+     "at": 8,
+     "size": 54,
+     "bg": "ink",
+     "fg": "gold",
+     "rot": -2,
+     "font": "Inter-Black"
+    }
+   ]
+  },
+  {
+   "start": 9,
+   "kind": "teach_cards",
+   "els": [
+    {
+     "type": "bg",
+     "look": "hall"
+    },
+    {
+     "type": "ground",
+     "y": 1255
+    },
+    {
+     "type": "card_rows",
+     "at": 9,
+     "rows": [
+      {
+       "y": 600,
+       "cards": [
+        {
+         "r": "10",
+         "s": "s"
+        },
+        {
+         "r": "6",
+         "s": "c"
+        },
+        {
+         "r": "8",
+         "s": "h"
+        }
+       ],
+       "x0": 500,
+       "label": "DEALER",
+       "total": "24"
+      },
+      {
+       "y": 960,
+       "cards": [
+        {
+         "r": "K",
+         "s": "d"
+        },
+        {
+         "r": "5",
+         "s": "s"
+        },
+        {
+         "r": "9",
+         "s": "c"
+        }
+       ],
+       "x0": 500,
+       "label": "YOU",
+       "total": "24"
+      }
+     ],
+     "t0_at": {
+      "b": 10,
+      "w": 8
+     },
+     "c0_0_at": {
+      "b": 10,
+      "d": 0.0
+     },
+     "c0_1_at": {
+      "b": 10,
+      "d": 0.2
+     },
+     "c0_2_at": {
+      "b": 10,
+      "w": 8,
+      "d": 0.3
+     },
+     "t1_at": {
+      "b": 10,
+      "w": 3
+     },
+     "c1_0_at": {
+      "b": 9,
+      "d": 0.0
+     },
+     "c1_1_at": {
+      "b": 9,
+      "d": 0.2
+     },
+     "c1_2_at": {
+      "b": 10,
+      "w": 1,
+      "d": 0.3
+     }
+    },
+    {
+     "type": "mascot",
+     "at": 9,
+     "x": 165,
+     "y": 805,
+     "s": 0.7,
+     "pose": "point",
+     "side": 1,
+     "rise": 140
+    },
+    {
+     "type": "stamp",
+     "text": "YOU STILL LOSE",
+     "x": 640,
+     "y": 800,
+     "size": 78,
+     "rot": -10,
+     "at": {
+      "b": 10,
+      "w": 9
+     }
+    },
+    {
+     "type": "label",
+     "text": "THE CATCH",
+     "y": 300,
+     "at": 9,
+     "size": 54,
+     "bg": "ink",
+     "fg": "gold",
+     "rot": -2,
+     "font": "Inter-Black"
+    }
+   ]
+  },
+  {
+   "start": 11,
+   "kind": "ending",
+   "els": [
+    {
+     "type": "bg",
+     "look": "paper",
+     "glow": 0.3,
+     "glow_y": 760
+    },
+    {
+     "type": "word",
+     "at": 11,
+     "text": "LUCK",
+     "font": "Inter-Black",
+     "size": 190,
+     "y": 560,
+     "rot": -3,
+     "strike_at": {
+      "b": 11,
+      "w": 3
+     }
+    },
+    {
+     "type": "word",
+     "at": {
+      "b": 11,
+      "w": 11
+     },
+     "text": "FIRST",
+     "size": 210,
+     "y": 900,
+     "rot": 2,
+     "card": "ink",
+     "ink": "gold",
+     "pop": "slam",
+     "glow": true
+    },
+    {
+     "type": "ground",
+     "y": 1255
+    },
+    {
+     "type": "text",
+     "at": {
+      "b": 11,
+      "d": 1.0
+     },
+     "text": "THE RIGGED GAME",
+     "y": 1720,
+     "size": 34,
+     "alpha": 0.8,
+     "footer": true
+    },
+    {
+     "type": "outro",
+     "at": [
+      "end",
+      0.35
+     ]
+    }
+   ]
+  }
+ ],
+ "cover": {
+  "kicker": "HOW TO PLAY",
+  "big": "21",
+  "sub": "BLACKJACK IN 60 SECONDS"
+ },
+ "sources": [
+  {
+   "name": "Wikipedia, Blackjack (card values, bust, 3 to 2, dealer draws to 17, house edge from double busts)",
+   "url": "https://en.wikipedia.org/wiki/Blackjack",
+   "fetched": "2026-11-19"
+  },
+  {
+   "name": "Wizard of Odds (Michael Shackleford), Blackjack basics",
+   "url": "https://wizardofodds.com/games/blackjack/basics/",
+   "fetched": "2026-11-19"
+  }
+ ],
+ "post": {
+  "slot": "evening",
+  "post_at": "2026-11-20T23:30:00+05:30",
+  "instagram_caption": "How blackjack works, in under a minute.\n\nGet closer to 21 than the dealer without going over. Face cards count 10, an ace is 1 or 11, and you hit or stand. The catch: you play first, so if you bust you lose even when the dealer busts too. That rule is where most of the casino's edge comes from.\n\nEducation only. Not gambling advice. 18+\n\nWhich casino game should Ace explain next?\n\n#theriggedgame #blackjack #howtoplay #casino #cardgames",
+  "youtube_title": "How To Play Blackjack In Under A Minute",
+  "youtube_description": "The rules of blackjack, explained simply: card values, hit, stand, bust, blackjack and the dealer's rule. And the catch that gives the casino most of its edge: you play first, so you lose when you bust even if the dealer busts too.\n\nEducation only. Not gambling advice. 18+ AI narration.\n\nSources:\n• Wikipedia, \"Blackjack\"\n• Wizard of Odds (Michael Shackleford), \"Blackjack basics\"\n\nThe Rigged Game: how casinos really work. Instagram: @the_rigged_game\n\n#Casino #Blackjack #Shorts"
+ },
+ "math": [
+  {
+   "expr": "21",
+   "expect": 21,
+   "note": "target total"
+  },
+  {
+   "expr": "10",
+   "expect": 10,
+   "note": "face cards and tens count 10"
+  },
+  {
+   "expr": "1",
+   "expect": 1,
+   "note": "ace low value"
+  },
+  {
+   "expr": "11",
+   "expect": 11,
+   "note": "ace high value"
+  },
+  {
+   "expr": "9 + 7 + 4",
+   "expect": 20,
+   "note": "hit example: 16 + 4 = 20, stand"
+  },
+  {
+   "expr": "10 + 6 + 9",
+   "expect": 25,
+   "note": "bust example"
+  },
+  {
+   "expr": "11 + 10",
+   "expect": 21,
+   "note": "ace + king = blackjack"
+  },
+  {
+   "expr": "3 / 2",
+   "expect": 1.5,
+   "note": "blackjack usually pays 3 to 2 (some casinos pay 6:5)"
+  },
+  {
+   "expr": "2",
+   "expect": 2,
+   "note": "3 to 2"
+  },
+  {
+   "expr": "3",
+   "expect": 3,
+   "note": "3 to 2"
+  },
+  {
+   "expr": "17",
+   "expect": 17,
+   "note": "dealer draws until 17 or more"
+  },
+  {
+   "expr": "10 + 6 + 3",
+   "expect": 19,
+   "note": "dealer example"
+  },
+  {
+   "expr": "10 + 6 + 8",
+   "expect": 24,
+   "note": "dealer busts"
+  },
+  {
+   "expr": "10 + 5 + 9",
+   "expect": 24,
+   "note": "you bust first and still lose"
+  }
+ ]
+}

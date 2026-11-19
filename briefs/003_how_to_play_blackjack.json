@@ -1,0 +1,485 @@
+{
+ "id": "003_how_to_play_blackjack",
+ "episode": "04",
+ "series": "How To Play",
+ "keywords": [
+  "dealer",
+  "hit",
+  "stand",
+  "bust",
+  "ace",
+  "blackjack",
+  "first",
+  "edge",
+  "face"
+ ],
+ "beats": [
+  {
+   "say": "Ever wondered how blackjack actually works? Here it is in under a minute.",
+   "cap": "Ever wondered how|blackjack actually works?|Here it is in under a minute.",
+   "show": {
+    "kind": "teach_cards",
+    "header": "HOW TO PLAY: BLACKJACK",
+    "pose": "point",
+    "rows": [
+     {
+      "label": "DEALER",
+      "cards": [
+       {
+        "r": "9",
+        "s": "c"
+       },
+       {
+        "r": "?",
+        "down": true
+       }
+      ]
+     },
+     {
+      "label": "YOU",
+      "cards": [
+       {
+        "r": "K",
+        "s": "h"
+       },
+       {
+        "r": "7",
+        "s": "s"
+       }
+      ]
+     }
+    ],
+    "note": "YOU VS THE DEALER",
+    "note_at": 1
+   }
+  },
+  {
+   "say": "You play against the dealer, not against the other players at the table.",
+   "cap": "You play against the dealer,|not against the other players|at the table."
+  },
+  {
+   "say": "The goal is to get closer to twenty one than the dealer, without going over.",
+   "cap": "The goal is to get|closer to 21 than the dealer,|without going over.",
+   "show": {
+    "kind": "teach_card",
+    "header": "THE GOAL",
+    "pose": "present",
+    "items": [
+     {
+      "text": "BEAT THE DEALER",
+      "size": 74
+     },
+     {
+      "text": "NEVER OVER 21",
+      "word": 12,
+      "size": 74,
+      "card": "gold"
+     }
+    ]
+   }
+  },
+  {
+   "say": "Number cards count as their number, and every face card counts as ten.",
+   "cap": "Number cards count|as their number,|and every face card|counts as 10.",
+   "show": {
+    "kind": "teach_cards",
+    "header": "CARD VALUES",
+    "pose": "point",
+    "rows": [
+     {
+      "cards": [
+       {
+        "r": "7",
+        "s": "d"
+       },
+       {
+        "r": "K",
+        "s": "h",
+        "word": 7
+       },
+       {
+        "r": "Q",
+        "s": "s",
+        "word": 8
+       },
+       {
+        "r": "J",
+        "s": "c",
+        "word": 9
+       }
+      ]
+     }
+    ],
+    "note": "FACE CARDS = 10",
+    "note_at": {
+     "beat": 0,
+     "word": 10
+    }
+   }
+  },
+  {
+   "say": "An ace counts as one or eleven, whichever helps your hand more.",
+   "cap": "An ace counts as 1 or 11,|whichever helps your hand more.",
+   "show": {
+    "kind": "teach_cards",
+    "header": "THE ACE",
+    "pose": "chip",
+    "rows": [
+     {
+      "cards": [
+       {
+        "r": "A",
+        "s": "s",
+        "delay": 0.2
+       }
+      ]
+     }
+    ],
+    "note": "ACE = 1 OR 11",
+    "note_at": {
+     "beat": 0,
+     "word": 4
+    }
+   }
+  },
+  {
+   "say": "You start with two cards. Say hit to take another card, or stand to stop.",
+   "cap": "You start with two cards.|Say hit to take another card,|or stand to stop.",
+   "show": {
+    "kind": "teach_cards",
+    "header": "HIT OR STAND",
+    "pose": "point",
+    "rows": [
+     {
+      "label": "YOU",
+      "total": "20",
+      "total_at": {
+       "beat": 0,
+       "word": 12
+      },
+      "cards": [
+       {
+        "r": "9",
+        "s": "h"
+       },
+       {
+        "r": "7",
+        "s": "c"
+       },
+       {
+        "r": "4",
+        "s": "d",
+        "word": 6
+       }
+      ]
+     }
+    ],
+    "note": "HIT = ONE MORE CARD",
+    "note_at": {
+     "beat": 0,
+     "word": 6
+    }
+   }
+  },
+  {
+   "say": "Go over twenty one and you bust, which means you lose that hand right away.",
+   "cap": "Go over 21 and you bust,|which means you lose|that hand right away.",
+   "show": {
+    "kind": "teach_cards",
+    "header": "GOING BUST",
+    "pose": "present",
+    "rows": [
+     {
+      "label": "YOU",
+      "total": "25",
+      "total_at": {
+       "beat": 0,
+       "word": 3
+      },
+      "cards": [
+       {
+        "r": "K",
+        "s": "s"
+       },
+       {
+        "r": "6",
+        "s": "h"
+       },
+       {
+        "r": "9",
+        "s": "d",
+        "word": 2
+       }
+      ]
+     }
+    ],
+    "stamp": "BUST",
+    "stamp_at": {
+     "beat": 0,
+     "word": 6
+    }
+   }
+  },
+  {
+   "say": "An ace and a ten value card as your first two cards is a blackjack, which usually pays three to two.",
+   "cap": "An ace and a 10 value card|as your first two cards|is a blackjack,|which usually pays 3 to 2.",
+   "show": {
+    "kind": "teach_cards",
+    "header": "BLACKJACK!",
+    "pose": "chip",
+    "rows": [
+     {
+      "label": "YOU",
+      "total": "21",
+      "total_bg": "ink",
+      "total_at": {
+       "beat": 0,
+       "word": 13
+      },
+      "cards": [
+       {
+        "r": "A",
+        "s": "h"
+       },
+       {
+        "r": "K",
+        "s": "s",
+        "word": 3
+       }
+      ]
+     }
+    ],
+    "note": "USUALLY PAYS 3 TO 2",
+    "note_at": {
+     "beat": 0,
+     "word": 16
+    }
+   }
+  },
+  {
+   "say": "The dealer has no choices, and must keep drawing cards until they reach seventeen or more.",
+   "cap": "The dealer has no choices,|and must keep drawing cards|until they reach 17 or more.",
+   "show": {
+    "kind": "teach_cards",
+    "header": "THE DEALER'S RULE",
+    "pose": "point",
+    "rows": [
+     {
+      "label": "DEALER",
+      "total": "19",
+      "total_at": {
+       "beat": 0,
+       "word": 13
+      },
+      "cards": [
+       {
+        "r": "J",
+        "s": "c"
+       },
+       {
+        "r": "6",
+        "s": "d"
+       },
+       {
+        "r": "3",
+        "s": "h",
+        "word": 8
+       }
+      ]
+     }
+    ],
+    "note": "DRAWS UNTIL 17+",
+    "note_at": {
+     "beat": 0,
+     "word": 11
+    }
+   }
+  },
+  {
+   "say": "But here is the catch: you always play your hand before the dealer.",
+   "cap": "But here is the catch:|you always play your hand|before the dealer.",
+   "show": {
+    "kind": "teach_cards",
+    "header": "THE CATCH",
+    "pose": "point",
+    "rows": [
+     {
+      "label": "DEALER",
+      "total": "24",
+      "total_at": {
+       "beat": 1,
+       "word": 8
+      },
+      "cards": [
+       {
+        "r": "10",
+        "s": "s",
+        "beat": 1
+       },
+       {
+        "r": "6",
+        "s": "c",
+        "beat": 1,
+        "delay": 0.2
+       },
+       {
+        "r": "8",
+        "s": "h",
+        "beat": 1,
+        "word": 8
+       }
+      ]
+     },
+     {
+      "label": "YOU",
+      "total": "24",
+      "total_at": {
+       "beat": 1,
+       "word": 3
+      },
+      "cards": [
+       {
+        "r": "K",
+        "s": "d"
+       },
+       {
+        "r": "5",
+        "s": "s",
+        "delay": 0.2
+       },
+       {
+        "r": "9",
+        "s": "c",
+        "beat": 1,
+        "word": 1
+       }
+      ]
+     }
+    ],
+    "stamp": "YOU STILL LOSE",
+    "stamp_at": {
+     "beat": 1,
+     "word": 9
+    },
+    "stamp_size": 78
+   }
+  },
+  {
+   "say": "If you bust, you lose, even when the dealer busts too.",
+   "cap": "If you bust, you lose,|even when the dealer busts too."
+  },
+  {
+   "say": "Most of the casino's edge comes from that one rule: you go first.",
+   "cap": "Most of the casino's edge|comes from that one rule:|you go first.",
+   "show": {
+    "kind": "ending",
+    "wrong": "LUCK",
+    "right": "FIRST",
+    "strike_at": {
+     "beat": 0,
+     "word": 3
+    },
+    "right_at": {
+     "beat": 0,
+     "word": 11
+    }
+   }
+  }
+ ],
+ "cover": {
+  "kicker": "HOW TO PLAY",
+  "big": "21",
+  "sub": "BLACKJACK IN 60 SECONDS"
+ },
+ "sources": [
+  {
+   "name": "Wikipedia, Blackjack (card values, bust, 3 to 2, dealer draws to 17, house edge from double busts)",
+   "url": "https://en.wikipedia.org/wiki/Blackjack",
+   "fetched": "2026-11-19"
+  },
+  {
+   "name": "Wizard of Odds (Michael Shackleford), Blackjack basics",
+   "url": "https://wizardofodds.com/games/blackjack/basics/",
+   "fetched": "2026-11-19"
+  }
+ ],
+ "math": [
+  {
+   "expr": "21",
+   "expect": 21,
+   "note": "target total"
+  },
+  {
+   "expr": "10",
+   "expect": 10,
+   "note": "face cards and tens count 10"
+  },
+  {
+   "expr": "1",
+   "expect": 1,
+   "note": "ace low value"
+  },
+  {
+   "expr": "11",
+   "expect": 11,
+   "note": "ace high value"
+  },
+  {
+   "expr": "9 + 7 + 4",
+   "expect": 20,
+   "note": "hit example: 16 + 4 = 20, stand"
+  },
+  {
+   "expr": "10 + 6 + 9",
+   "expect": 25,
+   "note": "bust example"
+  },
+  {
+   "expr": "11 + 10",
+   "expect": 21,
+   "note": "ace + king = blackjack"
+  },
+  {
+   "expr": "3 / 2",
+   "expect": 1.5,
+   "note": "blackjack usually pays 3 to 2 (some casinos pay 6:5)"
+  },
+  {
+   "expr": "2",
+   "expect": 2,
+   "note": "3 to 2"
+  },
+  {
+   "expr": "3",
+   "expect": 3,
+   "note": "3 to 2"
+  },
+  {
+   "expr": "17",
+   "expect": 17,
+   "note": "dealer draws until 17 or more"
+  },
+  {
+   "expr": "10 + 6 + 3",
+   "expect": 19,
+   "note": "dealer example"
+  },
+  {
+   "expr": "10 + 6 + 8",
+   "expect": 24,
+   "note": "dealer busts"
+  },
+  {
+   "expr": "10 + 5 + 9",
+   "expect": 24,
+   "note": "you bust first and still lose"
+  }
+ ],
+ "post": {
+  "slot": "evening",
+  "post_at": "2026-11-20T23:30:00+05:30",
+  "instagram_caption": "How blackjack works, in under a minute.\n\nGet closer to 21 than the dealer without going over. Face cards count 10, an ace is 1 or 11, and you hit or stand. The catch: you play first, so if you bust you lose even when the dealer busts too. That rule is where most of the casino's edge comes from.\n\nEducation only. Not gambling advice. 18+\n\nWhich casino game should Ace explain next?\n\n#theriggedgame #blackjack #howtoplay #casino #cardgames",
+  "youtube_title": "How To Play Blackjack In Under A Minute",
+  "youtube_description": "The rules of blackjack, explained simply: card values, hit, stand, bust, blackjack and the dealer's rule. And the catch that gives the casino most of its edge: you play first, so you lose when you bust even if the dealer busts too.\n\nEducation only. Not gambling advice. 18+ AI narration.\n\nSources:\n• Wikipedia, \"Blackjack\"\n• Wizard of Odds (Michael Shackleford), \"Blackjack basics\"\n\nThe Rigged Game: how casinos really work. Instagram: @the_rigged_game\n\n#Casino #Blackjack #Shorts"
+ }
+}

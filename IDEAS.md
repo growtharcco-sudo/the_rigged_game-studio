@@ -20,3 +20,12 @@ Mark a line `[used <id>]` when it becomes a Reel.
 - Edward Thorp: the maths professor who wrote "Beat the Dealer".
 - Why casinos give "free" hotel rooms, meals and shows (comps).
 - The carpet trick: why casino carpets are so loud.
+
+## How To Play series (Ace teaches the rules simply, then the catch that gives the casino its edge. Never tips to win.)
+- [used 003_how_to_play_blackjack] How to play blackjack: values, hit, stand, bust, dealer draws to 17. Catch: you go first.
+- How to play roulette: inside vs outside bets and what each pays. Catch: every bet loses to the zero.
+- How to play Texas Hold'em poker: blinds, hole cards, flop, turn, river, hand ranks. Catch: you play other players, the casino takes the rake.
+- How to play baccarat: player, banker, tie, card values. Catch: the 5% commission on banker wins.
+- How to play craps: pass line, come out roll, point. Catch: the 2, 3 and 12 on the come out.
+- How a slot machine works: reels, paylines, the random number generator. Catch: the payback percentage is set in advance.
+- How to play keno: pick numbers, the draw. Catch: one of the highest house edges in the casino.

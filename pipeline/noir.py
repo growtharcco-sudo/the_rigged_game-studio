@@ -519,6 +519,63 @@ def d_wheel_show(cv, e, lt, R):
     if s0 < 1: cv.restore()
     cv.restore()
 
+def suit_path(suit, cx, cy, r):
+    p = skia.Path()
+    def heart(flip):
+        k = -1 if flip else 1
+        p.moveTo(cx, cy + k * r)
+        p.cubicTo(cx - 1.45 * r, cy - k * 0.15 * r, cx - 0.65 * r, cy - k * 1.25 * r, cx, cy - k * 0.42 * r)
+        p.cubicTo(cx + 0.65 * r, cy - k * 1.25 * r, cx + 1.45 * r, cy - k * 0.15 * r, cx, cy + k * r); p.close()
+    if suit == 'h': heart(False)
+    elif suit == 'd':
+        p.moveTo(cx, cy - r * 1.1); p.lineTo(cx + r * 0.75, cy); p.lineTo(cx, cy + r * 1.1); p.lineTo(cx - r * 0.75, cy); p.close()
+    elif suit == 's':
+        heart(True); p.moveTo(cx, cy + 0.3 * r); p.lineTo(cx + 0.35 * r, cy + 1.15 * r); p.lineTo(cx - 0.35 * r, cy + 1.15 * r); p.close()
+    else:
+        for dx, dy in ((0, -0.55), (-0.55, 0.15), (0.55, 0.15)): p.addCircle(cx + dx * r, cy + dy * r, 0.48 * r)
+        p.moveTo(cx, cy); p.lineTo(cx + 0.35 * r, cy + 1.15 * r); p.lineTo(cx - 0.35 * r, cy + 1.15 * r); p.close()
+    p.setFillType(skia.PathFillType.kWinding); return p
+
+def play_card(cv, x, y, rank, suit, face=1.0, cw=150, ch=212, sc=1.2):
+    """one paper playing card centred at x, y. face: 1 = face up, 0 = back (flip squashes through 0.5)"""
+    sx = abs(math.cos(face * math.pi)) if 0 < face < 1 else 1
+    up = face >= 0.5
+    cv.save(); cv.translate(x, y); cv.scale(max(sx, 0.02) * sc, sc)
+    rr = skia.Path(); rr.addRRect(skia.RRect.MakeRectXY(skia.Rect(-cw / 2, -ch / 2, cw / 2, ch / 2), 14, 14))
+    cut(cv, rr, PAPER if up else RUST, 7, 10, 0.45)
+    if up:
+        c = RED if suit in 'hd' else INKD
+        cv.drawString(rank, -cw / 2 + 14, -ch / 2 + 52, font('Inter-Black', 46), paint(c))
+        cv.drawPath(suit_path(suit, -cw / 2 + 33, -ch / 2 + 80, 13), paint(c))
+        cv.drawPath(suit_path(suit, 8, 22, 40), paint(c))
+    else:
+        cv.drawRoundRect(skia.Rect(-cw / 2 + 12, -ch / 2 + 12, cw / 2 - 12, ch / 2 - 12), 9, 9, paint(PAPER, 0.85, 'stroke', 4))
+        cv.drawPath(suit_path('d', 0, 0, 34), paint(PAPER, 0.8))
+    cv.restore()
+
+@drawer('card_rows')
+def d_card_rows(cv, e, lt, R):
+    """rows of playing cards dealt in on cue; a face-down card can flip at its flip time; optional total badges"""
+    tab = skia.Path(); tab.addOval(skia.Rect(330, 380, W + 260, 1230)); cut(cv, tab, GREEN, 8, 14, 0.4)
+    cv.drawOval(skia.Rect(355, 405, W + 235, 1205), paint(GOLD, 0.35, 'stroke', 3))
+    for i, row in enumerate(e['rows']):
+        y = row['y']; x0 = row.get('x0', 500)
+        if row.get('label'): label_card(cv, row['label'], x0 + 20, y - 165, 32, INKD, GOLD, rot=-2)
+        for j, cd in enumerate(row['cards']):
+            rt = R(f'c{i}_{j}')
+            if rt <= 0: continue
+            m = ease_out(rt / 0.4)
+            cx = x0 + j * 140 + (1 - m) * 420; cy = y - (1 - m) * 520
+            face = 0.0 if cd.get('down') else 1.0
+            if cd.get('down') and f'_f{i}_{j}_at' in e and R(f'f{i}_{j}') > 0: face = clamp(R(f'f{i}_{j}') / 0.35)
+            cv.save(); cv.translate(cx, cy); cv.rotate((1 - m) * 25 + (j - 1) * 3); cv.translate(-cx, -cy)
+            play_card(cv, cx, cy, cd['r'], cd.get('s', 's'), face)
+            cv.restore()
+        if row.get('total') and R(f't{i}') > 0:
+            a = ease_out(R(f't{i}') / 0.3)
+            label_card(cv, row['total'], x0 + len(row['cards']) * 140 + 30, y + 10, 44,
+                       col(row.get('total_bg', 'rust')), PAPER, rot=4, fname='Inter-Black', a=a, s=0.6 + 0.4 * back_out(a))
+
 @drawer('nobet_eye')
 def d_nobet_eye(cv, e, lt, R):
     """crossed-out chip ('no bet') that turns into an eye ('just watched') at eye_at"""
@@ -1051,6 +1108,11 @@ def texts(e):
         out.append((e.get('label', ''), 'Mono-Bold', 30, W / 2, 1215, 56, 1000))
     elif t == 'tally':
         out.append((f'{e.get("unit", "DAY")} 00 / {e.get("days", 30)}', 'Mono-Bold', 46, W / 2, 250, 56, 1000))
+    elif t == 'card_rows':
+        for r in e['rows']:
+            if r.get('label'): out.append((r['label'], 'Mono-Bold', 32, r.get('x0', 500) + 20, r['y'] - 165, 56, 1000))
+            if r.get('total'):
+                out.append((r['total'], 'Inter-Black', 44, r.get('x0', 500) + len(r['cards']) * 140 + 30, r['y'] + 10, 56, 1000))
     elif t == 'outro':
         out.append((e.get('follow', 'FOLLOW FOR MORE CASINO SECRETS'), 'Mono-Bold', 40, W / 2, 1290, 56, 1000))
     return out
