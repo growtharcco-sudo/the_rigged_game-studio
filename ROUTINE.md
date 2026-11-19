@@ -22,6 +22,8 @@ Slots (all IST) are in `channel.json`:
   1. *Countdown:* "Casinos use five hidden tricks... number one is the sneakiest." (kinds `fan` + `countdown`)
   2. *Story:* a person, a beaten casino, a big number. (kind `title`)
   3. *Question:* "Ever seen a clock in a casino?" (kind `clock_hunt`, or `cards`)
+- **Ace** (the top-hat gambler) is the channel's teacher. Game explainers use the kinds `teach_wheel` and
+  `teach_card`, where Ace points, presents or holds up a chip. Never swap him for another character.
 - Save the payoff for the last 8 to 12 seconds; end on one short shareable line. The `ending` kind holds the
   end card after the last word, so the video never cuts off.
 - 35 to 55 seconds spoken. Something on screen changes every 2 to 3 seconds.

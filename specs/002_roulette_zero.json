@@ -1,0 +1,597 @@
+{
+ "id": "002_roulette_zero",
+ "episode": "03",
+ "series": "How The Games Work",
+ "voice": "am_liam",
+ "speed": 1.0,
+ "hold": 2.6,
+ "caption_keywords": [
+  "green",
+  "zero",
+  "pockets",
+  "fair",
+  "edge",
+  "European",
+  "American",
+  "unlucky"
+ ],
+ "phrases": [
+  {
+   "say": "Why does the casino always win at roulette? Look at this one green pocket.",
+   "cap": "Why does the casino|always win at roulette?|Look at this|one green pocket.",
+   "pause": 0.45
+  },
+  {
+   "say": "A European wheel has thirty seven pockets: the numbers one to thirty six, plus a single zero.",
+   "cap": "A European wheel|has 37 pockets:|the numbers 1 to 36,|plus a single zero.",
+   "pause": 0.45
+  },
+  {
+   "say": "Put a chip on one number and win, and the casino pays you thirty five to one.",
+   "cap": "Put a chip on one number|and win, and the casino|pays you 35 to 1.",
+   "pause": 0.45
+  },
+  {
+   "say": "But with thirty seven pockets, a fair payout would be thirty six to one.",
+   "cap": "But with 37 pockets,|a fair payout would be|36 to 1.",
+   "pause": 0.45
+  },
+  {
+   "say": "That one missing chip on every win is where the casino's edge comes from.",
+   "cap": "That one missing chip|on every win is where|the casino's edge comes from.",
+   "pause": 0.45
+  },
+  {
+   "say": "It works out to a house edge of about two point seven percent on every bet.",
+   "cap": "It works out to|a house edge of about|2.7% on every bet.",
+   "pause": 0.45
+  },
+  {
+   "say": "Bet ten dollars a spin for a thousand spins, and you can expect to lose about two hundred seventy dollars.",
+   "cap": "Bet $10 a spin|for 1,000 spins,|and you can expect|to lose about $270.",
+   "pause": 0.45
+  },
+  {
+   "say": "American wheels add a second green pocket, the double zero, and the edge almost doubles to five point two six percent.",
+   "cap": "American wheels add|a second green pocket,|the double zero, and the edge|almost doubles to 5.26%.",
+   "pause": 0.45
+  },
+  {
+   "say": "So the next time you lose at roulette, you were not unlucky.",
+   "cap": "So the next time|you lose at roulette,|you were not unlucky.",
+   "pause": 0.45
+  },
+  {
+   "say": "You were playing against the zero.",
+   "cap": "You were playing|against the zero.",
+   "pause": 0.45
+  }
+ ],
+ "scenes": [
+  {
+   "start": 0,
+   "kind": "teach_wheel",
+   "els": [
+    {
+     "type": "bg",
+     "look": "hall"
+    },
+    {
+     "type": "ground",
+     "y": 1255
+    },
+    {
+     "type": "wheel_show",
+     "at": -1,
+     "x": 655,
+     "y": 690,
+     "r": 245,
+     "american": false,
+     "zero_at": -1,
+     "now": true
+    },
+    {
+     "type": "mascot",
+     "at": -1,
+     "x": 175,
+     "y": 805,
+     "s": 0.72,
+     "pose": "point",
+     "side": 1,
+     "pose_now": true
+    },
+    {
+     "type": "label",
+     "text": "WHY THE CASINO WINS",
+     "y": 300,
+     "at": -1,
+     "size": 54,
+     "bg": "ink",
+     "fg": "gold",
+     "rot": -2,
+     "font": "Inter-Black"
+    }
+   ]
+  },
+  {
+   "start": 1,
+   "kind": "teach_wheel",
+   "els": [
+    {
+     "type": "bg",
+     "look": "hall"
+    },
+    {
+     "type": "ground",
+     "y": 1255
+    },
+    {
+     "type": "wheel_show",
+     "at": 1,
+     "x": 655,
+     "y": 690,
+     "r": 245,
+     "american": false,
+     "zero_at": {
+      "b": 1,
+      "w": 14
+     }
+    },
+    {
+     "type": "mascot",
+     "at": 1,
+     "x": 175,
+     "y": 805,
+     "s": 0.72,
+     "pose": "present",
+     "side": 1,
+     "rise": 140
+    },
+    {
+     "type": "label",
+     "text": "1 TO 36 + ZERO = 37",
+     "y": 1135,
+     "at": {
+      "b": 1,
+      "w": 5
+     },
+     "size": 44,
+     "bg": "ink",
+     "fg": "gold",
+     "rot": 2,
+     "font": "Mono-Bold",
+     "delay": 0.3,
+     "x": 660
+    },
+    {
+     "type": "label",
+     "text": "EUROPEAN WHEEL",
+     "y": 300,
+     "at": 1,
+     "size": 54,
+     "bg": "ink",
+     "fg": "gold",
+     "rot": -2,
+     "font": "Inter-Black"
+    }
+   ]
+  },
+  {
+   "start": 2,
+   "kind": "teach_card",
+   "els": [
+    {
+     "type": "bg",
+     "look": "hall"
+    },
+    {
+     "type": "ground",
+     "y": 1255
+    },
+    {
+     "type": "mascot",
+     "at": 2,
+     "x": 175,
+     "y": 805,
+     "s": 0.72,
+     "pose": "chip",
+     "side": 1,
+     "rise": 140
+    },
+    {
+     "type": "word",
+     "at": {
+      "b": 2,
+      "w": 12,
+      "d": 0.2
+     },
+     "text": "PAYS 35 TO 1",
+     "font": "Inter-Black",
+     "size": 84,
+     "x": 660,
+     "y": 760,
+     "rot": -3,
+     "pop": "back",
+     "card": "paper",
+     "ink": "ink"
+    },
+    {
+     "type": "label",
+     "text": "ONE NUMBER WINS",
+     "y": 300,
+     "at": 2,
+     "size": 54,
+     "bg": "ink",
+     "fg": "gold",
+     "rot": -2,
+     "font": "Inter-Black"
+    }
+   ]
+  },
+  {
+   "start": 3,
+   "kind": "teach_card",
+   "els": [
+    {
+     "type": "bg",
+     "look": "hall"
+    },
+    {
+     "type": "ground",
+     "y": 1255
+    },
+    {
+     "type": "mascot",
+     "at": 3,
+     "x": 175,
+     "y": 805,
+     "s": 0.72,
+     "pose": "point",
+     "side": 1,
+     "rise": 140
+    },
+    {
+     "type": "word",
+     "at": {
+      "b": 3,
+      "w": 9,
+      "d": 0.2
+     },
+     "text": "FAIR: 36 TO 1",
+     "font": "Inter-Black",
+     "size": 76,
+     "x": 660,
+     "y": 620,
+     "rot": -3,
+     "pop": "back",
+     "card": "gold",
+     "ink": "ink"
+    },
+    {
+     "type": "word",
+     "at": {
+      "b": 4,
+      "d": 0.2
+     },
+     "text": "PAID: 35 TO 1",
+     "font": "Inter-Black",
+     "size": 76,
+     "x": 660,
+     "y": 930,
+     "rot": 2,
+     "pop": "back",
+     "card": "paper",
+     "ink": "ink"
+    },
+    {
+     "type": "stamp",
+     "text": "1 CHIP SHORT",
+     "x": 660,
+     "y": 1150,
+     "size": 80,
+     "rot": -8,
+     "at": {
+      "b": 4,
+      "w": 3
+     }
+    },
+    {
+     "type": "label",
+     "text": "FAIR VS PAID",
+     "y": 300,
+     "at": 3,
+     "size": 54,
+     "bg": "ink",
+     "fg": "gold",
+     "rot": -2,
+     "font": "Inter-Black"
+    }
+   ]
+  },
+  {
+   "start": 5,
+   "kind": "counter",
+   "els": [
+    {
+     "type": "bg",
+     "look": "paper"
+    },
+    {
+     "type": "counter",
+     "at": 5,
+     "value": 2.7,
+     "prefix": "",
+     "suffix": "%",
+     "decimals": 1,
+     "count_at": {
+      "b": 5,
+      "w": 8
+     },
+     "dur": 1.6,
+     "chips": true,
+     "unit": "HOUSE EDGE"
+    },
+    {
+     "type": "ground",
+     "y": 1255
+    }
+   ]
+  },
+  {
+   "start": 6,
+   "kind": "counter",
+   "els": [
+    {
+     "type": "bg",
+     "look": "paper"
+    },
+    {
+     "type": "counter",
+     "at": 6,
+     "value": 270,
+     "prefix": "-$",
+     "suffix": "",
+     "decimals": 0,
+     "count_at": {
+      "b": 6,
+      "w": 12
+     },
+     "dur": 1.8,
+     "chips": true,
+     "unit": "EXPECTED LOSS",
+     "after": "1,000 SPINS AT $10",
+     "after_at": {
+      "b": 6,
+      "d": 0.4
+     }
+    },
+    {
+     "type": "ground",
+     "y": 1255
+    }
+   ]
+  },
+  {
+   "start": 7,
+   "kind": "teach_wheel",
+   "els": [
+    {
+     "type": "bg",
+     "look": "hall"
+    },
+    {
+     "type": "ground",
+     "y": 1255
+    },
+    {
+     "type": "wheel_show",
+     "at": 7,
+     "x": 655,
+     "y": 690,
+     "r": 245,
+     "american": true,
+     "zero_at": {
+      "b": 7,
+      "w": 4
+     }
+    },
+    {
+     "type": "mascot",
+     "at": 7,
+     "x": 175,
+     "y": 805,
+     "s": 0.72,
+     "pose": "point",
+     "side": 1,
+     "rise": 140
+    },
+    {
+     "type": "label",
+     "text": "0 + 00 = 5.26% EDGE",
+     "y": 1135,
+     "at": {
+      "b": 7,
+      "w": 14
+     },
+     "size": 44,
+     "bg": "ink",
+     "fg": "gold",
+     "rot": 2,
+     "font": "Mono-Bold",
+     "delay": 0.3,
+     "x": 660
+    },
+    {
+     "type": "label",
+     "text": "AMERICAN WHEEL",
+     "y": 300,
+     "at": 7,
+     "size": 54,
+     "bg": "ink",
+     "fg": "gold",
+     "rot": -2,
+     "font": "Inter-Black"
+    }
+   ]
+  },
+  {
+   "start": 8,
+   "kind": "ending",
+   "els": [
+    {
+     "type": "bg",
+     "look": "paper",
+     "glow": 0.3,
+     "glow_y": 760
+    },
+    {
+     "type": "word",
+     "at": 8,
+     "text": "LUCK",
+     "font": "Inter-Black",
+     "size": 190,
+     "y": 560,
+     "rot": -3,
+     "strike_at": {
+      "b": 8,
+      "w": 10
+     }
+    },
+    {
+     "type": "word",
+     "at": {
+      "b": 9,
+      "w": 5
+     },
+     "text": "ZERO",
+     "size": 210,
+     "y": 900,
+     "rot": 2,
+     "card": "ink",
+     "ink": "gold",
+     "pop": "slam",
+     "glow": true
+    },
+    {
+     "type": "ground",
+     "y": 1255
+    },
+    {
+     "type": "text",
+     "at": {
+      "b": 8,
+      "d": 1.0
+     },
+     "text": "THE RIGGED GAME",
+     "y": 1720,
+     "size": 34,
+     "alpha": 0.8,
+     "footer": true
+    },
+    {
+     "type": "outro",
+     "at": [
+      "end",
+      0.35
+     ]
+    }
+   ]
+  }
+ ],
+ "cover": {
+  "kicker": "WHY THE CASINO ALWAYS WINS",
+  "big": "0",
+  "sub": "ONE GREEN POCKET"
+ },
+ "sources": [
+  {
+   "name": "Wikipedia, Roulette (pockets 0 to 36, 00 on American wheels, 35 to 1, house edge 2.70% and 5.26%)",
+   "url": "https://en.wikipedia.org/wiki/Roulette",
+   "fetched": "2026-11-19"
+  },
+  {
+   "name": "Wizard of Odds (Michael Shackleford), Roulette: house edge 1/37 = 2.70% and 1/19 = 5.26%",
+   "url": "https://wizardofodds.com/games/roulette/",
+   "fetched": "2026-11-19"
+  }
+ ],
+ "post": {
+  "slot": "evening",
+  "post_at": "2026-11-19T23:30:00+05:30",
+  "instagram_caption": "Why does the casino always win at roulette? One green pocket.\n\nA European wheel has 37 pockets, but a winning number pays only 35 to 1 instead of a fair 36 to 1. That gap is a 2.7% house edge on every bet, and the American double zero almost doubles it to 5.26%.\n\nEducation only. Not gambling advice. 18+\n\nDid you know about the zero before watching this?\n\n#theriggedgame #roulette #houseedge #casino #probability",
+  "youtube_title": "Why The Casino Always Wins At Roulette",
+  "youtube_description": "A European roulette wheel has 37 pockets but pays 35 to 1 on a single number. That missing chip is a 2.7% house edge, and the American double zero raises it to 5.26%.\n\nEducation only. Not gambling advice. 18+ AI narration.\n\nSources:\n• Wikipedia, \"Roulette\"\n• Wizard of Odds (Michael Shackleford), \"Roulette\"\n\nThe Rigged Game: how casinos really work. Instagram: @the_rigged_game\n\n#Casino #Roulette #Shorts"
+ },
+ "math": [
+  {
+   "expr": "36 + 1",
+   "expect": 37,
+   "note": "European wheel: numbers 1 to 36 plus a single zero"
+  },
+  {
+   "expr": "36 + 2",
+   "expect": 38,
+   "note": "American wheel: 1 to 36 plus 0 and 00"
+  },
+  {
+   "expr": "35",
+   "expect": 35,
+   "note": "straight-up payout 35 to 1 (Wikipedia, Wizard of Odds)"
+  },
+  {
+   "expr": "37 - 1",
+   "expect": 36,
+   "note": "fair payout on 37 pockets is 36 to 1"
+  },
+  {
+   "expr": "36 - 35",
+   "expect": 1,
+   "note": "one chip short on every win"
+  },
+  {
+   "expr": "round(100 / 37, 1)",
+   "expect": 2.7,
+   "note": "single-zero house edge, percent"
+  },
+  {
+   "expr": "round(100 * 2 / 38, 2)",
+   "expect": 5.26,
+   "note": "double-zero house edge, percent"
+  },
+  {
+   "expr": "round(10 * 1000 / 37)",
+   "expect": 270,
+   "note": "expected loss: $10 x 1,000 spins x 1/37"
+  },
+  {
+   "expr": "round((2 / 38) / (1 / 37), 2)",
+   "expect": 1.95,
+   "note": "5.26% vs 2.70%: almost double"
+  },
+  {
+   "expr": "1000",
+   "expect": 1000,
+   "note": "1,000 spins"
+  },
+  {
+   "expr": "10",
+   "expect": 10,
+   "note": "$10 per spin"
+  },
+  {
+   "expr": "1",
+   "expect": 1,
+   "note": "1 to 36 starts at 1"
+  },
+  {
+   "expr": "0",
+   "expect": 0,
+   "note": "the zero pocket"
+  },
+  {
+   "expr": "00",
+   "expect": 0,
+   "note": "double zero pocket label"
+  }
+ ]
+}

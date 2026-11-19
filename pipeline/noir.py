@@ -95,7 +95,11 @@ def wedge_path(cx, cy, r0, r1, a0, a1):
     p.arcTo(skia.Rect(cx - r0, cy - r0, cx + r0, cy + r0), a1, a0 - a1, False)
     p.close(); return p
 
-def wheel(cv, cx, cy, R, rot, highlight=None, hl_amt=0.0, dividers=1.0, flash=0.0):
+ORDER_US = [0, 28, 9, 26, 30, 11, 7, 20, 32, 17, 5, 22, 34, 15, 3, 24, 36, 13, 1, '00', 27, 10, 25, 29, 12, 8, 19, 31,
+            18, 6, 21, 33, 16, 4, 23, 35, 14, 2]
+RED_NUMS = {1, 3, 5, 7, 9, 12, 14, 16, 18, 19, 21, 23, 25, 27, 30, 32, 34, 36}
+
+def wheel(cv, cx, cy, R, rot, highlight=None, hl_amt=0.0, dividers=1.0, flash=0.0, american=False, hl_color='#e2b84a'):
     s = R / 300.0
     cv.drawCircle(cx, cy + 14 * s, R * 1.08, paint('#000000', 0.5, blur=20 * s))
     rim = skia.Paint(AntiAlias=True)
@@ -103,13 +107,14 @@ def wheel(cv, cx, cy, R, rot, highlight=None, hl_amt=0.0, dividers=1.0, flash=0.
     cv.drawCircle(cx, cy, R * 1.08, rim)
     cv.drawCircle(cx, cy, R * 1.08, paint('#e2b84a', 0.8, 'stroke', 4 * s))
     cv.drawCircle(cx, cy, R * 0.98, paint('#120a04'))
-    step = 360 / 37
-    for i, num in enumerate(ORDER):
+    order = ORDER_US if american else ORDER
+    step = 360 / len(order)
+    for i, num in enumerate(order):
         a0 = rot + i * step - 90 - step / 2
-        c = FELT if num == 0 else (RED if i % 2 == 1 else BLACK)
+        c = FELT if num in (0, '00') else (RED if num in RED_NUMS else BLACK)
         cv.drawPath(wedge_path(cx, cy, R * 0.62, R * 0.95, a0, a0 + step), paint(c))
         if highlight and num in highlight and hl_amt > 0:
-            cv.drawPath(wedge_path(cx, cy, R * 0.62, R * 0.95, a0, a0 + step), paint('#e2b84a', 0.85 * hl_amt))
+            cv.drawPath(wedge_path(cx, cy, R * 0.62, R * 0.95, a0, a0 + step), paint(hl_color, 0.85 * hl_amt))
         am = math.radians(a0 + step / 2)
         cv.save(); cv.translate(cx + math.cos(am) * R * 0.85, cy + math.sin(am) * R * 0.85); cv.rotate(a0 + step / 2 + 90)
         f = skia.Font(TF['Inter-Bold'], 22 * s); lab = str(num)
@@ -240,9 +245,35 @@ def stamp_at(cv, text, x, y, lt, size=130, color=RUST, rot=-10, bg=PAPER):
     cv.drawRoundRect(skia.Rect(-w / 2 - 22, -size * 0.8, w / 2 + 22, size * 0.21), 10, 10, paint(color, a, 'stroke', 8))
     text_c(cv, text, 0, 0, f, paint(color, a)); cv.restore()
 
-def mascot_draw(cv, x, y, s, a=1.0, color=SHADOW, sh=0.5):
+POSES = {'point': -14, 'present': 22, 'chip': -58}   # arm angle in degrees: 0 = straight out, + = down
+
+def arm_geom(x, y, s, pose, side, raise_amt, lt):
+    """shoulder, hand and direction of Ace's teaching arm"""
+    th = 78 + (POSES[pose] - 78) * raise_amt
+    if pose in ('point', 'present'): th += 4 * math.sin(lt * 3.2) * raise_amt   # talking gesture
+    ang = th if side > 0 else 180 - th
+    sx, sy = x + side * 82 * s, y + 172 * s
+    L = 215 * s; r = math.radians(ang)
+    return sx, sy, ang, sx + math.cos(r) * L, sy + math.sin(r) * L
+
+def arm_path(x, y, s, pose, side, raise_amt, lt):
+    sx, sy, ang, hx, hy = arm_geom(x, y, s, pose, side, raise_amt, lt)
+    w = 42 * s; L = 215 * s
+    p = skia.Path(); p.addRRect(skia.RRect.MakeRectXY(skia.Rect(-w / 2, -w / 2, L, w / 2), w / 2, w / 2))
+    p.addCircle(L, 0, 27 * s)
+    if pose == 'point': p.addRRect(skia.RRect.MakeRectXY(skia.Rect(L, -8 * s, L + 52 * s, 8 * s), 8 * s, 8 * s))
+    if pose == 'present': p.addOval(skia.Rect(L - 4 * s, -34 * s, L + 34 * s, 10 * s))
+    m = skia.Matrix(); m.setTranslate(sx, sy); m.preRotate(ang); p.transform(m)
+    return p
+
+def mascot_draw(cv, x, y, s, a=1.0, color=SHADOW, sh=0.5, pose=None, side=1, raise_amt=1.0, lt=0.0):
     if a < 1: cv.saveLayerAlpha(None, int(255 * clamp(a)))
-    cut(cv, man_path(x, y, s), color, 12 * s / 0.8, 16 * s / 0.8, sh)
+    body = man_path(x, y, s)
+    if pose: body.addPath(arm_path(x, y, s, pose, side, raise_amt, lt))
+    cut(cv, body, color, 12 * s / 0.8, 16 * s / 0.8, sh)
+    if pose == 'chip' and raise_amt > 0.3:
+        _, _, _, hx, hy = arm_geom(x, y, s, pose, side, raise_amt, lt)
+        chip_face(cv, hx + side * 6 * s, hy - 38 * s, 40 * s, RUST, rot=6 * math.sin(lt * 2))
     if a < 1: cv.restore()
 
 def chip_stack(cv, x, base, n, color, w=130):
@@ -379,7 +410,11 @@ def d_mascot(cv, e, lt, R):
     y = e.get('y', 820)
     if e.get('rise'): y += e['rise'] * (1 - ease_out(lt / e.get('rise_dur', 0.8)))
     a = ease_out(lt / e['fade']) if e.get('fade') else 1.0
-    mascot_draw(cv, x, y, e.get('s', 0.78), a, col(e.get('color', SHADOW)), e.get('sh', 0.5))
+    pose = e.get('pose'); ra = 1.0
+    if pose and not e.get('pose_now'):
+        rp = R('pose') if '_pose_at' in e else lt - e.get('pose_delay', 0.35)
+        ra = back_out(clamp(rp / 0.55), 1.4)
+    mascot_draw(cv, x, y, e.get('s', 0.78), a, col(e.get('color', SHADOW)), e.get('sh', 0.5), pose, e.get('side', 1), ra, lt)
 
 @drawer('label')
 def d_label(cv, e, lt, R):
@@ -460,6 +495,28 @@ def d_table_wheel(cv, e, lt, R):
     wheel(cv, W / 2, 700, 270, rot=lt * 70)
     ba = math.radians(-lt * 260)
     cv.drawCircle(W / 2 + math.cos(ba) * 262, 700 + math.sin(ba) * 262, 12, paint('#ffffff'))
+    cv.restore()
+
+@drawer('wheel_show')
+def d_wheel_show(cv, e, lt, R):
+    """explainer wheel: slow spin, green pockets glow from zero_at, a ball can drop into zero at ball_at"""
+    cx, cy, Rr = e.get('x', 640), e.get('y', 700), e.get('r', 255)
+    am = e.get('american', False)
+    s0 = 1.0 if e.get('now') else ease_out(lt / 0.5); sc = 1.0 if e.get('now') else 0.85 + 0.15 * back_out(clamp(lt / 0.5))
+    rot = e.get('rot0', 262) + lt * e.get('speed', 5)   # zero starts facing Ace's finger
+    hl = 0.0
+    if '_zero_at' in e:
+        rz = R('zero'); hl = ease_out(rz / 0.5) * (0.75 + 0.25 * math.sin(max(rz, 0) * 5)) if rz > 0 else 0
+    cv.save(); cv.translate(cx, cy); cv.scale(sc, sc); cv.translate(-cx, -cy)
+    if hl > 0: glow(cv, cx, cy, Rr * 1.7, '#3fd17a', 0.35 * hl)
+    if s0 < 1: cv.saveLayerAlpha(None, int(255 * s0))
+    wheel(cv, cx, cy, Rr, rot, highlight={0, '00'}, hl_amt=hl, american=am, hl_color='#9dffc4')
+    if '_ball_at' in e and R('ball') > 0:
+        u = clamp(R('ball') / 2.6)
+        ang = math.radians(rot - 90 - 1000 * (1 - ease_out(u)))
+        rr = Rr * (1.0 - 0.22 * ease_in_out((u - 0.55) / 0.45))
+        cv.drawCircle(cx + math.cos(ang) * rr, cy + math.sin(ang) * rr, 13 * Rr / 300, paint('#ffffff'))
+    if s0 < 1: cv.restore()
     cv.restore()
 
 @drawer('nobet_eye')
@@ -1088,7 +1145,7 @@ def draw_els(cv, els, t, scene_start):
             v = e.get('_' + name + '_at')
             return t - v if v is not None else -100.0
         if e['type'] in ('bg', 'ground'): lt = t - scene_start
-        if e['type'] == 'mascot' and e['_t0'] < -50: lt = t - scene_start   # hook gambler walks in from frame 0
+        if e['type'] in ('mascot', 'wheel_show') and e['_t0'] < -50: lt = t - scene_start   # hook animates from frame 0
         DRAW[e['type']](cv, e, max(lt, 0) if e['type'] not in ('bg',) else lt, R)
         if e.get('_until') is not None and t > e['_until']: cv.restore()
 

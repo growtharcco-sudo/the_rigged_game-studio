@@ -5,7 +5,7 @@ Mark a line `[used <id>]` when it becomes a Reel.
 
 - [used 001_casino_tricks] 5 tricks casinos use to keep you playing (no clocks, maze floor, chips, free drinks, losses disguised as wins).
 - [used 000] Joseph Jagger: the engineer who beat Monte Carlo by finding a biased wheel (1873).
-- Roulette explained: why the single green zero is the casino's whole profit (house edge 1/37).
+- [used 002_roulette_zero] Roulette explained: why the single green zero is the casino's whole profit (house edge 1/37).
 - American vs European roulette: what one extra green pocket does to your odds.
 - The gambler's fallacy: Monte Carlo, 1913, black came up 26 times in a row.
 - Why every slot machine has a payback percentage, and who sets it.

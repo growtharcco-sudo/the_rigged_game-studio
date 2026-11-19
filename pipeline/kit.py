@@ -35,7 +35,9 @@ Scene kinds (all in the noir paper-cutout style; legacy/ has the episodes they c
   patched    header, stamp ("PATCHED"), fix_at, stamp_at                   guards, wrench sweeps the wheel
   town       place                                                         sunset, houses rising
   book       year, boss, title=[2 lines], boss_at, open_at                 book opens, former boss behind it
-  EXPLAINERS
+  EXPLAINERS (Ace, the gambler mascot, teaches: pose "point" | "present" | "chip")
+  teach_wheel  header, note, note_at, pose, zero_at (green pockets glow), ball_at (ball lands on zero), american
+  teach_card   header, pose, items=[{text, beat, word, delay, strike_at}] (max 2 big cards), stamp, stamp_at
   countdown  n, sub                                                        big flipping number card (#5 ... #1)
   cards      items=[{text, icon, beat, word, delay}] (max 3), stamp, stamp_at   paper cards slide in. icons: clock,
                                                                            window, sunset, chip, cash, wheel, drink, dice
@@ -145,6 +147,37 @@ def block(kind, s, b, nb):
         if s.get('year'): els.append(L(s['year'], 330, A, size=64, font='Inter-Black', pop='big'))
         if s.get('boss'): els.append(dict(L(s['boss'], 470, bt, size=34, bg='ink', rot=3), x=W / 2 + 230, delay=0.2))
         els.append(G(1255))
+        return els
+    if kind in ('teach_wheel', 'teach_card'):
+        hook = b == 0
+        ace = {'type': 'mascot', 'at': A, 'x': 175, 'y': 805, 's': 0.72, 'pose': s.get('pose', 'point'), 'side': 1}
+        if hook: ace['pose_now'] = True
+        else: ace['rise'] = 140
+        els = [{'type': 'bg', 'look': 'hall'}, G(1255)]
+        if kind == 'teach_wheel':
+            w = {'type': 'wheel_show', 'at': A, 'x': 655, 'y': 690, 'r': 245, 'american': bool(s.get('american'))}
+            if 'zero_at' in s: w['zero_at'] = at(s['zero_at'])
+            if 'ball_at' in s: w['ball_at'] = at(s['ball_at'])
+            if hook: w['now'] = True
+            els += [w, ace]
+            if s.get('note'):
+                els.append(L(s['note'], 1135, at(s.get('note_at', 0)), size=44, bg='ink', fg='gold', rot=2, delay=0.3, x=660))
+        else:
+            els.append(ace)
+            ys = [620, 930] if len(s.get('items', [])) > 1 else [760]
+            for i, it in enumerate(s['items'][:2]):
+                ref = {'beat': it.get('beat', 0), 'delay': it.get('delay', 0.2 if i == 0 else 0.0),
+                       **({'word': it['word']} if 'word' in it else {})}
+                wd = {'type': 'word', 'at': at(ref), 'text': it['text'], 'font': 'Inter-Black', 'size': it.get('size', 96),
+                      'x': 660, 'y': ys[i], 'rot': -3 if i == 0 else 2, 'pop': 'back',
+                      'card': it.get('card', 'paper'), 'ink': it.get('ink', 'ink')}
+                if 'strike_at' in it: wd['strike_at'] = at(it['strike_at']); wd['tear_drop'] = 25; wd['tear_rot'] = 4
+                els.append(wd)
+            if s.get('stamp'):
+                els.append({'type': 'stamp', 'text': s['stamp'], 'x': 660, 'y': 1150, 'size': 80, 'rot': -8,
+                            'at': at(s.get('stamp_at', nb - 1))})
+        if s.get('header'):
+            els.append(L(s['header'], 300, A, size=54, bg='ink', fg='gold', font='Inter-Black', rot=-2))
         return els
     if kind == 'countdown':
         n = s['n']
