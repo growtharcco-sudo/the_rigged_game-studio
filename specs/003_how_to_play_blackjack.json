@@ -968,22 +968,22 @@
  },
  "sources": [
   {
-   "name": "Wikipedia, Blackjack (card values, bust, 3 to 2, dealer draws to 17, house edge from double busts)",
+   "name": "Wikipedia, Blackjack (card values, bust, 3 to 2, dealer draws to 17, most of the edge from the player losing when both bust)",
    "url": "https://en.wikipedia.org/wiki/Blackjack",
-   "fetched": "2026-11-19"
+   "fetched": "2026-11-20"
   },
   {
-   "name": "Wizard of Odds (Michael Shackleford), Blackjack basics",
+   "name": "Wizard of Odds (Michael Shackleford), How to Play Blackjack: Rules, Odds & Strategy",
    "url": "https://wizardofodds.com/games/blackjack/basics/",
-   "fetched": "2026-11-19"
+   "fetched": "2026-11-20"
   }
  ],
  "post": {
-  "slot": "evening",
-  "post_at": "2026-11-20T23:30:00+05:30",
+  "slot": "morning",
+  "post_at": "2026-11-21T07:30:00+05:30",
   "instagram_caption": "How blackjack works, in under a minute.\n\nGet closer to 21 than the dealer without going over. Face cards count 10, an ace is 1 or 11, and you hit or stand. The catch: you play first, so if you bust you lose even when the dealer busts too. That rule is where most of the casino's edge comes from.\n\nEducation only. Not gambling advice. 18+\n\nWhich casino game should Ace explain next?\n\n#theriggedgame #blackjack #howtoplay #casino #cardgames",
   "youtube_title": "How To Play Blackjack In Under A Minute",
-  "youtube_description": "The rules of blackjack, explained simply: card values, hit, stand, bust, blackjack and the dealer's rule. And the catch that gives the casino most of its edge: you play first, so you lose when you bust even if the dealer busts too.\n\nEducation only. Not gambling advice. 18+ AI narration.\n\nSources:\n• Wikipedia, \"Blackjack\"\n• Wizard of Odds (Michael Shackleford), \"Blackjack basics\"\n\nThe Rigged Game: how casinos really work. Instagram: @the_rigged_game\n\n#Casino #Blackjack #Shorts"
+  "youtube_description": "The rules of blackjack, explained simply: card values, hit, stand, bust, blackjack and the dealer's rule. And the catch that gives the casino most of its edge: you play first, so you lose when you bust even if the dealer busts too.\n\nEducation only. Not gambling advice. 18+ AI narration.\n\nSources:\n• Wikipedia, \"Blackjack\"\n• Wizard of Odds (Michael Shackleford), \"How to Play Blackjack: Rules, Odds & Strategy\"\n\nThe Rigged Game: how casinos really work. Instagram: @the_rigged_game\n\n#Casino #Blackjack #Shorts"
  },
  "math": [
   {
