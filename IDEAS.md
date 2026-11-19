@@ -7,12 +7,12 @@ Mark a line `[used <id>]` when it becomes a Reel.
 - [used 000] Joseph Jagger: the engineer who beat Monte Carlo by finding a biased wheel (1873).
 - [used 002_roulette_zero] Roulette explained: why the single green zero is the casino's whole profit (house edge 1/37).
 - American vs European roulette: what one extra green pocket does to your odds.
-- The gambler's fallacy: Monte Carlo, 1913, black came up 26 times in a row.
+- [used 005_monte_carlo_1913] The gambler's fallacy: Monte Carlo, 1913, black came up 26 times in a row.
 - Why every slot machine has a payback percentage, and who sets it.
 - The MIT blackjack team: card counting, and why casinos can ask counters to leave.
 - The Martingale "system" (doubling your bet): why table limits break it.
 - Why casinos use chips: the history and the psychology.
-- The house edge on popular games, compared (roulette, blackjack, baccarat, keno, slots).
+- [used 004_house_edge_ranked] The house edge on popular games, compared (roulette, blackjack, baccarat, keno, slots).
 - Near misses on slot machines: why "almost winning" feels like progress.
 - The origin of dice: the oldest known dice and what they were made of.
 - How Las Vegas went from desert railroad stop to casino city.

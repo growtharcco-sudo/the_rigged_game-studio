@@ -1,0 +1,323 @@
+{
+ "id": "004_house_edge_ranked",
+ "episode": "05",
+ "series": "Casino Secrets",
+ "keywords": [
+  "five",
+  "four",
+  "three",
+  "two",
+  "one",
+  "house",
+  "keeps",
+  "banker",
+  "craps",
+  "roulette",
+  "double",
+  "zero",
+  "tie",
+  "keno",
+  "edge",
+  "luck",
+  "biggest"
+ ],
+ "beats": [
+  {
+   "say": "Here are five casino bets, ranked by how much the house keeps.",
+   "cap": "Here are five casino bets,|ranked by how much|the house keeps.",
+   "show": {
+    "kind": "fan",
+    "n": 5,
+    "title": "5 BETS RANKED",
+    "secret": "WORST LAST",
+    "secret_at": {
+     "beat": 1,
+     "delay": 0.6
+    }
+   }
+  },
+  {
+   "say": "And number one keeps more than any other bet on this list.",
+   "cap": "And number one keeps more|than any other bet|on this list."
+  },
+  {
+   "say": "Number five is the banker bet in baccarat.",
+   "cap": "Number five is|the banker bet in baccarat.",
+   "show": {
+    "kind": "countdown",
+    "n": 5,
+    "sub": "BACCARAT BANKER",
+    "label": "BET #5"
+   }
+  },
+  {
+   "say": "On average, the house keeps one point zero six percent of every bet.",
+   "cap": "On average, the house keeps|1.06%|of every bet.",
+   "show": {
+    "kind": "teach_card",
+    "header": "BANKER BET",
+    "pose": "chip",
+    "items": [
+     {
+      "text": "1.06%",
+      "word": 5,
+      "size": 120,
+      "card": "gold"
+     }
+    ]
+   }
+  },
+  {
+   "say": "Number four is the pass line bet in craps.",
+   "cap": "Number four is|the pass line bet in craps.",
+   "show": {
+    "kind": "countdown",
+    "n": 4,
+    "sub": "CRAPS PASS LINE",
+    "label": "BET #4"
+   }
+  },
+  {
+   "say": "Here the house edge is one point four one percent.",
+   "cap": "Here the house edge is|1.41%.",
+   "show": {
+    "kind": "teach_card",
+    "header": "PASS LINE",
+    "pose": "point",
+    "items": [
+     {
+      "text": "1.41%",
+      "word": 5,
+      "size": 120,
+      "card": "gold"
+     }
+    ]
+   }
+  },
+  {
+   "say": "Number three is American roulette, with its double zero.",
+   "cap": "Number three is|American roulette,|with its double zero.",
+   "show": {
+    "kind": "countdown",
+    "n": 3,
+    "sub": "AMERICAN ROULETTE",
+    "label": "BET #3"
+   }
+  },
+  {
+   "say": "That second green pocket pushes the edge to five point two six percent.",
+   "cap": "That second green pocket|pushes the edge to|5.26%.",
+   "show": {
+    "kind": "teach_wheel",
+    "header": "DOUBLE ZERO",
+    "pose": "point",
+    "american": true,
+    "zero_at": {
+     "beat": 0,
+     "word": 2
+    },
+    "note": "5.26% EDGE",
+    "note_at": {
+     "beat": 0,
+     "word": 8
+    }
+   }
+  },
+  {
+   "say": "Number two is the tie bet, back at the baccarat table.",
+   "cap": "Number two is the tie bet,|back at the baccarat table.",
+   "show": {
+    "kind": "countdown",
+    "n": 2,
+    "sub": "BACCARAT TIE",
+    "label": "BET #2"
+   }
+  },
+  {
+   "say": "Same table as number five, but the edge jumps to fourteen point three six percent.",
+   "cap": "Same table as number five,|but the edge jumps to|14.36%.",
+   "show": {
+    "kind": "teach_card",
+    "header": "SAME TABLE",
+    "pose": "present",
+    "items": [
+     {
+      "text": "BANKER: 1.06%",
+      "size": 76
+     },
+     {
+      "text": "TIE: 14.36%",
+      "word": 10,
+      "size": 76,
+      "card": "gold"
+     }
+    ]
+   }
+  },
+  {
+   "say": "And number one, the biggest edge on this list, is keno.",
+   "cap": "And number one,|the biggest edge on this list,|is keno.",
+   "show": {
+    "kind": "countdown",
+    "n": 1,
+    "sub": "KENO",
+    "label": "BET #1"
+   }
+  },
+  {
+   "say": "Keno's house edge runs from twenty five all the way to twenty nine percent.",
+   "cap": "Keno's house edge runs|from 25 all the way|to 29%.",
+   "show": {
+    "kind": "teach_card",
+    "header": "KENO",
+    "pose": "point",
+    "items": [
+     {
+      "text": "25% TO 29%",
+      "word": 5,
+      "size": 96,
+      "card": "gold"
+     }
+    ]
+   }
+  },
+  {
+   "say": "Bet one hundred dollars on keno, and the house expects to keep twenty five or more.",
+   "cap": "Bet $100 on keno,|and the house expects|to keep $25 or more.",
+   "show": {
+    "kind": "counter",
+    "value": 25,
+    "prefix": "$",
+    "unit": "KEPT FROM $100",
+    "count_at": {
+     "beat": 0,
+     "word": 9
+    },
+    "dur": 1.2
+   }
+  },
+  {
+   "say": "On all five bets, the house is not counting on luck. It is counting on the edge.",
+   "cap": "On all five bets,|the house is not counting on luck.|It is counting on the edge.",
+   "show": {
+    "kind": "ending",
+    "wrong": "LUCK",
+    "right": "EDGE",
+    "strike_at": {
+     "beat": 0,
+     "word": 10
+    },
+    "right_at": {
+     "beat": 0,
+     "word": 16
+    }
+   }
+  }
+ ],
+ "cover": {
+  "kicker": "5 BETS RANKED BY HOUSE EDGE",
+  "big": "#1?",
+  "sub": "THE WORST ONE IS LAST"
+ },
+ "sources": [
+  {
+   "name": "Wizard of Odds (Michael Shackleford), Casino House Edge Chart by Game: baccarat banker 1.06%, tie 14.36%, pass/come 1.41%, double zero roulette 5.26%, keno 25% to 29%",
+   "url": "https://wizardofodds.com/gambling/house-edge/",
+   "fetched": "2026-11-20"
+  },
+  {
+   "name": "Wikipedia, Casino game (house edge defined as casino profit as a percent of the bet; double zero roulette 5.26%; keno up to 25%)",
+   "url": "https://en.wikipedia.org/wiki/Casino_game",
+   "fetched": "2026-11-20"
+  }
+ ],
+ "math": [
+  {
+   "expr": "5",
+   "expect": 5,
+   "note": "five bets in the countdown"
+  },
+  {
+   "expr": "1.06",
+   "expect": 1.06,
+   "note": "baccarat banker house edge (Wizard of Odds chart)"
+  },
+  {
+   "expr": "1.41",
+   "expect": 1.41,
+   "note": "craps pass/come house edge (Wizard of Odds chart)"
+  },
+  {
+   "expr": "round(100 * 2 / 38, 2)",
+   "expect": 5.26,
+   "note": "double zero roulette house edge: 2 green pockets of 38"
+  },
+  {
+   "expr": "14.36",
+   "expect": 14.36,
+   "note": "baccarat tie house edge (Wizard of Odds chart)"
+  },
+  {
+   "expr": "25",
+   "expect": 25,
+   "note": "keno house edge low end (Wizard of Odds chart 25% to 29%)"
+  },
+  {
+   "expr": "29",
+   "expect": 29,
+   "note": "keno house edge high end (Wizard of Odds chart)"
+  },
+  {
+   "expr": "100",
+   "expect": 100,
+   "note": "example stake $100"
+  },
+  {
+   "expr": "100 * 25 / 100",
+   "expect": 25,
+   "note": "$100 at a 25% edge: house expects to keep $25"
+  },
+  {
+   "expr": "1.06 < 1.41 < 5.26 < 14.36 < 25",
+   "expect": true,
+   "note": "ranking order, smallest edge first"
+  },
+  {
+   "expr": "1",
+   "expect": 1,
+   "note": "bet #1"
+  },
+  {
+   "expr": "2",
+   "expect": 2,
+   "note": "bet #2"
+  },
+  {
+   "expr": "3",
+   "expect": 3,
+   "note": "bet #3"
+  },
+  {
+   "expr": "4",
+   "expect": 4,
+   "note": "bet #4"
+  },
+  {
+   "expr": "round(14.36 / 1.06, 1)",
+   "expect": 13.5,
+   "note": "tie edge is more than 13 times the banker edge"
+  },
+  {
+   "expr": "13",
+   "expect": 13,
+   "note": "more than 13 times"
+  }
+ ],
+ "post": {
+  "slot": "evening",
+  "post_at": "2026-11-20T23:30:00+05:30",
+  "instagram_caption": "5 casino bets, ranked by how much the house keeps. Number 1 is the worst.\n\nBaccarat banker 1.06%, craps pass line 1.41%, American roulette 5.26%, baccarat tie 14.36%, and keno at 25% to 29%. Every one of them leaves the house ahead on average.\n\nEducation only. Not gambling advice. 18+\n\nWhich of these numbers surprised you the most?\n\n#theriggedgame #houseedge #casino #keno #probability",
+  "youtube_title": "5 Casino Bets Ranked By House Edge",
+  "youtube_description": "Five casino bets ranked by house edge, from baccarat's banker bet at 1.06% to keno at 25% to 29%. The tie bet sits at the same table as the banker bet but takes more than 13 times as much.\n\nEducation only. Not gambling advice. 18+ AI narration.\n\nSources:\n• Wizard of Odds (Michael Shackleford), \"Casino House Edge Chart by Game\"\n• Wikipedia, \"Casino game\"\n\nThe Rigged Game: how casinos really work. Instagram: @the_rigged_game\n\n#Casino #HouseEdge #Shorts"
+ }
+}

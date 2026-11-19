@@ -1,0 +1,843 @@
+{
+ "id": "004_house_edge_ranked",
+ "episode": "05",
+ "series": "Casino Secrets",
+ "voice": "am_liam",
+ "speed": 1.0,
+ "hold": 2.6,
+ "caption_keywords": [
+  "five",
+  "four",
+  "three",
+  "two",
+  "one",
+  "house",
+  "keeps",
+  "banker",
+  "craps",
+  "roulette",
+  "double",
+  "zero",
+  "tie",
+  "keno",
+  "edge",
+  "luck",
+  "biggest"
+ ],
+ "phrases": [
+  {
+   "say": "Here are five casino bets, ranked by how much the house keeps.",
+   "cap": "Here are five casino bets,|ranked by how much|the house keeps.",
+   "pause": 0.45
+  },
+  {
+   "say": "And number one keeps more than any other bet on this list.",
+   "cap": "And number one keeps more|than any other bet|on this list.",
+   "pause": 0.45
+  },
+  {
+   "say": "Number five is the banker bet in baccarat.",
+   "cap": "Number five is|the banker bet in baccarat.",
+   "pause": 0.45
+  },
+  {
+   "say": "On average, the house keeps one point zero six percent of every bet.",
+   "cap": "On average, the house keeps|1.06%|of every bet.",
+   "pause": 0.45
+  },
+  {
+   "say": "Number four is the pass line bet in craps.",
+   "cap": "Number four is|the pass line bet in craps.",
+   "pause": 0.45
+  },
+  {
+   "say": "Here the house edge is one point four one percent.",
+   "cap": "Here the house edge is|1.41%.",
+   "pause": 0.45
+  },
+  {
+   "say": "Number three is American roulette, with its double zero.",
+   "cap": "Number three is|American roulette,|with its double zero.",
+   "pause": 0.45
+  },
+  {
+   "say": "That second green pocket pushes the edge to five point two six percent.",
+   "cap": "That second green pocket|pushes the edge to|5.26%.",
+   "pause": 0.45
+  },
+  {
+   "say": "Number two is the tie bet, back at the baccarat table.",
+   "cap": "Number two is the tie bet,|back at the baccarat table.",
+   "pause": 0.45
+  },
+  {
+   "say": "Same table as number five, but the edge jumps to fourteen point three six percent.",
+   "cap": "Same table as number five,|but the edge jumps to|14.36%.",
+   "pause": 0.45
+  },
+  {
+   "say": "And number one, the biggest edge on this list, is keno.",
+   "cap": "And number one,|the biggest edge on this list,|is keno.",
+   "pause": 0.45
+  },
+  {
+   "say": "Keno's house edge runs from twenty five all the way to twenty nine percent.",
+   "cap": "Keno's house edge runs|from 25 all the way|to 29%.",
+   "pause": 0.45
+  },
+  {
+   "say": "Bet one hundred dollars on keno, and the house expects to keep twenty five or more.",
+   "cap": "Bet $100 on keno,|and the house expects|to keep $25 or more.",
+   "pause": 0.45
+  },
+  {
+   "say": "On all five bets, the house is not counting on luck. It is counting on the edge.",
+   "cap": "On all five bets,|the house is not counting on luck.|It is counting on the edge.",
+   "pause": 0.45
+  }
+ ],
+ "scenes": [
+  {
+   "start": 0,
+   "kind": "fan",
+   "els": [
+    {
+     "type": "bg",
+     "look": "hall"
+    },
+    {
+     "type": "ground",
+     "y": 1250
+    },
+    {
+     "type": "mascot",
+     "at": -1,
+     "x": 190,
+     "y": 830,
+     "s": 0.78
+    },
+    {
+     "type": "fan",
+     "at": -1,
+     "n": 5
+    },
+    {
+     "type": "label",
+     "text": "5 BETS RANKED",
+     "y": 300,
+     "at": -1,
+     "size": 66,
+     "bg": "ink",
+     "fg": "gold",
+     "rot": -3,
+     "font": "Inter-Black"
+    },
+    {
+     "type": "stamp",
+     "text": "WORST LAST",
+     "x": 690.0,
+     "y": 520,
+     "size": 84,
+     "rot": -12,
+     "at": {
+      "b": 1,
+      "d": 0.6
+     }
+    }
+   ]
+  },
+  {
+   "start": 2,
+   "kind": "countdown",
+   "els": [
+    {
+     "type": "bg",
+     "look": "dark",
+     "rays": true
+    },
+    {
+     "type": "numcard",
+     "at": 2,
+     "n": 5
+    },
+    {
+     "type": "label",
+     "text": "BACCARAT BANKER",
+     "y": 1240,
+     "at": 2,
+     "size": 54,
+     "bg": "ink",
+     "fg": "gold",
+     "rot": 2,
+     "font": "Inter-Black",
+     "delay": 0.2
+    },
+    {
+     "type": "label",
+     "text": "BET #5",
+     "y": 300,
+     "at": 2,
+     "size": 46,
+     "bg": "rust",
+     "fg": "paper",
+     "rot": -3,
+     "font": "Mono-Bold",
+     "delay": 0.2
+    }
+   ]
+  },
+  {
+   "start": 3,
+   "kind": "teach_card",
+   "els": [
+    {
+     "type": "bg",
+     "look": "hall"
+    },
+    {
+     "type": "ground",
+     "y": 1255
+    },
+    {
+     "type": "mascot",
+     "at": 3,
+     "x": 175,
+     "y": 805,
+     "s": 0.72,
+     "pose": "chip",
+     "side": 1,
+     "rise": 140
+    },
+    {
+     "type": "word",
+     "at": {
+      "b": 3,
+      "w": 5,
+      "d": 0.2
+     },
+     "text": "1.06%",
+     "font": "Inter-Black",
+     "size": 120,
+     "x": 660,
+     "y": 760,
+     "rot": -3,
+     "pop": "back",
+     "card": "gold",
+     "ink": "ink"
+    },
+    {
+     "type": "label",
+     "text": "BANKER BET",
+     "y": 300,
+     "at": 3,
+     "size": 54,
+     "bg": "ink",
+     "fg": "gold",
+     "rot": -2,
+     "font": "Inter-Black"
+    }
+   ]
+  },
+  {
+   "start": 4,
+   "kind": "countdown",
+   "els": [
+    {
+     "type": "bg",
+     "look": "dark",
+     "rays": true
+    },
+    {
+     "type": "numcard",
+     "at": 4,
+     "n": 4
+    },
+    {
+     "type": "label",
+     "text": "CRAPS PASS LINE",
+     "y": 1240,
+     "at": 4,
+     "size": 54,
+     "bg": "ink",
+     "fg": "gold",
+     "rot": 2,
+     "font": "Inter-Black",
+     "delay": 0.2
+    },
+    {
+     "type": "label",
+     "text": "BET #4",
+     "y": 300,
+     "at": 4,
+     "size": 46,
+     "bg": "rust",
+     "fg": "paper",
+     "rot": -3,
+     "font": "Mono-Bold",
+     "delay": 0.2
+    }
+   ]
+  },
+  {
+   "start": 5,
+   "kind": "teach_card",
+   "els": [
+    {
+     "type": "bg",
+     "look": "hall"
+    },
+    {
+     "type": "ground",
+     "y": 1255
+    },
+    {
+     "type": "mascot",
+     "at": 5,
+     "x": 175,
+     "y": 805,
+     "s": 0.72,
+     "pose": "point",
+     "side": 1,
+     "rise": 140
+    },
+    {
+     "type": "word",
+     "at": {
+      "b": 5,
+      "w": 5,
+      "d": 0.2
+     },
+     "text": "1.41%",
+     "font": "Inter-Black",
+     "size": 120,
+     "x": 660,
+     "y": 760,
+     "rot": -3,
+     "pop": "back",
+     "card": "gold",
+     "ink": "ink"
+    },
+    {
+     "type": "label",
+     "text": "PASS LINE",
+     "y": 300,
+     "at": 5,
+     "size": 54,
+     "bg": "ink",
+     "fg": "gold",
+     "rot": -2,
+     "font": "Inter-Black"
+    }
+   ]
+  },
+  {
+   "start": 6,
+   "kind": "countdown",
+   "els": [
+    {
+     "type": "bg",
+     "look": "dark",
+     "rays": true
+    },
+    {
+     "type": "numcard",
+     "at": 6,
+     "n": 3
+    },
+    {
+     "type": "label",
+     "text": "AMERICAN ROULETTE",
+     "y": 1240,
+     "at": 6,
+     "size": 54,
+     "bg": "ink",
+     "fg": "gold",
+     "rot": 2,
+     "font": "Inter-Black",
+     "delay": 0.2
+    },
+    {
+     "type": "label",
+     "text": "BET #3",
+     "y": 300,
+     "at": 6,
+     "size": 46,
+     "bg": "rust",
+     "fg": "paper",
+     "rot": -3,
+     "font": "Mono-Bold",
+     "delay": 0.2
+    }
+   ]
+  },
+  {
+   "start": 7,
+   "kind": "teach_wheel",
+   "els": [
+    {
+     "type": "bg",
+     "look": "hall"
+    },
+    {
+     "type": "ground",
+     "y": 1255
+    },
+    {
+     "type": "wheel_show",
+     "at": 7,
+     "x": 655,
+     "y": 690,
+     "r": 245,
+     "american": true,
+     "zero_at": {
+      "b": 7,
+      "w": 2
+     }
+    },
+    {
+     "type": "mascot",
+     "at": 7,
+     "x": 175,
+     "y": 805,
+     "s": 0.72,
+     "pose": "point",
+     "side": 1,
+     "rise": 140
+    },
+    {
+     "type": "label",
+     "text": "5.26% EDGE",
+     "y": 1135,
+     "at": {
+      "b": 7,
+      "w": 8
+     },
+     "size": 44,
+     "bg": "ink",
+     "fg": "gold",
+     "rot": 2,
+     "font": "Mono-Bold",
+     "delay": 0.3,
+     "x": 660
+    },
+    {
+     "type": "label",
+     "text": "DOUBLE ZERO",
+     "y": 300,
+     "at": 7,
+     "size": 54,
+     "bg": "ink",
+     "fg": "gold",
+     "rot": -2,
+     "font": "Inter-Black"
+    }
+   ]
+  },
+  {
+   "start": 8,
+   "kind": "countdown",
+   "els": [
+    {
+     "type": "bg",
+     "look": "dark",
+     "rays": true
+    },
+    {
+     "type": "numcard",
+     "at": 8,
+     "n": 2
+    },
+    {
+     "type": "label",
+     "text": "BACCARAT TIE",
+     "y": 1240,
+     "at": 8,
+     "size": 54,
+     "bg": "ink",
+     "fg": "gold",
+     "rot": 2,
+     "font": "Inter-Black",
+     "delay": 0.2
+    },
+    {
+     "type": "label",
+     "text": "BET #2",
+     "y": 300,
+     "at": 8,
+     "size": 46,
+     "bg": "rust",
+     "fg": "paper",
+     "rot": -3,
+     "font": "Mono-Bold",
+     "delay": 0.2
+    }
+   ]
+  },
+  {
+   "start": 9,
+   "kind": "teach_card",
+   "els": [
+    {
+     "type": "bg",
+     "look": "hall"
+    },
+    {
+     "type": "ground",
+     "y": 1255
+    },
+    {
+     "type": "mascot",
+     "at": 9,
+     "x": 175,
+     "y": 805,
+     "s": 0.72,
+     "pose": "present",
+     "side": 1,
+     "rise": 140
+    },
+    {
+     "type": "word",
+     "at": {
+      "b": 9,
+      "d": 0.2
+     },
+     "text": "BANKER: 1.06%",
+     "font": "Inter-Black",
+     "size": 76,
+     "x": 660,
+     "y": 620,
+     "rot": -3,
+     "pop": "back",
+     "card": "paper",
+     "ink": "ink"
+    },
+    {
+     "type": "word",
+     "at": {
+      "b": 9,
+      "w": 10,
+      "d": 0.0
+     },
+     "text": "TIE: 14.36%",
+     "font": "Inter-Black",
+     "size": 76,
+     "x": 660,
+     "y": 930,
+     "rot": 2,
+     "pop": "back",
+     "card": "gold",
+     "ink": "ink"
+    },
+    {
+     "type": "label",
+     "text": "SAME TABLE",
+     "y": 300,
+     "at": 9,
+     "size": 54,
+     "bg": "ink",
+     "fg": "gold",
+     "rot": -2,
+     "font": "Inter-Black"
+    }
+   ]
+  },
+  {
+   "start": 10,
+   "kind": "countdown",
+   "els": [
+    {
+     "type": "bg",
+     "look": "dark",
+     "rays": true
+    },
+    {
+     "type": "numcard",
+     "at": 10,
+     "n": 1
+    },
+    {
+     "type": "label",
+     "text": "KENO",
+     "y": 1240,
+     "at": 10,
+     "size": 54,
+     "bg": "paper",
+     "fg": "rust",
+     "rot": 2,
+     "font": "Inter-Black",
+     "delay": 0.2
+    },
+    {
+     "type": "label",
+     "text": "BET #1",
+     "y": 300,
+     "at": 10,
+     "size": 46,
+     "bg": "rust",
+     "fg": "paper",
+     "rot": -3,
+     "font": "Mono-Bold",
+     "delay": 0.2
+    }
+   ]
+  },
+  {
+   "start": 11,
+   "kind": "teach_card",
+   "els": [
+    {
+     "type": "bg",
+     "look": "hall"
+    },
+    {
+     "type": "ground",
+     "y": 1255
+    },
+    {
+     "type": "mascot",
+     "at": 11,
+     "x": 175,
+     "y": 805,
+     "s": 0.72,
+     "pose": "point",
+     "side": 1,
+     "rise": 140
+    },
+    {
+     "type": "word",
+     "at": {
+      "b": 11,
+      "w": 5,
+      "d": 0.2
+     },
+     "text": "25% TO 29%",
+     "font": "Inter-Black",
+     "size": 96,
+     "x": 660,
+     "y": 760,
+     "rot": -3,
+     "pop": "back",
+     "card": "gold",
+     "ink": "ink"
+    },
+    {
+     "type": "label",
+     "text": "KENO",
+     "y": 300,
+     "at": 11,
+     "size": 54,
+     "bg": "ink",
+     "fg": "gold",
+     "rot": -2,
+     "font": "Inter-Black"
+    }
+   ]
+  },
+  {
+   "start": 12,
+   "kind": "counter",
+   "els": [
+    {
+     "type": "bg",
+     "look": "paper"
+    },
+    {
+     "type": "counter",
+     "at": 12,
+     "value": 25,
+     "prefix": "$",
+     "suffix": "",
+     "decimals": 0,
+     "count_at": {
+      "b": 12,
+      "w": 9
+     },
+     "dur": 1.2,
+     "chips": true,
+     "unit": "KEPT FROM $100"
+    },
+    {
+     "type": "ground",
+     "y": 1255
+    }
+   ]
+  },
+  {
+   "start": 13,
+   "kind": "ending",
+   "els": [
+    {
+     "type": "bg",
+     "look": "paper",
+     "glow": 0.3,
+     "glow_y": 760
+    },
+    {
+     "type": "word",
+     "at": 13,
+     "text": "LUCK",
+     "font": "Inter-Black",
+     "size": 190,
+     "y": 560,
+     "rot": -3,
+     "strike_at": {
+      "b": 13,
+      "w": 10
+     }
+    },
+    {
+     "type": "word",
+     "at": {
+      "b": 13,
+      "w": 16
+     },
+     "text": "EDGE",
+     "size": 210,
+     "y": 900,
+     "rot": 2,
+     "card": "ink",
+     "ink": "gold",
+     "pop": "slam",
+     "glow": true
+    },
+    {
+     "type": "ground",
+     "y": 1255
+    },
+    {
+     "type": "text",
+     "at": {
+      "b": 13,
+      "d": 1.0
+     },
+     "text": "THE RIGGED GAME",
+     "y": 1720,
+     "size": 34,
+     "alpha": 0.8,
+     "footer": true
+    },
+    {
+     "type": "outro",
+     "at": [
+      "end",
+      0.35
+     ]
+    }
+   ]
+  }
+ ],
+ "progress": [
+  2,
+  4,
+  6,
+  8,
+  10
+ ],
+ "progress_end": 13,
+ "cover": {
+  "kicker": "5 BETS RANKED BY HOUSE EDGE",
+  "big": "#1?",
+  "sub": "THE WORST ONE IS LAST"
+ },
+ "sources": [
+  {
+   "name": "Wizard of Odds (Michael Shackleford), Casino House Edge Chart by Game: baccarat banker 1.06%, tie 14.36%, pass/come 1.41%, double zero roulette 5.26%, keno 25% to 29%",
+   "url": "https://wizardofodds.com/gambling/house-edge/",
+   "fetched": "2026-11-20"
+  },
+  {
+   "name": "Wikipedia, Casino game (house edge defined as casino profit as a percent of the bet; double zero roulette 5.26%; keno up to 25%)",
+   "url": "https://en.wikipedia.org/wiki/Casino_game",
+   "fetched": "2026-11-20"
+  }
+ ],
+ "post": {
+  "slot": "evening",
+  "post_at": "2026-11-20T23:30:00+05:30",
+  "instagram_caption": "5 casino bets, ranked by how much the house keeps. Number 1 is the worst.\n\nBaccarat banker 1.06%, craps pass line 1.41%, American roulette 5.26%, baccarat tie 14.36%, and keno at 25% to 29%. Every one of them leaves the house ahead on average.\n\nEducation only. Not gambling advice. 18+\n\nWhich of these numbers surprised you the most?\n\n#theriggedgame #houseedge #casino #keno #probability",
+  "youtube_title": "5 Casino Bets Ranked By House Edge",
+  "youtube_description": "Five casino bets ranked by house edge, from baccarat's banker bet at 1.06% to keno at 25% to 29%. The tie bet sits at the same table as the banker bet but takes more than 13 times as much.\n\nEducation only. Not gambling advice. 18+ AI narration.\n\nSources:\n• Wizard of Odds (Michael Shackleford), \"Casino House Edge Chart by Game\"\n• Wikipedia, \"Casino game\"\n\nThe Rigged Game: how casinos really work. Instagram: @the_rigged_game\n\n#Casino #HouseEdge #Shorts"
+ },
+ "math": [
+  {
+   "expr": "5",
+   "expect": 5,
+   "note": "five bets in the countdown"
+  },
+  {
+   "expr": "1.06",
+   "expect": 1.06,
+   "note": "baccarat banker house edge (Wizard of Odds chart)"
+  },
+  {
+   "expr": "1.41",
+   "expect": 1.41,
+   "note": "craps pass/come house edge (Wizard of Odds chart)"
+  },
+  {
+   "expr": "round(100 * 2 / 38, 2)",
+   "expect": 5.26,
+   "note": "double zero roulette house edge: 2 green pockets of 38"
+  },
+  {
+   "expr": "14.36",
+   "expect": 14.36,
+   "note": "baccarat tie house edge (Wizard of Odds chart)"
+  },
+  {
+   "expr": "25",
+   "expect": 25,
+   "note": "keno house edge low end (Wizard of Odds chart 25% to 29%)"
+  },
+  {
+   "expr": "29",
+   "expect": 29,
+   "note": "keno house edge high end (Wizard of Odds chart)"
+  },
+  {
+   "expr": "100",
+   "expect": 100,
+   "note": "example stake $100"
+  },
+  {
+   "expr": "100 * 25 / 100",
+   "expect": 25,
+   "note": "$100 at a 25% edge: house expects to keep $25"
+  },
+  {
+   "expr": "1.06 < 1.41 < 5.26 < 14.36 < 25",
+   "expect": true,
+   "note": "ranking order, smallest edge first"
+  },
+  {
+   "expr": "1",
+   "expect": 1,
+   "note": "bet #1"
+  },
+  {
+   "expr": "2",
+   "expect": 2,
+   "note": "bet #2"
+  },
+  {
+   "expr": "3",
+   "expect": 3,
+   "note": "bet #3"
+  },
+  {
+   "expr": "4",
+   "expect": 4,
+   "note": "bet #4"
+  },
+  {
+   "expr": "round(14.36 / 1.06, 1)",
+   "expect": 13.5,
+   "note": "tie edge is more than 13 times the banker edge"
+  },
+  {
+   "expr": "13",
+   "expect": 13,
+   "note": "more than 13 times"
+  }
+ ]
+}
