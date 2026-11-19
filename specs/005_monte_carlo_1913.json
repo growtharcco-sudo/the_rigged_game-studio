@@ -1,0 +1,491 @@
+{
+ "id": "005_monte_carlo_1913",
+ "episode": "06",
+ "series": "Casino History",
+ "voice": "am_liam",
+ "speed": 1.0,
+ "hold": 2.6,
+ "caption_keywords": [
+  "1913",
+  "black",
+  "red",
+  "impossible",
+  "streak",
+  "sure",
+  "millions",
+  "francs",
+  "fallacy",
+  "memory",
+  "due",
+  "chance",
+  "never"
+ ],
+ "phrases": [
+  {
+   "say": "In nineteen thirteen, a roulette wheel in Monte Carlo did something almost impossible.",
+   "cap": "In 1913,|a roulette wheel in Monte Carlo|did something|almost impossible.",
+   "pause": 0.45
+  },
+  {
+   "say": "The ball landed on black, then on black again, and again.",
+   "cap": "The ball landed on black,|then on black again,|and again.",
+   "pause": 0.45
+  },
+  {
+   "say": "Ten blacks in a row, then fifteen, and still the streak went on.",
+   "cap": "Ten blacks in a row,|then fifteen,|and still the streak went on.",
+   "pause": 0.45
+  },
+  {
+   "say": "The gamblers were sure a long run of red had to come next.",
+   "cap": "The gamblers were sure|a long run of red|had to come next.",
+   "pause": 0.45
+  },
+  {
+   "say": "So they bet more and more of their money against black.",
+   "cap": "So they bet more and more|of their money|against black.",
+   "pause": 0.45
+  },
+  {
+   "say": "But black came up twenty six times in a row.",
+   "cap": "But black came up|26 times in a row.",
+   "pause": 0.45
+  },
+  {
+   "say": "Gamblers lost millions of francs betting against that streak.",
+   "cap": "Gamblers lost|millions of francs|betting against that streak.",
+   "pause": 0.45
+  },
+  {
+   "say": "Their mistake now has a famous name: the gambler's fallacy.",
+   "cap": "Their mistake now has|a famous name:|the gambler's fallacy.",
+   "pause": 0.45
+  },
+  {
+   "say": "It is the belief that past results change what happens next.",
+   "cap": "It is the belief|that past results|change what happens next.",
+   "pause": 0.45
+  },
+  {
+   "say": "But a roulette wheel has no memory of the last spin.",
+   "cap": "But a roulette wheel|has no memory|of the last spin.",
+   "pause": 0.45
+  },
+  {
+   "say": "Red was never due. Every single spin is pure chance.",
+   "cap": "Red was never due.|Every single spin|is pure chance.",
+   "pause": 0.45
+  }
+ ],
+ "scenes": [
+  {
+   "start": 0,
+   "kind": "title",
+   "els": [
+    {
+     "type": "bg",
+     "look": "night"
+    },
+    {
+     "type": "mascot",
+     "at": -1,
+     "x": 300,
+     "y": 830,
+     "s": 0.82,
+     "drift": -60,
+     "walk": 90,
+     "walk_dur": 2.5
+    },
+    {
+     "type": "word",
+     "at": -1,
+     "text": "1913",
+     "y": 400,
+     "size": 190,
+     "rot": -3,
+     "pop": "back"
+    },
+    {
+     "type": "label",
+     "text": "MONTE CARLO",
+     "y": 520,
+     "at": -1,
+     "size": 40,
+     "bg": "rust",
+     "fg": "paper",
+     "rot": -3,
+     "font": "Mono-Bold"
+    }
+   ]
+  },
+  {
+   "start": 1,
+   "kind": "notebook",
+   "els": [
+    {
+     "type": "bg",
+     "look": "candle"
+    },
+    {
+     "type": "tally",
+     "at": 1,
+     "days": 26,
+     "unit": "BLACK",
+     "dur": 4.8
+    },
+    {
+     "type": "ground",
+     "y": 1255
+    }
+   ]
+  },
+  {
+   "start": 3,
+   "kind": "teach_card",
+   "els": [
+    {
+     "type": "bg",
+     "look": "hall"
+    },
+    {
+     "type": "ground",
+     "y": 1255
+    },
+    {
+     "type": "mascot",
+     "at": 3,
+     "x": 175,
+     "y": 805,
+     "s": 0.72,
+     "pose": "point",
+     "side": 1,
+     "rise": 140
+    },
+    {
+     "type": "word",
+     "at": {
+      "b": 3,
+      "w": 7,
+      "d": 0.2
+     },
+     "text": "RED IS DUE",
+     "font": "Inter-Black",
+     "size": 96,
+     "x": 660,
+     "y": 760,
+     "rot": -3,
+     "pop": "back",
+     "card": "gold",
+     "ink": "ink"
+    },
+    {
+     "type": "label",
+     "text": "THE CROWD'S LOGIC",
+     "y": 300,
+     "at": 3,
+     "size": 54,
+     "bg": "ink",
+     "fg": "gold",
+     "rot": -2,
+     "font": "Inter-Black"
+    }
+   ]
+  },
+  {
+   "start": 5,
+   "kind": "counter",
+   "els": [
+    {
+     "type": "bg",
+     "look": "paper"
+    },
+    {
+     "type": "counter",
+     "at": 5,
+     "value": 26,
+     "prefix": "",
+     "suffix": "",
+     "decimals": 0,
+     "count_at": {
+      "b": 5,
+      "w": 4
+     },
+     "dur": 1.6,
+     "chips": false,
+     "unit": "BLACKS IN A ROW"
+    },
+    {
+     "type": "ground",
+     "y": 1255
+    }
+   ]
+  },
+  {
+   "start": 6,
+   "kind": "chart",
+   "els": [
+    {
+     "type": "bg",
+     "look": "blueprint",
+     "rot": -1.2
+    },
+    {
+     "type": "chart",
+     "at": 6,
+     "title": "THE CROWD'S MONEY"
+    },
+    {
+     "type": "ground",
+     "y": 1262
+    }
+   ]
+  },
+  {
+   "start": 7,
+   "kind": "teach_card",
+   "els": [
+    {
+     "type": "bg",
+     "look": "hall"
+    },
+    {
+     "type": "ground",
+     "y": 1255
+    },
+    {
+     "type": "mascot",
+     "at": 7,
+     "x": 175,
+     "y": 805,
+     "s": 0.72,
+     "pose": "present",
+     "side": 1,
+     "rise": 140
+    },
+    {
+     "type": "word",
+     "at": {
+      "b": 7,
+      "w": 7,
+      "d": 0.2
+     },
+     "text": "GAMBLER'S",
+     "font": "Inter-Black",
+     "size": 96,
+     "x": 660,
+     "y": 620,
+     "rot": -3,
+     "pop": "back",
+     "card": "paper",
+     "ink": "ink"
+    },
+    {
+     "type": "word",
+     "at": {
+      "b": 7,
+      "w": 8,
+      "d": 0.0
+     },
+     "text": "FALLACY",
+     "font": "Inter-Black",
+     "size": 96,
+     "x": 660,
+     "y": 930,
+     "rot": 2,
+     "pop": "back",
+     "card": "gold",
+     "ink": "ink"
+    },
+    {
+     "type": "label",
+     "text": "THE MISTAKE",
+     "y": 300,
+     "at": 7,
+     "size": 54,
+     "bg": "ink",
+     "fg": "gold",
+     "rot": -2,
+     "font": "Inter-Black"
+    }
+   ]
+  },
+  {
+   "start": 9,
+   "kind": "teach_wheel",
+   "els": [
+    {
+     "type": "bg",
+     "look": "hall"
+    },
+    {
+     "type": "ground",
+     "y": 1255
+    },
+    {
+     "type": "wheel_show",
+     "at": 9,
+     "x": 655,
+     "y": 690,
+     "r": 245,
+     "american": false
+    },
+    {
+     "type": "mascot",
+     "at": 9,
+     "x": 175,
+     "y": 805,
+     "s": 0.72,
+     "pose": "point",
+     "side": 1,
+     "rise": 140
+    },
+    {
+     "type": "label",
+     "text": "EVERY SPIN STARTS FRESH",
+     "y": 1135,
+     "at": {
+      "b": 9,
+      "w": 6
+     },
+     "size": 44,
+     "bg": "ink",
+     "fg": "gold",
+     "rot": 2,
+     "font": "Mono-Bold",
+     "delay": 0.3,
+     "x": 660
+    },
+    {
+     "type": "label",
+     "text": "NO MEMORY",
+     "y": 300,
+     "at": 9,
+     "size": 54,
+     "bg": "ink",
+     "fg": "gold",
+     "rot": -2,
+     "font": "Inter-Black"
+    }
+   ]
+  },
+  {
+   "start": 10,
+   "kind": "ending",
+   "els": [
+    {
+     "type": "bg",
+     "look": "paper",
+     "glow": 0.3,
+     "glow_y": 760
+    },
+    {
+     "type": "word",
+     "at": 10,
+     "text": "DUE",
+     "font": "Inter-Black",
+     "size": 190,
+     "y": 560,
+     "rot": -3,
+     "strike_at": {
+      "b": 10,
+      "w": 3
+     }
+    },
+    {
+     "type": "word",
+     "at": {
+      "b": 10,
+      "w": 9
+     },
+     "text": "CHANCE",
+     "size": 210,
+     "y": 900,
+     "rot": 2,
+     "card": "ink",
+     "ink": "gold",
+     "pop": "slam",
+     "glow": true
+    },
+    {
+     "type": "ground",
+     "y": 1255
+    },
+    {
+     "type": "text",
+     "at": {
+      "b": 10,
+      "d": 1.0
+     },
+     "text": "THE RIGGED GAME",
+     "y": 1720,
+     "size": 34,
+     "alpha": 0.8,
+     "footer": true
+    },
+    {
+     "type": "outro",
+     "at": [
+      "end",
+      0.35
+     ]
+    }
+   ]
+  }
+ ],
+ "cover": {
+  "kicker": "MONTE CARLO, 1913",
+  "big": "26",
+  "sub": "BLACKS IN A ROW"
+ },
+ "sources": [
+  {
+   "name": "Wikipedia, Monte Carlo Casino (1913: the ball fell in black 26 times in a row; gamblers lost millions of francs betting against black)",
+   "url": "https://en.wikipedia.org/wiki/Monte_Carlo_Casino",
+   "fetched": "2026-11-20"
+  },
+  {
+   "name": "Alexander M Owen, The Monte Carlo fallacy, Medical Journal of Australia 2011 (1913, 26 consecutive blacks, definition of the fallacy)",
+   "url": "https://www.mja.com.au/journal/2011/195/7/monte-carlo-fallacy",
+   "fetched": "2026-11-20"
+  },
+  {
+   "name": "IFLScience, At the Monte Carlo Casino on August 18, 1913 (26 blacks in a row, gamblers bet heavily on red)",
+   "url": "https://www.iflscience.com/at-the-monte-carlo-casino-on-august-18-1913-patrons-witnessed-a-1-in-67-million-event-and-lost-millions-in-the-process-84063",
+   "fetched": "2026-11-20"
+  }
+ ],
+ "post": {
+  "slot": "evening",
+  "post_at": "2026-11-21T23:30:00+05:30",
+  "instagram_caption": "In 1913, a roulette wheel in Monte Carlo landed on black 26 times in a row.\n\nGamblers were sure red was due and lost millions of francs betting against black. The wheel has no memory, so every spin is a fresh chance. That mistake is called the gambler's fallacy.\n\nEducation only. Not gambling advice. 18+\n\nHave you ever felt that a result was due?\n\n#theriggedgame #gamblersfallacy #roulette #history #probability",
+  "youtube_title": "The Night Black Came Up 26 Times In A Row",
+  "youtube_description": "In 1913 at the Monte Carlo Casino, the roulette ball landed on black 26 times in a row. Gamblers bet millions of francs on red being due, and lost. The story behind the gambler's fallacy.\n\nEducation only. Not gambling advice. 18+ AI narration.\n\nSources:\n• Wikipedia, \"Monte Carlo Casino\"\n• Alexander M Owen, \"The Monte Carlo fallacy\", Medical Journal of Australia (2011)\n• IFLScience, \"At the Monte Carlo Casino on August 18, 1913...\"\n\nThe Rigged Game: how casinos really work. Instagram: @the_rigged_game\n\n#Casino #GamblersFallacy #Shorts"
+ },
+ "math": [
+  {
+   "expr": "1913",
+   "expect": 1913,
+   "note": "year of the streak (Wikipedia, MJA)"
+  },
+  {
+   "expr": "26",
+   "expect": 26,
+   "note": "blacks in a row (Wikipedia, MJA, IFLScience)"
+  },
+  {
+   "expr": "10 < 15 < 26",
+   "expect": true,
+   "note": "ten and fifteen are points along the 26 streak"
+  },
+  {
+   "expr": "10",
+   "expect": 10,
+   "note": "ten blacks"
+  },
+  {
+   "expr": "15",
+   "expect": 15,
+   "note": "fifteen blacks"
+  }
+ ]
+}

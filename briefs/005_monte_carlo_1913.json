@@ -1,0 +1,202 @@
+{
+ "id": "005_monte_carlo_1913",
+ "episode": "06",
+ "series": "Casino History",
+ "keywords": [
+  "1913",
+  "black",
+  "red",
+  "impossible",
+  "streak",
+  "sure",
+  "millions",
+  "francs",
+  "fallacy",
+  "memory",
+  "due",
+  "chance",
+  "never"
+ ],
+ "beats": [
+  {
+   "say": "In nineteen thirteen, a roulette wheel in Monte Carlo did something almost impossible.",
+   "cap": "In 1913,|a roulette wheel in Monte Carlo|did something|almost impossible.",
+   "show": {
+    "kind": "title",
+    "big": "1913",
+    "tag": "MONTE CARLO"
+   }
+  },
+  {
+   "say": "The ball landed on black, then on black again, and again.",
+   "cap": "The ball landed on black,|then on black again,|and again.",
+   "show": {
+    "kind": "notebook",
+    "days": 26,
+    "unit": "BLACK",
+    "dur": 4.8
+   }
+  },
+  {
+   "say": "Ten blacks in a row, then fifteen, and still the streak went on.",
+   "cap": "Ten blacks in a row,|then fifteen,|and still the streak went on."
+  },
+  {
+   "say": "The gamblers were sure a long run of red had to come next.",
+   "cap": "The gamblers were sure|a long run of red|had to come next.",
+   "show": {
+    "kind": "teach_card",
+    "header": "THE CROWD'S LOGIC",
+    "pose": "point",
+    "items": [
+     {
+      "text": "RED IS DUE",
+      "word": 7,
+      "size": 96,
+      "card": "gold"
+     }
+    ]
+   }
+  },
+  {
+   "say": "So they bet more and more of their money against black.",
+   "cap": "So they bet more and more|of their money|against black."
+  },
+  {
+   "say": "But black came up twenty six times in a row.",
+   "cap": "But black came up|26 times in a row.",
+   "show": {
+    "kind": "counter",
+    "value": 26,
+    "unit": "BLACKS IN A ROW",
+    "count_at": {
+     "beat": 0,
+     "word": 4
+    },
+    "dur": 1.6,
+    "chips": false
+   }
+  },
+  {
+   "say": "Gamblers lost millions of francs betting against that streak.",
+   "cap": "Gamblers lost|millions of francs|betting against that streak.",
+   "show": {
+    "kind": "chart",
+    "title": "THE CROWD'S MONEY"
+   }
+  },
+  {
+   "say": "Their mistake now has a famous name: the gambler's fallacy.",
+   "cap": "Their mistake now has|a famous name:|the gambler's fallacy.",
+   "show": {
+    "kind": "teach_card",
+    "header": "THE MISTAKE",
+    "pose": "present",
+    "items": [
+     {
+      "text": "GAMBLER'S",
+      "word": 7,
+      "size": 96
+     },
+     {
+      "text": "FALLACY",
+      "word": 8,
+      "size": 96,
+      "card": "gold"
+     }
+    ]
+   }
+  },
+  {
+   "say": "It is the belief that past results change what happens next.",
+   "cap": "It is the belief|that past results|change what happens next."
+  },
+  {
+   "say": "But a roulette wheel has no memory of the last spin.",
+   "cap": "But a roulette wheel|has no memory|of the last spin.",
+   "show": {
+    "kind": "teach_wheel",
+    "header": "NO MEMORY",
+    "pose": "point",
+    "note": "EVERY SPIN STARTS FRESH",
+    "note_at": {
+     "beat": 0,
+     "word": 6
+    }
+   }
+  },
+  {
+   "say": "Red was never due. Every single spin is pure chance.",
+   "cap": "Red was never due.|Every single spin|is pure chance.",
+   "show": {
+    "kind": "ending",
+    "wrong": "DUE",
+    "right": "CHANCE",
+    "strike_at": {
+     "beat": 0,
+     "word": 3
+    },
+    "right_at": {
+     "beat": 0,
+     "word": 9
+    }
+   }
+  }
+ ],
+ "cover": {
+  "kicker": "MONTE CARLO, 1913",
+  "big": "26",
+  "sub": "BLACKS IN A ROW"
+ },
+ "sources": [
+  {
+   "name": "Wikipedia, Monte Carlo Casino (1913: the ball fell in black 26 times in a row; gamblers lost millions of francs betting against black)",
+   "url": "https://en.wikipedia.org/wiki/Monte_Carlo_Casino",
+   "fetched": "2026-11-20"
+  },
+  {
+   "name": "Alexander M Owen, The Monte Carlo fallacy, Medical Journal of Australia 2011 (1913, 26 consecutive blacks, definition of the fallacy)",
+   "url": "https://www.mja.com.au/journal/2011/195/7/monte-carlo-fallacy",
+   "fetched": "2026-11-20"
+  },
+  {
+   "name": "IFLScience, At the Monte Carlo Casino on August 18, 1913 (26 blacks in a row, gamblers bet heavily on red)",
+   "url": "https://www.iflscience.com/at-the-monte-carlo-casino-on-august-18-1913-patrons-witnessed-a-1-in-67-million-event-and-lost-millions-in-the-process-84063",
+   "fetched": "2026-11-20"
+  }
+ ],
+ "math": [
+  {
+   "expr": "1913",
+   "expect": 1913,
+   "note": "year of the streak (Wikipedia, MJA)"
+  },
+  {
+   "expr": "26",
+   "expect": 26,
+   "note": "blacks in a row (Wikipedia, MJA, IFLScience)"
+  },
+  {
+   "expr": "10 < 15 < 26",
+   "expect": true,
+   "note": "ten and fifteen are points along the 26 streak"
+  },
+  {
+   "expr": "10",
+   "expect": 10,
+   "note": "ten blacks"
+  },
+  {
+   "expr": "15",
+   "expect": 15,
+   "note": "fifteen blacks"
+  }
+ ],
+ "post": {
+  "slot": "evening",
+  "post_at": "2026-11-21T23:30:00+05:30",
+  "instagram_caption": "In 1913, a roulette wheel in Monte Carlo landed on black 26 times in a row.\n\nGamblers were sure red was due and lost millions of francs betting against black. The wheel has no memory, so every spin is a fresh chance. That mistake is called the gambler's fallacy.\n\nEducation only. Not gambling advice. 18+\n\nHave you ever felt that a result was due?\n\n#theriggedgame #gamblersfallacy #roulette #history #probability",
+  "youtube_title": "The Night Black Came Up 26 Times In A Row",
+  "youtube_description": "In 1913 at the Monte Carlo Casino, the roulette ball landed on black 26 times in a row. Gamblers bet millions of francs on red being due, and lost. The story behind the gambler's fallacy.\n\nEducation only. Not gambling advice. 18+ AI narration.\n\nSources:\n• Wikipedia, \"Monte Carlo Casino\"\n• Alexander M Owen, \"The Monte Carlo fallacy\", Medical Journal of Australia (2011)\n• IFLScience, \"At the Monte Carlo Casino on August 18, 1913...\"\n\nThe Rigged Game: how casinos really work. Instagram: @the_rigged_game\n\n#Casino #GamblersFallacy #Shorts"
+ }
+}
