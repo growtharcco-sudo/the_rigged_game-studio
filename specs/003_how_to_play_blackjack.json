@@ -140,7 +140,29 @@
      "s": 0.7,
      "pose": "point",
      "side": 1,
-     "pose_now": true
+     "pose_now": true,
+     "g0_at": {
+      "b": 0,
+      "w": 5,
+      "d": 0.0
+     },
+     "ex0_at": {
+      "b": 1,
+      "w": 1,
+      "d": 0.0
+     },
+     "ex1_at": {
+      "b": 1,
+      "w": 7,
+      "d": 0.0
+     },
+     "ex_names": [
+      "narrow",
+      "neutral"
+     ],
+     "g_names": [
+      "nod"
+     ]
     },
     {
      "type": "label",
@@ -188,7 +210,15 @@
      "s": 0.72,
      "pose": "present",
      "side": 1,
-     "rise": 140
+     "rise": 140,
+     "g0_at": {
+      "b": 2,
+      "w": 12,
+      "d": 0.0
+     },
+     "g_names": [
+      "nod"
+     ]
     },
     {
      "type": "word",
@@ -303,7 +333,15 @@
      "s": 0.7,
      "pose": "point",
      "side": 1,
-     "rise": 140
+     "rise": 140,
+     "g0_at": {
+      "b": 3,
+      "w": 8,
+      "d": 0.0
+     },
+     "g_names": [
+      "nod"
+     ]
     },
     {
      "type": "label",
@@ -374,7 +412,22 @@
      "s": 0.7,
      "pose": "chip",
      "side": 1,
-     "rise": 140
+     "rise": 140,
+     "expr0": "smirk",
+     "ex0_at": {
+      "b": 4,
+      "w": 4,
+      "d": 0.0
+     },
+     "ex1_at": {
+      "b": 4,
+      "w": 9,
+      "d": 0.0
+     },
+     "ex_names": [
+      "wide",
+      "smirk"
+     ]
     },
     {
      "type": "label",
@@ -468,7 +521,21 @@
      "s": 0.7,
      "pose": "point",
      "side": 1,
-     "rise": 140
+     "rise": 140,
+     "g0_at": {
+      "b": 5,
+      "w": 6,
+      "d": 0.0
+     },
+     "g1_at": {
+      "b": 5,
+      "w": 12,
+      "d": 0.0
+     },
+     "g_names": [
+      "nod",
+      "nod"
+     ]
     },
     {
      "type": "label",
@@ -562,7 +629,23 @@
      "s": 0.7,
      "pose": "present",
      "side": 1,
-     "rise": 140
+     "rise": 140,
+     "ex0_at": {
+      "b": 6,
+      "w": 5,
+      "d": 0.0
+     },
+     "g0_at": {
+      "b": 6,
+      "w": 8,
+      "d": 0.0
+     },
+     "ex_names": [
+      "wide"
+     ],
+     "g_names": [
+      "shake"
+     ]
     },
     {
      "type": "stamp",
@@ -645,7 +728,16 @@
      "s": 0.7,
      "pose": "chip",
      "side": 1,
-     "rise": 140
+     "rise": 140,
+     "expr0": "smirk",
+     "g0_at": {
+      "b": 7,
+      "w": 13,
+      "d": 0.0
+     },
+     "g_names": [
+      "tip"
+     ]
     },
     {
      "type": "label",
@@ -739,7 +831,23 @@
      "s": 0.7,
      "pose": "point",
      "side": 1,
-     "rise": 140
+     "rise": 140,
+     "ex0_at": {
+      "b": 8,
+      "w": 2,
+      "d": 0.0
+     },
+     "g0_at": {
+      "b": 8,
+      "w": 11,
+      "d": 0.0
+     },
+     "ex_names": [
+      "narrow"
+     ],
+     "g_names": [
+      "nod"
+     ]
     },
     {
      "type": "label",
@@ -870,7 +978,35 @@
      "s": 0.7,
      "pose": "point",
      "side": 1,
-     "rise": 140
+     "rise": 140,
+     "ex0_at": {
+      "b": 9,
+      "w": 3,
+      "d": 0.0
+     },
+     "g0_at": {
+      "b": 10,
+      "w": 3,
+      "d": 0.0
+     },
+     "ex1_at": {
+      "b": 10,
+      "w": 7,
+      "d": 0.0
+     },
+     "g1_at": {
+      "b": 10,
+      "w": 8,
+      "d": 0.0
+     },
+     "ex_names": [
+      "narrow",
+      "wide"
+     ],
+     "g_names": [
+      "shrug",
+      "shake"
+     ]
     },
     {
      "type": "stamp",

@@ -50,7 +50,26 @@
      }
     ],
     "note": "YOU VS THE DEALER",
-    "note_at": 1
+    "note_at": 1,
+    "ace": {
+     "moves": [
+      {
+       "beat": 0,
+       "word": 5,
+       "g": "nod"
+      },
+      {
+       "beat": 1,
+       "word": 1,
+       "e": "narrow"
+      },
+      {
+       "beat": 1,
+       "word": 7,
+       "e": "neutral"
+      }
+     ]
+    }
    }
   },
   {
@@ -75,7 +94,15 @@
       "size": 74,
       "card": "gold"
      }
-    ]
+    ],
+    "ace": {
+     "moves": [
+      {
+       "word": 12,
+       "g": "nod"
+      }
+     ]
+    }
    }
   },
   {
@@ -114,6 +141,14 @@
     "note_at": {
      "beat": 0,
      "word": 10
+    },
+    "ace": {
+     "moves": [
+      {
+       "word": 8,
+       "g": "nod"
+      }
+     ]
     }
    }
   },
@@ -139,6 +174,19 @@
     "note_at": {
      "beat": 0,
      "word": 4
+    },
+    "ace": {
+     "expr": "smirk",
+     "moves": [
+      {
+       "word": 4,
+       "e": "wide"
+      },
+      {
+       "word": 9,
+       "e": "smirk"
+      }
+     ]
     }
    }
   },
@@ -178,6 +226,18 @@
     "note_at": {
      "beat": 0,
      "word": 6
+    },
+    "ace": {
+     "moves": [
+      {
+       "word": 6,
+       "g": "nod"
+      },
+      {
+       "word": 12,
+       "g": "nod"
+      }
+     ]
     }
    }
   },
@@ -217,6 +277,18 @@
     "stamp_at": {
      "beat": 0,
      "word": 6
+    },
+    "ace": {
+     "moves": [
+      {
+       "word": 5,
+       "e": "wide"
+      },
+      {
+       "word": 8,
+       "g": "shake"
+      }
+     ]
     }
    }
   },
@@ -253,6 +325,15 @@
     "note_at": {
      "beat": 0,
      "word": 16
+    },
+    "ace": {
+     "expr": "smirk",
+     "moves": [
+      {
+       "word": 13,
+       "g": "tip"
+      }
+     ]
     }
    }
   },
@@ -292,6 +373,18 @@
     "note_at": {
      "beat": 0,
      "word": 11
+    },
+    "ace": {
+     "moves": [
+      {
+       "word": 2,
+       "e": "narrow"
+      },
+      {
+       "word": 11,
+       "g": "nod"
+      }
+     ]
     }
    }
   },
@@ -361,7 +454,31 @@
      "beat": 1,
      "word": 9
     },
-    "stamp_size": 78
+    "stamp_size": 78,
+    "ace": {
+     "moves": [
+      {
+       "beat": 0,
+       "word": 3,
+       "e": "narrow"
+      },
+      {
+       "beat": 1,
+       "word": 3,
+       "g": "shrug"
+      },
+      {
+       "beat": 1,
+       "word": 7,
+       "e": "wide"
+      },
+      {
+       "beat": 1,
+       "word": 8,
+       "g": "shake"
+      }
+     ]
+    }
    }
   },
   {

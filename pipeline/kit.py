@@ -37,6 +37,8 @@ Scene kinds (all in the noir paper-cutout style; legacy/ has the episodes they c
   book       year, boss, title=[2 lines], boss_at, open_at                 book opens, former boss behind it
   EXPLAINERS (Ace, the gambler mascot, teaches: pose "point" | "present" | "chip")
   teach_wheel  header, note, note_at, pose, zero_at (green pockets glow), ball_at (ball lands on zero), american
+  Every teach kind also takes "ace": {"expr": "neutral"|"wide"|"narrow"|"smirk" (start),
+               "moves": [{beat, word, delay, "e": expression} or {..., "g": "nod"|"shake"|"tip"|"shrug"}]}
   teach_cards  header, pose, rows=[{label, total, total_at, cards=[{r, s (h d s c), beat, word, delay, down, flip_at}]}]
                (max 2 rows: dealer on top, you below), note, note_at, stamp, stamp_at
   teach_card   header, pose, items=[{text, beat, word, delay, strike_at}] (max 2 big cards), stamp, stamp_at
@@ -150,6 +152,17 @@ def block(kind, s, b, nb):
         if s.get('boss'): els.append(dict(L(s['boss'], 470, bt, size=34, bg='ink', rot=3), x=W / 2 + 230, delay=0.2))
         els.append(G(1255))
         return els
+    def ace_moves(ace):
+        cfg = s.get('ace', {})
+        if cfg.get('expr'): ace['expr0'] = cfg['expr']
+        en, gn = [], []
+        for mv in cfg.get('moves', []):
+            ref = {'beat': mv.get('beat', 0), 'delay': mv.get('delay', 0.0), **({'word': mv['word']} if 'word' in mv else {})}
+            if 'e' in mv: ace[f'ex{len(en)}_at'] = at(ref); en.append(mv['e'])
+            if 'g' in mv: ace[f'g{len(gn)}_at'] = at(ref); gn.append(mv['g'])
+        if en: ace['ex_names'] = en
+        if gn: ace['g_names'] = gn
+        return ace
     if kind == 'teach_cards':
         ace = {'type': 'mascot', 'at': A, 'x': 165, 'y': 805, 's': 0.7, 'pose': s.get('pose', 'point'), 'side': 1}
         if b == 0: ace['pose_now'] = True
@@ -167,7 +180,7 @@ def block(kind, s, b, nb):
                 ce[f'c{i}_{j}_at'] = -1 if (b == 0 and cd.get('beat', 0) == 0 and 'word' not in cd and 'delay' not in cd) else at(ref)
                 if cd.get('flip_at') is not None: ce[f'f{i}_{j}_at'] = at(cd['flip_at'])
             ce['rows'].append(r)
-        els = [{'type': 'bg', 'look': 'hall'}, G(1255), ce, ace]
+        els = [{'type': 'bg', 'look': 'hall'}, G(1255), ce, ace_moves(ace)]
         if s.get('note'):
             els.append(L(s['note'], 1180, at(s.get('note_at', 0)), size=42, bg='ink', fg='gold', rot=2, delay=0.2, x=690))
         if s.get('stamp'):
@@ -187,11 +200,11 @@ def block(kind, s, b, nb):
             if 'zero_at' in s: w['zero_at'] = at(s['zero_at'])
             if 'ball_at' in s: w['ball_at'] = at(s['ball_at'])
             if hook: w['now'] = True
-            els += [w, ace]
+            els += [w, ace_moves(ace)]
             if s.get('note'):
                 els.append(L(s['note'], 1135, at(s.get('note_at', 0)), size=44, bg='ink', fg='gold', rot=2, delay=0.3, x=660))
         else:
-            els.append(ace)
+            els.append(ace_moves(ace))
             ys = [620, 930] if len(s.get('items', [])) > 1 else [760]
             for i, it in enumerate(s['items'][:2]):
                 ref = {'beat': it.get('beat', 0), 'delay': it.get('delay', 0.2 if i == 0 else 0.0),

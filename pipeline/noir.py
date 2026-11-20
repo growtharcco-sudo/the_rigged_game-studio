@@ -147,6 +147,21 @@ def gear_path(cx, cy, r, teeth, rot, depth=0.16):
     p.close(); p.addCircle(cx, cy, r * 0.35); p.setFillType(skia.PathFillType.kEvenOdd)
     return p
 
+def man_body(x, y, s):
+    p = skia.Path()
+    p.moveTo(x - 150 * s, y + 520 * s)
+    p.cubicTo(x - 160 * s, y + 250 * s, x - 120 * s, y + 140 * s, x - 60 * s, y + 120 * s)
+    p.lineTo(x + 60 * s, y + 120 * s)
+    p.cubicTo(x + 120 * s, y + 140 * s, x + 160 * s, y + 250 * s, x + 150 * s, y + 520 * s); p.close()
+    p.addRect(skia.Rect(x + 175 * s, y + 250 * s, x + 187 * s, y + 520 * s))
+    return p
+
+def man_hat(x, y, s):
+    p = skia.Path()
+    p.addRect(skia.Rect(x - 95 * s, y + 5 * s, x + 95 * s, y + 25 * s))
+    p.addRect(skia.Rect(x - 58 * s, y - 120 * s, x + 58 * s, y + 10 * s))
+    return p
+
 def man_path(x, y, s):
     """the channel's gambler: top hat, coat, cane"""
     p = skia.Path()
@@ -266,11 +281,69 @@ def arm_path(x, y, s, pose, side, raise_amt, lt):
     m = skia.Matrix(); m.setTranslate(sx, sy); m.preRotate(ang); p.transform(m)
     return p
 
-def mascot_draw(cv, x, y, s, a=1.0, color=SHADOW, sh=0.5, pose=None, side=1, raise_amt=1.0, lt=0.0):
+EYE = '#f6d77c'
+GEST_DUR = {'nod': 0.7, 'shake': 0.85, 'tip': 1.2, 'shrug': 1.3}
+
+def _bump(u, edge=0.25):
+    """0 -> 1 -> 0 over u in 0..1 with a hold in the middle"""
+    if u <= 0 or u >= 1: return 0.0
+    return ease_in_out(min(u / edge, 1.0)) * ease_in_out(min((1 - u) / edge, 1.0))
+
+def eye_shape(cv, ex, ey, s, expr, blink, look, left):
+    w = 17 * s; c = paint(EYE)
+    hmul = 1.0 - 0.92 * blink
+    if expr == 'smirk' and blink < 0.5:
+        p = skia.Path(); p.moveTo(ex - w, ey + 4 * s); p.quadTo(ex, ey - 12 * s, ex + w, ey + 4 * s)
+        cv.drawPath(p, paint(EYE, 1, 'stroke', 5.5 * s)); return
+    if expr == 'narrow':
+        cv.save(); cv.translate(ex, ey); cv.rotate(13 if left else -13)
+        cv.drawOval(skia.Rect(-w, -3.2 * s * hmul, w, 3.2 * s * hmul), c); cv.restore(); return
+    h = (14 if expr == 'wide' else 7.5) * s * hmul
+    cv.drawOval(skia.Rect(ex - w, ey - h, ex + w, ey + h), c)
+    if expr == 'wide' and blink < 0.5:
+        cv.drawCircle(ex + look * 5 * s, ey + 1 * s, 5 * s, paint(INKD))
+
+def mascot_draw(cv, x, y, s, a=1.0, color=SHADOW, sh=0.5, pose=None, side=1, raise_amt=1.0, lt=0.0,
+                expr='neutral', gest=None, talk=0.0, eyes=True, blink_phase=0.0):
+    """gest: (name, u 0..1). talk: 0..1 pulse on each spoken word."""
     if a < 1: cv.saveLayerAlpha(None, int(255 * clamp(a)))
-    body = man_path(x, y, s)
+    gname, gu = gest if gest else (None, 0.0)
+    hdx = hdy = tilt = hat_up = hat_rot = 0.0; shrug = 0.0
+    hdy -= 6 * s * talk; tilt += 2.5 * talk * (1 if side > 0 else -1)
+    if gname == 'nod': hdy += 10 * s * abs(math.sin(2 * math.pi * gu))
+    if gname == 'shake': hdx += 10 * s * math.sin(4 * math.pi * gu) * (1 - gu); tilt += 4 * math.sin(4 * math.pi * gu) * (1 - gu)
+    if gname == 'tip': b = _bump(gu, 0.3); hat_up = 42 * s * b; hat_rot = -16 * b; hdy += 6 * s * b
+    if gname == 'shrug': shrug = _bump(gu, 0.28); hdy += 10 * s * shrug; tilt += 7 * shrug
+    if shrug: raise_amt *= (1 - shrug)
+    # head group transform: pivot at the neck
+    hm = skia.Matrix(); hm.setTranslate(hdx, hdy); hm.preRotate(tilt, x, y + 120 * s)
+    body = man_body(x, y, s)
+    if shrug > 0.02:   # shoulders lift a touch
+        sm = skia.Matrix(); sm.setScale(1, 1 - 0.035 * shrug, x, y + 520 * s); body.transform(sm)
+    head = skia.Path(); head.addCircle(x, y + 60 * s, 62 * s); head.transform(hm)
+    hat = man_hat(x, y, s); tm_ = skia.Matrix(); tm_.setRotate(hat_rot, x, y + 15 * s); tm_.postTranslate(0, -hat_up); hat.transform(tm_); hat.transform(hm)
+    body.addPath(head); body.addPath(hat)
     if pose: body.addPath(arm_path(x, y, s, pose, side, raise_amt, lt))
+    if shrug > 0.02:
+        for sd in (1, -1):
+            th = 78 + (-8 - 78) * shrug; ang = th if sd > 0 else 180 - th
+            ap = skia.Path(); w = 40 * s; L = 140 * s
+            ap.addRRect(skia.RRect.MakeRectXY(skia.Rect(-w / 2, -w / 2, L, w / 2), w / 2, w / 2))
+            ap.addOval(skia.Rect(L - 14 * s, -40 * s, L + 26 * s, 6 * s)); ap.addCircle(L, -6 * s, 24 * s)
+            m = skia.Matrix(); m.setTranslate(x + sd * 82 * s, y + 172 * s); m.preRotate(ang); ap.transform(m)
+            body.addPath(ap)
+    body.setFillType(skia.PathFillType.kWinding)
     cut(cv, body, color, 12 * s / 0.8, 16 * s / 0.8, sh)
+    if eyes:
+        bt = (lt + blink_phase) % 3.6
+        blink = _bump(bt / 0.16, 0.5) if bt < 0.16 else 0.0
+        if gname == 'tip' and expr == 'neutral': expr = 'smirk'
+        look = 1 if side > 0 else -1
+        cv.save(); cv.concat(hm)
+        glow(cv, x + look * 3 * s, y + 56 * s, 60 * s, EYE, 0.10)
+        for k, ex in ((True, x - 24 * s), (False, x + 24 * s)):
+            eye_shape(cv, ex + look * 4 * s, y + 56 * s, s, expr, blink, look, k)
+        cv.restore()
     if pose == 'chip' and raise_amt > 0.3:
         _, _, _, hx, hy = arm_geom(x, y, s, pose, side, raise_amt, lt)
         chip_face(cv, hx + side * 6 * s, hy - 38 * s, 40 * s, RUST, rot=6 * math.sin(lt * 2))
@@ -414,7 +487,20 @@ def d_mascot(cv, e, lt, R):
     if pose and not e.get('pose_now'):
         rp = R('pose') if '_pose_at' in e else lt - e.get('pose_delay', 0.35)
         ra = back_out(clamp(rp / 0.55), 1.4)
-    mascot_draw(cv, x, y, e.get('s', 0.78), a, col(e.get('color', SHADOW)), e.get('sh', 0.5), pose, e.get('side', 1), ra, lt)
+    expr = e.get('expr0', 'neutral')
+    for i, nm in enumerate(e.get('ex_names', [])):
+        if R(f'ex{i}') > 0: expr = nm
+    gest = None
+    for i, nm in enumerate(e.get('g_names', [])):
+        rg = R(f'g{i}')
+        if 0 < rg < GEST_DUR[nm]: gest = (nm, rg / GEST_DUR[nm])
+    talk = 0.0
+    now = e.get('_now', 0.0)
+    if e.get('talk', True):
+        for ws, we in e.get('_talk', ()):
+            if ws <= now < ws + 0.32: talk = max(talk, math.sin(math.pi * (now - ws) / 0.32))
+    mascot_draw(cv, x, y, e.get('s', 0.78), a, col(e.get('color', SHADOW)), e.get('sh', 0.5), pose, e.get('side', 1), ra, lt,
+                expr, gest, talk, e.get('eyes', True), e.get('blink_phase', (x * 0.013) % 3.6))
 
 @drawer('label')
 def d_label(cv, e, lt, R):
@@ -1154,6 +1240,8 @@ class Timeline:
         e['_until'] = self.tm(e['until']) if 'until' in e else None
         for k, v in list(e.items()):
             if k.endswith('_at') and not k.startswith('_'): e['_' + k] = self.tm(v)
+        if e['type'] == 'mascot':
+            e['_talk'] = [(w[1], w[2]) for ws in self.words for w in ws]
         if e['type'] == 'cards':
             for i, it in enumerate(e['items']): e[f'_item{i}_at'] = self.tm(it.get('at', e.get('at', -1))) + it.get('delay', 0.0) if it.get('at', e.get('at', -1)) != -1 else -100.0
 
@@ -1207,6 +1295,7 @@ def draw_els(cv, els, t, scene_start):
             v = e.get('_' + name + '_at')
             return t - v if v is not None else -100.0
         if e['type'] in ('bg', 'ground'): lt = t - scene_start
+        e['_now'] = t
         if e['type'] in ('mascot', 'wheel_show') and e['_t0'] < -50: lt = t - scene_start   # hook animates from frame 0
         DRAW[e['type']](cv, e, max(lt, 0) if e['type'] not in ('bg',) else lt, R)
         if e.get('_until') is not None and t > e['_until']: cv.restore()
