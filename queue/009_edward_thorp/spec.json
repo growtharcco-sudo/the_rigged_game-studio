@@ -1,0 +1,600 @@
+{
+ "id": "009_edward_thorp",
+ "episode": "10",
+ "series": "Casino History",
+ "voice": "am_liam",
+ "speed": 1.0,
+ "hold": 2.6,
+ "caption_keywords": [
+  "1962",
+  "professor",
+  "Thorp",
+  "computer",
+  "beaten",
+  "weekend",
+  "bestseller",
+  "decks",
+  "shuffled",
+  "disguises",
+  "Wall",
+  "Street",
+  "edge",
+  "rules"
+ ],
+ "phrases": [
+  {
+   "say": "In nineteen sixty two, a maths professor published a book that rattled casinos.",
+   "cap": "In 1962,|a maths professor|published a book|that rattled casinos.",
+   "pause": 0.45
+  },
+  {
+   "say": "His name was Edward Thorp, and the book was called Beat the Dealer.",
+   "cap": "His name was Edward Thorp,|and the book was called|Beat the Dealer.",
+   "pause": 0.45
+  },
+  {
+   "say": "He used an IBM computer to show that blackjack could sometimes be beaten.",
+   "cap": "He used an IBM computer|to show that blackjack|could sometimes be beaten.",
+   "pause": 0.45
+  },
+  {
+   "say": "Then he tested the maths in real casinos, starting with ten thousand dollars.",
+   "cap": "Then he tested the maths|in real casinos,|starting with $10,000.",
+   "pause": 0.45
+  },
+  {
+   "say": "In a single weekend, he won eleven thousand dollars.",
+   "cap": "In a single weekend,|he won $11,000.",
+   "pause": 0.45
+  },
+  {
+   "say": "His book sold over seven hundred thousand copies and became a bestseller.",
+   "cap": "His book sold over|700,000 copies|and became a bestseller.",
+   "pause": 0.45
+  },
+  {
+   "say": "So the casinos fought back. They added more decks and shuffled far more often.",
+   "cap": "So the casinos fought back.|They added more decks|and shuffled far more often.",
+   "pause": 0.45
+  },
+  {
+   "say": "Thorp was asked to leave casinos, so he tried disguises like false beards.",
+   "cap": "Thorp was asked|to leave casinos,|so he tried disguises|like false beards.",
+   "pause": 0.45
+  },
+  {
+   "say": "Later he took his maths to Wall Street and ran a hedge fund.",
+   "cap": "Later he took his maths|to Wall Street|and ran a hedge fund.",
+   "pause": 0.45
+  },
+  {
+   "say": "When a player finds an edge, the casino just changes the rules.",
+   "cap": "When a player finds an edge,|the casino just|changes the rules.",
+   "pause": 0.45
+  }
+ ],
+ "scenes": [
+  {
+   "start": 0,
+   "kind": "title",
+   "els": [
+    {
+     "type": "bg",
+     "look": "night"
+    },
+    {
+     "type": "mascot",
+     "at": -1,
+     "x": 300,
+     "y": 830,
+     "s": 0.82,
+     "drift": -60,
+     "walk": 90,
+     "walk_dur": 2.5
+    },
+    {
+     "type": "word",
+     "at": -1,
+     "text": "1962",
+     "y": 400,
+     "size": 190,
+     "rot": -3,
+     "pop": "back"
+    },
+    {
+     "type": "label",
+     "text": "THE PROFESSOR",
+     "y": 520,
+     "at": -1,
+     "size": 40,
+     "bg": "rust",
+     "fg": "paper",
+     "rot": -3,
+     "font": "Mono-Bold"
+    }
+   ]
+  },
+  {
+   "start": 1,
+   "kind": "book",
+   "els": [
+    {
+     "type": "bg",
+     "look": "paper",
+     "glow": 0.3
+    },
+    {
+     "type": "book",
+     "at": 1,
+     "open_at": {
+      "b": 1,
+      "d": 0.5
+     },
+     "title": [
+      "BEAT THE",
+      "DEALER"
+     ]
+    },
+    {
+     "type": "label",
+     "text": "1962",
+     "y": 330,
+     "at": 1,
+     "size": 64,
+     "bg": "rust",
+     "fg": "paper",
+     "rot": -3,
+     "font": "Inter-Black",
+     "pop": "big"
+    },
+    {
+     "type": "ground",
+     "y": 1255
+    }
+   ]
+  },
+  {
+   "start": 2,
+   "kind": "teach_card",
+   "els": [
+    {
+     "type": "bg",
+     "look": "hall"
+    },
+    {
+     "type": "ground",
+     "y": 1255
+    },
+    {
+     "type": "mascot",
+     "at": 2,
+     "x": 175,
+     "y": 805,
+     "s": 0.72,
+     "pose": "point",
+     "side": 1,
+     "rise": 140
+    },
+    {
+     "type": "word",
+     "at": {
+      "b": 2,
+      "w": 3,
+      "d": 0.2
+     },
+     "text": "IBM 704",
+     "font": "Inter-Black",
+     "size": 100,
+     "x": 660,
+     "y": 620,
+     "rot": -3,
+     "pop": "back",
+     "card": "paper",
+     "ink": "ink"
+    },
+    {
+     "type": "word",
+     "at": {
+      "b": 2,
+      "w": 7,
+      "d": 0.0
+     },
+     "text": "BLACKJACK",
+     "font": "Inter-Black",
+     "size": 90,
+     "x": 660,
+     "y": 930,
+     "rot": 2,
+     "pop": "back",
+     "card": "gold",
+     "ink": "ink"
+    },
+    {
+     "type": "label",
+     "text": "THE MATHS",
+     "y": 300,
+     "at": 2,
+     "size": 54,
+     "bg": "ink",
+     "fg": "gold",
+     "rot": -2,
+     "font": "Inter-Black"
+    }
+   ]
+  },
+  {
+   "start": 3,
+   "kind": "counter",
+   "els": [
+    {
+     "type": "bg",
+     "look": "paper"
+    },
+    {
+     "type": "counter",
+     "at": 3,
+     "value": 10000,
+     "prefix": "$",
+     "suffix": "",
+     "decimals": 0,
+     "count_at": {
+      "b": 3,
+      "w": 9
+     },
+     "dur": 1.2,
+     "chips": true,
+     "unit": "TO START"
+    },
+    {
+     "type": "ground",
+     "y": 1255
+    }
+   ]
+  },
+  {
+   "start": 4,
+   "kind": "counter",
+   "els": [
+    {
+     "type": "bg",
+     "look": "paper"
+    },
+    {
+     "type": "counter",
+     "at": 4,
+     "value": 11000,
+     "prefix": "$",
+     "suffix": "",
+     "decimals": 0,
+     "count_at": {
+      "b": 4,
+      "w": 6
+     },
+     "dur": 1.2,
+     "chips": true,
+     "unit": "WON IN ONE WEEKEND"
+    },
+    {
+     "type": "ground",
+     "y": 1255
+    }
+   ]
+  },
+  {
+   "start": 5,
+   "kind": "counter",
+   "els": [
+    {
+     "type": "bg",
+     "look": "paper"
+    },
+    {
+     "type": "counter",
+     "at": 5,
+     "value": 700000,
+     "prefix": "",
+     "suffix": "+",
+     "decimals": 0,
+     "count_at": {
+      "b": 5,
+      "w": 4
+     },
+     "dur": 1.6,
+     "chips": false,
+     "unit": "COPIES SOLD"
+    },
+    {
+     "type": "ground",
+     "y": 1255
+    }
+   ]
+  },
+  {
+   "start": 6,
+   "kind": "patched",
+   "els": [
+    {
+     "type": "bg",
+     "look": "red"
+    },
+    {
+     "type": "mascot",
+     "at": 6,
+     "x": 130,
+     "y": 820,
+     "s": 0.75,
+     "rise": 200
+    },
+    {
+     "type": "mascot",
+     "at": 6,
+     "x": 950,
+     "y": 820,
+     "s": 0.75,
+     "rise": 200
+    },
+    {
+     "type": "patch",
+     "at": 6,
+     "fix_at": {
+      "b": 6,
+      "d": 1.4
+     }
+    },
+    {
+     "type": "stamp",
+     "text": "BLOCKED",
+     "y": 730,
+     "size": 150,
+     "rot": -10,
+     "at": {
+      "b": 6,
+      "w": 8
+     }
+    },
+    {
+     "type": "label",
+     "text": "THE CASINOS FIGHT BACK",
+     "y": 250,
+     "at": 6,
+     "size": 44,
+     "bg": "ink",
+     "fg": "paper",
+     "rot": -2,
+     "font": "Mono-Bold"
+    },
+    {
+     "type": "ground",
+     "y": 1255
+    }
+   ]
+  },
+  {
+   "start": 7,
+   "kind": "teach_card",
+   "els": [
+    {
+     "type": "bg",
+     "look": "hall"
+    },
+    {
+     "type": "ground",
+     "y": 1255
+    },
+    {
+     "type": "mascot",
+     "at": 7,
+     "x": 175,
+     "y": 805,
+     "s": 0.72,
+     "pose": "chip",
+     "side": 1,
+     "rise": 140
+    },
+    {
+     "type": "word",
+     "at": {
+      "b": 7,
+      "w": 4,
+      "d": 0.2
+     },
+     "text": "ASKED TO LEAVE",
+     "font": "Inter-Black",
+     "size": 70,
+     "x": 660,
+     "y": 620,
+     "rot": -3,
+     "pop": "back",
+     "card": "paper",
+     "ink": "ink"
+    },
+    {
+     "type": "word",
+     "at": {
+      "b": 7,
+      "w": 12,
+      "d": 0.0
+     },
+     "text": "FALSE BEARD",
+     "font": "Inter-Black",
+     "size": 84,
+     "x": 660,
+     "y": 930,
+     "rot": 2,
+     "pop": "back",
+     "card": "gold",
+     "ink": "ink"
+    },
+    {
+     "type": "label",
+     "text": "IN DISGUISE",
+     "y": 300,
+     "at": 7,
+     "size": 54,
+     "bg": "ink",
+     "fg": "gold",
+     "rot": -2,
+     "font": "Inter-Black"
+    }
+   ]
+  },
+  {
+   "start": 8,
+   "kind": "town",
+   "els": [
+    {
+     "type": "bg",
+     "look": "sunset"
+    },
+    {
+     "type": "town",
+     "at": 8
+    },
+    {
+     "type": "ground",
+     "y": 1255
+    },
+    {
+     "type": "label",
+     "text": "WALL STREET",
+     "y": 300,
+     "at": 8,
+     "size": 44,
+     "bg": "rust",
+     "fg": "paper",
+     "rot": -2,
+     "font": "Mono-Bold"
+    }
+   ]
+  },
+  {
+   "start": 9,
+   "kind": "ending",
+   "els": [
+    {
+     "type": "bg",
+     "look": "paper",
+     "glow": 0.3,
+     "glow_y": 760
+    },
+    {
+     "type": "word",
+     "at": 9,
+     "text": "EDGE",
+     "font": "Inter-Black",
+     "size": 190,
+     "y": 560,
+     "rot": -3,
+     "strike_at": {
+      "b": 9,
+      "w": 5
+     }
+    },
+    {
+     "type": "word",
+     "at": {
+      "b": 9,
+      "w": 11
+     },
+     "text": "RULES",
+     "size": 210,
+     "y": 900,
+     "rot": 2,
+     "card": "ink",
+     "ink": "gold",
+     "pop": "slam",
+     "glow": true
+    },
+    {
+     "type": "ground",
+     "y": 1255
+    },
+    {
+     "type": "text",
+     "at": {
+      "b": 9,
+      "d": 1.0
+     },
+     "text": "THE RIGGED GAME",
+     "y": 1720,
+     "size": 34,
+     "alpha": 0.8,
+     "footer": true
+    },
+    {
+     "type": "outro",
+     "at": [
+      "end",
+      0.35
+     ]
+    }
+   ]
+  }
+ ],
+ "cover": {
+  "kicker": "THE PROFESSOR VS THE CASINOS",
+  "big": "1962",
+  "sub": "SO THEY CHANGED THE RULES"
+ },
+ "sources": [
+  {
+   "name": "Wikipedia, Edward O. Thorp (professor of mathematics at New Mexico State 1961 to 1965; Beat the Dealer 1962, over 700,000 copies, New York Times bestseller list; used the IBM 704; began with $10,000 and won $11,000 in a single weekend; used disguises such as false beards; casinos now shuffle long before the end of the deck; later used probability in the stock market and ran hedge funds)",
+   "url": "https://en.wikipedia.org/wiki/Edward_O._Thorp",
+   "fetched": "2026-11-26"
+  },
+  {
+   "name": "UC Irvine Libraries, Finding the Edge: Beat the House (Thorp repeatedly asked to leave casinos; casinos turned to 4 and 6 deck shoes; disguises)",
+   "url": "https://exhibits.lib.uci.edu/thorp/beat",
+   "fetched": "2026-11-26"
+  },
+  {
+   "name": "Atlas Obscura, The High Stakes History of Card Counting (after 1962 casinos moved to block counters; repeated shuffling)",
+   "url": "https://www.atlasobscura.com/articles/the-high-stakes-history-of-card-counting-and-its-uncertain-future",
+   "fetched": "2026-11-26"
+  }
+ ],
+ "post": {
+  "slot": "evening",
+  "post_at": "2026-11-27T23:30:00+05:30",
+  "instagram_caption": "In 1962, a maths professor published a book that rattled casinos.\n\nEdward Thorp used an IBM computer to show blackjack could sometimes be beaten, and his book Beat the Dealer sold over 700,000 copies. Casinos answered with more decks, more shuffling, and showing him the door.\n\nEducation only. Not gambling advice. 18+\n\nShould a casino be allowed to change the rules when someone gets good?\n\n#theriggedgame #blackjack #history #maths #casino",
+  "youtube_title": "The Maths Professor Who Rattled The Casinos",
+  "youtube_description": "In 1962 maths professor Edward Thorp published Beat the Dealer, showing with an IBM computer that blackjack could sometimes be beaten. Casinos answered with more decks, more shuffling and asking him to leave. When a player finds an edge, the casino changes the rules.\n\nEducation only. Not gambling advice. 18+ AI narration.\n\nSources:\n• Wikipedia, \"Edward O. Thorp\"\n• UC Irvine Libraries, \"Finding the Edge: Beat the House\"\n• Atlas Obscura, \"The High Stakes History of Card Counting\"\n\nThe Rigged Game: how casinos really work. Instagram: @the_rigged_game\n\n#Casino #Blackjack #Shorts"
+ },
+ "math": [
+  {
+   "expr": "1962",
+   "expect": 1962,
+   "note": "Beat the Dealer published (Wikipedia, Atlas Obscura)"
+  },
+  {
+   "expr": "1961 <= 1962 <= 1965",
+   "expect": true,
+   "note": "Thorp was a maths professor at New Mexico State 1961 to 1965"
+  },
+  {
+   "expr": "704",
+   "expect": 704,
+   "note": "IBM 704 computer (Wikipedia)"
+  },
+  {
+   "expr": "10000",
+   "expect": 10000,
+   "note": "starting stake $10,000 (Wikipedia)"
+  },
+  {
+   "expr": "11000",
+   "expect": 11000,
+   "note": "won $11,000 in a single weekend (Wikipedia)"
+  },
+  {
+   "expr": "700000",
+   "expect": 700000,
+   "note": "copies sold, over 700,000 (Wikipedia)"
+  },
+  {
+   "expr": "4 > 1 and 6 > 1",
+   "expect": true,
+   "note": "4 and 6 deck shoes mean more decks (UC Irvine)"
+  }
+ ]
+}
