@@ -1,0 +1,360 @@
+{
+ "id": "007_gambling_history_countdown",
+ "episode": "08",
+ "series": "Casino History",
+ "keywords": [
+  "four",
+  "oldest",
+  "Monte",
+  "Carlo",
+  "Venice",
+  "Ridotto",
+  "legal",
+  "Europe's",
+  "cards",
+  "China",
+  "leaf",
+  "dice",
+  "Burnt",
+  "City",
+  "young",
+  "old"
+ ],
+ "beats": [
+  {
+   "say": "Gambling is much older than any casino. Here are four moments, oldest last.",
+   "cap": "Gambling is much older|than any casino.|Here are four moments,|oldest last.",
+   "show": {
+    "kind": "fan",
+    "n": 4,
+    "title": "4 MOMENTS",
+    "secret": "OLDEST LAST",
+    "secret_at": {
+     "beat": 1,
+     "delay": 0.6
+    }
+   }
+  },
+  {
+   "say": "And number one was made more than four thousand five hundred years ago.",
+   "cap": "And number one was made|more than 4,500|years ago."
+  },
+  {
+   "say": "Number four. In eighteen sixty five, the Monte Carlo Casino opened its doors.",
+   "cap": "Number four.|In 1865,|the Monte Carlo Casino|opened its doors.",
+   "show": [
+    {
+     "kind": "countdown",
+     "n": 4,
+     "sub": "MONTE CARLO",
+     "label": "MOMENT #4"
+    },
+    {
+     "kind": "title",
+     "big": "1865",
+     "tag": "MONTE CARLO",
+     "from_word": 4
+    }
+   ]
+  },
+  {
+   "say": "Number three. In sixteen thirty eight, Venice opened the Ridotto.",
+   "cap": "Number three.|In 1638,|Venice opened|the Ridotto.",
+   "show": [
+    {
+     "kind": "countdown",
+     "n": 3,
+     "sub": "THE RIDOTTO",
+     "label": "MOMENT #3"
+    },
+    {
+     "kind": "book",
+     "year": "VENICE 1638",
+     "title": [
+      "THE",
+      "RIDOTTO"
+     ],
+     "from_word": 2
+    }
+   ]
+  },
+  {
+   "say": "The city could not stop people gambling, so it ran a legal casino itself.",
+   "cap": "The city could not|stop people gambling,|so it ran a legal|casino itself."
+  },
+  {
+   "say": "It was Europe's first state approved casino, and it closed in seventeen seventy four.",
+   "cap": "It was Europe's first|state approved casino,|and it closed|in 1774.",
+   "show": {
+    "kind": "teach_card",
+    "header": "THE RIDOTTO",
+    "pose": "present",
+    "items": [
+     {
+      "text": "EUROPE'S FIRST",
+      "word": 3,
+      "size": 76
+     },
+     {
+      "text": "CLOSED 1774",
+      "word": 11,
+      "size": 84,
+      "card": "gold"
+     }
+    ]
+   }
+  },
+  {
+   "say": "Number two. Playing cards, first recorded in China in the ninth century.",
+   "cap": "Number two.|Playing cards,|first recorded in China|in the ninth century.",
+   "show": [
+    {
+     "kind": "countdown",
+     "n": 2,
+     "sub": "PLAYING CARDS",
+     "label": "MOMENT #2"
+    },
+    {
+     "kind": "teach_cards",
+     "header": "PLAYING CARDS",
+     "pose": "point",
+     "from_word": 2,
+     "rows": [
+      {
+       "cards": [
+        {
+         "r": "K",
+         "s": "h",
+         "word": 3
+        },
+        {
+         "r": "Q",
+         "s": "s",
+         "word": 4
+        },
+        {
+         "r": "J",
+         "s": "d",
+         "word": 5
+        }
+       ]
+      }
+     ],
+     "note": "CHINA, 9TH CENTURY",
+     "note_at": {
+      "beat": 0,
+      "word": 9
+     }
+    }
+   ]
+  },
+  {
+   "say": "One Tang dynasty family was playing a leaf game in eight sixty eight.",
+   "cap": "One Tang dynasty family|was playing a leaf game|in 868.",
+   "show": {
+    "kind": "teach_card",
+    "header": "TANG DYNASTY",
+    "pose": "chip",
+    "items": [
+     {
+      "text": "LEAF GAME",
+      "word": 7,
+      "size": 90
+     },
+     {
+      "text": "868 AD",
+      "word": 9,
+      "size": 100,
+      "card": "gold"
+     }
+    ]
+   }
+  },
+  {
+   "say": "And number one, the oldest of all, is a set of dice.",
+   "cap": "And number one,|the oldest of all,|is a set of dice.",
+   "show": {
+    "kind": "countdown",
+    "n": 1,
+    "sub": "DICE",
+    "label": "MOMENT #1"
+   }
+  },
+  {
+   "say": "Found in the Burnt City in Iran, they date from about twenty eight hundred to twenty five hundred BC.",
+   "cap": "Found in the Burnt City|in Iran, they date|from about 2800|to 2500 BC.",
+   "show": {
+    "kind": "teach_card",
+    "header": "THE BURNT CITY",
+    "pose": "point",
+    "items": [
+     {
+      "text": "IRAN",
+      "word": 6,
+      "size": 90
+     },
+     {
+      "text": "2800 BC",
+      "word": 12,
+      "size": 100,
+      "card": "gold"
+     }
+    ]
+   }
+  },
+  {
+   "say": "That is more than four thousand five hundred years of rolling dice.",
+   "cap": "That is more than|4,500 years|of rolling dice.",
+   "show": {
+    "kind": "counter",
+    "value": 4500,
+    "suffix": "+",
+    "unit": "YEARS OF DICE",
+    "count_at": {
+     "beat": 0,
+     "word": 3
+    },
+    "dur": 1.6,
+    "chips": false
+   }
+  },
+  {
+   "say": "Casinos are young. The odds they live on are very, very old.",
+   "cap": "Casinos are young.|The odds they live on|are very, very old.",
+   "show": {
+    "kind": "ending",
+    "wrong": "YOUNG",
+    "right": "OLD",
+    "strike_at": {
+     "beat": 0,
+     "word": 2
+    },
+    "right_at": {
+     "beat": 0,
+     "word": 11
+    }
+   }
+  }
+ ],
+ "cover": {
+  "kicker": "GAMBLING HISTORY, OLDEST LAST",
+  "big": "#1?",
+  "sub": "OLDER THAN YOU THINK"
+ },
+ "sources": [
+  {
+   "name": "Wikipedia, Dice (possibly the oldest known dice, from a backgammon-like game set at the Burnt City in south-eastern Iran, about 2800 to 2500 BCE)",
+   "url": "https://en.wikipedia.org/wiki/Dice",
+   "fetched": "2026-11-26"
+  },
+  {
+   "name": "Wikipedia, Ridotto (opened by the Great Council of Venice in 1638 as a government-owned gambling house because it could not prevent citizens wagering; Europe's first state-sanctioned casino; closed 1774)",
+   "url": "https://en.wikipedia.org/wiki/Ridotto",
+   "fetched": "2026-11-26"
+  },
+  {
+   "name": "Wikipedia, List of Chinese inventions (first reference to a card game no later than the 9th century; the Wei clan of the Tang dynasty playing the leaf game in 868)",
+   "url": "https://en.wikipedia.org/wiki/List_of_Chinese_inventions",
+   "fetched": "2026-11-26"
+  },
+  {
+   "name": "Wikipedia, Casino (Monte Carlo Casino opened in 1865)",
+   "url": "https://en.wikipedia.org/wiki/Casino",
+   "fetched": "2026-11-26"
+  },
+  {
+   "name": "Wikipedia, Gambling (playing cards appeared in the 9th century CE in China; the Ridotto started operating in 1638)",
+   "url": "https://en.wikipedia.org/wiki/Gambling",
+   "fetched": "2026-11-26"
+  }
+ ],
+ "math": [
+  {
+   "expr": "4",
+   "expect": 4,
+   "note": "four moments in the countdown"
+  },
+  {
+   "expr": "1",
+   "expect": 1,
+   "note": "moment #1"
+  },
+  {
+   "expr": "2",
+   "expect": 2,
+   "note": "moment #2"
+  },
+  {
+   "expr": "3",
+   "expect": 3,
+   "note": "moment #3"
+  },
+  {
+   "expr": "1865",
+   "expect": 1865,
+   "note": "Monte Carlo Casino opened (Wikipedia, Casino)"
+  },
+  {
+   "expr": "1638",
+   "expect": 1638,
+   "note": "Ridotto opened in Venice (Wikipedia, Ridotto)"
+  },
+  {
+   "expr": "1774",
+   "expect": 1774,
+   "note": "Ridotto closed (Wikipedia, Ridotto)"
+  },
+  {
+   "expr": "868",
+   "expect": 868,
+   "note": "Tang dynasty Wei clan playing the leaf game (Wikipedia, List of Chinese inventions)"
+  },
+  {
+   "expr": "801 <= 868 <= 900",
+   "expect": true,
+   "note": "868 AD is in the ninth century"
+  },
+  {
+   "expr": "9",
+   "expect": 9,
+   "note": "ninth century (Wikipedia, Gambling)"
+  },
+  {
+   "expr": "2800",
+   "expect": 2800,
+   "note": "Burnt City dice, early date BCE (Wikipedia, Dice)"
+  },
+  {
+   "expr": "2500",
+   "expect": 2500,
+   "note": "Burnt City dice, late date BCE (Wikipedia, Dice)"
+  },
+  {
+   "expr": "2500 + 2026 - 1",
+   "expect": 4525,
+   "note": "years since 2500 BC in 2026 (no year zero)"
+  },
+  {
+   "expr": "2500 + 2026 - 1 > 4500",
+   "expect": true,
+   "note": "even the latest date is more than 4,500 years ago"
+  },
+  {
+   "expr": "4500",
+   "expect": 4500,
+   "note": "more than 4,500 years"
+  },
+  {
+   "expr": "1865 > 1638 > 868 > -2500",
+   "expect": true,
+   "note": "countdown order: newest first, oldest last"
+  }
+ ],
+ "post": {
+  "slot": "evening",
+  "post_at": "2026-11-26T23:30:00+05:30",
+  "instagram_caption": "Gambling is much older than any casino. 4 moments, oldest last.\n\nMonte Carlo opened in 1865. Venice opened the Ridotto, Europe's first state approved casino, in 1638. Playing cards were first recorded in China in the 9th century. And dice found in Iran's Burnt City date to about 2800 to 2500 BC.\n\nEducation only. Not gambling advice. 18+\n\nWhich of these four surprised you the most?\n\n#theriggedgame #gamblinghistory #history #dice #casino",
+  "youtube_title": "Gambling Is Older Than You Think: 4 Moments, Oldest Last",
+  "youtube_description": "Four moments in the history of gambling, from the Monte Carlo Casino in 1865 back to dice from Iran's Burnt City, made around 2800 to 2500 BC. Casinos are young. The odds they live on are very, very old.\n\nEducation only. Not gambling advice. 18+ AI narration.\n\nSources:\n• Wikipedia, \"Dice\"\n• Wikipedia, \"Ridotto\"\n• Wikipedia, \"List of Chinese inventions\"\n• Wikipedia, \"Casino\"\n• Wikipedia, \"Gambling\"\n\nThe Rigged Game: how casinos really work. Instagram: @the_rigged_game\n\n#Casino #History #Shorts"
+ }
+}

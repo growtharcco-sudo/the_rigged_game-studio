@@ -1,0 +1,904 @@
+{
+ "id": "007_gambling_history_countdown",
+ "episode": "08",
+ "series": "Casino History",
+ "voice": "am_liam",
+ "speed": 1.0,
+ "hold": 2.6,
+ "caption_keywords": [
+  "four",
+  "oldest",
+  "Monte",
+  "Carlo",
+  "Venice",
+  "Ridotto",
+  "legal",
+  "Europe's",
+  "cards",
+  "China",
+  "leaf",
+  "dice",
+  "Burnt",
+  "City",
+  "young",
+  "old"
+ ],
+ "phrases": [
+  {
+   "say": "Gambling is much older than any casino. Here are four moments, oldest last.",
+   "cap": "Gambling is much older|than any casino.|Here are four moments,|oldest last.",
+   "pause": 0.45
+  },
+  {
+   "say": "And number one was made more than four thousand five hundred years ago.",
+   "cap": "And number one was made|more than 4,500|years ago.",
+   "pause": 0.45
+  },
+  {
+   "say": "Number four. In eighteen sixty five, the Monte Carlo Casino opened its doors.",
+   "cap": "Number four.|In 1865,|the Monte Carlo Casino|opened its doors.",
+   "pause": 0.45
+  },
+  {
+   "say": "Number three. In sixteen thirty eight, Venice opened the Ridotto.",
+   "cap": "Number three.|In 1638,|Venice opened|the Ridotto.",
+   "pause": 0.45
+  },
+  {
+   "say": "The city could not stop people gambling, so it ran a legal casino itself.",
+   "cap": "The city could not|stop people gambling,|so it ran a legal|casino itself.",
+   "pause": 0.45
+  },
+  {
+   "say": "It was Europe's first state approved casino, and it closed in seventeen seventy four.",
+   "cap": "It was Europe's first|state approved casino,|and it closed|in 1774.",
+   "pause": 0.45
+  },
+  {
+   "say": "Number two. Playing cards, first recorded in China in the ninth century.",
+   "cap": "Number two.|Playing cards,|first recorded in China|in the ninth century.",
+   "pause": 0.45
+  },
+  {
+   "say": "One Tang dynasty family was playing a leaf game in eight sixty eight.",
+   "cap": "One Tang dynasty family|was playing a leaf game|in 868.",
+   "pause": 0.45
+  },
+  {
+   "say": "And number one, the oldest of all, is a set of dice.",
+   "cap": "And number one,|the oldest of all,|is a set of dice.",
+   "pause": 0.45
+  },
+  {
+   "say": "Found in the Burnt City in Iran, they date from about twenty eight hundred to twenty five hundred BC.",
+   "cap": "Found in the Burnt City|in Iran, they date|from about 2800|to 2500 BC.",
+   "pause": 0.45
+  },
+  {
+   "say": "That is more than four thousand five hundred years of rolling dice.",
+   "cap": "That is more than|4,500 years|of rolling dice.",
+   "pause": 0.45
+  },
+  {
+   "say": "Casinos are young. The odds they live on are very, very old.",
+   "cap": "Casinos are young.|The odds they live on|are very, very old.",
+   "pause": 0.45
+  }
+ ],
+ "scenes": [
+  {
+   "start": 0,
+   "kind": "fan",
+   "els": [
+    {
+     "type": "bg",
+     "look": "hall"
+    },
+    {
+     "type": "ground",
+     "y": 1250
+    },
+    {
+     "type": "mascot",
+     "at": -1,
+     "x": 190,
+     "y": 830,
+     "s": 0.78
+    },
+    {
+     "type": "fan",
+     "at": -1,
+     "n": 4
+    },
+    {
+     "type": "label",
+     "text": "4 MOMENTS",
+     "y": 300,
+     "at": -1,
+     "size": 66,
+     "bg": "ink",
+     "fg": "gold",
+     "rot": -3,
+     "font": "Inter-Black"
+    },
+    {
+     "type": "stamp",
+     "text": "OLDEST LAST",
+     "x": 690.0,
+     "y": 520,
+     "size": 84,
+     "rot": -12,
+     "at": {
+      "b": 1,
+      "d": 0.6
+     }
+    }
+   ]
+  },
+  {
+   "start": 2,
+   "kind": "countdown",
+   "els": [
+    {
+     "type": "bg",
+     "look": "dark",
+     "rays": true
+    },
+    {
+     "type": "numcard",
+     "at": 2,
+     "n": 4
+    },
+    {
+     "type": "label",
+     "text": "MONTE CARLO",
+     "y": 1240,
+     "at": 2,
+     "size": 54,
+     "bg": "ink",
+     "fg": "gold",
+     "rot": 2,
+     "font": "Inter-Black",
+     "delay": 0.2
+    },
+    {
+     "type": "label",
+     "text": "MOMENT #4",
+     "y": 300,
+     "at": 2,
+     "size": 46,
+     "bg": "rust",
+     "fg": "paper",
+     "rot": -3,
+     "font": "Mono-Bold",
+     "delay": 0.2
+    }
+   ]
+  },
+  {
+   "start": {
+    "b": 2,
+    "w": 4
+   },
+   "kind": "title",
+   "els": [
+    {
+     "type": "bg",
+     "look": "night"
+    },
+    {
+     "type": "mascot",
+     "at": 2,
+     "x": 300,
+     "y": 830,
+     "s": 0.82,
+     "drift": -60,
+     "walk": 90,
+     "walk_dur": 2.5
+    },
+    {
+     "type": "word",
+     "at": 2,
+     "text": "1865",
+     "y": 400,
+     "size": 190,
+     "rot": -3,
+     "pop": "back"
+    },
+    {
+     "type": "label",
+     "text": "MONTE CARLO",
+     "y": 520,
+     "at": 2,
+     "size": 40,
+     "bg": "rust",
+     "fg": "paper",
+     "rot": -3,
+     "font": "Mono-Bold"
+    }
+   ]
+  },
+  {
+   "start": 3,
+   "kind": "countdown",
+   "els": [
+    {
+     "type": "bg",
+     "look": "dark",
+     "rays": true
+    },
+    {
+     "type": "numcard",
+     "at": 3,
+     "n": 3
+    },
+    {
+     "type": "label",
+     "text": "THE RIDOTTO",
+     "y": 1240,
+     "at": 3,
+     "size": 54,
+     "bg": "ink",
+     "fg": "gold",
+     "rot": 2,
+     "font": "Inter-Black",
+     "delay": 0.2
+    },
+    {
+     "type": "label",
+     "text": "MOMENT #3",
+     "y": 300,
+     "at": 3,
+     "size": 46,
+     "bg": "rust",
+     "fg": "paper",
+     "rot": -3,
+     "font": "Mono-Bold",
+     "delay": 0.2
+    }
+   ]
+  },
+  {
+   "start": {
+    "b": 3,
+    "w": 2
+   },
+   "kind": "book",
+   "els": [
+    {
+     "type": "bg",
+     "look": "paper",
+     "glow": 0.3
+    },
+    {
+     "type": "book",
+     "at": 3,
+     "open_at": {
+      "b": 3,
+      "d": 2.6
+     },
+     "title": [
+      "THE",
+      "RIDOTTO"
+     ]
+    },
+    {
+     "type": "label",
+     "text": "VENICE 1638",
+     "y": 330,
+     "at": 3,
+     "size": 64,
+     "bg": "rust",
+     "fg": "paper",
+     "rot": -3,
+     "font": "Inter-Black",
+     "pop": "big"
+    },
+    {
+     "type": "ground",
+     "y": 1255
+    }
+   ]
+  },
+  {
+   "start": 5,
+   "kind": "teach_card",
+   "els": [
+    {
+     "type": "bg",
+     "look": "hall"
+    },
+    {
+     "type": "ground",
+     "y": 1255
+    },
+    {
+     "type": "mascot",
+     "at": 5,
+     "x": 175,
+     "y": 805,
+     "s": 0.72,
+     "pose": "present",
+     "side": 1,
+     "rise": 140
+    },
+    {
+     "type": "word",
+     "at": {
+      "b": 5,
+      "w": 3,
+      "d": 0.2
+     },
+     "text": "EUROPE'S FIRST",
+     "font": "Inter-Black",
+     "size": 76,
+     "x": 660,
+     "y": 620,
+     "rot": -3,
+     "pop": "back",
+     "card": "paper",
+     "ink": "ink"
+    },
+    {
+     "type": "word",
+     "at": {
+      "b": 5,
+      "w": 11,
+      "d": 0.0
+     },
+     "text": "CLOSED 1774",
+     "font": "Inter-Black",
+     "size": 84,
+     "x": 660,
+     "y": 930,
+     "rot": 2,
+     "pop": "back",
+     "card": "gold",
+     "ink": "ink"
+    },
+    {
+     "type": "label",
+     "text": "THE RIDOTTO",
+     "y": 300,
+     "at": 5,
+     "size": 54,
+     "bg": "ink",
+     "fg": "gold",
+     "rot": -2,
+     "font": "Inter-Black"
+    }
+   ]
+  },
+  {
+   "start": 6,
+   "kind": "countdown",
+   "els": [
+    {
+     "type": "bg",
+     "look": "dark",
+     "rays": true
+    },
+    {
+     "type": "numcard",
+     "at": 6,
+     "n": 2
+    },
+    {
+     "type": "label",
+     "text": "PLAYING CARDS",
+     "y": 1240,
+     "at": 6,
+     "size": 54,
+     "bg": "ink",
+     "fg": "gold",
+     "rot": 2,
+     "font": "Inter-Black",
+     "delay": 0.2
+    },
+    {
+     "type": "label",
+     "text": "MOMENT #2",
+     "y": 300,
+     "at": 6,
+     "size": 46,
+     "bg": "rust",
+     "fg": "paper",
+     "rot": -3,
+     "font": "Mono-Bold",
+     "delay": 0.2
+    }
+   ]
+  },
+  {
+   "start": {
+    "b": 6,
+    "w": 2
+   },
+   "kind": "teach_cards",
+   "els": [
+    {
+     "type": "bg",
+     "look": "hall"
+    },
+    {
+     "type": "ground",
+     "y": 1255
+    },
+    {
+     "type": "card_rows",
+     "at": 6,
+     "rows": [
+      {
+       "y": 800,
+       "cards": [
+        {
+         "r": "K",
+         "s": "h"
+        },
+        {
+         "r": "Q",
+         "s": "s"
+        },
+        {
+         "r": "J",
+         "s": "d"
+        }
+       ],
+       "x0": 500
+      }
+     ],
+     "c0_0_at": {
+      "b": 6,
+      "w": 3,
+      "d": 0.0
+     },
+     "c0_1_at": {
+      "b": 6,
+      "w": 4,
+      "d": 0.15
+     },
+     "c0_2_at": {
+      "b": 6,
+      "w": 5,
+      "d": 0.3
+     }
+    },
+    {
+     "type": "mascot",
+     "at": 6,
+     "x": 165,
+     "y": 805,
+     "s": 0.7,
+     "pose": "point",
+     "side": 1,
+     "rise": 140
+    },
+    {
+     "type": "label",
+     "text": "CHINA, 9TH CENTURY",
+     "y": 1180,
+     "at": {
+      "b": 6,
+      "w": 9
+     },
+     "size": 42,
+     "bg": "ink",
+     "fg": "gold",
+     "rot": 2,
+     "font": "Mono-Bold",
+     "delay": 0.2,
+     "x": 690
+    },
+    {
+     "type": "label",
+     "text": "PLAYING CARDS",
+     "y": 300,
+     "at": 6,
+     "size": 54,
+     "bg": "ink",
+     "fg": "gold",
+     "rot": -2,
+     "font": "Inter-Black"
+    }
+   ]
+  },
+  {
+   "start": 7,
+   "kind": "teach_card",
+   "els": [
+    {
+     "type": "bg",
+     "look": "hall"
+    },
+    {
+     "type": "ground",
+     "y": 1255
+    },
+    {
+     "type": "mascot",
+     "at": 7,
+     "x": 175,
+     "y": 805,
+     "s": 0.72,
+     "pose": "chip",
+     "side": 1,
+     "rise": 140
+    },
+    {
+     "type": "word",
+     "at": {
+      "b": 7,
+      "w": 7,
+      "d": 0.2
+     },
+     "text": "LEAF GAME",
+     "font": "Inter-Black",
+     "size": 90,
+     "x": 660,
+     "y": 620,
+     "rot": -3,
+     "pop": "back",
+     "card": "paper",
+     "ink": "ink"
+    },
+    {
+     "type": "word",
+     "at": {
+      "b": 7,
+      "w": 9,
+      "d": 0.0
+     },
+     "text": "868 AD",
+     "font": "Inter-Black",
+     "size": 100,
+     "x": 660,
+     "y": 930,
+     "rot": 2,
+     "pop": "back",
+     "card": "gold",
+     "ink": "ink"
+    },
+    {
+     "type": "label",
+     "text": "TANG DYNASTY",
+     "y": 300,
+     "at": 7,
+     "size": 54,
+     "bg": "ink",
+     "fg": "gold",
+     "rot": -2,
+     "font": "Inter-Black"
+    }
+   ]
+  },
+  {
+   "start": 8,
+   "kind": "countdown",
+   "els": [
+    {
+     "type": "bg",
+     "look": "dark",
+     "rays": true
+    },
+    {
+     "type": "numcard",
+     "at": 8,
+     "n": 1
+    },
+    {
+     "type": "label",
+     "text": "DICE",
+     "y": 1240,
+     "at": 8,
+     "size": 54,
+     "bg": "paper",
+     "fg": "rust",
+     "rot": 2,
+     "font": "Inter-Black",
+     "delay": 0.2
+    },
+    {
+     "type": "label",
+     "text": "MOMENT #1",
+     "y": 300,
+     "at": 8,
+     "size": 46,
+     "bg": "rust",
+     "fg": "paper",
+     "rot": -3,
+     "font": "Mono-Bold",
+     "delay": 0.2
+    }
+   ]
+  },
+  {
+   "start": 9,
+   "kind": "teach_card",
+   "els": [
+    {
+     "type": "bg",
+     "look": "hall"
+    },
+    {
+     "type": "ground",
+     "y": 1255
+    },
+    {
+     "type": "mascot",
+     "at": 9,
+     "x": 175,
+     "y": 805,
+     "s": 0.72,
+     "pose": "point",
+     "side": 1,
+     "rise": 140
+    },
+    {
+     "type": "word",
+     "at": {
+      "b": 9,
+      "w": 6,
+      "d": 0.2
+     },
+     "text": "IRAN",
+     "font": "Inter-Black",
+     "size": 90,
+     "x": 660,
+     "y": 620,
+     "rot": -3,
+     "pop": "back",
+     "card": "paper",
+     "ink": "ink"
+    },
+    {
+     "type": "word",
+     "at": {
+      "b": 9,
+      "w": 12,
+      "d": 0.0
+     },
+     "text": "2800 BC",
+     "font": "Inter-Black",
+     "size": 100,
+     "x": 660,
+     "y": 930,
+     "rot": 2,
+     "pop": "back",
+     "card": "gold",
+     "ink": "ink"
+    },
+    {
+     "type": "label",
+     "text": "THE BURNT CITY",
+     "y": 300,
+     "at": 9,
+     "size": 54,
+     "bg": "ink",
+     "fg": "gold",
+     "rot": -2,
+     "font": "Inter-Black"
+    }
+   ]
+  },
+  {
+   "start": 10,
+   "kind": "counter",
+   "els": [
+    {
+     "type": "bg",
+     "look": "paper"
+    },
+    {
+     "type": "counter",
+     "at": 10,
+     "value": 4500,
+     "prefix": "",
+     "suffix": "+",
+     "decimals": 0,
+     "count_at": {
+      "b": 10,
+      "w": 3
+     },
+     "dur": 1.6,
+     "chips": false,
+     "unit": "YEARS OF DICE"
+    },
+    {
+     "type": "ground",
+     "y": 1255
+    }
+   ]
+  },
+  {
+   "start": 11,
+   "kind": "ending",
+   "els": [
+    {
+     "type": "bg",
+     "look": "paper",
+     "glow": 0.3,
+     "glow_y": 760
+    },
+    {
+     "type": "word",
+     "at": 11,
+     "text": "YOUNG",
+     "font": "Inter-Black",
+     "size": 190,
+     "y": 560,
+     "rot": -3,
+     "strike_at": {
+      "b": 11,
+      "w": 2
+     }
+    },
+    {
+     "type": "word",
+     "at": {
+      "b": 11,
+      "w": 11
+     },
+     "text": "OLD",
+     "size": 210,
+     "y": 900,
+     "rot": 2,
+     "card": "ink",
+     "ink": "gold",
+     "pop": "slam",
+     "glow": true
+    },
+    {
+     "type": "ground",
+     "y": 1255
+    },
+    {
+     "type": "text",
+     "at": {
+      "b": 11,
+      "d": 1.0
+     },
+     "text": "THE RIGGED GAME",
+     "y": 1720,
+     "size": 34,
+     "alpha": 0.8,
+     "footer": true
+    },
+    {
+     "type": "outro",
+     "at": [
+      "end",
+      0.35
+     ]
+    }
+   ]
+  }
+ ],
+ "progress": [
+  2,
+  3,
+  6,
+  8
+ ],
+ "progress_end": 11,
+ "cover": {
+  "kicker": "GAMBLING HISTORY, OLDEST LAST",
+  "big": "#1?",
+  "sub": "OLDER THAN YOU THINK"
+ },
+ "sources": [
+  {
+   "name": "Wikipedia, Dice (possibly the oldest known dice, from a backgammon-like game set at the Burnt City in south-eastern Iran, about 2800 to 2500 BCE)",
+   "url": "https://en.wikipedia.org/wiki/Dice",
+   "fetched": "2026-11-26"
+  },
+  {
+   "name": "Wikipedia, Ridotto (opened by the Great Council of Venice in 1638 as a government-owned gambling house because it could not prevent citizens wagering; Europe's first state-sanctioned casino; closed 1774)",
+   "url": "https://en.wikipedia.org/wiki/Ridotto",
+   "fetched": "2026-11-26"
+  },
+  {
+   "name": "Wikipedia, List of Chinese inventions (first reference to a card game no later than the 9th century; the Wei clan of the Tang dynasty playing the leaf game in 868)",
+   "url": "https://en.wikipedia.org/wiki/List_of_Chinese_inventions",
+   "fetched": "2026-11-26"
+  },
+  {
+   "name": "Wikipedia, Casino (Monte Carlo Casino opened in 1865)",
+   "url": "https://en.wikipedia.org/wiki/Casino",
+   "fetched": "2026-11-26"
+  },
+  {
+   "name": "Wikipedia, Gambling (playing cards appeared in the 9th century CE in China; the Ridotto started operating in 1638)",
+   "url": "https://en.wikipedia.org/wiki/Gambling",
+   "fetched": "2026-11-26"
+  }
+ ],
+ "post": {
+  "slot": "evening",
+  "post_at": "2026-11-26T23:30:00+05:30",
+  "instagram_caption": "Gambling is much older than any casino. 4 moments, oldest last.\n\nMonte Carlo opened in 1865. Venice opened the Ridotto, Europe's first state approved casino, in 1638. Playing cards were first recorded in China in the 9th century. And dice found in Iran's Burnt City date to about 2800 to 2500 BC.\n\nEducation only. Not gambling advice. 18+\n\nWhich of these four surprised you the most?\n\n#theriggedgame #gamblinghistory #history #dice #casino",
+  "youtube_title": "Gambling Is Older Than You Think: 4 Moments, Oldest Last",
+  "youtube_description": "Four moments in the history of gambling, from the Monte Carlo Casino in 1865 back to dice from Iran's Burnt City, made around 2800 to 2500 BC. Casinos are young. The odds they live on are very, very old.\n\nEducation only. Not gambling advice. 18+ AI narration.\n\nSources:\n• Wikipedia, \"Dice\"\n• Wikipedia, \"Ridotto\"\n• Wikipedia, \"List of Chinese inventions\"\n• Wikipedia, \"Casino\"\n• Wikipedia, \"Gambling\"\n\nThe Rigged Game: how casinos really work. Instagram: @the_rigged_game\n\n#Casino #History #Shorts"
+ },
+ "math": [
+  {
+   "expr": "4",
+   "expect": 4,
+   "note": "four moments in the countdown"
+  },
+  {
+   "expr": "1",
+   "expect": 1,
+   "note": "moment #1"
+  },
+  {
+   "expr": "2",
+   "expect": 2,
+   "note": "moment #2"
+  },
+  {
+   "expr": "3",
+   "expect": 3,
+   "note": "moment #3"
+  },
+  {
+   "expr": "1865",
+   "expect": 1865,
+   "note": "Monte Carlo Casino opened (Wikipedia, Casino)"
+  },
+  {
+   "expr": "1638",
+   "expect": 1638,
+   "note": "Ridotto opened in Venice (Wikipedia, Ridotto)"
+  },
+  {
+   "expr": "1774",
+   "expect": 1774,
+   "note": "Ridotto closed (Wikipedia, Ridotto)"
+  },
+  {
+   "expr": "868",
+   "expect": 868,
+   "note": "Tang dynasty Wei clan playing the leaf game (Wikipedia, List of Chinese inventions)"
+  },
+  {
+   "expr": "801 <= 868 <= 900",
+   "expect": true,
+   "note": "868 AD is in the ninth century"
+  },
+  {
+   "expr": "9",
+   "expect": 9,
+   "note": "ninth century (Wikipedia, Gambling)"
+  },
+  {
+   "expr": "2800",
+   "expect": 2800,
+   "note": "Burnt City dice, early date BCE (Wikipedia, Dice)"
+  },
+  {
+   "expr": "2500",
+   "expect": 2500,
+   "note": "Burnt City dice, late date BCE (Wikipedia, Dice)"
+  },
+  {
+   "expr": "2500 + 2026 - 1",
+   "expect": 4525,
+   "note": "years since 2500 BC in 2026 (no year zero)"
+  },
+  {
+   "expr": "2500 + 2026 - 1 > 4500",
+   "expect": true,
+   "note": "even the latest date is more than 4,500 years ago"
+  },
+  {
+   "expr": "4500",
+   "expect": 4500,
+   "note": "more than 4,500 years"
+  },
+  {
+   "expr": "1865 > 1638 > 868 > -2500",
+   "expect": true,
+   "note": "countdown order: newest first, oldest last"
+  }
+ ]
+}
