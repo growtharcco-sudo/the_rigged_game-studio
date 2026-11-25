@@ -1,0 +1,972 @@
+{
+ "id": "008_how_to_play_baccarat",
+ "episode": "09",
+ "series": "How To Play",
+ "voice": "am_liam",
+ "speed": 1.0,
+ "hold": 2.6,
+ "caption_keywords": [
+  "nine",
+  "Player",
+  "Banker",
+  "tie",
+  "zero",
+  "last",
+  "digit",
+  "five",
+  "decisions",
+  "rules",
+  "catch",
+  "commission",
+  "edge",
+  "skill"
+ ],
+ "phrases": [
+  {
+   "say": "Can you count to nine? Then you can learn baccarat in under a minute.",
+   "cap": "Can you count to nine?|Then you can learn baccarat|in under a minute.",
+   "pause": 0.45
+  },
+  {
+   "say": "Two hands are dealt, one called Player and one called Banker.",
+   "cap": "Two hands are dealt,|one called Player|and one called Banker.",
+   "pause": 0.45
+  },
+  {
+   "say": "You bet on which hand will finish closest to nine, or on a tie.",
+   "cap": "You bet on which hand|will finish closest to nine,|or on a tie.",
+   "pause": 0.45
+  },
+  {
+   "say": "Aces count as one, and two to nine count as their number.",
+   "cap": "Aces count as one,|and two to nine|count as their number.",
+   "pause": 0.45
+  },
+  {
+   "say": "Tens and face cards are worth nothing at all, just zero.",
+   "cap": "Tens and face cards|are worth nothing at all,|just zero.",
+   "pause": 0.45
+  },
+  {
+   "say": "If a hand goes over nine, only the last digit of the total counts.",
+   "cap": "If a hand goes over nine,|only the last digit|of the total counts.",
+   "pause": 0.45
+  },
+  {
+   "say": "So a seven and an eight make fifteen, and that counts as five.",
+   "cap": "So a seven and an eight|make 15,|and that counts as 5.",
+   "pause": 0.45
+  },
+  {
+   "say": "And here is the strange part: you make no decisions at all.",
+   "cap": "And here is the strange part:|you make no decisions|at all.",
+   "pause": 0.45
+  },
+  {
+   "say": "Player and Banker bets pay even money, and a tie pays eight to one.",
+   "cap": "Player and Banker bets|pay even money,|and a tie pays 8 to 1.",
+   "pause": 0.45
+  },
+  {
+   "say": "But here is the catch: the casino takes five percent of every winning Banker bet.",
+   "cap": "But here is the catch:|the casino takes 5%|of every winning Banker bet.",
+   "pause": 0.45
+  },
+  {
+   "say": "With eight decks, that leaves a house edge of one point zero six percent on Banker.",
+   "cap": "With eight decks,|that leaves a house edge|of 1.06% on Banker.",
+   "pause": 0.45
+  },
+  {
+   "say": "The Player bet gives up one point two four, and the tie gives up fourteen point three six.",
+   "cap": "The Player bet gives up 1.24,|and the tie gives up|14.36.",
+   "pause": 0.45
+  },
+  {
+   "say": "Baccarat needs no skill at all. The house just needs its edge.",
+   "cap": "Baccarat needs no skill at all.|The house just needs|its edge.",
+   "pause": 0.45
+  }
+ ],
+ "scenes": [
+  {
+   "start": 0,
+   "kind": "teach_cards",
+   "els": [
+    {
+     "type": "bg",
+     "look": "hall"
+    },
+    {
+     "type": "ground",
+     "y": 1255
+    },
+    {
+     "type": "card_rows",
+     "at": -1,
+     "rows": [
+      {
+       "y": 600,
+       "cards": [
+        {
+         "r": "6",
+         "s": "c"
+        },
+        {
+         "r": "Q",
+         "s": "h"
+        }
+       ],
+       "x0": 500,
+       "label": "BANKER"
+      },
+      {
+       "y": 960,
+       "cards": [
+        {
+         "r": "4",
+         "s": "d"
+        },
+        {
+         "r": "5",
+         "s": "s"
+        }
+       ],
+       "x0": 500,
+       "label": "PLAYER"
+      }
+     ],
+     "c0_0_at": -1,
+     "c0_1_at": -1,
+     "c1_0_at": -1,
+     "c1_1_at": -1
+    },
+    {
+     "type": "mascot",
+     "at": -1,
+     "x": 165,
+     "y": 805,
+     "s": 0.7,
+     "pose": "point",
+     "side": 1,
+     "pose_now": true
+    },
+    {
+     "type": "label",
+     "text": "CLOSEST TO 9 WINS",
+     "y": 1180,
+     "at": 1,
+     "size": 42,
+     "bg": "ink",
+     "fg": "gold",
+     "rot": 2,
+     "font": "Mono-Bold",
+     "delay": 0.2,
+     "x": 690
+    },
+    {
+     "type": "label",
+     "text": "HOW TO PLAY: BACCARAT",
+     "y": 300,
+     "at": -1,
+     "size": 54,
+     "bg": "ink",
+     "fg": "gold",
+     "rot": -2,
+     "font": "Inter-Black"
+    }
+   ]
+  },
+  {
+   "start": 2,
+   "kind": "teach_card",
+   "els": [
+    {
+     "type": "bg",
+     "look": "hall"
+    },
+    {
+     "type": "ground",
+     "y": 1255
+    },
+    {
+     "type": "mascot",
+     "at": 2,
+     "x": 175,
+     "y": 805,
+     "s": 0.72,
+     "pose": "present",
+     "side": 1,
+     "rise": 140
+    },
+    {
+     "type": "word",
+     "at": {
+      "b": 2,
+      "w": 3,
+      "d": 0.2
+     },
+     "text": "PLAYER OR BANKER",
+     "font": "Inter-Black",
+     "size": 66,
+     "x": 660,
+     "y": 620,
+     "rot": -3,
+     "pop": "back",
+     "card": "paper",
+     "ink": "ink"
+    },
+    {
+     "type": "word",
+     "at": {
+      "b": 2,
+      "w": 11,
+      "d": 0.0
+     },
+     "text": "OR A TIE",
+     "font": "Inter-Black",
+     "size": 90,
+     "x": 660,
+     "y": 930,
+     "rot": 2,
+     "pop": "back",
+     "card": "gold",
+     "ink": "ink"
+    },
+    {
+     "type": "label",
+     "text": "THREE BETS",
+     "y": 300,
+     "at": 2,
+     "size": 54,
+     "bg": "ink",
+     "fg": "gold",
+     "rot": -2,
+     "font": "Inter-Black"
+    }
+   ]
+  },
+  {
+   "start": 3,
+   "kind": "teach_cards",
+   "els": [
+    {
+     "type": "bg",
+     "look": "hall"
+    },
+    {
+     "type": "ground",
+     "y": 1255
+    },
+    {
+     "type": "card_rows",
+     "at": 3,
+     "rows": [
+      {
+       "y": 800,
+       "cards": [
+        {
+         "r": "A",
+         "s": "s"
+        },
+        {
+         "r": "2",
+         "s": "h"
+        },
+        {
+         "r": "9",
+         "s": "c"
+        }
+       ],
+       "x0": 500
+      }
+     ],
+     "c0_0_at": {
+      "b": 3,
+      "d": 0.2
+     },
+     "c0_1_at": {
+      "b": 3,
+      "w": 6,
+      "d": 0.15
+     },
+     "c0_2_at": {
+      "b": 3,
+      "w": 8,
+      "d": 0.3
+     }
+    },
+    {
+     "type": "mascot",
+     "at": 3,
+     "x": 165,
+     "y": 805,
+     "s": 0.7,
+     "pose": "point",
+     "side": 1,
+     "rise": 140
+    },
+    {
+     "type": "label",
+     "text": "ACE = 1",
+     "y": 1180,
+     "at": {
+      "b": 3,
+      "w": 3
+     },
+     "size": 42,
+     "bg": "ink",
+     "fg": "gold",
+     "rot": 2,
+     "font": "Mono-Bold",
+     "delay": 0.2,
+     "x": 690
+    },
+    {
+     "type": "label",
+     "text": "CARD VALUES",
+     "y": 300,
+     "at": 3,
+     "size": 54,
+     "bg": "ink",
+     "fg": "gold",
+     "rot": -2,
+     "font": "Inter-Black"
+    }
+   ]
+  },
+  {
+   "start": 4,
+   "kind": "teach_cards",
+   "els": [
+    {
+     "type": "bg",
+     "look": "hall"
+    },
+    {
+     "type": "ground",
+     "y": 1255
+    },
+    {
+     "type": "card_rows",
+     "at": 4,
+     "rows": [
+      {
+       "y": 800,
+       "cards": [
+        {
+         "r": "10",
+         "s": "d"
+        },
+        {
+         "r": "K",
+         "s": "s"
+        },
+        {
+         "r": "Q",
+         "s": "h"
+        },
+        {
+         "r": "J",
+         "s": "c"
+        }
+       ],
+       "x0": 470
+      }
+     ],
+     "c0_0_at": {
+      "b": 4,
+      "d": 0.2
+     },
+     "c0_1_at": {
+      "b": 4,
+      "w": 2,
+      "d": 0.15
+     },
+     "c0_2_at": {
+      "b": 4,
+      "w": 3,
+      "d": 0.3
+     },
+     "c0_3_at": {
+      "b": 4,
+      "w": 3,
+      "d": 0.2
+     }
+    },
+    {
+     "type": "mascot",
+     "at": 4,
+     "x": 165,
+     "y": 805,
+     "s": 0.7,
+     "pose": "chip",
+     "side": 1,
+     "rise": 140
+    },
+    {
+     "type": "label",
+     "text": "10, J, Q, K = 0",
+     "y": 1180,
+     "at": {
+      "b": 4,
+      "w": 9
+     },
+     "size": 42,
+     "bg": "ink",
+     "fg": "gold",
+     "rot": 2,
+     "font": "Mono-Bold",
+     "delay": 0.2,
+     "x": 690
+    },
+    {
+     "type": "label",
+     "text": "WORTH ZERO",
+     "y": 300,
+     "at": 4,
+     "size": 54,
+     "bg": "ink",
+     "fg": "gold",
+     "rot": -2,
+     "font": "Inter-Black"
+    }
+   ]
+  },
+  {
+   "start": 5,
+   "kind": "teach_cards",
+   "els": [
+    {
+     "type": "bg",
+     "look": "hall"
+    },
+    {
+     "type": "ground",
+     "y": 1255
+    },
+    {
+     "type": "card_rows",
+     "at": 5,
+     "rows": [
+      {
+       "y": 800,
+       "cards": [
+        {
+         "r": "7",
+         "s": "h"
+        },
+        {
+         "r": "8",
+         "s": "s"
+        }
+       ],
+       "x0": 500,
+       "label": "HAND",
+       "total": "5"
+      }
+     ],
+     "t0_at": {
+      "b": 6,
+      "w": 10
+     },
+     "c0_0_at": {
+      "b": 6,
+      "w": 1,
+      "d": 0.0
+     },
+     "c0_1_at": {
+      "b": 6,
+      "w": 4,
+      "d": 0.15
+     }
+    },
+    {
+     "type": "mascot",
+     "at": 5,
+     "x": 165,
+     "y": 805,
+     "s": 0.7,
+     "pose": "point",
+     "side": 1,
+     "rise": 140
+    },
+    {
+     "type": "label",
+     "text": "15 COUNTS AS 5",
+     "y": 1180,
+     "at": {
+      "b": 6,
+      "w": 10
+     },
+     "size": 42,
+     "bg": "ink",
+     "fg": "gold",
+     "rot": 2,
+     "font": "Mono-Bold",
+     "delay": 0.2,
+     "x": 690
+    },
+    {
+     "type": "label",
+     "text": "ONLY THE LAST DIGIT",
+     "y": 300,
+     "at": 5,
+     "size": 54,
+     "bg": "ink",
+     "fg": "gold",
+     "rot": -2,
+     "font": "Inter-Black"
+    }
+   ]
+  },
+  {
+   "start": 7,
+   "kind": "teach_card",
+   "els": [
+    {
+     "type": "bg",
+     "look": "hall"
+    },
+    {
+     "type": "ground",
+     "y": 1255
+    },
+    {
+     "type": "mascot",
+     "at": 7,
+     "x": 175,
+     "y": 805,
+     "s": 0.72,
+     "pose": "present",
+     "side": 1,
+     "rise": 140
+    },
+    {
+     "type": "word",
+     "at": {
+      "b": 7,
+      "w": 9,
+      "d": 0.2
+     },
+     "text": "NONE",
+     "font": "Inter-Black",
+     "size": 120,
+     "x": 660,
+     "y": 760,
+     "rot": -3,
+     "pop": "back",
+     "card": "gold",
+     "ink": "ink"
+    },
+    {
+     "type": "label",
+     "text": "YOUR CHOICES",
+     "y": 300,
+     "at": 7,
+     "size": 54,
+     "bg": "ink",
+     "fg": "gold",
+     "rot": -2,
+     "font": "Inter-Black"
+    }
+   ]
+  },
+  {
+   "start": 8,
+   "kind": "teach_card",
+   "els": [
+    {
+     "type": "bg",
+     "look": "hall"
+    },
+    {
+     "type": "ground",
+     "y": 1255
+    },
+    {
+     "type": "mascot",
+     "at": 8,
+     "x": 175,
+     "y": 805,
+     "s": 0.72,
+     "pose": "chip",
+     "side": 1,
+     "rise": 140
+    },
+    {
+     "type": "word",
+     "at": {
+      "b": 8,
+      "w": 5,
+      "d": 0.2
+     },
+     "text": "1 TO 1",
+     "font": "Inter-Black",
+     "size": 96,
+     "x": 660,
+     "y": 620,
+     "rot": -3,
+     "pop": "back",
+     "card": "paper",
+     "ink": "ink"
+    },
+    {
+     "type": "word",
+     "at": {
+      "b": 8,
+      "w": 10,
+      "d": 0.0
+     },
+     "text": "TIE: 8 TO 1",
+     "font": "Inter-Black",
+     "size": 84,
+     "x": 660,
+     "y": 930,
+     "rot": 2,
+     "pop": "back",
+     "card": "gold",
+     "ink": "ink"
+    },
+    {
+     "type": "label",
+     "text": "THE PAYOUTS",
+     "y": 300,
+     "at": 8,
+     "size": 54,
+     "bg": "ink",
+     "fg": "gold",
+     "rot": -2,
+     "font": "Inter-Black"
+    }
+   ]
+  },
+  {
+   "start": 9,
+   "kind": "teach_card",
+   "els": [
+    {
+     "type": "bg",
+     "look": "hall"
+    },
+    {
+     "type": "ground",
+     "y": 1255
+    },
+    {
+     "type": "mascot",
+     "at": 9,
+     "x": 175,
+     "y": 805,
+     "s": 0.72,
+     "pose": "point",
+     "side": 1,
+     "rise": 140
+    },
+    {
+     "type": "word",
+     "at": {
+      "b": 9,
+      "w": 8,
+      "d": 0.2
+     },
+     "text": "5% CUT",
+     "font": "Inter-Black",
+     "size": 110,
+     "x": 660,
+     "y": 760,
+     "rot": -3,
+     "pop": "back",
+     "card": "gold",
+     "ink": "ink"
+    },
+    {
+     "type": "label",
+     "text": "THE CATCH",
+     "y": 300,
+     "at": 9,
+     "size": 54,
+     "bg": "ink",
+     "fg": "gold",
+     "rot": -2,
+     "font": "Inter-Black"
+    }
+   ]
+  },
+  {
+   "start": 10,
+   "kind": "teach_card",
+   "els": [
+    {
+     "type": "bg",
+     "look": "hall"
+    },
+    {
+     "type": "ground",
+     "y": 1255
+    },
+    {
+     "type": "mascot",
+     "at": 10,
+     "x": 175,
+     "y": 805,
+     "s": 0.72,
+     "pose": "present",
+     "side": 1,
+     "rise": 140
+    },
+    {
+     "type": "word",
+     "at": {
+      "b": 10,
+      "w": 11,
+      "d": 0.2
+     },
+     "text": "BANKER: 1.06%",
+     "font": "Inter-Black",
+     "size": 74,
+     "x": 660,
+     "y": 620,
+     "rot": -3,
+     "pop": "back",
+     "card": "paper",
+     "ink": "ink"
+    },
+    {
+     "type": "word",
+     "at": {
+      "b": 10,
+      "w": 1,
+      "d": 0.0
+     },
+     "text": "PLAYER: 1.24%",
+     "font": "Inter-Black",
+     "size": 74,
+     "x": 660,
+     "y": 930,
+     "rot": 2,
+     "pop": "back",
+     "card": "gold",
+     "ink": "ink"
+    },
+    {
+     "type": "label",
+     "text": "HOUSE EDGE",
+     "y": 300,
+     "at": 10,
+     "size": 54,
+     "bg": "ink",
+     "fg": "gold",
+     "rot": -2,
+     "font": "Inter-Black"
+    }
+   ]
+  },
+  {
+   "start": 11,
+   "kind": "teach_card",
+   "els": [
+    {
+     "type": "bg",
+     "look": "hall"
+    },
+    {
+     "type": "ground",
+     "y": 1255
+    },
+    {
+     "type": "mascot",
+     "at": 11,
+     "x": 175,
+     "y": 805,
+     "s": 0.72,
+     "pose": "point",
+     "side": 1,
+     "rise": 140
+    },
+    {
+     "type": "word",
+     "at": {
+      "b": 11,
+      "w": 12,
+      "d": 0.2
+     },
+     "text": "TIE: 14.36%",
+     "font": "Inter-Black",
+     "size": 90,
+     "x": 660,
+     "y": 760,
+     "rot": -3,
+     "pop": "back",
+     "card": "gold",
+     "ink": "ink"
+    },
+    {
+     "type": "label",
+     "text": "THE TIE BET",
+     "y": 300,
+     "at": 11,
+     "size": 54,
+     "bg": "ink",
+     "fg": "gold",
+     "rot": -2,
+     "font": "Inter-Black"
+    }
+   ]
+  },
+  {
+   "start": 12,
+   "kind": "ending",
+   "els": [
+    {
+     "type": "bg",
+     "look": "paper",
+     "glow": 0.3,
+     "glow_y": 760
+    },
+    {
+     "type": "word",
+     "at": 12,
+     "text": "SKILL",
+     "font": "Inter-Black",
+     "size": 190,
+     "y": 560,
+     "rot": -3,
+     "strike_at": {
+      "b": 12,
+      "w": 3
+     }
+    },
+    {
+     "type": "word",
+     "at": {
+      "b": 12,
+      "w": 11
+     },
+     "text": "EDGE",
+     "size": 210,
+     "y": 900,
+     "rot": 2,
+     "card": "ink",
+     "ink": "gold",
+     "pop": "slam",
+     "glow": true
+    },
+    {
+     "type": "ground",
+     "y": 1255
+    },
+    {
+     "type": "text",
+     "at": {
+      "b": 12,
+      "d": 1.0
+     },
+     "text": "THE RIGGED GAME",
+     "y": 1720,
+     "size": 34,
+     "alpha": 0.8,
+     "footer": true
+    },
+    {
+     "type": "outro",
+     "at": [
+      "end",
+      0.35
+     ]
+    }
+   ]
+  }
+ ],
+ "cover": {
+  "kicker": "HOW TO PLAY",
+  "big": "9",
+  "sub": "BACCARAT IN 60 SECONDS"
+ },
+ "sources": [
+  {
+   "name": "Pagat (John McLeod), Baccarat card game rules (aces 1, 2 to 9 face value, tens and face cards 0; only the last digit counts; the procedure after the deal is fixed and nobody makes decisions; Player 1 to 1, Banker 19 to 20 (5% commission), Tie 8 to 1; 8 decks house edge Banker 1.06%, Player 1.24%, Tie 14.36%)",
+   "url": "https://www.pagat.com/banking/baccarat.html",
+   "fetched": "2026-11-26"
+  }
+ ],
+ "post": {
+  "slot": "morning",
+  "post_at": "2026-11-27T07:30:00+05:30",
+  "instagram_caption": "How baccarat works, in under a minute.\n\nTwo hands, Player and Banker, race to 9. Tens and face cards count 0, and only the last digit of a total counts. You make no decisions, and every bet still has a house edge: 1.06% on Banker, 1.24% on Player, 14.36% on a tie.\n\nEducation only. Not gambling advice. 18+\n\nDid you know players make no choices in baccarat?\n\n#theriggedgame #baccarat #howtoplay #casino #houseedge",
+  "youtube_title": "How Baccarat Works In Under A Minute",
+  "youtube_description": "Baccarat explained simply: two hands, Player and Banker, closest to nine wins, and only the last digit counts. Players make no decisions, and the house edge is 1.06% on Banker, 1.24% on Player and 14.36% on a tie.\n\nEducation only. Not gambling advice. 18+ AI narration.\n\nSources:\n• Pagat (John McLeod), \"Baccarat\"\n\nThe Rigged Game: how casinos really work. Instagram: @the_rigged_game\n\n#Casino #Baccarat #Shorts"
+ },
+ "math": [
+  {
+   "expr": "9",
+   "expect": 9,
+   "note": "closest to nine wins (Pagat)"
+  },
+  {
+   "expr": "1",
+   "expect": 1,
+   "note": "ace counts as one (Pagat)"
+  },
+  {
+   "expr": "0",
+   "expect": 0,
+   "note": "tens and face cards count zero (Pagat)"
+  },
+  {
+   "expr": "7 + 8",
+   "expect": 15,
+   "note": "seven plus eight"
+  },
+  {
+   "expr": "(7 + 8) % 10",
+   "expect": 5,
+   "note": "only the last digit counts: 15 counts as 5"
+  },
+  {
+   "expr": "(6 + 0) % 10",
+   "expect": 6,
+   "note": "hook hand: 6 and Q is 6"
+  },
+  {
+   "expr": "(4 + 5) % 10",
+   "expect": 9,
+   "note": "hook hand: 4 and 5 is 9"
+  },
+  {
+   "expr": "8",
+   "expect": 8,
+   "note": "tie pays 8 to 1 (Pagat)"
+  },
+  {
+   "expr": "round(100 * (1 - 19 / 20))",
+   "expect": 5,
+   "note": "Banker pays 19 to 20, a 5% commission on wins (Pagat)"
+  },
+  {
+   "expr": "1.06",
+   "expect": 1.06,
+   "note": "Banker house edge, 8 decks (Pagat)"
+  },
+  {
+   "expr": "1.24",
+   "expect": 1.24,
+   "note": "Player house edge, 8 decks (Pagat)"
+  },
+  {
+   "expr": "14.36",
+   "expect": 14.36,
+   "note": "Tie house edge at 8 to 1, 8 decks (Pagat)"
+  },
+  {
+   "expr": "1.06 < 1.24 < 14.36",
+   "expect": true,
+   "note": "every bet has a house edge; tie is by far the biggest"
+  },
+  {
+   "expr": "60",
+   "expect": 60,
+   "note": "cover: 60 seconds, the Reel is under a minute"
+  }
+ ]
+}
