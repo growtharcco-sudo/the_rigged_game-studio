@@ -1,0 +1,647 @@
+{
+ "id": "006_how_slots_work",
+ "episode": "07",
+ "series": "How To Play",
+ "voice": "am_liam",
+ "speed": 1.0,
+ "hold": 2.6,
+ "caption_keywords": [
+  "decides",
+  "random",
+  "generator",
+  "reels",
+  "catch",
+  "payback",
+  "factory",
+  "software",
+  "minimum",
+  "Nevada",
+  "Jersey",
+  "Pennsylvania",
+  "keeps",
+  "luck",
+  "code"
+ ],
+ "phrases": [
+  {
+   "say": "Ever wondered who decides how much a slot machine pays back?",
+   "cap": "Ever wondered who decides|how much a slot machine|pays back?",
+   "pause": 0.45
+  },
+  {
+   "say": "Back in the late eighteen hundreds, Charles Fey built the Liberty Bell, a machine with three spinning reels.",
+   "cap": "Back in the late 1800s,|Charles Fey built|the Liberty Bell,|a machine with|three spinning reels.",
+   "pause": 0.45
+  },
+  {
+   "say": "Today, a computer chip called a random number generator picks every single result.",
+   "cap": "Today, a computer chip|called a random|number generator|picks every single result.",
+   "pause": 0.45
+  },
+  {
+   "say": "In Pennsylvania, the rules say the result is chosen when each play begins.",
+   "cap": "In Pennsylvania, the rules say|the result is chosen|when each play begins.",
+   "pause": 0.45
+  },
+  {
+   "say": "The spinning reels you watch only show you what was already picked.",
+   "cap": "The spinning reels you watch|only show you|what was already picked.",
+   "pause": 0.45
+  },
+  {
+   "say": "Now here is the catch. Every machine has a payback percentage, set before you play.",
+   "cap": "Now here is the catch.|Every machine has|a payback percentage,|set before you play.",
+   "pause": 0.45
+  },
+  {
+   "say": "It is set at the factory when the software is written, and the casino picks the chip.",
+   "cap": "It is set at the factory|when the software|is written,|and the casino|picks the chip.",
+   "pause": 0.45
+  },
+  {
+   "say": "By law, the minimum is seventy five percent in Nevada and eighty three in New Jersey.",
+   "cap": "By law, the minimum is|75% in Nevada|and 83 in New Jersey.",
+   "pause": 0.45
+  },
+  {
+   "say": "Pennsylvania sets its own floor a little higher, at eighty five percent.",
+   "cap": "Pennsylvania sets|its own floor|a little higher,|at 85%.",
+   "pause": 0.45
+  },
+  {
+   "say": "Say a machine is set to pay back ninety percent over the long run.",
+   "cap": "Say a machine is set|to pay back 90%|over the long run.",
+   "pause": 0.45
+  },
+  {
+   "say": "For every hundred dollars played, it returns ninety, and the casino keeps ten.",
+   "cap": "For every $100 played,|it returns $90,|and the casino keeps $10.",
+   "pause": 0.45
+  },
+  {
+   "say": "So the casino's cut is not luck. It was written into the code.",
+   "cap": "So the casino's cut is not luck.|It was written into the code.",
+   "pause": 0.45
+  }
+ ],
+ "scenes": [
+  {
+   "start": 0,
+   "kind": "teach_card",
+   "els": [
+    {
+     "type": "bg",
+     "look": "hall"
+    },
+    {
+     "type": "ground",
+     "y": 1255
+    },
+    {
+     "type": "mascot",
+     "at": -1,
+     "x": 175,
+     "y": 805,
+     "s": 0.72,
+     "pose": "point",
+     "side": 1,
+     "pose_now": true
+    },
+    {
+     "type": "word",
+     "at": -1,
+     "text": "WHO DECIDES?",
+     "font": "Inter-Black",
+     "size": 88,
+     "x": 660,
+     "y": 760,
+     "rot": -3,
+     "pop": "back",
+     "card": "gold",
+     "ink": "ink"
+    },
+    {
+     "type": "label",
+     "text": "HOW SLOTS WORK",
+     "y": 300,
+     "at": -1,
+     "size": 54,
+     "bg": "ink",
+     "fg": "gold",
+     "rot": -2,
+     "font": "Inter-Black"
+    }
+   ]
+  },
+  {
+   "start": 1,
+   "kind": "teach_card",
+   "els": [
+    {
+     "type": "bg",
+     "look": "hall"
+    },
+    {
+     "type": "ground",
+     "y": 1255
+    },
+    {
+     "type": "mascot",
+     "at": 1,
+     "x": 175,
+     "y": 805,
+     "s": 0.72,
+     "pose": "present",
+     "side": 1,
+     "rise": 140
+    },
+    {
+     "type": "word",
+     "at": {
+      "b": 1,
+      "w": 4,
+      "d": 0.2
+     },
+     "text": "LATE 1800s",
+     "font": "Inter-Black",
+     "size": 84,
+     "x": 660,
+     "y": 620,
+     "rot": -3,
+     "pop": "back",
+     "card": "paper",
+     "ink": "ink"
+    },
+    {
+     "type": "word",
+     "at": {
+      "b": 1,
+      "w": 15,
+      "d": 0.0
+     },
+     "text": "3 REELS",
+     "font": "Inter-Black",
+     "size": 96,
+     "x": 660,
+     "y": 930,
+     "rot": 2,
+     "pop": "back",
+     "card": "gold",
+     "ink": "ink"
+    },
+    {
+     "type": "label",
+     "text": "THE LIBERTY BELL",
+     "y": 300,
+     "at": 1,
+     "size": 54,
+     "bg": "ink",
+     "fg": "gold",
+     "rot": -2,
+     "font": "Inter-Black"
+    }
+   ]
+  },
+  {
+   "start": 2,
+   "kind": "teach_card",
+   "els": [
+    {
+     "type": "bg",
+     "look": "hall"
+    },
+    {
+     "type": "ground",
+     "y": 1255
+    },
+    {
+     "type": "mascot",
+     "at": 2,
+     "x": 175,
+     "y": 805,
+     "s": 0.72,
+     "pose": "point",
+     "side": 1,
+     "rise": 140
+    },
+    {
+     "type": "word",
+     "at": {
+      "b": 2,
+      "w": 6,
+      "d": 0.2
+     },
+     "text": "RANDOM NUMBER",
+     "font": "Inter-Black",
+     "size": 70,
+     "x": 660,
+     "y": 620,
+     "rot": -3,
+     "pop": "back",
+     "card": "paper",
+     "ink": "ink"
+    },
+    {
+     "type": "word",
+     "at": {
+      "b": 2,
+      "w": 8,
+      "d": 0.0
+     },
+     "text": "GENERATOR",
+     "font": "Inter-Black",
+     "size": 84,
+     "x": 660,
+     "y": 930,
+     "rot": 2,
+     "pop": "back",
+     "card": "gold",
+     "ink": "ink"
+    },
+    {
+     "type": "label",
+     "text": "THE REAL BOSS",
+     "y": 300,
+     "at": 2,
+     "size": 54,
+     "bg": "ink",
+     "fg": "gold",
+     "rot": -2,
+     "font": "Inter-Black"
+    }
+   ]
+  },
+  {
+   "start": 4,
+   "kind": "teach_card",
+   "els": [
+    {
+     "type": "bg",
+     "look": "hall"
+    },
+    {
+     "type": "ground",
+     "y": 1255
+    },
+    {
+     "type": "mascot",
+     "at": 4,
+     "x": 175,
+     "y": 805,
+     "s": 0.72,
+     "pose": "chip",
+     "side": 1,
+     "rise": 140
+    },
+    {
+     "type": "word",
+     "at": {
+      "b": 4,
+      "w": 6,
+      "d": 0.2
+     },
+     "text": "JUST A SHOW",
+     "font": "Inter-Black",
+     "size": 86,
+     "x": 660,
+     "y": 760,
+     "rot": -3,
+     "pop": "back",
+     "card": "gold",
+     "ink": "ink"
+    },
+    {
+     "type": "label",
+     "text": "THE REELS",
+     "y": 300,
+     "at": 4,
+     "size": 54,
+     "bg": "ink",
+     "fg": "gold",
+     "rot": -2,
+     "font": "Inter-Black"
+    }
+   ]
+  },
+  {
+   "start": 5,
+   "kind": "teach_card",
+   "els": [
+    {
+     "type": "bg",
+     "look": "hall"
+    },
+    {
+     "type": "ground",
+     "y": 1255
+    },
+    {
+     "type": "mascot",
+     "at": 5,
+     "x": 175,
+     "y": 805,
+     "s": 0.72,
+     "pose": "point",
+     "side": 1,
+     "rise": 140
+    },
+    {
+     "type": "word",
+     "at": {
+      "b": 5,
+      "w": 9,
+      "d": 0.2
+     },
+     "text": "PAYBACK %",
+     "font": "Inter-Black",
+     "size": 100,
+     "x": 660,
+     "y": 760,
+     "rot": -3,
+     "pop": "back",
+     "card": "gold",
+     "ink": "ink"
+    },
+    {
+     "type": "label",
+     "text": "THE CATCH",
+     "y": 300,
+     "at": 5,
+     "size": 54,
+     "bg": "ink",
+     "fg": "gold",
+     "rot": -2,
+     "font": "Inter-Black"
+    }
+   ]
+  },
+  {
+   "start": 7,
+   "kind": "cards",
+   "els": [
+    {
+     "type": "bg",
+     "look": "study"
+    },
+    {
+     "type": "cards",
+     "at": 7,
+     "items": [
+      {
+       "text": "NV 75%",
+       "icon": "chip",
+       "at": {
+        "b": 7,
+        "w": 7,
+        "d": 0.0
+       }
+      },
+      {
+       "text": "NJ 83%",
+       "icon": "cash",
+       "at": {
+        "b": 7,
+        "w": 14,
+        "d": 0.0
+       }
+      },
+      {
+       "text": "PA 85%",
+       "icon": "wheel",
+       "at": {
+        "b": 8,
+        "w": 0,
+        "d": 0.0
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "start": 9,
+   "kind": "teach_card",
+   "els": [
+    {
+     "type": "bg",
+     "look": "hall"
+    },
+    {
+     "type": "ground",
+     "y": 1255
+    },
+    {
+     "type": "mascot",
+     "at": 9,
+     "x": 175,
+     "y": 805,
+     "s": 0.72,
+     "pose": "present",
+     "side": 1,
+     "rise": 140
+    },
+    {
+     "type": "word",
+     "at": {
+      "b": 9,
+      "w": 9,
+      "d": 0.2
+     },
+     "text": "90% BACK",
+     "font": "Inter-Black",
+     "size": 100,
+     "x": 660,
+     "y": 760,
+     "rot": -3,
+     "pop": "back",
+     "card": "gold",
+     "ink": "ink"
+    },
+    {
+     "type": "label",
+     "text": "AN EXAMPLE",
+     "y": 300,
+     "at": 9,
+     "size": 54,
+     "bg": "ink",
+     "fg": "gold",
+     "rot": -2,
+     "font": "Inter-Black"
+    }
+   ]
+  },
+  {
+   "start": 10,
+   "kind": "counter",
+   "els": [
+    {
+     "type": "bg",
+     "look": "paper"
+    },
+    {
+     "type": "counter",
+     "at": 10,
+     "value": 10,
+     "prefix": "$",
+     "suffix": "",
+     "decimals": 0,
+     "count_at": {
+      "b": 10,
+      "w": 8
+     },
+     "dur": 1.0,
+     "chips": true,
+     "unit": "KEPT FROM $100"
+    },
+    {
+     "type": "ground",
+     "y": 1255
+    }
+   ]
+  },
+  {
+   "start": 11,
+   "kind": "ending",
+   "els": [
+    {
+     "type": "bg",
+     "look": "paper",
+     "glow": 0.3,
+     "glow_y": 760
+    },
+    {
+     "type": "word",
+     "at": 11,
+     "text": "LUCK",
+     "font": "Inter-Black",
+     "size": 190,
+     "y": 560,
+     "rot": -3,
+     "strike_at": {
+      "b": 11,
+      "w": 6
+     }
+    },
+    {
+     "type": "word",
+     "at": {
+      "b": 11,
+      "w": 12
+     },
+     "text": "CODE",
+     "size": 210,
+     "y": 900,
+     "rot": 2,
+     "card": "ink",
+     "ink": "gold",
+     "pop": "slam",
+     "glow": true
+    },
+    {
+     "type": "ground",
+     "y": 1255
+    },
+    {
+     "type": "text",
+     "at": {
+      "b": 11,
+      "d": 1.0
+     },
+     "text": "THE RIGGED GAME",
+     "y": 1720,
+     "size": 34,
+     "alpha": 0.8,
+     "footer": true
+    },
+    {
+     "type": "outro",
+     "at": [
+      "end",
+      0.35
+     ]
+    }
+   ]
+  }
+ ],
+ "cover": {
+  "kicker": "HOW SLOTS REALLY WORK",
+  "big": "75%",
+  "sub": "NEVADA'S LEGAL MINIMUM"
+ },
+ "sources": [
+  {
+   "name": "Wikipedia, Slot machine (Charles Fey's Liberty Bell, three reels, between 1887 and 1895; random number generators; payout set at the factory when the software is written, operator chooses the chip; minimum payout Nevada 75%, New Jersey 83%)",
+   "url": "https://en.wikipedia.org/wiki/Slot_machine",
+   "fetched": "2026-11-26"
+  },
+  {
+   "name": "Pennsylvania Code, 58 Pa. Code 461a.7 Slot machine minimum design standards (theoretical payout may not be less than 85%; outcome selected by a random number generator at the initiation of each play; display an accurate representation of the selected outcome)",
+   "url": "https://law.cornell.edu/regulations/pennsylvania/58-Pa-Code-SS-461a-7",
+   "fetched": "2026-11-26"
+  },
+  {
+   "name": "Wikipedia, Return to player (90% payout means $90 returned for every $100 bet)",
+   "url": "https://en.wikipedia.org/wiki/Return_to_player",
+   "fetched": "2026-11-26"
+  }
+ ],
+ "post": {
+  "slot": "morning",
+  "post_at": "2026-11-26T07:30:00+05:30",
+  "instagram_caption": "Who decides how much a slot machine pays back? Not luck.\n\nA random number generator picks each result, and the payback percentage is set in the software before you play. The law only sets a minimum: 75% in Nevada, 83% in New Jersey, 85% in Pennsylvania.\n\nEducation only. Not gambling advice. 18+\n\nDid you think the spinning reels decided the result?\n\n#theriggedgame #slotmachines #casino #howitworks #probability",
+  "youtube_title": "Who Decides What A Slot Machine Pays Back?",
+  "youtube_description": "How a slot machine really works. A random number generator picks the result when the play begins, and the payback percentage is set in the software, with legal minimums like 75% in Nevada and 85% in Pennsylvania.\n\nEducation only. Not gambling advice. 18+ AI narration.\n\nSources:\n• Wikipedia, \"Slot machine\"\n• Pennsylvania Code, \"58 Pa. Code 461a.7 Slot machine minimum design standards\"\n• Wikipedia, \"Return to player\"\n\nThe Rigged Game: how casinos really work. Instagram: @the_rigged_game\n\n#Casino #SlotMachines #Shorts"
+ },
+ "math": [
+  {
+   "expr": "1887 >= 1800 and 1895 < 1900",
+   "expect": true,
+   "note": "Fey's machine dates to between 1887 and 1895, the late 1800s (Wikipedia)"
+  },
+  {
+   "expr": "3",
+   "expect": 3,
+   "note": "three reels on the Liberty Bell (Wikipedia)"
+  },
+  {
+   "expr": "75",
+   "expect": 75,
+   "note": "Nevada minimum payout % (Wikipedia, Slot machine)"
+  },
+  {
+   "expr": "83",
+   "expect": 83,
+   "note": "New Jersey minimum payout % (Wikipedia, Slot machine)"
+  },
+  {
+   "expr": "85",
+   "expect": 85,
+   "note": "Pennsylvania minimum theoretical payout % (58 Pa. Code 461a.7)"
+  },
+  {
+   "expr": "75 < 83 < 85",
+   "expect": true,
+   "note": "Pennsylvania's floor is higher than Nevada's and New Jersey's"
+  },
+  {
+   "expr": "90",
+   "expect": 90,
+   "note": "example payback % (Wikipedia, Return to player)"
+  },
+  {
+   "expr": "100",
+   "expect": 100,
+   "note": "example $100 played"
+  },
+  {
+   "expr": "100 * 90 / 100",
+   "expect": 90,
+   "note": "$100 at 90% payback returns $90"
+  },
+  {
+   "expr": "100 - 100 * 90 / 100",
+   "expect": 10,
+   "note": "casino keeps $10 of every $100"
+  }
+ ]
+}

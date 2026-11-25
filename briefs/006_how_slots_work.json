@@ -1,0 +1,287 @@
+{
+ "id": "006_how_slots_work",
+ "episode": "07",
+ "series": "How To Play",
+ "keywords": [
+  "decides",
+  "random",
+  "generator",
+  "reels",
+  "catch",
+  "payback",
+  "factory",
+  "software",
+  "minimum",
+  "Nevada",
+  "Jersey",
+  "Pennsylvania",
+  "keeps",
+  "luck",
+  "code"
+ ],
+ "beats": [
+  {
+   "say": "Ever wondered who decides how much a slot machine pays back?",
+   "cap": "Ever wondered who decides|how much a slot machine|pays back?",
+   "show": {
+    "kind": "teach_card",
+    "header": "HOW SLOTS WORK",
+    "pose": "point",
+    "items": [
+     {
+      "text": "WHO DECIDES?",
+      "size": 88,
+      "card": "gold"
+     }
+    ]
+   }
+  },
+  {
+   "say": "Back in the late eighteen hundreds, Charles Fey built the Liberty Bell, a machine with three spinning reels.",
+   "cap": "Back in the late 1800s,|Charles Fey built|the Liberty Bell,|a machine with|three spinning reels.",
+   "show": {
+    "kind": "teach_card",
+    "header": "THE LIBERTY BELL",
+    "pose": "present",
+    "items": [
+     {
+      "text": "LATE 1800s",
+      "word": 4,
+      "size": 84
+     },
+     {
+      "text": "3 REELS",
+      "word": 15,
+      "size": 96,
+      "card": "gold"
+     }
+    ]
+   }
+  },
+  {
+   "say": "Today, a computer chip called a random number generator picks every single result.",
+   "cap": "Today, a computer chip|called a random|number generator|picks every single result.",
+   "show": {
+    "kind": "teach_card",
+    "header": "THE REAL BOSS",
+    "pose": "point",
+    "items": [
+     {
+      "text": "RANDOM NUMBER",
+      "word": 6,
+      "size": 70
+     },
+     {
+      "text": "GENERATOR",
+      "word": 8,
+      "size": 84,
+      "card": "gold"
+     }
+    ]
+   }
+  },
+  {
+   "say": "In Pennsylvania, the rules say the result is chosen when each play begins.",
+   "cap": "In Pennsylvania, the rules say|the result is chosen|when each play begins."
+  },
+  {
+   "say": "The spinning reels you watch only show you what was already picked.",
+   "cap": "The spinning reels you watch|only show you|what was already picked.",
+   "show": {
+    "kind": "teach_card",
+    "header": "THE REELS",
+    "pose": "chip",
+    "items": [
+     {
+      "text": "JUST A SHOW",
+      "word": 6,
+      "size": 86,
+      "card": "gold"
+     }
+    ]
+   }
+  },
+  {
+   "say": "Now here is the catch. Every machine has a payback percentage, set before you play.",
+   "cap": "Now here is the catch.|Every machine has|a payback percentage,|set before you play.",
+   "show": {
+    "kind": "teach_card",
+    "header": "THE CATCH",
+    "pose": "point",
+    "items": [
+     {
+      "text": "PAYBACK %",
+      "word": 9,
+      "size": 100,
+      "card": "gold"
+     }
+    ]
+   }
+  },
+  {
+   "say": "It is set at the factory when the software is written, and the casino picks the chip.",
+   "cap": "It is set at the factory|when the software|is written,|and the casino|picks the chip."
+  },
+  {
+   "say": "By law, the minimum is seventy five percent in Nevada and eighty three in New Jersey.",
+   "cap": "By law, the minimum is|75% in Nevada|and 83 in New Jersey.",
+   "show": {
+    "kind": "cards",
+    "items": [
+     {
+      "text": "NV 75%",
+      "icon": "chip",
+      "beat": 0,
+      "word": 7
+     },
+     {
+      "text": "NJ 83%",
+      "icon": "cash",
+      "beat": 0,
+      "word": 14
+     },
+     {
+      "text": "PA 85%",
+      "icon": "wheel",
+      "beat": 1,
+      "word": 0
+     }
+    ]
+   }
+  },
+  {
+   "say": "Pennsylvania sets its own floor a little higher, at eighty five percent.",
+   "cap": "Pennsylvania sets|its own floor|a little higher,|at 85%."
+  },
+  {
+   "say": "Say a machine is set to pay back ninety percent over the long run.",
+   "cap": "Say a machine is set|to pay back 90%|over the long run.",
+   "show": {
+    "kind": "teach_card",
+    "header": "AN EXAMPLE",
+    "pose": "present",
+    "items": [
+     {
+      "text": "90% BACK",
+      "word": 9,
+      "size": 100,
+      "card": "gold"
+     }
+    ]
+   }
+  },
+  {
+   "say": "For every hundred dollars played, it returns ninety, and the casino keeps ten.",
+   "cap": "For every $100 played,|it returns $90,|and the casino keeps $10.",
+   "show": {
+    "kind": "counter",
+    "value": 10,
+    "prefix": "$",
+    "unit": "KEPT FROM $100",
+    "count_at": {
+     "beat": 0,
+     "word": 8
+    },
+    "dur": 1.0
+   }
+  },
+  {
+   "say": "So the casino's cut is not luck. It was written into the code.",
+   "cap": "So the casino's cut is not luck.|It was written into the code.",
+   "show": {
+    "kind": "ending",
+    "wrong": "LUCK",
+    "right": "CODE",
+    "strike_at": {
+     "beat": 0,
+     "word": 6
+    },
+    "right_at": {
+     "beat": 0,
+     "word": 12
+    }
+   }
+  }
+ ],
+ "cover": {
+  "kicker": "HOW SLOTS REALLY WORK",
+  "big": "75%",
+  "sub": "NEVADA'S LEGAL MINIMUM"
+ },
+ "sources": [
+  {
+   "name": "Wikipedia, Slot machine (Charles Fey's Liberty Bell, three reels, between 1887 and 1895; random number generators; payout set at the factory when the software is written, operator chooses the chip; minimum payout Nevada 75%, New Jersey 83%)",
+   "url": "https://en.wikipedia.org/wiki/Slot_machine",
+   "fetched": "2026-11-26"
+  },
+  {
+   "name": "Pennsylvania Code, 58 Pa. Code 461a.7 Slot machine minimum design standards (theoretical payout may not be less than 85%; outcome selected by a random number generator at the initiation of each play; display an accurate representation of the selected outcome)",
+   "url": "https://law.cornell.edu/regulations/pennsylvania/58-Pa-Code-SS-461a-7",
+   "fetched": "2026-11-26"
+  },
+  {
+   "name": "Wikipedia, Return to player (90% payout means $90 returned for every $100 bet)",
+   "url": "https://en.wikipedia.org/wiki/Return_to_player",
+   "fetched": "2026-11-26"
+  }
+ ],
+ "math": [
+  {
+   "expr": "1887 >= 1800 and 1895 < 1900",
+   "expect": true,
+   "note": "Fey's machine dates to between 1887 and 1895, the late 1800s (Wikipedia)"
+  },
+  {
+   "expr": "3",
+   "expect": 3,
+   "note": "three reels on the Liberty Bell (Wikipedia)"
+  },
+  {
+   "expr": "75",
+   "expect": 75,
+   "note": "Nevada minimum payout % (Wikipedia, Slot machine)"
+  },
+  {
+   "expr": "83",
+   "expect": 83,
+   "note": "New Jersey minimum payout % (Wikipedia, Slot machine)"
+  },
+  {
+   "expr": "85",
+   "expect": 85,
+   "note": "Pennsylvania minimum theoretical payout % (58 Pa. Code 461a.7)"
+  },
+  {
+   "expr": "75 < 83 < 85",
+   "expect": true,
+   "note": "Pennsylvania's floor is higher than Nevada's and New Jersey's"
+  },
+  {
+   "expr": "90",
+   "expect": 90,
+   "note": "example payback % (Wikipedia, Return to player)"
+  },
+  {
+   "expr": "100",
+   "expect": 100,
+   "note": "example $100 played"
+  },
+  {
+   "expr": "100 * 90 / 100",
+   "expect": 90,
+   "note": "$100 at 90% payback returns $90"
+  },
+  {
+   "expr": "100 - 100 * 90 / 100",
+   "expect": 10,
+   "note": "casino keeps $10 of every $100"
+  }
+ ],
+ "post": {
+  "slot": "morning",
+  "post_at": "2026-11-26T07:30:00+05:30",
+  "instagram_caption": "Who decides how much a slot machine pays back? Not luck.\n\nA random number generator picks each result, and the payback percentage is set in the software before you play. The law only sets a minimum: 75% in Nevada, 83% in New Jersey, 85% in Pennsylvania.\n\nEducation only. Not gambling advice. 18+\n\nDid you think the spinning reels decided the result?\n\n#theriggedgame #slotmachines #casino #howitworks #probability",
+  "youtube_title": "Who Decides What A Slot Machine Pays Back?",
+  "youtube_description": "How a slot machine really works. A random number generator picks the result when the play begins, and the payback percentage is set in the software, with legal minimums like 75% in Nevada and 85% in Pennsylvania.\n\nEducation only. Not gambling advice. 18+ AI narration.\n\nSources:\n• Wikipedia, \"Slot machine\"\n• Pennsylvania Code, \"58 Pa. Code 461a.7 Slot machine minimum design standards\"\n• Wikipedia, \"Return to player\"\n\nThe Rigged Game: how casinos really work. Instagram: @the_rigged_game\n\n#Casino #SlotMachines #Shorts"
+ }
+}
