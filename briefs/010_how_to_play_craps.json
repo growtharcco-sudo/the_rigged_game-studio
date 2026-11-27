@@ -1,0 +1,326 @@
+{
+ "id": "010_how_to_play_craps",
+ "episode": "11",
+ "series": "How To Play",
+ "keywords": [
+  "craps",
+  "dice",
+  "come",
+  "out",
+  "seven",
+  "eleven",
+  "point",
+  "pass",
+  "line",
+  "catch",
+  "edge",
+  "middle",
+  "luck"
+ ],
+ "beats": [
+  {
+   "say": "Ever watched a craps table and had no idea what was going on? Here is the game in under a minute.",
+   "cap": "Ever watched a craps table|and had no idea|what was going on?|Here is the game|in under a minute.",
+   "show": {
+    "kind": "teach_card",
+    "header": "HOW TO PLAY: CRAPS",
+    "pose": "point",
+    "items": [
+     {
+      "text": "CRAPS",
+      "size": 120,
+      "delay": 0.0
+     },
+     {
+      "text": "UNDER 1 MINUTE",
+      "beat": 0,
+      "word": 14,
+      "size": 70,
+      "card": "gold"
+     }
+    ]
+   }
+  },
+  {
+   "say": "The shooter rolls two dice, and the first roll is called the come out.",
+   "cap": "The shooter rolls two dice,|and the first roll|is called the come out.",
+   "show": {
+    "kind": "teach_card",
+    "header": "THE COME OUT",
+    "pose": "present",
+    "items": [
+     {
+      "text": "2 DICE",
+      "word": 4,
+      "size": 110
+     },
+     {
+      "text": "FIRST ROLL",
+      "word": 8,
+      "size": 90,
+      "card": "gold"
+     }
+    ]
+   }
+  },
+  {
+   "say": "On the come out, a seven or an eleven wins for the pass line.",
+   "cap": "On the come out,|a seven or an eleven|wins for the pass line.",
+   "show": {
+    "kind": "teach_card",
+    "header": "PASS LINE WINS",
+    "pose": "chip",
+    "items": [
+     {
+      "text": "7 OR 11",
+      "word": 5,
+      "size": 120,
+      "card": "gold"
+     }
+    ]
+   }
+  },
+  {
+   "say": "A two, a three or a twelve is called craps, and the pass line loses.",
+   "cap": "A two, a three or a twelve|is called craps,|and the pass line loses.",
+   "show": {
+    "kind": "teach_card",
+    "header": "THAT IS CRAPS",
+    "pose": "point",
+    "items": [
+     {
+      "text": "2, 3 OR 12",
+      "word": 6,
+      "size": 100
+     },
+     {
+      "text": "PASS LOSES",
+      "word": 13,
+      "size": 90,
+      "card": "gold"
+     }
+    ]
+   }
+  },
+  {
+   "say": "Any other number becomes the point, and the shooter keeps on rolling.",
+   "cap": "Any other number|becomes the point,|and the shooter|keeps on rolling.",
+   "show": {
+    "kind": "teach_card",
+    "header": "THE POINT",
+    "pose": "present",
+    "items": [
+     {
+      "text": "4 5 6 8 9 10",
+      "word": 3,
+      "size": 84,
+      "card": "gold"
+     }
+    ]
+   }
+  },
+  {
+   "say": "Roll the point again before a seven and the pass line wins. A seven first, and it loses.",
+   "cap": "Roll the point again|before a seven|and the pass line wins.|A seven first,|and it loses.",
+   "show": {
+    "kind": "teach_card",
+    "header": "POINT BEFORE 7",
+    "pose": "point",
+    "items": [
+     {
+      "text": "POINT = WIN",
+      "word": 9,
+      "size": 90
+     },
+     {
+      "text": "7 = LOSE",
+      "word": 14,
+      "size": 100,
+      "card": "gold"
+     }
+    ]
+   }
+  },
+  {
+   "say": "A winning pass line bet pays even money, one to one.",
+   "cap": "A winning pass line bet|pays even money,|1 to 1.",
+   "show": {
+    "kind": "teach_card",
+    "header": "THE PAYOUT",
+    "pose": "chip",
+    "items": [
+     {
+      "text": "1 TO 1",
+      "word": 7,
+      "size": 130,
+      "card": "gold"
+     }
+    ]
+   }
+  },
+  {
+   "say": "But here is the catch: the pass line wins only about forty nine point three percent of the time.",
+   "cap": "But here is the catch:|the pass line wins|only about 49.3%|of the time.",
+   "show": {
+    "kind": "counter",
+    "value": 49.3,
+    "suffix": "%",
+    "decimals": 1,
+    "unit": "PASS LINE WINS",
+    "count_at": {
+     "beat": 0,
+     "word": 10
+    },
+    "dur": 1.4,
+    "chips": false
+   }
+  },
+  {
+   "say": "Paid at even money, that leaves the house an edge of one point four one percent.",
+   "cap": "Paid at even money,|that leaves the house|an edge of 1.41%.",
+   "show": {
+    "kind": "teach_card",
+    "header": "THE CATCH",
+    "pose": "point",
+    "items": [
+     {
+      "text": "EDGE: 1.41%",
+      "word": 10,
+      "size": 100,
+      "card": "gold"
+     }
+    ]
+   }
+  },
+  {
+   "say": "And the loud bets in the middle are worse. Any seven carries sixteen point six seven percent.",
+   "cap": "And the loud bets in the middle|are worse. Any seven carries|16.67%.",
+   "show": {
+    "kind": "teach_card",
+    "header": "THE MIDDLE BETS",
+    "pose": "present",
+    "items": [
+     {
+      "text": "PASS: 1.41%",
+      "word": 3,
+      "size": 84
+     },
+     {
+      "text": "ANY 7: 16.67%",
+      "word": 11,
+      "size": 84,
+      "card": "gold"
+     }
+    ]
+   }
+  },
+  {
+   "say": "Craps feels like pure luck, but every bet on the felt has an edge.",
+   "cap": "Craps feels like pure luck,|but every bet on the felt|has an edge.",
+   "show": {
+    "kind": "ending",
+    "wrong": "LUCK",
+    "right": "EDGE",
+    "strike_at": {
+     "beat": 0,
+     "word": 4
+    },
+    "right_at": {
+     "beat": 0,
+     "word": 13
+    }
+   }
+  }
+ ],
+ "cover": {
+  "kicker": "HOW TO PLAY",
+  "big": "7/11",
+  "sub": "CRAPS IN 60 SECONDS"
+ },
+ "sources": [
+  {
+   "name": "Encyclopaedia Britannica, Craps (come-out roll: 7 or 11 wins, 2, 3 or 12 is craps and loses; 4, 5, 6, 8, 9 or 10 becomes the point; the shooter rolls until the point repeats and wins, or a 7 and loses; derived from the English game hazard; house advantage 1.4 to 11.1 percent depending on the bet)",
+   "url": "https://www.britannica.com/topic/craps",
+   "fetched": "2026-11-28"
+  },
+  {
+   "name": "HowStuffWorks (John Grochowski), How to Play Craps (Pass bets are paid at even money; house edge 1.41 percent on Pass; any seven 16.67 percent)",
+   "url": "https://entertainment.howstuffworks.com/playing-craps.htm",
+   "fetched": "2026-11-28"
+  }
+ ],
+ "math": [
+  {
+   "expr": "2",
+   "expect": 2,
+   "note": "two dice (Britannica)"
+  },
+  {
+   "expr": "1",
+   "expect": 1,
+   "note": "under one minute: the Reel is under 60 seconds"
+  },
+  {
+   "expr": "60",
+   "expect": 60,
+   "note": "cover: 60 seconds"
+  },
+  {
+   "expr": "7 + 11",
+   "expect": 18,
+   "note": "come-out naturals 7 and 11 win (Britannica)"
+  },
+  {
+   "expr": "2 + 3 + 12",
+   "expect": 17,
+   "note": "craps 2, 3 and 12 lose on the come out (Britannica)"
+  },
+  {
+   "expr": "4 + 5 + 6 + 8 + 9 + 10",
+   "expect": 42,
+   "note": "every other total, 4 5 6 8 9 10, becomes the point (Britannica)"
+  },
+  {
+   "expr": "1",
+   "expect": 1,
+   "note": "pass pays even money, 1 to 1 (HowStuffWorks)"
+  },
+  {
+   "expr": "(6/36 + 2/36 + 2 * ((3/36) * 3/9 + (4/36) * 4/10 + (5/36) * 5/11)) * 495",
+   "expect": 244,
+   "note": "pass line wins 244 times in 495: naturals plus each point made before a 7"
+  },
+  {
+   "expr": "round(100 * 244 / 495, 1)",
+   "expect": 49.3,
+   "note": "pass line win chance, about 49.3%"
+  },
+  {
+   "expr": "round(100 * (1 - 2 * 244 / 495), 2)",
+   "expect": 1.41,
+   "note": "pass line house edge at even money, 1.41% (HowStuffWorks)"
+  },
+  {
+   "expr": "7",
+   "expect": 7,
+   "note": "any seven bet"
+  },
+  {
+   "expr": "round(100 * (1 - 5 * (6 / 36)), 2)",
+   "expect": 16.67,
+   "note": "any seven pays 4 to 1 on a 1 in 6 chance: 16.67% edge (HowStuffWorks)"
+  },
+  {
+   "expr": "1.41 < 16.67",
+   "expect": true,
+   "note": "the middle bets are worse"
+  }
+ ],
+ "post": {
+  "slot": "morning",
+  "post_at": "2026-11-28T07:30:00+05:30",
+  "instagram_caption": "How craps works, in under a minute.\n\nOn the come out, 7 or 11 wins for the pass line and 2, 3 or 12 loses. Anything else is the point, and it has to come again before a 7. The pass line wins about 49.3% of the time at even money, a 1.41% house edge, and the loud bets in the middle are far worse.\n\nEducation only. Not gambling advice. 18+\n\nHad you ever worked out what was happening at a craps table?\n\n#theriggedgame #craps #howtoplay #casino #houseedge",
+  "youtube_title": "How Craps Works In Under A Minute",
+  "youtube_description": "Craps explained simply: the come out roll, the point, and why a seven ends it. The pass line wins about 49.3% of the time at even money, a 1.41% house edge, and a middle bet like any seven carries 16.67%.\n\nEducation only. Not gambling advice. 18+ AI narration.\n\nSources:\n• Encyclopaedia Britannica, \"Craps\"\n• HowStuffWorks (John Grochowski), \"How to Play Craps\"\n\nThe Rigged Game: how casinos really work. Instagram: @the_rigged_game\n\n#Casino #Craps #Shorts"
+ }
+}

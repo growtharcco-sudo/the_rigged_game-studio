@@ -10,12 +10,12 @@ Mark a line `[used <id>]` when it becomes a Reel.
 - [used 005_monte_carlo_1913] The gambler's fallacy: Monte Carlo, 1913, black came up 26 times in a row.
 - Why every slot machine has a payback percentage, and who sets it.
 - The MIT blackjack team: card counting, and why casinos can ask counters to leave.
-- The Martingale "system" (doubling your bet): why table limits break it.
+- [used 011_martingale_myth] The Martingale "system" (doubling your bet): why table limits break it.
 - Why casinos use chips: the history and the psychology.
 - [used 004_house_edge_ranked] The house edge on popular games, compared (roulette, blackjack, baccarat, keno, slots).
 - Near misses on slot machines: why "almost winning" feels like progress.
 - [used 007_gambling_history_countdown] The origin of dice: the oldest known dice and what they were made of.
-- How Las Vegas went from desert railroad stop to casino city.
+- [used 013_las_vegas_countdown] How Las Vegas went from desert railroad stop to casino city.
 - Lottery odds: how unlikely a jackpot really is, compared with everyday events.
 - [used 009_edward_thorp] Edward Thorp: the maths professor who wrote "Beat the Dealer".
 - Why casinos give "free" hotel rooms, meals and shows (comps).
@@ -26,6 +26,6 @@ Mark a line `[used <id>]` when it becomes a Reel.
 - How to play roulette: inside vs outside bets and what each pays. Catch: every bet loses to the zero.
 - How to play Texas Hold'em poker: blinds, hole cards, flop, turn, river, hand ranks. Catch: you play other players, the casino takes the rake.
 - [used 008_how_to_play_baccarat] How to play baccarat: player, banker, tie, card values. Catch: the 5% commission on banker wins.
-- How to play craps: pass line, come out roll, point. Catch: the 2, 3 and 12 on the come out.
+- [used 010_how_to_play_craps] How to play craps: pass line, come out roll, point. Catch: the 2, 3 and 12 on the come out.
 - [used 006_how_slots_work] How a slot machine works: reels, paylines, the random number generator. Catch: the payback percentage is set in advance.
-- How to play keno: pick numbers, the draw. Catch: one of the highest house edges in the casino.
+- [used 012_how_to_play_keno] How to play keno: pick numbers, the draw. Catch: one of the highest house edges in the casino.

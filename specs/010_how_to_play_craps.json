@@ -1,0 +1,814 @@
+{
+ "id": "010_how_to_play_craps",
+ "episode": "11",
+ "series": "How To Play",
+ "voice": "am_liam",
+ "speed": 1.0,
+ "hold": 2.6,
+ "caption_keywords": [
+  "craps",
+  "dice",
+  "come",
+  "out",
+  "seven",
+  "eleven",
+  "point",
+  "pass",
+  "line",
+  "catch",
+  "edge",
+  "middle",
+  "luck"
+ ],
+ "phrases": [
+  {
+   "say": "Ever watched a craps table and had no idea what was going on? Here is the game in under a minute.",
+   "cap": "Ever watched a craps table|and had no idea|what was going on?|Here is the game|in under a minute.",
+   "pause": 0.45
+  },
+  {
+   "say": "The shooter rolls two dice, and the first roll is called the come out.",
+   "cap": "The shooter rolls two dice,|and the first roll|is called the come out.",
+   "pause": 0.45
+  },
+  {
+   "say": "On the come out, a seven or an eleven wins for the pass line.",
+   "cap": "On the come out,|a seven or an eleven|wins for the pass line.",
+   "pause": 0.45
+  },
+  {
+   "say": "A two, a three or a twelve is called craps, and the pass line loses.",
+   "cap": "A two, a three or a twelve|is called craps,|and the pass line loses.",
+   "pause": 0.45
+  },
+  {
+   "say": "Any other number becomes the point, and the shooter keeps on rolling.",
+   "cap": "Any other number|becomes the point,|and the shooter|keeps on rolling.",
+   "pause": 0.45
+  },
+  {
+   "say": "Roll the point again before a seven and the pass line wins. A seven first, and it loses.",
+   "cap": "Roll the point again|before a seven|and the pass line wins.|A seven first,|and it loses.",
+   "pause": 0.45
+  },
+  {
+   "say": "A winning pass line bet pays even money, one to one.",
+   "cap": "A winning pass line bet|pays even money,|1 to 1.",
+   "pause": 0.45
+  },
+  {
+   "say": "But here is the catch: the pass line wins only about forty nine point three percent of the time.",
+   "cap": "But here is the catch:|the pass line wins|only about 49.3%|of the time.",
+   "pause": 0.45
+  },
+  {
+   "say": "Paid at even money, that leaves the house an edge of one point four one percent.",
+   "cap": "Paid at even money,|that leaves the house|an edge of 1.41%.",
+   "pause": 0.45
+  },
+  {
+   "say": "And the loud bets in the middle are worse. Any seven carries sixteen point six seven percent.",
+   "cap": "And the loud bets in the middle|are worse. Any seven carries|16.67%.",
+   "pause": 0.45
+  },
+  {
+   "say": "Craps feels like pure luck, but every bet on the felt has an edge.",
+   "cap": "Craps feels like pure luck,|but every bet on the felt|has an edge.",
+   "pause": 0.45
+  }
+ ],
+ "scenes": [
+  {
+   "start": 0,
+   "kind": "teach_card",
+   "els": [
+    {
+     "type": "bg",
+     "look": "hall"
+    },
+    {
+     "type": "ground",
+     "y": 1255
+    },
+    {
+     "type": "mascot",
+     "at": -1,
+     "x": 175,
+     "y": 805,
+     "s": 0.72,
+     "pose": "point",
+     "side": 1,
+     "pose_now": true
+    },
+    {
+     "type": "word",
+     "at": -1,
+     "text": "CRAPS",
+     "font": "Inter-Black",
+     "size": 120,
+     "x": 660,
+     "y": 620,
+     "rot": -3,
+     "pop": "back",
+     "card": "paper",
+     "ink": "ink"
+    },
+    {
+     "type": "word",
+     "at": {
+      "b": 0,
+      "w": 14,
+      "d": 0.0
+     },
+     "text": "UNDER 1 MINUTE",
+     "font": "Inter-Black",
+     "size": 70,
+     "x": 660,
+     "y": 930,
+     "rot": 2,
+     "pop": "back",
+     "card": "gold",
+     "ink": "ink"
+    },
+    {
+     "type": "label",
+     "text": "HOW TO PLAY: CRAPS",
+     "y": 300,
+     "at": -1,
+     "size": 54,
+     "bg": "ink",
+     "fg": "gold",
+     "rot": -2,
+     "font": "Inter-Black"
+    }
+   ]
+  },
+  {
+   "start": 1,
+   "kind": "teach_card",
+   "els": [
+    {
+     "type": "bg",
+     "look": "hall"
+    },
+    {
+     "type": "ground",
+     "y": 1255
+    },
+    {
+     "type": "mascot",
+     "at": 1,
+     "x": 175,
+     "y": 805,
+     "s": 0.72,
+     "pose": "present",
+     "side": 1,
+     "rise": 140
+    },
+    {
+     "type": "word",
+     "at": {
+      "b": 1,
+      "w": 4,
+      "d": 0.2
+     },
+     "text": "2 DICE",
+     "font": "Inter-Black",
+     "size": 110,
+     "x": 660,
+     "y": 620,
+     "rot": -3,
+     "pop": "back",
+     "card": "paper",
+     "ink": "ink"
+    },
+    {
+     "type": "word",
+     "at": {
+      "b": 1,
+      "w": 8,
+      "d": 0.0
+     },
+     "text": "FIRST ROLL",
+     "font": "Inter-Black",
+     "size": 90,
+     "x": 660,
+     "y": 930,
+     "rot": 2,
+     "pop": "back",
+     "card": "gold",
+     "ink": "ink"
+    },
+    {
+     "type": "label",
+     "text": "THE COME OUT",
+     "y": 300,
+     "at": 1,
+     "size": 54,
+     "bg": "ink",
+     "fg": "gold",
+     "rot": -2,
+     "font": "Inter-Black"
+    }
+   ]
+  },
+  {
+   "start": 2,
+   "kind": "teach_card",
+   "els": [
+    {
+     "type": "bg",
+     "look": "hall"
+    },
+    {
+     "type": "ground",
+     "y": 1255
+    },
+    {
+     "type": "mascot",
+     "at": 2,
+     "x": 175,
+     "y": 805,
+     "s": 0.72,
+     "pose": "chip",
+     "side": 1,
+     "rise": 140
+    },
+    {
+     "type": "word",
+     "at": {
+      "b": 2,
+      "w": 5,
+      "d": 0.2
+     },
+     "text": "7 OR 11",
+     "font": "Inter-Black",
+     "size": 120,
+     "x": 660,
+     "y": 760,
+     "rot": -3,
+     "pop": "back",
+     "card": "gold",
+     "ink": "ink"
+    },
+    {
+     "type": "label",
+     "text": "PASS LINE WINS",
+     "y": 300,
+     "at": 2,
+     "size": 54,
+     "bg": "ink",
+     "fg": "gold",
+     "rot": -2,
+     "font": "Inter-Black"
+    }
+   ]
+  },
+  {
+   "start": 3,
+   "kind": "teach_card",
+   "els": [
+    {
+     "type": "bg",
+     "look": "hall"
+    },
+    {
+     "type": "ground",
+     "y": 1255
+    },
+    {
+     "type": "mascot",
+     "at": 3,
+     "x": 175,
+     "y": 805,
+     "s": 0.72,
+     "pose": "point",
+     "side": 1,
+     "rise": 140
+    },
+    {
+     "type": "word",
+     "at": {
+      "b": 3,
+      "w": 6,
+      "d": 0.2
+     },
+     "text": "2, 3 OR 12",
+     "font": "Inter-Black",
+     "size": 100,
+     "x": 660,
+     "y": 620,
+     "rot": -3,
+     "pop": "back",
+     "card": "paper",
+     "ink": "ink"
+    },
+    {
+     "type": "word",
+     "at": {
+      "b": 3,
+      "w": 13,
+      "d": 0.0
+     },
+     "text": "PASS LOSES",
+     "font": "Inter-Black",
+     "size": 90,
+     "x": 660,
+     "y": 930,
+     "rot": 2,
+     "pop": "back",
+     "card": "gold",
+     "ink": "ink"
+    },
+    {
+     "type": "label",
+     "text": "THAT IS CRAPS",
+     "y": 300,
+     "at": 3,
+     "size": 54,
+     "bg": "ink",
+     "fg": "gold",
+     "rot": -2,
+     "font": "Inter-Black"
+    }
+   ]
+  },
+  {
+   "start": 4,
+   "kind": "teach_card",
+   "els": [
+    {
+     "type": "bg",
+     "look": "hall"
+    },
+    {
+     "type": "ground",
+     "y": 1255
+    },
+    {
+     "type": "mascot",
+     "at": 4,
+     "x": 175,
+     "y": 805,
+     "s": 0.72,
+     "pose": "present",
+     "side": 1,
+     "rise": 140
+    },
+    {
+     "type": "word",
+     "at": {
+      "b": 4,
+      "w": 3,
+      "d": 0.2
+     },
+     "text": "4 5 6 8 9 10",
+     "font": "Inter-Black",
+     "size": 84,
+     "x": 660,
+     "y": 760,
+     "rot": -3,
+     "pop": "back",
+     "card": "gold",
+     "ink": "ink"
+    },
+    {
+     "type": "label",
+     "text": "THE POINT",
+     "y": 300,
+     "at": 4,
+     "size": 54,
+     "bg": "ink",
+     "fg": "gold",
+     "rot": -2,
+     "font": "Inter-Black"
+    }
+   ]
+  },
+  {
+   "start": 5,
+   "kind": "teach_card",
+   "els": [
+    {
+     "type": "bg",
+     "look": "hall"
+    },
+    {
+     "type": "ground",
+     "y": 1255
+    },
+    {
+     "type": "mascot",
+     "at": 5,
+     "x": 175,
+     "y": 805,
+     "s": 0.72,
+     "pose": "point",
+     "side": 1,
+     "rise": 140
+    },
+    {
+     "type": "word",
+     "at": {
+      "b": 5,
+      "w": 9,
+      "d": 0.2
+     },
+     "text": "POINT = WIN",
+     "font": "Inter-Black",
+     "size": 90,
+     "x": 660,
+     "y": 620,
+     "rot": -3,
+     "pop": "back",
+     "card": "paper",
+     "ink": "ink"
+    },
+    {
+     "type": "word",
+     "at": {
+      "b": 5,
+      "w": 14,
+      "d": 0.0
+     },
+     "text": "7 = LOSE",
+     "font": "Inter-Black",
+     "size": 100,
+     "x": 660,
+     "y": 930,
+     "rot": 2,
+     "pop": "back",
+     "card": "gold",
+     "ink": "ink"
+    },
+    {
+     "type": "label",
+     "text": "POINT BEFORE 7",
+     "y": 300,
+     "at": 5,
+     "size": 54,
+     "bg": "ink",
+     "fg": "gold",
+     "rot": -2,
+     "font": "Inter-Black"
+    }
+   ]
+  },
+  {
+   "start": 6,
+   "kind": "teach_card",
+   "els": [
+    {
+     "type": "bg",
+     "look": "hall"
+    },
+    {
+     "type": "ground",
+     "y": 1255
+    },
+    {
+     "type": "mascot",
+     "at": 6,
+     "x": 175,
+     "y": 805,
+     "s": 0.72,
+     "pose": "chip",
+     "side": 1,
+     "rise": 140
+    },
+    {
+     "type": "word",
+     "at": {
+      "b": 6,
+      "w": 7,
+      "d": 0.2
+     },
+     "text": "1 TO 1",
+     "font": "Inter-Black",
+     "size": 130,
+     "x": 660,
+     "y": 760,
+     "rot": -3,
+     "pop": "back",
+     "card": "gold",
+     "ink": "ink"
+    },
+    {
+     "type": "label",
+     "text": "THE PAYOUT",
+     "y": 300,
+     "at": 6,
+     "size": 54,
+     "bg": "ink",
+     "fg": "gold",
+     "rot": -2,
+     "font": "Inter-Black"
+    }
+   ]
+  },
+  {
+   "start": 7,
+   "kind": "counter",
+   "els": [
+    {
+     "type": "bg",
+     "look": "paper"
+    },
+    {
+     "type": "counter",
+     "at": 7,
+     "value": 49.3,
+     "prefix": "",
+     "suffix": "%",
+     "decimals": 1,
+     "count_at": {
+      "b": 7,
+      "w": 10
+     },
+     "dur": 1.4,
+     "chips": false,
+     "unit": "PASS LINE WINS"
+    },
+    {
+     "type": "ground",
+     "y": 1255
+    }
+   ]
+  },
+  {
+   "start": 8,
+   "kind": "teach_card",
+   "els": [
+    {
+     "type": "bg",
+     "look": "hall"
+    },
+    {
+     "type": "ground",
+     "y": 1255
+    },
+    {
+     "type": "mascot",
+     "at": 8,
+     "x": 175,
+     "y": 805,
+     "s": 0.72,
+     "pose": "point",
+     "side": 1,
+     "rise": 140
+    },
+    {
+     "type": "word",
+     "at": {
+      "b": 8,
+      "w": 10,
+      "d": 0.2
+     },
+     "text": "EDGE: 1.41%",
+     "font": "Inter-Black",
+     "size": 100,
+     "x": 660,
+     "y": 760,
+     "rot": -3,
+     "pop": "back",
+     "card": "gold",
+     "ink": "ink"
+    },
+    {
+     "type": "label",
+     "text": "THE CATCH",
+     "y": 300,
+     "at": 8,
+     "size": 54,
+     "bg": "ink",
+     "fg": "gold",
+     "rot": -2,
+     "font": "Inter-Black"
+    }
+   ]
+  },
+  {
+   "start": 9,
+   "kind": "teach_card",
+   "els": [
+    {
+     "type": "bg",
+     "look": "hall"
+    },
+    {
+     "type": "ground",
+     "y": 1255
+    },
+    {
+     "type": "mascot",
+     "at": 9,
+     "x": 175,
+     "y": 805,
+     "s": 0.72,
+     "pose": "present",
+     "side": 1,
+     "rise": 140
+    },
+    {
+     "type": "word",
+     "at": {
+      "b": 9,
+      "w": 3,
+      "d": 0.2
+     },
+     "text": "PASS: 1.41%",
+     "font": "Inter-Black",
+     "size": 84,
+     "x": 660,
+     "y": 620,
+     "rot": -3,
+     "pop": "back",
+     "card": "paper",
+     "ink": "ink"
+    },
+    {
+     "type": "word",
+     "at": {
+      "b": 9,
+      "w": 11,
+      "d": 0.0
+     },
+     "text": "ANY 7: 16.67%",
+     "font": "Inter-Black",
+     "size": 84,
+     "x": 660,
+     "y": 930,
+     "rot": 2,
+     "pop": "back",
+     "card": "gold",
+     "ink": "ink"
+    },
+    {
+     "type": "label",
+     "text": "THE MIDDLE BETS",
+     "y": 300,
+     "at": 9,
+     "size": 54,
+     "bg": "ink",
+     "fg": "gold",
+     "rot": -2,
+     "font": "Inter-Black"
+    }
+   ]
+  },
+  {
+   "start": 10,
+   "kind": "ending",
+   "els": [
+    {
+     "type": "bg",
+     "look": "paper",
+     "glow": 0.3,
+     "glow_y": 760
+    },
+    {
+     "type": "word",
+     "at": 10,
+     "text": "LUCK",
+     "font": "Inter-Black",
+     "size": 190,
+     "y": 560,
+     "rot": -3,
+     "strike_at": {
+      "b": 10,
+      "w": 4
+     }
+    },
+    {
+     "type": "word",
+     "at": {
+      "b": 10,
+      "w": 13
+     },
+     "text": "EDGE",
+     "size": 210,
+     "y": 900,
+     "rot": 2,
+     "card": "ink",
+     "ink": "gold",
+     "pop": "slam",
+     "glow": true
+    },
+    {
+     "type": "ground",
+     "y": 1255
+    },
+    {
+     "type": "text",
+     "at": {
+      "b": 10,
+      "d": 1.0
+     },
+     "text": "THE RIGGED GAME",
+     "y": 1720,
+     "size": 34,
+     "alpha": 0.8,
+     "footer": true
+    },
+    {
+     "type": "outro",
+     "at": [
+      "end",
+      0.35
+     ]
+    }
+   ]
+  }
+ ],
+ "cover": {
+  "kicker": "HOW TO PLAY",
+  "big": "7/11",
+  "sub": "CRAPS IN 60 SECONDS"
+ },
+ "sources": [
+  {
+   "name": "Encyclopaedia Britannica, Craps (come-out roll: 7 or 11 wins, 2, 3 or 12 is craps and loses; 4, 5, 6, 8, 9 or 10 becomes the point; the shooter rolls until the point repeats and wins, or a 7 and loses; derived from the English game hazard; house advantage 1.4 to 11.1 percent depending on the bet)",
+   "url": "https://www.britannica.com/topic/craps",
+   "fetched": "2026-11-28"
+  },
+  {
+   "name": "HowStuffWorks (John Grochowski), How to Play Craps (Pass bets are paid at even money; house edge 1.41 percent on Pass; any seven 16.67 percent)",
+   "url": "https://entertainment.howstuffworks.com/playing-craps.htm",
+   "fetched": "2026-11-28"
+  }
+ ],
+ "post": {
+  "slot": "morning",
+  "post_at": "2026-11-28T07:30:00+05:30",
+  "instagram_caption": "How craps works, in under a minute.\n\nOn the come out, 7 or 11 wins for the pass line and 2, 3 or 12 loses. Anything else is the point, and it has to come again before a 7. The pass line wins about 49.3% of the time at even money, a 1.41% house edge, and the loud bets in the middle are far worse.\n\nEducation only. Not gambling advice. 18+\n\nHad you ever worked out what was happening at a craps table?\n\n#theriggedgame #craps #howtoplay #casino #houseedge",
+  "youtube_title": "How Craps Works In Under A Minute",
+  "youtube_description": "Craps explained simply: the come out roll, the point, and why a seven ends it. The pass line wins about 49.3% of the time at even money, a 1.41% house edge, and a middle bet like any seven carries 16.67%.\n\nEducation only. Not gambling advice. 18+ AI narration.\n\nSources:\n• Encyclopaedia Britannica, \"Craps\"\n• HowStuffWorks (John Grochowski), \"How to Play Craps\"\n\nThe Rigged Game: how casinos really work. Instagram: @the_rigged_game\n\n#Casino #Craps #Shorts"
+ },
+ "math": [
+  {
+   "expr": "2",
+   "expect": 2,
+   "note": "two dice (Britannica)"
+  },
+  {
+   "expr": "1",
+   "expect": 1,
+   "note": "under one minute: the Reel is under 60 seconds"
+  },
+  {
+   "expr": "60",
+   "expect": 60,
+   "note": "cover: 60 seconds"
+  },
+  {
+   "expr": "7 + 11",
+   "expect": 18,
+   "note": "come-out naturals 7 and 11 win (Britannica)"
+  },
+  {
+   "expr": "2 + 3 + 12",
+   "expect": 17,
+   "note": "craps 2, 3 and 12 lose on the come out (Britannica)"
+  },
+  {
+   "expr": "4 + 5 + 6 + 8 + 9 + 10",
+   "expect": 42,
+   "note": "every other total, 4 5 6 8 9 10, becomes the point (Britannica)"
+  },
+  {
+   "expr": "1",
+   "expect": 1,
+   "note": "pass pays even money, 1 to 1 (HowStuffWorks)"
+  },
+  {
+   "expr": "(6/36 + 2/36 + 2 * ((3/36) * 3/9 + (4/36) * 4/10 + (5/36) * 5/11)) * 495",
+   "expect": 244,
+   "note": "pass line wins 244 times in 495: naturals plus each point made before a 7"
+  },
+  {
+   "expr": "round(100 * 244 / 495, 1)",
+   "expect": 49.3,
+   "note": "pass line win chance, about 49.3%"
+  },
+  {
+   "expr": "round(100 * (1 - 2 * 244 / 495), 2)",
+   "expect": 1.41,
+   "note": "pass line house edge at even money, 1.41% (HowStuffWorks)"
+  },
+  {
+   "expr": "7",
+   "expect": 7,
+   "note": "any seven bet"
+  },
+  {
+   "expr": "round(100 * (1 - 5 * (6 / 36)), 2)",
+   "expect": 16.67,
+   "note": "any seven pays 4 to 1 on a 1 in 6 chance: 16.67% edge (HowStuffWorks)"
+  },
+  {
+   "expr": "1.41 < 16.67",
+   "expect": true,
+   "note": "the middle bets are worse"
+  }
+ ]
+}
