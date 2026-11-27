@@ -1,0 +1,798 @@
+{
+ "id": "012_how_to_play_keno",
+ "episode": "13",
+ "series": "How To Play",
+ "voice": "am_liam",
+ "speed": 1.0,
+ "hold": 2.6,
+ "caption_keywords": [
+  "keno",
+  "odds",
+  "China",
+  "eighty",
+  "twenty",
+  "strategy",
+  "catch",
+  "house",
+  "keeps",
+  "million",
+  "lucky",
+  "edge"
+ ],
+ "phrases": [
+  {
+   "say": "Mark ten numbers on a keno ticket. What are the odds that all ten come up?",
+   "cap": "Mark ten numbers|on a keno ticket.|What are the odds|that all ten come up?",
+   "pause": 0.45
+  },
+  {
+   "say": "Keno has its roots in China, and Chinese immigrants brought it to America in the late eighteen hundreds.",
+   "cap": "Keno has its roots in China,|and Chinese immigrants|brought it to America|in the late 1800s.",
+   "pause": 0.45
+  },
+  {
+   "say": "The ticket has eighty numbers, and you mark anywhere from one to twenty of them.",
+   "cap": "The ticket has 80 numbers,|and you mark anywhere|from 1 to 20 of them.",
+   "pause": 0.45
+  },
+  {
+   "say": "Then twenty numbers are drawn, and you are paid by how many of yours match.",
+   "cap": "Then 20 numbers are drawn,|and you are paid|by how many of yours match.",
+   "pause": 0.45
+  },
+  {
+   "say": "There is no strategy at all, because every number is as likely as any other.",
+   "cap": "There is no strategy at all,|because every number|is as likely as any other.",
+   "pause": 0.45
+  },
+  {
+   "say": "Mark just four numbers, and all four come up about once in three hundred twenty six games.",
+   "cap": "Mark just four numbers,|and all four come up|about once in 326 games.",
+   "pause": 0.45
+  },
+  {
+   "say": "Here is the catch. On one sample four number pay table, a dollar returns about eighty cents.",
+   "cap": "Here is the catch.|On one sample|four number pay table,|a dollar returns|about 80 cents.",
+   "pause": 0.45
+  },
+  {
+   "say": "Keno pays back anywhere from under seventy to just over eighty percent. The house keeps the rest.",
+   "cap": "Keno pays back anywhere|from under 70|to just over 80%.|The house keeps the rest.",
+   "pause": 0.45
+  },
+  {
+   "say": "And all ten out of ten? About one in eight point nine million.",
+   "cap": "And all ten out of ten?|About 1 in 8.9 million.",
+   "pause": 0.45
+  },
+  {
+   "say": "There are no lucky numbers in keno. There is only the house edge.",
+   "cap": "There are no lucky numbers|in keno. There is only|the house edge.",
+   "pause": 0.45
+  }
+ ],
+ "scenes": [
+  {
+   "start": 0,
+   "kind": "teach_card",
+   "els": [
+    {
+     "type": "bg",
+     "look": "hall"
+    },
+    {
+     "type": "ground",
+     "y": 1255
+    },
+    {
+     "type": "mascot",
+     "at": -1,
+     "x": 175,
+     "y": 805,
+     "s": 0.72,
+     "pose": "point",
+     "side": 1,
+     "pose_now": true
+    },
+    {
+     "type": "word",
+     "at": -1,
+     "text": "KENO",
+     "font": "Inter-Black",
+     "size": 130,
+     "x": 660,
+     "y": 620,
+     "rot": -3,
+     "pop": "back",
+     "card": "paper",
+     "ink": "ink"
+    },
+    {
+     "type": "word",
+     "at": {
+      "b": 0,
+      "w": 9,
+      "d": 0.0
+     },
+     "text": "ALL 10 OF 10?",
+     "font": "Inter-Black",
+     "size": 84,
+     "x": 660,
+     "y": 930,
+     "rot": 2,
+     "pop": "back",
+     "card": "gold",
+     "ink": "ink"
+    },
+    {
+     "type": "label",
+     "text": "HOW TO PLAY: KENO",
+     "y": 300,
+     "at": -1,
+     "size": 54,
+     "bg": "ink",
+     "fg": "gold",
+     "rot": -2,
+     "font": "Inter-Black"
+    }
+   ]
+  },
+  {
+   "start": 1,
+   "kind": "teach_card",
+   "els": [
+    {
+     "type": "bg",
+     "look": "hall"
+    },
+    {
+     "type": "ground",
+     "y": 1255
+    },
+    {
+     "type": "mascot",
+     "at": 1,
+     "x": 175,
+     "y": 805,
+     "s": 0.72,
+     "pose": "present",
+     "side": 1,
+     "rise": 140
+    },
+    {
+     "type": "word",
+     "at": {
+      "b": 1,
+      "w": 5,
+      "d": 0.2
+     },
+     "text": "CHINA",
+     "font": "Inter-Black",
+     "size": 120,
+     "x": 660,
+     "y": 620,
+     "rot": -3,
+     "pop": "back",
+     "card": "paper",
+     "ink": "ink"
+    },
+    {
+     "type": "word",
+     "at": {
+      "b": 1,
+      "w": 12,
+      "d": 0.0
+     },
+     "text": "USA, LATE 1800s",
+     "font": "Inter-Black",
+     "size": 76,
+     "x": 660,
+     "y": 930,
+     "rot": 2,
+     "pop": "back",
+     "card": "gold",
+     "ink": "ink"
+    },
+    {
+     "type": "label",
+     "text": "WHERE IT CAME FROM",
+     "y": 300,
+     "at": 1,
+     "size": 54,
+     "bg": "ink",
+     "fg": "gold",
+     "rot": -2,
+     "font": "Inter-Black"
+    }
+   ]
+  },
+  {
+   "start": 2,
+   "kind": "teach_card",
+   "els": [
+    {
+     "type": "bg",
+     "look": "hall"
+    },
+    {
+     "type": "ground",
+     "y": 1255
+    },
+    {
+     "type": "mascot",
+     "at": 2,
+     "x": 175,
+     "y": 805,
+     "s": 0.72,
+     "pose": "chip",
+     "side": 1,
+     "rise": 140
+    },
+    {
+     "type": "word",
+     "at": {
+      "b": 2,
+      "w": 3,
+      "d": 0.2
+     },
+     "text": "80 NUMBERS",
+     "font": "Inter-Black",
+     "size": 100,
+     "x": 660,
+     "y": 620,
+     "rot": -3,
+     "pop": "back",
+     "card": "paper",
+     "ink": "ink"
+    },
+    {
+     "type": "word",
+     "at": {
+      "b": 2,
+      "w": 10,
+      "d": 0.0
+     },
+     "text": "MARK 1 TO 20",
+     "font": "Inter-Black",
+     "size": 90,
+     "x": 660,
+     "y": 930,
+     "rot": 2,
+     "pop": "back",
+     "card": "gold",
+     "ink": "ink"
+    },
+    {
+     "type": "label",
+     "text": "YOUR TICKET",
+     "y": 300,
+     "at": 2,
+     "size": 54,
+     "bg": "ink",
+     "fg": "gold",
+     "rot": -2,
+     "font": "Inter-Black"
+    }
+   ]
+  },
+  {
+   "start": 3,
+   "kind": "teach_card",
+   "els": [
+    {
+     "type": "bg",
+     "look": "hall"
+    },
+    {
+     "type": "ground",
+     "y": 1255
+    },
+    {
+     "type": "mascot",
+     "at": 3,
+     "x": 175,
+     "y": 805,
+     "s": 0.72,
+     "pose": "point",
+     "side": 1,
+     "rise": 140
+    },
+    {
+     "type": "word",
+     "at": {
+      "b": 3,
+      "w": 1,
+      "d": 0.2
+     },
+     "text": "20 DRAWN",
+     "font": "Inter-Black",
+     "size": 120,
+     "x": 660,
+     "y": 620,
+     "rot": -3,
+     "pop": "back",
+     "card": "paper",
+     "ink": "ink"
+    },
+    {
+     "type": "word",
+     "at": {
+      "b": 3,
+      "w": 13,
+      "d": 0.0
+     },
+     "text": "PAID BY MATCH",
+     "font": "Inter-Black",
+     "size": 70,
+     "x": 660,
+     "y": 930,
+     "rot": 2,
+     "pop": "back",
+     "card": "gold",
+     "ink": "ink"
+    },
+    {
+     "type": "label",
+     "text": "THE DRAW",
+     "y": 300,
+     "at": 3,
+     "size": 54,
+     "bg": "ink",
+     "fg": "gold",
+     "rot": -2,
+     "font": "Inter-Black"
+    }
+   ]
+  },
+  {
+   "start": 4,
+   "kind": "teach_card",
+   "els": [
+    {
+     "type": "bg",
+     "look": "hall"
+    },
+    {
+     "type": "ground",
+     "y": 1255
+    },
+    {
+     "type": "mascot",
+     "at": 4,
+     "x": 175,
+     "y": 805,
+     "s": 0.72,
+     "pose": "present",
+     "side": 1,
+     "rise": 140
+    },
+    {
+     "type": "word",
+     "at": {
+      "b": 4,
+      "w": 3,
+      "d": 0.2
+     },
+     "text": "NONE",
+     "font": "Inter-Black",
+     "size": 140,
+     "x": 660,
+     "y": 760,
+     "rot": -3,
+     "pop": "back",
+     "card": "gold",
+     "ink": "ink"
+    },
+    {
+     "type": "label",
+     "text": "STRATEGY",
+     "y": 300,
+     "at": 4,
+     "size": 54,
+     "bg": "ink",
+     "fg": "gold",
+     "rot": -2,
+     "font": "Inter-Black"
+    }
+   ]
+  },
+  {
+   "start": 5,
+   "kind": "teach_card",
+   "els": [
+    {
+     "type": "bg",
+     "look": "hall"
+    },
+    {
+     "type": "ground",
+     "y": 1255
+    },
+    {
+     "type": "mascot",
+     "at": 5,
+     "x": 175,
+     "y": 805,
+     "s": 0.72,
+     "pose": "point",
+     "side": 1,
+     "rise": 140
+    },
+    {
+     "type": "word",
+     "at": {
+      "b": 5,
+      "w": 11,
+      "d": 0.2
+     },
+     "text": "1 IN 326",
+     "font": "Inter-Black",
+     "size": 120,
+     "x": 660,
+     "y": 760,
+     "rot": -3,
+     "pop": "back",
+     "card": "gold",
+     "ink": "ink"
+    },
+    {
+     "type": "label",
+     "text": "ALL 4 OF 4",
+     "y": 300,
+     "at": 5,
+     "size": 54,
+     "bg": "ink",
+     "fg": "gold",
+     "rot": -2,
+     "font": "Inter-Black"
+    }
+   ]
+  },
+  {
+   "start": 6,
+   "kind": "teach_card",
+   "els": [
+    {
+     "type": "bg",
+     "look": "hall"
+    },
+    {
+     "type": "ground",
+     "y": 1255
+    },
+    {
+     "type": "mascot",
+     "at": 6,
+     "x": 175,
+     "y": 805,
+     "s": 0.72,
+     "pose": "chip",
+     "side": 1,
+     "rise": 140
+    },
+    {
+     "type": "word",
+     "at": {
+      "b": 6,
+      "w": 12,
+      "d": 0.2
+     },
+     "text": "$1 IN",
+     "font": "Inter-Black",
+     "size": 110,
+     "x": 660,
+     "y": 620,
+     "rot": -3,
+     "pop": "back",
+     "card": "paper",
+     "ink": "ink"
+    },
+    {
+     "type": "word",
+     "at": {
+      "b": 6,
+      "w": 15,
+      "d": 0.0
+     },
+     "text": "80 CENTS BACK",
+     "font": "Inter-Black",
+     "size": 84,
+     "x": 660,
+     "y": 930,
+     "rot": 2,
+     "pop": "back",
+     "card": "gold",
+     "ink": "ink"
+    },
+    {
+     "type": "label",
+     "text": "THE CATCH",
+     "y": 300,
+     "at": 6,
+     "size": 54,
+     "bg": "ink",
+     "fg": "gold",
+     "rot": -2,
+     "font": "Inter-Black"
+    }
+   ]
+  },
+  {
+   "start": 7,
+   "kind": "teach_card",
+   "els": [
+    {
+     "type": "bg",
+     "look": "hall"
+    },
+    {
+     "type": "ground",
+     "y": 1255
+    },
+    {
+     "type": "mascot",
+     "at": 7,
+     "x": 175,
+     "y": 805,
+     "s": 0.72,
+     "pose": "point",
+     "side": 1,
+     "rise": 140
+    },
+    {
+     "type": "word",
+     "at": {
+      "b": 7,
+      "w": 7,
+      "d": 0.2
+     },
+     "text": "70% TO 80%+",
+     "font": "Inter-Black",
+     "size": 84,
+     "x": 660,
+     "y": 620,
+     "rot": -3,
+     "pop": "back",
+     "card": "paper",
+     "ink": "ink"
+    },
+    {
+     "type": "word",
+     "at": {
+      "b": 7,
+      "w": 14,
+      "d": 0.0
+     },
+     "text": "HOUSE: THE REST",
+     "font": "Inter-Black",
+     "size": 70,
+     "x": 660,
+     "y": 930,
+     "rot": 2,
+     "pop": "back",
+     "card": "gold",
+     "ink": "ink"
+    },
+    {
+     "type": "label",
+     "text": "KENO PAYBACK",
+     "y": 300,
+     "at": 7,
+     "size": 54,
+     "bg": "ink",
+     "fg": "gold",
+     "rot": -2,
+     "font": "Inter-Black"
+    }
+   ]
+  },
+  {
+   "start": 8,
+   "kind": "teach_card",
+   "els": [
+    {
+     "type": "bg",
+     "look": "hall"
+    },
+    {
+     "type": "ground",
+     "y": 1255
+    },
+    {
+     "type": "mascot",
+     "at": 8,
+     "x": 175,
+     "y": 805,
+     "s": 0.72,
+     "pose": "present",
+     "side": 1,
+     "rise": 140
+    },
+    {
+     "type": "word",
+     "at": {
+      "b": 8,
+      "w": 7,
+      "d": 0.2
+     },
+     "text": "1 IN",
+     "font": "Inter-Black",
+     "size": 110,
+     "x": 660,
+     "y": 620,
+     "rot": -3,
+     "pop": "back",
+     "card": "paper",
+     "ink": "ink"
+    },
+    {
+     "type": "word",
+     "at": {
+      "b": 8,
+      "w": 9,
+      "d": 0.0
+     },
+     "text": "8.9 MILLION",
+     "font": "Inter-Black",
+     "size": 110,
+     "x": 660,
+     "y": 930,
+     "rot": 2,
+     "pop": "back",
+     "card": "gold",
+     "ink": "ink"
+    },
+    {
+     "type": "label",
+     "text": "ALL 10 OF 10",
+     "y": 300,
+     "at": 8,
+     "size": 54,
+     "bg": "ink",
+     "fg": "gold",
+     "rot": -2,
+     "font": "Inter-Black"
+    }
+   ]
+  },
+  {
+   "start": 9,
+   "kind": "ending",
+   "els": [
+    {
+     "type": "bg",
+     "look": "paper",
+     "glow": 0.3,
+     "glow_y": 760
+    },
+    {
+     "type": "word",
+     "at": 9,
+     "text": "LUCKY",
+     "font": "Inter-Black",
+     "size": 190,
+     "y": 560,
+     "rot": -3,
+     "strike_at": {
+      "b": 9,
+      "w": 3
+     }
+    },
+    {
+     "type": "word",
+     "at": {
+      "b": 9,
+      "w": 12
+     },
+     "text": "EDGE",
+     "size": 210,
+     "y": 900,
+     "rot": 2,
+     "card": "ink",
+     "ink": "gold",
+     "pop": "slam",
+     "glow": true
+    },
+    {
+     "type": "ground",
+     "y": 1255
+    },
+    {
+     "type": "text",
+     "at": {
+      "b": 9,
+      "d": 1.0
+     },
+     "text": "THE RIGGED GAME",
+     "y": 1720,
+     "size": 34,
+     "alpha": 0.8,
+     "footer": true
+    },
+    {
+     "type": "outro",
+     "at": [
+      "end",
+      0.35
+     ]
+    }
+   ]
+  }
+ ],
+ "cover": {
+  "kicker": "HOW TO PLAY",
+  "big": "KENO",
+  "sub": "ALL 10 OF 10? 1 IN 8.9M"
+ },
+ "sources": [
+  {
+   "name": "HowStuffWorks (John Grochowski), How to Play Keno (80 numbers, the player marks 1 through 20, 20 numbers are drawn and winners are paid by a pay table; no strategy, every number as likely as any other; sample four-spot $1 ticket pays $1 for 2 hits, $5 for 3, $120 for 4; paybacks range from below 70 percent to more than 80 percent; roots in China, brought to the United States by Chinese immigrants in the late 1800s)",
+   "url": "https://entertainment.howstuffworks.com/how-to-play-keno.htm",
+   "fetched": "2026-11-28"
+  }
+ ],
+ "post": {
+  "slot": "morning",
+  "post_at": "2026-11-29T07:30:00+05:30",
+  "instagram_caption": "Mark ten numbers on a keno ticket. What are the odds all ten come up?\n\nKeno came from China. You mark up to 20 of 80 numbers, 20 are drawn, and there is no strategy at all. Keno pays back from under 70% to just over 80%, and hitting all 10 of 10 is about 1 in 8.9 million.\n\nEducation only. Not gambling advice. 18+\n\nDid you think some keno numbers were luckier than others?\n\n#theriggedgame #keno #howtoplay #casino #probability",
+  "youtube_title": "How Keno Works, And The Odds Of Hitting All 10",
+  "youtube_description": "Keno explained simply: 80 numbers, you mark up to 20, the casino draws 20 and pays by how many match. There is no strategy, paybacks run from under 70% to just over 80%, and catching all 10 of 10 is about 1 in 8.9 million.\n\nEducation only. Not gambling advice. 18+ AI narration.\n\nSources:\n• HowStuffWorks (John Grochowski), \"How to Play Keno\"\n\nThe Rigged Game: how casinos really work. Instagram: @the_rigged_game\n\n#Casino #Keno #Shorts"
+ },
+ "math": [
+  {
+   "expr": "10",
+   "expect": 10,
+   "note": "a ten number ticket"
+  },
+  {
+   "expr": "1800",
+   "expect": 1800,
+   "note": "late 1800s (HowStuffWorks)"
+  },
+  {
+   "expr": "80",
+   "expect": 80,
+   "note": "80 numbers on the ticket (HowStuffWorks)"
+  },
+  {
+   "expr": "20",
+   "expect": 20,
+   "note": "mark 1 to 20 numbers, 20 numbers drawn (HowStuffWorks)"
+  },
+  {
+   "expr": "1",
+   "expect": 1,
+   "note": "mark at least 1 number; $1 sample ticket"
+  },
+  {
+   "expr": "4",
+   "expect": 4,
+   "note": "four number ticket"
+  },
+  {
+   "expr": "round(math.comb(80, 4) / math.comb(20, 4))",
+   "expect": 326,
+   "note": "all 4 of 4 hit: C(20,4)/C(80,4), about 1 in 326"
+  },
+  {
+   "expr": "round(100 * (1 * math.comb(20, 2) * math.comb(60, 2) + 5 * math.comb(20, 3) * 60 + 120 * math.comb(20, 4)) / math.comb(80, 4))",
+   "expect": 80,
+   "note": "HowStuffWorks sample 4-spot pay table ($1, $5, $120) returns about 80 cents per $1 (79.6)"
+  },
+  {
+   "expr": "70",
+   "expect": 70,
+   "note": "paybacks from below 70 percent (HowStuffWorks)"
+  },
+  {
+   "expr": "80",
+   "expect": 80,
+   "note": "to more than 80 percent (HowStuffWorks)"
+  },
+  {
+   "expr": "round(math.comb(80, 10) / math.comb(20, 10) / 1e6, 1)",
+   "expect": 8.9,
+   "note": "all 10 of 10: C(20,10)/C(80,10), about 1 in 8.9 million"
+  }
+ ]
+}
