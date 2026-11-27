@@ -1,0 +1,356 @@
+{
+ "id": "011_martingale_myth",
+ "episode": "12",
+ "series": "Casino Myths",
+ "keywords": [
+  "never",
+  "lose",
+  "fails",
+  "martingale",
+  "double",
+  "loss",
+  "streaks",
+  "money",
+  "edge",
+  "green",
+  "zero",
+  "system",
+  "odds"
+ ],
+ "beats": [
+  {
+   "say": "There is a betting system that sounds like it can never lose. Here are four reasons it fails.",
+   "cap": "There is a betting system|that sounds like|it can never lose.|Here are four reasons|it fails.",
+   "show": {
+    "kind": "fan",
+    "n": 4,
+    "title": "THE DOUBLING SYSTEM",
+    "secret": "IT FAILS",
+    "secret_at": {
+     "beat": 0,
+     "word": 16
+    }
+   }
+  },
+  {
+   "say": "It is called the martingale: bet one dollar, and double your bet after every loss.",
+   "cap": "It is called the martingale:|bet $1, and double your bet|after every loss.",
+   "show": {
+    "kind": "teach_card",
+    "header": "THE MARTINGALE",
+    "pose": "chip",
+    "items": [
+     {
+      "text": "BET $1",
+      "word": 6,
+      "size": 110
+     },
+     {
+      "text": "LOSE? DOUBLE IT",
+      "word": 11,
+      "size": 76,
+      "card": "gold"
+     }
+    ]
+   }
+  },
+  {
+   "say": "When you finally win, you get back every loss, plus one dollar.",
+   "cap": "When you finally win,|you get back every loss,|plus $1.",
+   "show": {
+    "kind": "teach_card",
+    "header": "THE PROMISE",
+    "pose": "present",
+    "items": [
+     {
+      "text": "+$1",
+      "word": 10,
+      "size": 140,
+      "card": "gold"
+     }
+    ]
+   }
+  },
+  {
+   "say": "Number four. However long it takes, every win earns you just one dollar.",
+   "cap": "Number four.|However long it takes,|every win earns you|just $1.",
+   "show": [
+    {
+     "kind": "countdown",
+     "n": 4,
+     "sub": "TINY WINS",
+     "label": "REASON #4"
+    },
+    {
+     "kind": "teach_card",
+     "header": "TINY WINS",
+     "pose": "point",
+     "from_word": 6,
+     "items": [
+      {
+       "text": "EVERY WIN: $1",
+       "word": 11,
+       "size": 90,
+       "card": "gold"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "say": "Number three. The bets grow fast: one, two, four, eight, sixteen dollars.",
+   "cap": "Number three.|The bets grow fast:|$1, $2, $4, $8, $16.",
+   "show": [
+    {
+     "kind": "countdown",
+     "n": 3,
+     "sub": "BETS EXPLODE",
+     "label": "REASON #3"
+    },
+    {
+     "kind": "teach_card",
+     "header": "BETS EXPLODE",
+     "pose": "present",
+     "from_word": 6,
+     "items": [
+      {
+       "text": "$1 $2 $4",
+       "word": 6,
+       "size": 100
+      },
+      {
+       "text": "$8 $16",
+       "word": 9,
+       "size": 110,
+       "card": "gold"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "say": "After ten losses in a row, the next bet is one thousand and twenty four dollars, just to win one.",
+   "cap": "After ten losses in a row,|the next bet is $1,024,|just to win $1.",
+   "show": {
+    "kind": "counter",
+    "value": 1024,
+    "prefix": "$",
+    "unit": "NEXT BET, TO WIN $1",
+    "count_at": {
+     "beat": 0,
+     "word": 9
+    },
+    "dur": 1.6
+   }
+  },
+  {
+   "say": "Number two. Even on a fair coin, three losses in a row comes up one time in eight.",
+   "cap": "Number two.|Even on a fair coin,|three losses in a row|comes up|1 time in 8.",
+   "show": [
+    {
+     "kind": "countdown",
+     "n": 2,
+     "sub": "STREAKS HAPPEN",
+     "label": "REASON #2"
+    },
+    {
+     "kind": "teach_card",
+     "header": "LOSING STREAKS",
+     "pose": "point",
+     "from_word": 2,
+     "items": [
+      {
+       "text": "3 IN A ROW",
+       "word": 8,
+       "size": 96
+      },
+      {
+       "text": "1 IN 8",
+       "word": 15,
+       "size": 120,
+       "card": "gold"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "say": "And you only have so much money, so one long streak can wipe you out.",
+   "cap": "And you only have|so much money,|so one long streak|can wipe you out.",
+   "show": {
+    "kind": "teach_card",
+    "header": "YOUR MONEY RUNS OUT",
+    "pose": "chip",
+    "items": [
+     {
+      "text": "LONG STREAK",
+      "word": 10,
+      "size": 80
+     },
+     {
+      "text": "WIPED OUT",
+      "word": 13,
+      "size": 110,
+      "card": "gold"
+     }
+    ]
+   }
+  },
+  {
+   "say": "And number one. Real roulette wheels have green pockets, so the house always keeps an edge.",
+   "cap": "And number one.|Real roulette wheels|have green pockets,|so the house always|keeps an edge.",
+   "show": [
+    {
+     "kind": "countdown",
+     "n": 1,
+     "sub": "THE HOUSE EDGE",
+     "label": "REASON #1"
+    },
+    {
+     "kind": "teach_wheel",
+     "pose": "point",
+     "from_word": 3,
+     "zero_at": {
+      "beat": 0,
+      "word": 7
+     },
+     "note": "THE GREEN ZERO",
+     "note_at": {
+      "beat": 0,
+      "word": 7
+     }
+    }
+   ]
+  },
+  {
+   "say": "Even on a perfectly fair game, the small wins and the huge losses average out to zero.",
+   "cap": "Even on a perfectly|fair game, the small wins|and the huge losses|average out to zero.",
+   "show": {
+    "kind": "teach_card",
+    "header": "THE AVERAGE",
+    "pose": "present",
+    "items": [
+     {
+      "text": "SMALL WINS",
+      "word": 7,
+      "size": 84
+     },
+     {
+      "text": "HUGE LOSSES",
+      "word": 11,
+      "size": 90,
+      "card": "gold"
+     }
+    ]
+   }
+  },
+  {
+   "say": "No system can beat the odds. It only makes the losses bigger.",
+   "cap": "No system can beat the odds.|It only makes|the losses bigger.",
+   "show": {
+    "kind": "ending",
+    "wrong": "SYSTEM",
+    "right": "ODDS",
+    "strike_at": {
+     "beat": 0,
+     "word": 1
+    },
+    "right_at": {
+     "beat": 0,
+     "word": 5
+    }
+   }
+  }
+ ],
+ "cover": {
+  "kicker": "THE DOUBLING SYSTEM",
+  "big": "x2",
+  "sub": "4 REASONS IT FAILS"
+ },
+ "sources": [
+  {
+   "name": "Scientific American, The Gambling Strategy That's Guaranteed to Make Money and Why You Should Never Use It (martingale: bet $1, double after every loss, $1, $2, $4, $8, $16, a win always nets $1; you have only so much money and bets grow exponentially; losing the first three bets is one in eight on a 50-50 game; small wins and few huge losses average out to $0; real roulette tables have green pockets giving the house an edge; for games with winning chances of 50 percent or worse, no betting strategy secures an upper hand)",
+   "url": "https://scientificamerican.com/article/the-gambling-strategy-thats-guaranteed-to-make-money-and-why-you-should-never-use-it",
+   "fetched": "2026-11-28"
+  }
+ ],
+ "math": [
+  {
+   "expr": "4",
+   "expect": 4,
+   "note": "four reasons in the countdown"
+  },
+  {
+   "expr": "1",
+   "expect": 1,
+   "note": "base bet $1 (Scientific American)"
+  },
+  {
+   "expr": "(1 + 2 + 4) - 7",
+   "expect": 0,
+   "note": "lose $1, $2, $4 = $7 lost (Scientific American)"
+  },
+  {
+   "expr": "8 - (1 + 2 + 4)",
+   "expect": 1,
+   "note": "then win $8: every loss back plus $1 (Scientific American)"
+  },
+  {
+   "expr": "1 + 2 + 4 + 8 + 16",
+   "expect": 31,
+   "note": "bets $1, $2, $4, $8, $16 each double (Scientific American)"
+  },
+  {
+   "expr": "2 ** 4",
+   "expect": 16,
+   "note": "fifth bet is $16"
+  },
+  {
+   "expr": "2 ** 10",
+   "expect": 1024,
+   "note": "after ten straight losses the eleventh bet is $1,024"
+  },
+  {
+   "expr": "2 ** 11 - (2 ** 10 + 2 ** 9 + 2 ** 8 + 2 ** 7 + 2 ** 6 + 2 ** 5 + 2 ** 4 + 2 ** 3 + 2 ** 2 + 2 + 1)",
+   "expect": 1,
+   "note": "winning the $1,024 bet nets just $1"
+  },
+  {
+   "expr": "10",
+   "expect": 10,
+   "note": "ten losses in a row"
+  },
+  {
+   "expr": "(1 / 2) ** 3",
+   "expect": 0.125,
+   "note": "three losses in a row on a 50-50 game: 1 in 8, 12.5% (Scientific American)"
+  },
+  {
+   "expr": "1 / (1 / 2) ** 3",
+   "expect": 8,
+   "note": "1 time in 8"
+  },
+  {
+   "expr": "3",
+   "expect": 3,
+   "note": "three losses"
+  },
+  {
+   "expr": "(7 / 8) * 1 - (1 / 8) * 7",
+   "expect": 0,
+   "note": "fair game, $7 bankroll: small wins and the big loss average out to $0 (Scientific American)"
+  },
+  {
+   "expr": "2",
+   "expect": 2,
+   "note": "cover: x2, doubling"
+  }
+ ],
+ "post": {
+  "slot": "evening",
+  "post_at": "2026-11-28T23:30:00+05:30",
+  "instagram_caption": "There is a betting system that sounds like it can never lose.\n\nThe martingale says double your bet after every loss. Every win nets just $1, the bets explode ($1,024 after ten losses), streaks happen, and green pockets keep the house edge. Even on a fair game, the average result is zero.\n\nEducation only. Not gambling advice. 18+\n\nHas anyone ever told you doubling up after a loss can't fail?\n\n#theriggedgame #martingale #casinomyths #probability #houseedge",
+  "youtube_title": "The Betting System That Can Never Lose (Except It Does)",
+  "youtube_description": "The martingale says to double your bet after every loss, so the first win gets everything back plus $1. Four reasons it fails: tiny wins, exploding bets, losing streaks and limited money, and the house edge from the green pockets. Even on a fair game the results average out to zero.\n\nEducation only. Not gambling advice. 18+ AI narration.\n\nSources:\n• Scientific American, \"The Gambling Strategy That's Guaranteed to Make Money and Why You Should Never Use It\"\n\nThe Rigged Game: how casinos really work. Instagram: @the_rigged_game\n\n#Casino #Probability #Shorts"
+ }
+}

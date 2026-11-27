@@ -1,0 +1,994 @@
+{
+ "id": "011_martingale_myth",
+ "episode": "12",
+ "series": "Casino Myths",
+ "voice": "am_liam",
+ "speed": 1.0,
+ "hold": 2.6,
+ "caption_keywords": [
+  "never",
+  "lose",
+  "fails",
+  "martingale",
+  "double",
+  "loss",
+  "streaks",
+  "money",
+  "edge",
+  "green",
+  "zero",
+  "system",
+  "odds"
+ ],
+ "phrases": [
+  {
+   "say": "There is a betting system that sounds like it can never lose. Here are four reasons it fails.",
+   "cap": "There is a betting system|that sounds like|it can never lose.|Here are four reasons|it fails.",
+   "pause": 0.45
+  },
+  {
+   "say": "It is called the martingale: bet one dollar, and double your bet after every loss.",
+   "cap": "It is called the martingale:|bet $1, and double your bet|after every loss.",
+   "pause": 0.45
+  },
+  {
+   "say": "When you finally win, you get back every loss, plus one dollar.",
+   "cap": "When you finally win,|you get back every loss,|plus $1.",
+   "pause": 0.45
+  },
+  {
+   "say": "Number four. However long it takes, every win earns you just one dollar.",
+   "cap": "Number four.|However long it takes,|every win earns you|just $1.",
+   "pause": 0.45
+  },
+  {
+   "say": "Number three. The bets grow fast: one, two, four, eight, sixteen dollars.",
+   "cap": "Number three.|The bets grow fast:|$1, $2, $4, $8, $16.",
+   "pause": 0.45
+  },
+  {
+   "say": "After ten losses in a row, the next bet is one thousand and twenty four dollars, just to win one.",
+   "cap": "After ten losses in a row,|the next bet is $1,024,|just to win $1.",
+   "pause": 0.45
+  },
+  {
+   "say": "Number two. Even on a fair coin, three losses in a row comes up one time in eight.",
+   "cap": "Number two.|Even on a fair coin,|three losses in a row|comes up|1 time in 8.",
+   "pause": 0.45
+  },
+  {
+   "say": "And you only have so much money, so one long streak can wipe you out.",
+   "cap": "And you only have|so much money,|so one long streak|can wipe you out.",
+   "pause": 0.45
+  },
+  {
+   "say": "And number one. Real roulette wheels have green pockets, so the house always keeps an edge.",
+   "cap": "And number one.|Real roulette wheels|have green pockets,|so the house always|keeps an edge.",
+   "pause": 0.45
+  },
+  {
+   "say": "Even on a perfectly fair game, the small wins and the huge losses average out to zero.",
+   "cap": "Even on a perfectly|fair game, the small wins|and the huge losses|average out to zero.",
+   "pause": 0.45
+  },
+  {
+   "say": "No system can beat the odds. It only makes the losses bigger.",
+   "cap": "No system can beat the odds.|It only makes|the losses bigger.",
+   "pause": 0.45
+  }
+ ],
+ "scenes": [
+  {
+   "start": 0,
+   "kind": "fan",
+   "els": [
+    {
+     "type": "bg",
+     "look": "hall"
+    },
+    {
+     "type": "ground",
+     "y": 1250
+    },
+    {
+     "type": "mascot",
+     "at": -1,
+     "x": 190,
+     "y": 830,
+     "s": 0.78
+    },
+    {
+     "type": "fan",
+     "at": -1,
+     "n": 4
+    },
+    {
+     "type": "label",
+     "text": "THE DOUBLING SYSTEM",
+     "y": 300,
+     "at": -1,
+     "size": 66,
+     "bg": "ink",
+     "fg": "gold",
+     "rot": -3,
+     "font": "Inter-Black"
+    },
+    {
+     "type": "stamp",
+     "text": "IT FAILS",
+     "x": 690.0,
+     "y": 520,
+     "size": 84,
+     "rot": -12,
+     "at": {
+      "b": 0,
+      "w": 16
+     }
+    }
+   ]
+  },
+  {
+   "start": 1,
+   "kind": "teach_card",
+   "els": [
+    {
+     "type": "bg",
+     "look": "hall"
+    },
+    {
+     "type": "ground",
+     "y": 1255
+    },
+    {
+     "type": "mascot",
+     "at": 1,
+     "x": 175,
+     "y": 805,
+     "s": 0.72,
+     "pose": "chip",
+     "side": 1,
+     "rise": 140
+    },
+    {
+     "type": "word",
+     "at": {
+      "b": 1,
+      "w": 6,
+      "d": 0.2
+     },
+     "text": "BET $1",
+     "font": "Inter-Black",
+     "size": 110,
+     "x": 660,
+     "y": 620,
+     "rot": -3,
+     "pop": "back",
+     "card": "paper",
+     "ink": "ink"
+    },
+    {
+     "type": "word",
+     "at": {
+      "b": 1,
+      "w": 11,
+      "d": 0.0
+     },
+     "text": "LOSE? DOUBLE IT",
+     "font": "Inter-Black",
+     "size": 76,
+     "x": 660,
+     "y": 930,
+     "rot": 2,
+     "pop": "back",
+     "card": "gold",
+     "ink": "ink"
+    },
+    {
+     "type": "label",
+     "text": "THE MARTINGALE",
+     "y": 300,
+     "at": 1,
+     "size": 54,
+     "bg": "ink",
+     "fg": "gold",
+     "rot": -2,
+     "font": "Inter-Black"
+    }
+   ]
+  },
+  {
+   "start": 2,
+   "kind": "teach_card",
+   "els": [
+    {
+     "type": "bg",
+     "look": "hall"
+    },
+    {
+     "type": "ground",
+     "y": 1255
+    },
+    {
+     "type": "mascot",
+     "at": 2,
+     "x": 175,
+     "y": 805,
+     "s": 0.72,
+     "pose": "present",
+     "side": 1,
+     "rise": 140
+    },
+    {
+     "type": "word",
+     "at": {
+      "b": 2,
+      "w": 10,
+      "d": 0.2
+     },
+     "text": "+$1",
+     "font": "Inter-Black",
+     "size": 140,
+     "x": 660,
+     "y": 760,
+     "rot": -3,
+     "pop": "back",
+     "card": "gold",
+     "ink": "ink"
+    },
+    {
+     "type": "label",
+     "text": "THE PROMISE",
+     "y": 300,
+     "at": 2,
+     "size": 54,
+     "bg": "ink",
+     "fg": "gold",
+     "rot": -2,
+     "font": "Inter-Black"
+    }
+   ]
+  },
+  {
+   "start": 3,
+   "kind": "countdown",
+   "els": [
+    {
+     "type": "bg",
+     "look": "dark",
+     "rays": true
+    },
+    {
+     "type": "numcard",
+     "at": 3,
+     "n": 4
+    },
+    {
+     "type": "label",
+     "text": "TINY WINS",
+     "y": 1240,
+     "at": 3,
+     "size": 54,
+     "bg": "ink",
+     "fg": "gold",
+     "rot": 2,
+     "font": "Inter-Black",
+     "delay": 0.2
+    },
+    {
+     "type": "label",
+     "text": "REASON #4",
+     "y": 300,
+     "at": 3,
+     "size": 46,
+     "bg": "rust",
+     "fg": "paper",
+     "rot": -3,
+     "font": "Mono-Bold",
+     "delay": 0.2
+    }
+   ]
+  },
+  {
+   "start": {
+    "b": 3,
+    "w": 6
+   },
+   "kind": "teach_card",
+   "els": [
+    {
+     "type": "bg",
+     "look": "hall"
+    },
+    {
+     "type": "ground",
+     "y": 1255
+    },
+    {
+     "type": "mascot",
+     "at": 3,
+     "x": 175,
+     "y": 805,
+     "s": 0.72,
+     "pose": "point",
+     "side": 1,
+     "rise": 140
+    },
+    {
+     "type": "word",
+     "at": {
+      "b": 3,
+      "w": 11,
+      "d": 0.2
+     },
+     "text": "EVERY WIN: $1",
+     "font": "Inter-Black",
+     "size": 90,
+     "x": 660,
+     "y": 760,
+     "rot": -3,
+     "pop": "back",
+     "card": "gold",
+     "ink": "ink"
+    },
+    {
+     "type": "label",
+     "text": "TINY WINS",
+     "y": 300,
+     "at": 3,
+     "size": 54,
+     "bg": "ink",
+     "fg": "gold",
+     "rot": -2,
+     "font": "Inter-Black"
+    }
+   ]
+  },
+  {
+   "start": 4,
+   "kind": "countdown",
+   "els": [
+    {
+     "type": "bg",
+     "look": "dark",
+     "rays": true
+    },
+    {
+     "type": "numcard",
+     "at": 4,
+     "n": 3
+    },
+    {
+     "type": "label",
+     "text": "BETS EXPLODE",
+     "y": 1240,
+     "at": 4,
+     "size": 54,
+     "bg": "ink",
+     "fg": "gold",
+     "rot": 2,
+     "font": "Inter-Black",
+     "delay": 0.2
+    },
+    {
+     "type": "label",
+     "text": "REASON #3",
+     "y": 300,
+     "at": 4,
+     "size": 46,
+     "bg": "rust",
+     "fg": "paper",
+     "rot": -3,
+     "font": "Mono-Bold",
+     "delay": 0.2
+    }
+   ]
+  },
+  {
+   "start": {
+    "b": 4,
+    "w": 6
+   },
+   "kind": "teach_card",
+   "els": [
+    {
+     "type": "bg",
+     "look": "hall"
+    },
+    {
+     "type": "ground",
+     "y": 1255
+    },
+    {
+     "type": "mascot",
+     "at": 4,
+     "x": 175,
+     "y": 805,
+     "s": 0.72,
+     "pose": "present",
+     "side": 1,
+     "rise": 140
+    },
+    {
+     "type": "word",
+     "at": {
+      "b": 4,
+      "w": 6,
+      "d": 0.2
+     },
+     "text": "$1 $2 $4",
+     "font": "Inter-Black",
+     "size": 100,
+     "x": 660,
+     "y": 620,
+     "rot": -3,
+     "pop": "back",
+     "card": "paper",
+     "ink": "ink"
+    },
+    {
+     "type": "word",
+     "at": {
+      "b": 4,
+      "w": 9,
+      "d": 0.0
+     },
+     "text": "$8 $16",
+     "font": "Inter-Black",
+     "size": 110,
+     "x": 660,
+     "y": 930,
+     "rot": 2,
+     "pop": "back",
+     "card": "gold",
+     "ink": "ink"
+    },
+    {
+     "type": "label",
+     "text": "BETS EXPLODE",
+     "y": 300,
+     "at": 4,
+     "size": 54,
+     "bg": "ink",
+     "fg": "gold",
+     "rot": -2,
+     "font": "Inter-Black"
+    }
+   ]
+  },
+  {
+   "start": 5,
+   "kind": "counter",
+   "els": [
+    {
+     "type": "bg",
+     "look": "paper"
+    },
+    {
+     "type": "counter",
+     "at": 5,
+     "value": 1024,
+     "prefix": "$",
+     "suffix": "",
+     "decimals": 0,
+     "count_at": {
+      "b": 5,
+      "w": 9
+     },
+     "dur": 1.6,
+     "chips": true,
+     "unit": "NEXT BET, TO WIN $1"
+    },
+    {
+     "type": "ground",
+     "y": 1255
+    }
+   ]
+  },
+  {
+   "start": 6,
+   "kind": "countdown",
+   "els": [
+    {
+     "type": "bg",
+     "look": "dark",
+     "rays": true
+    },
+    {
+     "type": "numcard",
+     "at": 6,
+     "n": 2
+    },
+    {
+     "type": "label",
+     "text": "STREAKS HAPPEN",
+     "y": 1240,
+     "at": 6,
+     "size": 54,
+     "bg": "ink",
+     "fg": "gold",
+     "rot": 2,
+     "font": "Inter-Black",
+     "delay": 0.2
+    },
+    {
+     "type": "label",
+     "text": "REASON #2",
+     "y": 300,
+     "at": 6,
+     "size": 46,
+     "bg": "rust",
+     "fg": "paper",
+     "rot": -3,
+     "font": "Mono-Bold",
+     "delay": 0.2
+    }
+   ]
+  },
+  {
+   "start": {
+    "b": 6,
+    "w": 2
+   },
+   "kind": "teach_card",
+   "els": [
+    {
+     "type": "bg",
+     "look": "hall"
+    },
+    {
+     "type": "ground",
+     "y": 1255
+    },
+    {
+     "type": "mascot",
+     "at": 6,
+     "x": 175,
+     "y": 805,
+     "s": 0.72,
+     "pose": "point",
+     "side": 1,
+     "rise": 140
+    },
+    {
+     "type": "word",
+     "at": {
+      "b": 6,
+      "w": 8,
+      "d": 0.2
+     },
+     "text": "3 IN A ROW",
+     "font": "Inter-Black",
+     "size": 96,
+     "x": 660,
+     "y": 620,
+     "rot": -3,
+     "pop": "back",
+     "card": "paper",
+     "ink": "ink"
+    },
+    {
+     "type": "word",
+     "at": {
+      "b": 6,
+      "w": 15,
+      "d": 0.0
+     },
+     "text": "1 IN 8",
+     "font": "Inter-Black",
+     "size": 120,
+     "x": 660,
+     "y": 930,
+     "rot": 2,
+     "pop": "back",
+     "card": "gold",
+     "ink": "ink"
+    },
+    {
+     "type": "label",
+     "text": "LOSING STREAKS",
+     "y": 300,
+     "at": 6,
+     "size": 54,
+     "bg": "ink",
+     "fg": "gold",
+     "rot": -2,
+     "font": "Inter-Black"
+    }
+   ]
+  },
+  {
+   "start": 7,
+   "kind": "teach_card",
+   "els": [
+    {
+     "type": "bg",
+     "look": "hall"
+    },
+    {
+     "type": "ground",
+     "y": 1255
+    },
+    {
+     "type": "mascot",
+     "at": 7,
+     "x": 175,
+     "y": 805,
+     "s": 0.72,
+     "pose": "chip",
+     "side": 1,
+     "rise": 140
+    },
+    {
+     "type": "word",
+     "at": {
+      "b": 7,
+      "w": 10,
+      "d": 0.2
+     },
+     "text": "LONG STREAK",
+     "font": "Inter-Black",
+     "size": 80,
+     "x": 660,
+     "y": 620,
+     "rot": -3,
+     "pop": "back",
+     "card": "paper",
+     "ink": "ink"
+    },
+    {
+     "type": "word",
+     "at": {
+      "b": 7,
+      "w": 13,
+      "d": 0.0
+     },
+     "text": "WIPED OUT",
+     "font": "Inter-Black",
+     "size": 110,
+     "x": 660,
+     "y": 930,
+     "rot": 2,
+     "pop": "back",
+     "card": "gold",
+     "ink": "ink"
+    },
+    {
+     "type": "label",
+     "text": "YOUR MONEY RUNS OUT",
+     "y": 300,
+     "at": 7,
+     "size": 54,
+     "bg": "ink",
+     "fg": "gold",
+     "rot": -2,
+     "font": "Inter-Black"
+    }
+   ]
+  },
+  {
+   "start": 8,
+   "kind": "countdown",
+   "els": [
+    {
+     "type": "bg",
+     "look": "dark",
+     "rays": true
+    },
+    {
+     "type": "numcard",
+     "at": 8,
+     "n": 1
+    },
+    {
+     "type": "label",
+     "text": "THE HOUSE EDGE",
+     "y": 1240,
+     "at": 8,
+     "size": 54,
+     "bg": "paper",
+     "fg": "rust",
+     "rot": 2,
+     "font": "Inter-Black",
+     "delay": 0.2
+    },
+    {
+     "type": "label",
+     "text": "REASON #1",
+     "y": 300,
+     "at": 8,
+     "size": 46,
+     "bg": "rust",
+     "fg": "paper",
+     "rot": -3,
+     "font": "Mono-Bold",
+     "delay": 0.2
+    }
+   ]
+  },
+  {
+   "start": {
+    "b": 8,
+    "w": 3
+   },
+   "kind": "teach_wheel",
+   "els": [
+    {
+     "type": "bg",
+     "look": "hall"
+    },
+    {
+     "type": "ground",
+     "y": 1255
+    },
+    {
+     "type": "wheel_show",
+     "at": 8,
+     "x": 655,
+     "y": 690,
+     "r": 245,
+     "american": false,
+     "zero_at": {
+      "b": 8,
+      "w": 7
+     }
+    },
+    {
+     "type": "mascot",
+     "at": 8,
+     "x": 175,
+     "y": 805,
+     "s": 0.72,
+     "pose": "point",
+     "side": 1,
+     "rise": 140
+    },
+    {
+     "type": "label",
+     "text": "THE GREEN ZERO",
+     "y": 1135,
+     "at": {
+      "b": 8,
+      "w": 7
+     },
+     "size": 44,
+     "bg": "ink",
+     "fg": "gold",
+     "rot": 2,
+     "font": "Mono-Bold",
+     "delay": 0.3,
+     "x": 660
+    }
+   ]
+  },
+  {
+   "start": 9,
+   "kind": "teach_card",
+   "els": [
+    {
+     "type": "bg",
+     "look": "hall"
+    },
+    {
+     "type": "ground",
+     "y": 1255
+    },
+    {
+     "type": "mascot",
+     "at": 9,
+     "x": 175,
+     "y": 805,
+     "s": 0.72,
+     "pose": "present",
+     "side": 1,
+     "rise": 140
+    },
+    {
+     "type": "word",
+     "at": {
+      "b": 9,
+      "w": 7,
+      "d": 0.2
+     },
+     "text": "SMALL WINS",
+     "font": "Inter-Black",
+     "size": 84,
+     "x": 660,
+     "y": 620,
+     "rot": -3,
+     "pop": "back",
+     "card": "paper",
+     "ink": "ink"
+    },
+    {
+     "type": "word",
+     "at": {
+      "b": 9,
+      "w": 11,
+      "d": 0.0
+     },
+     "text": "HUGE LOSSES",
+     "font": "Inter-Black",
+     "size": 90,
+     "x": 660,
+     "y": 930,
+     "rot": 2,
+     "pop": "back",
+     "card": "gold",
+     "ink": "ink"
+    },
+    {
+     "type": "label",
+     "text": "THE AVERAGE",
+     "y": 300,
+     "at": 9,
+     "size": 54,
+     "bg": "ink",
+     "fg": "gold",
+     "rot": -2,
+     "font": "Inter-Black"
+    }
+   ]
+  },
+  {
+   "start": 10,
+   "kind": "ending",
+   "els": [
+    {
+     "type": "bg",
+     "look": "paper",
+     "glow": 0.3,
+     "glow_y": 760
+    },
+    {
+     "type": "word",
+     "at": 10,
+     "text": "SYSTEM",
+     "font": "Inter-Black",
+     "size": 190,
+     "y": 560,
+     "rot": -3,
+     "strike_at": {
+      "b": 10,
+      "w": 1
+     }
+    },
+    {
+     "type": "word",
+     "at": {
+      "b": 10,
+      "w": 5
+     },
+     "text": "ODDS",
+     "size": 210,
+     "y": 900,
+     "rot": 2,
+     "card": "ink",
+     "ink": "gold",
+     "pop": "slam",
+     "glow": true
+    },
+    {
+     "type": "ground",
+     "y": 1255
+    },
+    {
+     "type": "text",
+     "at": {
+      "b": 10,
+      "d": 1.0
+     },
+     "text": "THE RIGGED GAME",
+     "y": 1720,
+     "size": 34,
+     "alpha": 0.8,
+     "footer": true
+    },
+    {
+     "type": "outro",
+     "at": [
+      "end",
+      0.35
+     ]
+    }
+   ]
+  }
+ ],
+ "progress": [
+  3,
+  4,
+  6,
+  8
+ ],
+ "progress_end": 10,
+ "cover": {
+  "kicker": "THE DOUBLING SYSTEM",
+  "big": "x2",
+  "sub": "4 REASONS IT FAILS"
+ },
+ "sources": [
+  {
+   "name": "Scientific American, The Gambling Strategy That's Guaranteed to Make Money and Why You Should Never Use It (martingale: bet $1, double after every loss, $1, $2, $4, $8, $16, a win always nets $1; you have only so much money and bets grow exponentially; losing the first three bets is one in eight on a 50-50 game; small wins and few huge losses average out to $0; real roulette tables have green pockets giving the house an edge; for games with winning chances of 50 percent or worse, no betting strategy secures an upper hand)",
+   "url": "https://scientificamerican.com/article/the-gambling-strategy-thats-guaranteed-to-make-money-and-why-you-should-never-use-it",
+   "fetched": "2026-11-28"
+  }
+ ],
+ "post": {
+  "slot": "evening",
+  "post_at": "2026-11-28T23:30:00+05:30",
+  "instagram_caption": "There is a betting system that sounds like it can never lose.\n\nThe martingale says double your bet after every loss. Every win nets just $1, the bets explode ($1,024 after ten losses), streaks happen, and green pockets keep the house edge. Even on a fair game, the average result is zero.\n\nEducation only. Not gambling advice. 18+\n\nHas anyone ever told you doubling up after a loss can't fail?\n\n#theriggedgame #martingale #casinomyths #probability #houseedge",
+  "youtube_title": "The Betting System That Can Never Lose (Except It Does)",
+  "youtube_description": "The martingale says to double your bet after every loss, so the first win gets everything back plus $1. Four reasons it fails: tiny wins, exploding bets, losing streaks and limited money, and the house edge from the green pockets. Even on a fair game the results average out to zero.\n\nEducation only. Not gambling advice. 18+ AI narration.\n\nSources:\n• Scientific American, \"The Gambling Strategy That's Guaranteed to Make Money and Why You Should Never Use It\"\n\nThe Rigged Game: how casinos really work. Instagram: @the_rigged_game\n\n#Casino #Probability #Shorts"
+ },
+ "math": [
+  {
+   "expr": "4",
+   "expect": 4,
+   "note": "four reasons in the countdown"
+  },
+  {
+   "expr": "1",
+   "expect": 1,
+   "note": "base bet $1 (Scientific American)"
+  },
+  {
+   "expr": "(1 + 2 + 4) - 7",
+   "expect": 0,
+   "note": "lose $1, $2, $4 = $7 lost (Scientific American)"
+  },
+  {
+   "expr": "8 - (1 + 2 + 4)",
+   "expect": 1,
+   "note": "then win $8: every loss back plus $1 (Scientific American)"
+  },
+  {
+   "expr": "1 + 2 + 4 + 8 + 16",
+   "expect": 31,
+   "note": "bets $1, $2, $4, $8, $16 each double (Scientific American)"
+  },
+  {
+   "expr": "2 ** 4",
+   "expect": 16,
+   "note": "fifth bet is $16"
+  },
+  {
+   "expr": "2 ** 10",
+   "expect": 1024,
+   "note": "after ten straight losses the eleventh bet is $1,024"
+  },
+  {
+   "expr": "2 ** 11 - (2 ** 10 + 2 ** 9 + 2 ** 8 + 2 ** 7 + 2 ** 6 + 2 ** 5 + 2 ** 4 + 2 ** 3 + 2 ** 2 + 2 + 1)",
+   "expect": 1,
+   "note": "winning the $1,024 bet nets just $1"
+  },
+  {
+   "expr": "10",
+   "expect": 10,
+   "note": "ten losses in a row"
+  },
+  {
+   "expr": "(1 / 2) ** 3",
+   "expect": 0.125,
+   "note": "three losses in a row on a 50-50 game: 1 in 8, 12.5% (Scientific American)"
+  },
+  {
+   "expr": "1 / (1 / 2) ** 3",
+   "expect": 8,
+   "note": "1 time in 8"
+  },
+  {
+   "expr": "3",
+   "expect": 3,
+   "note": "three losses"
+  },
+  {
+   "expr": "(7 / 8) * 1 - (1 / 8) * 7",
+   "expect": 0,
+   "note": "fair game, $7 bankroll: small wins and the big loss average out to $0 (Scientific American)"
+  },
+  {
+   "expr": "2",
+   "expect": 2,
+   "note": "cover: x2, doubling"
+  }
+ ]
+}
