@@ -1,0 +1,341 @@
+{
+ "id": "013_las_vegas_countdown",
+ "episode": "14",
+ "series": "Casino History",
+ "keywords": [
+  "thirty",
+  "moments",
+  "railroad",
+  "auction",
+  "water",
+  "legal",
+  "license",
+  "dam",
+  "workers",
+  "Strip",
+  "Flamingo",
+  "tourists",
+  "luck",
+  "edge"
+ ],
+ "beats": [
+  {
+   "say": "In nineteen hundred, Las Vegas had just thirty people. Here are four moments that changed that.",
+   "cap": "In 1900, Las Vegas|had just 30 people.|Here are four moments|that changed that.",
+   "show": {
+    "kind": "fan",
+    "n": 4,
+    "title": "LAS VEGAS: 30 PEOPLE",
+    "secret": "#1: THE STRIP",
+    "secret_at": {
+     "beat": 0,
+     "word": 12
+    }
+   }
+  },
+  {
+   "say": "Number four. On May fifteenth, nineteen oh five, a railroad land auction founded the town.",
+   "cap": "Number four.|On May 15, 1905,|a railroad land auction|founded the town.",
+   "show": [
+    {
+     "kind": "countdown",
+     "n": 4,
+     "sub": "THE RAILROAD",
+     "label": "MOMENT #4"
+    },
+    {
+     "kind": "town",
+     "place": "LAS VEGAS, 1905",
+     "from_word": 2
+    }
+   ]
+  },
+  {
+   "say": "Its springs made it a handy place for trains to stop for water in the desert.",
+   "cap": "Its springs made it|a handy place for trains|to stop for water|in the desert.",
+   "show": {
+    "kind": "teach_card",
+    "header": "THE WATER STOP",
+    "pose": "present",
+    "items": [
+     {
+      "text": "SPRINGS",
+      "word": 1,
+      "size": 120
+     },
+     {
+      "text": "WATER STOP",
+      "word": 12,
+      "size": 100,
+      "card": "gold"
+     }
+    ]
+   }
+  },
+  {
+   "say": "Number three. In nineteen thirty one, Nevada made gambling legal again.",
+   "cap": "Number three.|In 1931, Nevada|made gambling legal again.",
+   "show": [
+    {
+     "kind": "countdown",
+     "n": 3,
+     "sub": "GAMBLING LEGAL",
+     "label": "MOMENT #3"
+    },
+    {
+     "kind": "title",
+     "big": "1931",
+     "tag": "GAMBLING LEGAL",
+     "from_word": 2
+    }
+   ]
+  },
+  {
+   "say": "That year, the first gaming license in Clark County went to the Northern Club.",
+   "cap": "That year, the first|gaming license in Clark County|went to the Northern Club.",
+   "show": {
+    "kind": "teach_card",
+    "header": "FIRST LICENSE",
+    "pose": "chip",
+    "items": [
+     {
+      "text": "LICENSE #1",
+      "word": 5,
+      "size": 100
+     },
+     {
+      "text": "NORTHERN CLUB",
+      "word": 12,
+      "size": 72,
+      "card": "gold"
+     }
+    ]
+   }
+  },
+  {
+   "say": "Number two. A giant dam was being built nearby, and the workers poured in.",
+   "cap": "Number two.|A giant dam|was being built nearby,|and the workers poured in.",
+   "show": [
+    {
+     "kind": "countdown",
+     "n": 2,
+     "sub": "THE DAM",
+     "label": "MOMENT #2"
+    },
+    {
+     "kind": "teach_card",
+     "header": "HOOVER DAM",
+     "pose": "point",
+     "from_word": 2,
+     "items": [
+      {
+       "text": "THE DAM",
+       "word": 4,
+       "size": 120
+      },
+      {
+       "text": "WORKERS COME",
+       "word": 12,
+       "size": 72,
+       "card": "gold"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "say": "More than forty two thousand unemployed workers came, hoping for one of five thousand jobs.",
+   "cap": "More than 42,000|unemployed workers came,|hoping for one|of 5,000 jobs.",
+   "show": {
+    "kind": "counter",
+    "value": 42000,
+    "suffix": "+",
+    "unit": "FOR 5,000 JOBS",
+    "count_at": {
+     "beat": 0,
+     "word": 2
+    },
+    "dur": 1.6,
+    "chips": false
+   }
+  },
+  {
+   "say": "And number one. In nineteen forty one, El Rancho Vegas opened on Highway ninety one.",
+   "cap": "And number one.|In 1941, El Rancho Vegas|opened on Highway 91.",
+   "show": [
+    {
+     "kind": "countdown",
+     "n": 1,
+     "sub": "THE STRIP",
+     "label": "MOMENT #1"
+    },
+    {
+     "kind": "title",
+     "big": "1941",
+     "tag": "EL RANCHO VEGAS",
+     "from_word": 3
+    }
+   ]
+  },
+  {
+   "say": "It was the first resort on what became the Strip. The Flamingo followed in nineteen forty six.",
+   "cap": "It was the first resort|on what became the Strip.|The Flamingo followed|in 1946.",
+   "show": {
+    "kind": "teach_card",
+    "header": "THE STRIP IS BORN",
+    "pose": "present",
+    "items": [
+     {
+      "text": "EL RANCHO 1941",
+      "word": 3,
+      "size": 84
+     },
+     {
+      "text": "FLAMINGO 1946",
+      "word": 12,
+      "size": 84,
+      "card": "gold"
+     }
+    ]
+   }
+  },
+  {
+   "say": "By two thousand five, more than thirty eight million tourists were coming every year.",
+   "cap": "By 2005, more than|38 million tourists|were coming every year.",
+   "show": {
+    "kind": "counter",
+    "value": 38,
+    "suffix": "M+",
+    "unit": "TOURISTS A YEAR BY 2005",
+    "count_at": {
+     "beat": 0,
+     "word": 4
+    },
+    "dur": 1.6
+   }
+  },
+  {
+   "say": "Las Vegas was not built on luck. It was built on the house edge.",
+   "cap": "Las Vegas was not built on luck.|It was built on|the house edge.",
+   "show": {
+    "kind": "ending",
+    "wrong": "LUCK",
+    "right": "EDGE",
+    "strike_at": {
+     "beat": 0,
+     "word": 6
+    },
+    "right_at": {
+     "beat": 0,
+     "word": 13
+    }
+   }
+  }
+ ],
+ "cover": {
+  "kicker": "HOW VEGAS HAPPENED",
+  "big": "30",
+  "sub": "PEOPLE LIVED THERE IN 1900"
+ },
+ "sources": [
+  {
+   "name": "Encyclopaedia Britannica, Las Vegas: History (the 1900 census counted only 30 people; Clark's 1905 auction near the new railroad depot; the artesian springs gave a reliable water source on the route; gambling legalized again in 1931; thousands of Boulder (Hoover) Dam builders came to town)",
+   "url": "https://www.britannica.com/place/Las-Vegas-Nevada/History",
+   "fetched": "2026-11-28"
+  },
+  {
+   "name": "City of Las Vegas, History Timeline (birthday May 15, 1905, railroad land auction; water made Las Vegas a refueling point and rest stop; first gaming license in Clark County to the Northern Club in 1931; El Rancho Vegas in 1941 the first themed resort on what would become the Strip; Flamingo 1946)",
+   "url": "https://www.lasvegasnevada.gov/Residents/History/Timeline",
+   "fetched": "2026-11-28"
+  },
+  {
+   "name": "PBS American Experience, Las Vegas timeline (1931 legislature repeals the gambling ban; more than 42,000 unemployed workers come to Las Vegas for 5,000 dam jobs; 1941 El Rancho, the first resort on Highway 91, later the Strip; Flamingo opens December 1946; 2005 more than 38 million tourists a year)",
+   "url": "https://www.pbs.org/wgbh/americanexperience/features/lasvegas-timeline",
+   "fetched": "2026-11-28"
+  }
+ ],
+ "math": [
+  {
+   "expr": "1900",
+   "expect": 1900,
+   "note": "1900 census (Britannica)"
+  },
+  {
+   "expr": "30",
+   "expect": 30,
+   "note": "only 30 people in 1900 (Britannica)"
+  },
+  {
+   "expr": "4",
+   "expect": 4,
+   "note": "four moments"
+  },
+  {
+   "expr": "15",
+   "expect": 15,
+   "note": "May 15 (City of Las Vegas)"
+  },
+  {
+   "expr": "1905",
+   "expect": 1905,
+   "note": "railroad land auction (City of Las Vegas, Britannica)"
+  },
+  {
+   "expr": "1931",
+   "expect": 1931,
+   "note": "gambling legal again, first Clark County license (PBS, Britannica, City)"
+  },
+  {
+   "expr": "1",
+   "expect": 1,
+   "note": "first gaming license, license #1"
+  },
+  {
+   "expr": "42000",
+   "expect": 42000,
+   "note": "more than 42,000 unemployed workers came (PBS)"
+  },
+  {
+   "expr": "5000",
+   "expect": 5000,
+   "note": "5,000 dam jobs (PBS)"
+  },
+  {
+   "expr": "round(42000 / 5000, 1)",
+   "expect": 8.4,
+   "note": "over 8 people per job"
+  },
+  {
+   "expr": "1941",
+   "expect": 1941,
+   "note": "El Rancho Vegas opens (City, PBS)"
+  },
+  {
+   "expr": "91",
+   "expect": 91,
+   "note": "Highway 91, later the Strip (PBS)"
+  },
+  {
+   "expr": "1946",
+   "expect": 1946,
+   "note": "Flamingo opens (PBS, City)"
+  },
+  {
+   "expr": "2005",
+   "expect": 2005,
+   "note": "tourist figure year (PBS)"
+  },
+  {
+   "expr": "38",
+   "expect": 38,
+   "note": "more than 38 million tourists a year (PBS)"
+  }
+ ],
+ "post": {
+  "slot": "evening",
+  "post_at": "2026-11-29T23:30:00+05:30",
+  "instagram_caption": "In 1900, Las Vegas had just 30 people.\n\nA 1905 railroad land auction founded the town, Nevada made gambling legal again in 1931, dam workers poured in, and in 1941 El Rancho Vegas opened the first resort on what became the Strip. By 2005, more than 38 million tourists came every year.\n\nEducation only. Not gambling advice. 18+\n\nWhich of these four moments surprised you most?\n\n#theriggedgame #lasvegas #history #casino #gamblinghistory",
+  "youtube_title": "How A Town Of 30 People Became Las Vegas",
+  "youtube_description": "In 1900 Las Vegas had just 30 people. Four moments built it: the 1905 railroad land auction, legal gambling in 1931, the dam workers, and El Rancho Vegas in 1941, the first resort on what became the Strip.\n\nEducation only. Not gambling advice. 18+ AI narration.\n\nSources:\n• Encyclopaedia Britannica, \"Las Vegas: History\"\n• City of Las Vegas, \"History Timeline\"\n• PBS American Experience, \"Las Vegas Timeline\"\n\nThe Rigged Game: how casinos really work. Instagram: @the_rigged_game\n\n#Casino #LasVegas #Shorts"
+ }
+}
